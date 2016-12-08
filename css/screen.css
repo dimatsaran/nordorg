@@ -1,0 +1,1861 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../scss/partials/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../scss/partials/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../scss/partials/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../scss/partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../scss/partials/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../scss/partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../scss/partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** * Fonts. */
+@font-face {
+  font-family: 'rubik-regular';
+  src: url("fonts/rubik-regular-webfont.woff2") format("woff2"), url("fonts/rubik-regular.ttf") format("truetype"), url("fonts/rubik-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rubik-medium';
+  src: url("fonts/rubik-medium-webfont.woff2") format("woff2"), url("fonts/rubik-medium.ttf") format("truetype"), url("fonts/rubik-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rubik-light';
+  src: url("fonts/rubik-light-webfont.woff2") format("woff2"), url("fonts/rubik-light.ttf") format("truetype"), url("fonts/rubik-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 20, ../scss/partials/elements/_colors.scss */
+.color-sap-green {
+  background-color: #658d1b;
+}
+
+/* line 23, ../scss/partials/elements/_colors.scss */
+.color-sepia {
+  background-color: #8b5b29;
+}
+
+/* line 26, ../scss/partials/elements/_colors.scss */
+.color-rouge {
+  background-color: #a7272a;
+}
+
+/* for mobile header */
+/* line 2, ../scss/partials/elements/_base.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+/* line 25, ../scss/partials/elements/_base.scss */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #373737;
+}
+
+/* line 28, ../scss/partials/elements/_base.scss */
+h1, .h1 {
+  color: #373737;
+  font-size: 47px;
+  line-height: 52px;
+}
+
+/* line 33, ../scss/partials/elements/_base.scss */
+h2, .h2 {
+  color: #658d1b;
+  font-size: 42px;
+  line-height: 39px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+/* line 41, ../scss/partials/elements/_base.scss */
+h3, .h3 {
+  color: #636362;
+  font-size: 30px;
+  line-height: 32px;
+}
+
+/* line 46, ../scss/partials/elements/_base.scss */
+h4, .h4 {
+  color: #636362;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* line 62, ../scss/partials/elements/_base.scss */
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* line 66, ../scss/partials/elements/_base.scss */
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  color: #373737;
+  font-size: 16px;
+  line-height: 26px;
+  min-width: 320px;
+}
+
+/* line 75, ../scss/partials/elements/_base.scss */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 2, ../scss/partials/elements/_base.scss */
+.container:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+/* line 81, ../scss/partials/elements/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* overlap styles */
+/* line 1, ../scss/partials/elements/_sprites.scss */
+.social {
+  background-image: url("../images/social.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+/* line 6, ../scss/partials/elements/_sprites.scss */
+.social-f-b {
+  width: 11px;
+  height: 23px;
+  background-position: -5px -5px;
+}
+
+/* line 12, ../scss/partials/elements/_sprites.scss */
+.social-g {
+  width: 34px;
+  height: 23px;
+  background-position: -26px -5px;
+}
+
+/* line 18, ../scss/partials/elements/_sprites.scss */
+.social-i-n {
+  width: 24px;
+  height: 22px;
+  background-position: -5px -38px;
+}
+
+/* line 24, ../scss/partials/elements/_sprites.scss */
+.social-pinterest {
+  width: 20px;
+  height: 24px;
+  background-position: -38px -38px;
+}
+
+/* line 30, ../scss/partials/elements/_sprites.scss */
+.social-t-w {
+  width: 27px;
+  height: 20px;
+  background-position: -70px -5px;
+}
+
+/* line 36, ../scss/partials/elements/_sprites.scss */
+.social-y-t-b-e {
+  width: 20px;
+  height: 24px;
+  background-position: -70px -35px;
+}
+
+/**
+ * Form elements.
+ */
+/* line 4, ../scss/partials/elements/_form.scss */
+.nord-form {
+  padding-bottom: 14px;
+}
+/* line 6, ../scss/partials/elements/_form.scss */
+.nord-form .form-item,
+.nord-form .form-actions {
+  margin: 0 0 5px;
+  padding: 0 0 11px;
+  position: relative;
+}
+/* line 12, ../scss/partials/elements/_form.scss */
+.nord-form .form-item input[type="text"],
+.nord-form .form-item input[type="tel"],
+.nord-form .form-item input[type="email"],
+.nord-form .form-item input[type="url"],
+.nord-form .form-item input[type="password"],
+.nord-form .form-item input[type="search"],
+.nord-form .form-item textarea,
+.nord-form .form-actions input[type="text"],
+.nord-form .form-actions input[type="tel"],
+.nord-form .form-actions input[type="email"],
+.nord-form .form-actions input[type="url"],
+.nord-form .form-actions input[type="password"],
+.nord-form .form-actions input[type="search"],
+.nord-form .form-actions textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 0 !important;
+}
+/* line 24, ../scss/partials/elements/_form.scss */
+.nord-form .form-actions {
+  padding-top: 16px;
+  margin-bottom: 0;
+}
+/* line 28, ../scss/partials/elements/_form.scss */
+.nord-form .form-actions .btn {
+  min-width: 270px;
+  max-width: 300px;
+  border-radius: 0 !important;
+  box-sizing: content-box;
+}
+/* line 36, ../scss/partials/elements/_form.scss */
+.nord-form .form-item-pair {
+  margin: 0 -10px;
+}
+/* line 2, ../scss/partials/elements/_base.scss */
+.nord-form .form-item-pair:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+/* line 39, ../scss/partials/elements/_form.scss */
+.nord-form .form-item-pair .form-item {
+  float: left;
+  margin: 0 0 5px;
+  padding: 0 10px 11px;
+  position: relative;
+  width: 50%;
+}
+@media screen and (max-width: 680px) {
+  /* line 39, ../scss/partials/elements/_form.scss */
+  .nord-form .form-item-pair .form-item {
+    width: 100%;
+  }
+}
+@media (max-width: 420px) {
+  /* line 39, ../scss/partials/elements/_form.scss */
+  .nord-form .form-item-pair .form-item {
+    width: 100%;
+  }
+}
+/* line 58, ../scss/partials/elements/_form.scss */
+.nord-form label {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 680px) {
+  /* line 58, ../scss/partials/elements/_form.scss */
+  .nord-form label {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 420px) {
+  /* line 58, ../scss/partials/elements/_form.scss */
+  .nord-form label {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+/* line 74, ../scss/partials/elements/_form.scss */
+.nord-form textarea {
+  max-height: 122px;
+}
+/* line 77, ../scss/partials/elements/_form.scss */
+.nord-form .red-description, .nord-form .error-message {
+  bottom: 0;
+  font-size: 10px;
+  line-height: 1;
+  position: absolute;
+}
+
+/* line 86, ../scss/partials/elements/_form.scss */
+div.messages {
+  font-size: 18px;
+  line-height: 22px;
+  padding: 9px 10px;
+  margin: 3px 0;
+  border: 1px solid;
+}
+/* line 94, ../scss/partials/elements/_form.scss */
+div.messages p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* line 1, ../scss/partials/elements/_buttons.scss */
+.btn {
+  background-color: transparent;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 222px;
+  height: 52px;
+  border-radius: 100px;
+}
+/* line 14, ../scss/partials/elements/_buttons.scss */
+.btn.btn-sap-green {
+  background-color: #658d1b;
+}
+/* line 17, ../scss/partials/elements/_buttons.scss */
+.btn.btn-sepia {
+  background-color: #8b5b29;
+}
+/* line 20, ../scss/partials/elements/_buttons.scss */
+.btn.btn-rouge {
+  background-color: #a7272a;
+}
+/* line 23, ../scss/partials/elements/_buttons.scss */
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* line 27, ../scss/partials/elements/_buttons.scss */
+.btn-play {
+  width: 75px;
+  height: 75px;
+  background: transparent url("../images/icon-play.png") no-repeat scroll;
+  display: block;
+  margin: 0 auto;
+  border: 0 none;
+  font-size: 0;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 10px;
+}
+/* line 38, ../scss/partials/elements/_buttons.scss */
+.btn-play:hover {
+  opacity: .85;
+}
+
+@media screen and (max-width: 680px) {
+  /* line 43, ../scss/partials/elements/_buttons.scss */
+  .slick-slider .slick-arrow {
+    height: 47px;
+    top: 60%;
+    width: 14px;
+    z-index: 200;
+  }
+}
+@media (max-width: 420px) {
+  /* line 43, ../scss/partials/elements/_buttons.scss */
+  .slick-slider .slick-arrow {
+    height: 47px;
+    top: 40%;
+    width: 14px;
+    z-index: 200;
+  }
+}
+@media screen and (max-width: 680px) {
+  /* line 57, ../scss/partials/elements/_buttons.scss */
+  .slick-slider .slick-prev {
+    left: 11px;
+  }
+  /* line 60, ../scss/partials/elements/_buttons.scss */
+  .slick-slider .slick-prev:before {
+    top: 0;
+    display: block;
+    height: 47px;
+    position: absolute;
+    width: 14px;
+    font-size: 0;
+    content: "";
+  }
+}
+@media screen and (max-width: 680px) {
+  /* line 72, ../scss/partials/elements/_buttons.scss */
+  .slick-slider .slick-next {
+    right: 11px;
+  }
+  /* line 75, ../scss/partials/elements/_buttons.scss */
+  .slick-slider .slick-next:before {
+    top: 0;
+    display: block;
+    height: 47px;
+    position: absolute;
+    width: 14px;
+    font-size: 0;
+    content: "";
+  }
+}
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * */
+/* line 4, ../scss/partials/blocks/_header.scss */
+header {
+  top: 0;
+  display: block;
+  z-index: 900;
+  width: 100%;
+  background-color: #ffffff;
+  height: 105px;
+}
+/* line 2, ../scss/partials/elements/_base.scss */
+header:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+/* line 12, ../scss/partials/blocks/_header.scss */
+header .container {
+  position: relative;
+}
+/* line 2, ../scss/partials/elements/_base.scss */
+header .container:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+@media screen and (max-width: 680px) {
+  /* line 12, ../scss/partials/blocks/_header.scss */
+  header .container {
+    min-width: 320px;
+  }
+}
+/* line 19, ../scss/partials/blocks/_header.scss */
+header .logo-block {
+  padding-top: 17px;
+  width: 20%;
+  float: left;
+}
+/* line 23, ../scss/partials/blocks/_header.scss */
+header .logo-block .logo {
+  position: relative;
+  display: block;
+}
+/* line 26, ../scss/partials/blocks/_header.scss */
+header .logo-block .logo .logo-bg {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 36, ../scss/partials/blocks/_header.scss */
+header .user-block {
+  width: 80%;
+  float: left;
+  display: inline-block;
+  text-align: right;
+  padding-top: 18px;
+}
+/* line 43, ../scss/partials/blocks/_header.scss */
+header .user-block .user-nav li {
+  display: inline-block;
+  padding-left: 20px;
+}
+/* line 46, ../scss/partials/blocks/_header.scss */
+header .user-block .user-nav li:first-of-type {
+  padding-left: 0;
+}
+/* line 49, ../scss/partials/blocks/_header.scss */
+header .user-block .user-nav li a {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  color: #284734;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+/* line 62, ../scss/partials/blocks/_header.scss */
+header .menu-block {
+  width: 80%;
+  float: left;
+  display: inline-block;
+  text-align: right;
+  padding-top: 16px;
+}
+/* line 69, ../scss/partials/blocks/_header.scss */
+header .menu-block .main-nav li {
+  display: inline-block;
+  padding-left: 20px;
+}
+/* line 72, ../scss/partials/blocks/_header.scss */
+header .menu-block .main-nav li:first-of-type {
+  padding-left: 0;
+}
+/* line 75, ../scss/partials/blocks/_header.scss */
+header .menu-block .main-nav li a {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #284734;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+}
+/* line 85, ../scss/partials/blocks/_header.scss */
+header .menu-block .main-nav li a:hover, header .menu-block .main-nav li a .active {
+  color: #a7272a;
+}
+/* line 93, ../scss/partials/blocks/_header.scss */
+header .label-block {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media screen and (max-width: 680px) {
+  /* line 93, ../scss/partials/blocks/_header.scss */
+  header .label-block {
+    right: 10px;
+    top: 10px;
+  }
+}
+/* line 101, ../scss/partials/blocks/_header.scss */
+header .label-block > div {
+  display: inline-block;
+  padding: 10px 7px;
+}
+@media screen and (max-width: 1169px) {
+  /* line 109, ../scss/partials/blocks/_header.scss */
+  header .label-block > div.icon-9001 {
+    display: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  /* line 109, ../scss/partials/blocks/_header.scss */
+  header .label-block > div.icon-9001 {
+    display: none;
+  }
+}
+/* line 119, ../scss/partials/blocks/_header.scss */
+header .navbar-nav {
+  margin: 0;
+}
+/* line 122, ../scss/partials/blocks/_header.scss */
+header .navbar-nav li.btn-transparent {
+  min-width: 100px;
+}
+/* line 126, ../scss/partials/blocks/_header.scss */
+header .navbar-nav li a {
+  display: block;
+  color: #efefef;
+  padding: 0;
+}
+/* line 130, ../scss/partials/blocks/_header.scss */
+header .navbar-nav li a:hover {
+  text-decoration: none;
+}
+/* line 178, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu {
+  background: transparent;
+  padding: 0;
+}
+/* line 182, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu .slicknav_btn {
+  position: absolute;
+  margin: 10px;
+  background-color: transparent;
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  /* line 182, ../scss/partials/blocks/_header.scss */
+  header .slicknav_menu .slicknav_btn {
+    display: block;
+  }
+}
+/* line 196, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu .slicknav_btn .slicknav_icon {
+  height: 2em;
+  width: 2em;
+}
+/* line 199, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu .slicknav_btn .slicknav_icon .slicknav_icon-bar {
+  height: 0.3em;
+  width: 2em;
+}
+/* line 203, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu .slicknav_btn .slicknav_icon .slicknav_icon-bar + .slicknav_icon-bar {
+  margin-top: 0.5em;
+}
+/* line 210, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu .slicknav_nav {
+  position: fixed;
+  z-index: 800;
+  background: rgba(55, 55, 55, 0.9) none repeat scroll 0 0;
+  left: 0;
+  top: 0;
+  width: 77%;
+  height: 100%;
+}
+/* line 218, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu .slicknav_nav ul {
+  margin: 0;
+  top: 50px;
+  left: 10px;
+  position: absolute;
+}
+/* line 224, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu .slicknav_nav ul li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #f3eeea;
+  font-weight: bold;
+  padding: 5px 0;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  display: inline-block;
+}
+/* line 233, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu .slicknav_nav ul li a:hover {
+  color: #efefef;
+  background-color: transparent;
+}
+/* line 242, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu .hiddenBg {
+  height: 100%;
+  position: fixed;
+  z-index: 650;
+  top: 0;
+  cursor: pointer;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+/* line 255, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu.menu_show {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  /* line 255, ../scss/partials/blocks/_header.scss */
+  header .slicknav_menu.menu_show {
+    display: block;
+  }
+}
+/* line 266, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu.menu_show .slicknav_btn {
+  z-index: 900;
+  top: 0;
+  position: absolute;
+  margin: 0;
+}
+/* line 272, ../scss/partials/blocks/_header.scss */
+header .slicknav_menu.menu_show .hiddenBg {
+  display: block;
+}
+
+/* line 2, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs.career {
+  background: transparent url("../images/bg-career.png") no-repeat scroll center center;
+  height: 208px;
+}
+/* line 6, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs.company {
+  background: transparent url("../images/bg-company.png") no-repeat scroll center center;
+  height: 130px;
+}
+/* line 10, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs.become-partner {
+  background: transparent url("../images/bg-become-partner.png") no-repeat scroll center center;
+  height: 208px;
+}
+/* line 14, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs .list-breadcrumbs {
+  padding-top: 26px;
+}
+/* line 17, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs .list-breadcrumbs ul li {
+  display: inline-block;
+  font-size: 14px;
+  color: #ffffff;
+}
+/* line 22, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs .list-breadcrumbs ul li a {
+  padding: 0 5px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  letter-spacing: -0.1px;
+}
+/* line 36, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs h1 {
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: -0.5px;
+}
+
+/* line 1, ../scss/partials/blocks/_footer.scss */
+footer {
+  background-color: #f3eeea;
+  padding: 50px 0;
+}
+/* line 2, ../scss/partials/elements/_base.scss */
+footer:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+/* line 7, ../scss/partials/blocks/_footer.scss */
+footer .logo-block {
+  width: 20%;
+  float: left;
+}
+/* line 12, ../scss/partials/blocks/_footer.scss */
+footer .content-block {
+  float: left;
+  width: 80%;
+}
+/* line 2, ../scss/partials/elements/_base.scss */
+footer .footer-nav:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+/* line 20, ../scss/partials/blocks/_footer.scss */
+footer .footer-nav .box {
+  display: inline-block;
+  padding-left: 40px;
+  vertical-align: top;
+  text-align: left;
+}
+/* line 25, ../scss/partials/blocks/_footer.scss */
+footer .footer-nav .box:first-of-type {
+  padding-left: 0;
+}
+/* line 29, ../scss/partials/blocks/_footer.scss */
+footer .footer-nav .title-menu {
+  color: #658d1b;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-family: "Rubik", sans-serif;
+}
+/* line 37, ../scss/partials/blocks/_footer.scss */
+footer .footer-nav ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+/* line 50, ../scss/partials/blocks/_footer.scss */
+footer .footer-bottom {
+  padding-top: 20px;
+}
+/* line 2, ../scss/partials/elements/_base.scss */
+footer .footer-bottom:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+/* line 54, ../scss/partials/blocks/_footer.scss */
+footer .footer-social {
+  float: left;
+  width: 50%;
+}
+/* line 57, ../scss/partials/blocks/_footer.scss */
+footer .footer-social .title-block {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  color: #658d1b;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+}
+/* line 69, ../scss/partials/blocks/_footer.scss */
+footer .footer-social ul li {
+  display: inline-block;
+}
+/* line 71, ../scss/partials/blocks/_footer.scss */
+footer .footer-social ul li a {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+}
+/* line 82, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail {
+  float: left;
+  width: 50%;
+  padding-top: 10px;
+}
+/* line 86, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item {
+  width: 418px;
+  height: 52px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.31);
+  position: relative;
+}
+/* line 93, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item input {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+  border: 0 none;
+  display: inline-block;
+  width: 85%;
+  margin: 12px 5px 10px 12px;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+/* line 104, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item input::-webkit-input-placeholder {
+  color: #373737;
+}
+/* line 105, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item input::-moz-placeholder {
+  color: #373737;
+}
+/* line 106, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item input:-moz-placeholder {
+  color: #373737;
+}
+/* line 107, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item input:-ms-input-placeholder {
+  color: #373737;
+}
+/* line 108, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item input:focus {
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+/* line 109, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+/* line 110, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item input:focus::-moz-placeholder {
+  color: transparent;
+}
+/* line 111, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item input:focus:-moz-placeholder {
+  color: transparent;
+}
+/* line 112, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+/* line 116, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item .btn {
+  width: 43px;
+  height: 43px;
+  background-color: #658d1b;
+  border-radius: 100%;
+  border: 0 none;
+  font-size: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+/* line 1, ../scss/partials/blocks/_main-page.scss */
+body {
+  background: transparent url("../images/pattern.png") no-repeat scroll center 250px;
+}
+/* line 4, ../scss/partials/blocks/_main-page.scss */
+body.main-page:before {
+  background: transparent url("../images/main-bg.png") no-repeat scroll top center;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 390px;
+  width: 100%;
+  z-index: -10;
+}
+/* line 16, ../scss/partials/blocks/_main-page.scss */
+body.index .item-block {
+  height: 100px !important;
+}
+/* line 18, ../scss/partials/blocks/_main-page.scss */
+body.index .item-block .text-block {
+  padding: 0 !important;
+  width: 100%;
+  height: 100%;
+}
+/* line 22, ../scss/partials/blocks/_main-page.scss */
+body.index .item-block .text-block a {
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: table;
+  vertical-align: middle;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* line 37, ../scss/partials/blocks/_main-page.scss */
+.block-category .row-block {
+  margin: 50px -9px 50px;
+}
+/* line 39, ../scss/partials/blocks/_main-page.scss */
+.block-category .row-block .content-block {
+  margin: 0 0 10px;
+  padding: 0 11px;
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 45, ../scss/partials/blocks/_main-page.scss */
+.block-category .row-block .content-block .item-block {
+  text-align: center;
+  border-radius: 10px;
+  width: 370px;
+  height: 468px;
+  position: relative;
+}
+/* line 51, ../scss/partials/blocks/_main-page.scss */
+.block-category .row-block .content-block .item-block .img {
+  width: 100%;
+  position: relative;
+}
+/* line 54, ../scss/partials/blocks/_main-page.scss */
+.block-category .row-block .content-block .item-block .img img {
+  border-radius: 10px;
+}
+/* line 58, ../scss/partials/blocks/_main-page.scss */
+.block-category .row-block .content-block .item-block .img .icon-tractor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  top: 80px;
+  background: transparent url("../images/icon-tractor.png") no-repeat scroll top center;
+}
+/* line 69, ../scss/partials/blocks/_main-page.scss */
+.block-category .row-block .content-block .item-block .text-block {
+  padding: 20px 40px;
+}
+/* line 72, ../scss/partials/blocks/_main-page.scss */
+.block-category .row-block .content-block .item-block .title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  text-align: center;
+}
+/* line 81, ../scss/partials/blocks/_main-page.scss */
+.block-category .row-block .content-block .item-block .desc {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 96, ../scss/partials/blocks/_main-page.scss */
+.block-catalog .title-block {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+}
+/* line 101, ../scss/partials/blocks/_main-page.scss */
+.block-catalog .title-block h2 {
+  color: #658d1b;
+  font-size: 42px;
+  line-height: 26px;
+  font-weight: 300;
+}
+/* line 107, ../scss/partials/blocks/_main-page.scss */
+.block-catalog .title-block .desc {
+  padding-top: 30px;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  text-align: center;
+}
+/* line 117, ../scss/partials/blocks/_main-page.scss */
+.block-catalog .row-block {
+  margin: 50px -9px 50px;
+}
+/* line 119, ../scss/partials/blocks/_main-page.scss */
+.block-catalog .row-block .content-block {
+  margin: 0 0 10px;
+  padding: 0 11px;
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 125, ../scss/partials/blocks/_main-page.scss */
+.block-catalog .row-block .content-block .item-block {
+  text-align: center;
+  position: relative;
+}
+/* line 133, ../scss/partials/blocks/_main-page.scss */
+.block-catalog .row-block .content-block .item-block .img {
+  width: 100%;
+  height: 450px;
+  display: table;
+  padding: 24px 40px 0;
+}
+/* line 138, ../scss/partials/blocks/_main-page.scss */
+.block-catalog .row-block .content-block .item-block .img.upper {
+  padding: 10px 40px 0;
+}
+/* line 141, ../scss/partials/blocks/_main-page.scss */
+.block-catalog .row-block .content-block .item-block .img img {
+  vertical-align: bottom;
+}
+/* line 145, ../scss/partials/blocks/_main-page.scss */
+.block-catalog .row-block .content-block .item-block .text-block {
+  padding: 0 40px;
+}
+/* line 148, ../scss/partials/blocks/_main-page.scss */
+.block-catalog .row-block .content-block .item-block .title {
+  color: #658d1b;
+  font-size: 26px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  text-align: center;
+}
+/* line 157, ../scss/partials/blocks/_main-page.scss */
+.block-catalog .row-block .content-block .item-block .desc {
+  color: #373737;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+/* line 174, ../scss/partials/blocks/_main-page.scss */
+.block-slider .slide {
+  position: relative;
+}
+/* line 178, ../scss/partials/blocks/_main-page.scss */
+.block-slider .text-holder {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 183, ../scss/partials/blocks/_main-page.scss */
+.block-slider .text-holder .info {
+  margin-top: 200px;
+}
+/* line 185, ../scss/partials/blocks/_main-page.scss */
+.block-slider .text-holder .info .title-block {
+  font-size: 42px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.62;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+}
+/* line 194, ../scss/partials/blocks/_main-page.scss */
+.block-slider .text-holder .info .desc {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 20px;
+}
+/* line 206, ../scss/partials/blocks/_main-page.scss */
+.block-slider .slick-dots {
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 211, ../scss/partials/blocks/_main-page.scss */
+.block-partner {
+  height: 130px;
+  padding: 30px 0;
+}
+/* line 214, ../scss/partials/blocks/_main-page.scss */
+.block-partner .titleBlock {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 218, ../scss/partials/blocks/_main-page.scss */
+.block-partner h3 {
+  color: #8b5b29;
+  line-height: 26px;
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+}
+/* line 224, ../scss/partials/blocks/_main-page.scss */
+.block-partner .partner-logos {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 227, ../scss/partials/blocks/_main-page.scss */
+.block-partner .partner-logos li {
+  display: inline-block;
+  padding: 0 8px;
+}
+/* line 231, ../scss/partials/blocks/_main-page.scss */
+.block-partner .partner-logos li a {
+  display: inline-block;
+}
+/* line 234, ../scss/partials/blocks/_main-page.scss */
+.block-partner .partner-logos li a img {
+  vertical-align: middle;
+}
+
+/* line 2, ../scss/partials/blocks/_user-line-d.scss */
+.block-header-slider .slide {
+  position: relative;
+}
+/* line 6, ../scss/partials/blocks/_user-line-d.scss */
+.block-header-slider .text-holder {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 11, ../scss/partials/blocks/_user-line-d.scss */
+.block-header-slider .text-holder .info {
+  margin-top: 200px;
+}
+/* line 13, ../scss/partials/blocks/_user-line-d.scss */
+.block-header-slider .text-holder .info .title-block {
+  font-size: 60px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.43;
+  letter-spacing: -0.5px;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(55, 55, 55, 0.61);
+}
+/* line 26, ../scss/partials/blocks/_user-line-d.scss */
+.block-header-slider .slick-dots {
+  position: absolute;
+  bottom: 34px;
+}
+/* line 31, ../scss/partials/blocks/_user-line-d.scss */
+.block-header-slider .slick-dots li button:before {
+  border-radius: 100%;
+  background-color: #ffffff;
+  opacity: 1;
+  content: '';
+  width: 11px;
+  height: 11px;
+}
+/* line 43, ../scss/partials/blocks/_user-line-d.scss */
+.block-header-slider .slick-dots li.slick-active button:before {
+  background-color: #da4947;
+}
+
+/* line 51, ../scss/partials/blocks/_user-line-d.scss */
+.block-description {
+  background-color: #ffffff;
+}
+/* line 53, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .title-block {
+  padding-top: 78px;
+  text-align: center;
+}
+/* line 56, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .title-block h2 {
+  color: #658d1b;
+  font-size: 42px;
+  line-height: 0.62;
+  font-weight: 300;
+  text-align: center;
+  font-style: normal;
+  font-stretch: normal;
+}
+/* line 66, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .row-block {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 70, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .row-block .content-block {
+  padding: 0 25px;
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 76, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .row-block .content-block .item-block {
+  text-align: left;
+  position: relative;
+}
+/* line 81, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .row-block .content-block .item-block .text-block {
+  padding: 20px;
+}
+/* line 84, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .row-block .content-block .item-block .title {
+  color: #373737;
+  font-size: 26px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+}
+/* line 92, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .row-block .content-block .item-block .desc {
+  color: #373737;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  padding-top: 20px;
+}
+/* line 100, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .row-block .content-block .item-block .desc ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+/* line 113, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik {
+  background-color: #f3eeea;
+}
+/* line 115, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik .title-block {
+  padding-top: 78px;
+}
+/* line 121, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik .title-block h2 {
+  color: #658d1b;
+  font-size: 42px;
+  line-height: 0.62;
+  font-weight: 300;
+  text-align: center;
+}
+/* line 128, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik .title-block .desc {
+  padding-top: 30px;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  text-align: center;
+}
+/* line 138, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik .row-block {
+  margin: 0 -10px;
+  padding-top: 50px;
+}
+/* line 141, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik .row-block .content-block {
+  margin: 0 0 26px;
+  padding: 0 11px;
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 147, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik .row-block .content-block .item-block {
+  text-align: center;
+  width: 275px;
+  height: 260px;
+  border-radius: 5px;
+  position: relative;
+  background-color: #ffffff;
+}
+/* line 156, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik .row-block .content-block .item-block .img {
+  width: 100%;
+}
+/* line 158, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik .row-block .content-block .item-block .img img {
+  border-radius: 10px;
+}
+/* line 162, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik .row-block .content-block .item-block .text-block {
+  padding: 20px 40px;
+}
+/* line 165, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik .row-block .content-block .item-block .title {
+  color: #8b5b29;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  text-align: center;
+}
+/* line 174, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik .row-block .content-block .item-block .desc {
+  color: #373737;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.73;
+  text-align: center;
+  padding: 10px;
+}
+
+/* line 188, ../scss/partials/blocks/_user-line-d.scss */
+.block-information {
+  background-color: #ffffff;
+}
+/* line 190, ../scss/partials/blocks/_user-line-d.scss */
+.block-information .title-block {
+  padding-top: 78px;
+  text-align: center;
+}
+/* line 193, ../scss/partials/blocks/_user-line-d.scss */
+.block-information .title-block h2 {
+  color: #658d1b;
+  font-size: 42px;
+  line-height: 0.62;
+  font-weight: 300;
+  text-align: center;
+  font-style: normal;
+  font-stretch: normal;
+}
+/* line 203, ../scss/partials/blocks/_user-line-d.scss */
+.block-information .row-block {
+  margin: 0 -10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 207, ../scss/partials/blocks/_user-line-d.scss */
+.block-information .row-block .content-block {
+  padding: 0 10px;
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 213, ../scss/partials/blocks/_user-line-d.scss */
+.block-information .row-block .content-block .item-block {
+  text-align: left;
+  position: relative;
+}
+/* line 218, ../scss/partials/blocks/_user-line-d.scss */
+.block-information .row-block .content-block .item-block .text-block {
+  padding: 20px;
+}
+/* line 221, ../scss/partials/blocks/_user-line-d.scss */
+.block-information .row-block .content-block .item-block .title {
+  color: #373737;
+  font-size: 26px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+}
+/* line 229, ../scss/partials/blocks/_user-line-d.scss */
+.block-information .row-block .content-block .item-block .desc {
+  color: #373737;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  padding-top: 20px;
+}
+/* line 237, ../scss/partials/blocks/_user-line-d.scss */
+.block-information .row-block .content-block .item-block .desc ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+/* line 250, ../scss/partials/blocks/_user-line-d.scss */
+.block-productions {
+  background-color: #ffffff;
+}
+/* line 252, ../scss/partials/blocks/_user-line-d.scss */
+.block-productions .title-block {
+  padding-top: 78px;
+  width: 600px;
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 257, ../scss/partials/blocks/_user-line-d.scss */
+.block-productions .title-block h2 {
+  line-height: 0.62;
+  text-align: center;
+}
+/* line 261, ../scss/partials/blocks/_user-line-d.scss */
+.block-productions .title-block .desc {
+  padding-top: 50px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.18;
+}
+/* line 267, ../scss/partials/blocks/_user-line-d.scss */
+.block-productions .title-block .btn {
+  width: 255px;
+  margin-top: 50px;
+}
+/* line 271, ../scss/partials/blocks/_user-line-d.scss */
+.block-productions .title-block .title {
+  padding-top: 50px;
+  color: #8b5b29;
+  font-size: 30px;
+  line-height: 1.07;
+  font-weight: 300;
+}
+/* line 279, ../scss/partials/blocks/_user-line-d.scss */
+.block-productions .row-block {
+  margin: 0 -10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 283, ../scss/partials/blocks/_user-line-d.scss */
+.block-productions .row-block .content-block {
+  padding: 0 10px;
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 289, ../scss/partials/blocks/_user-line-d.scss */
+.block-productions .row-block .content-block .item-block {
+  text-align: center;
+  padding: 0 30px;
+}
+/* line 292, ../scss/partials/blocks/_user-line-d.scss */
+.block-productions .row-block .content-block .item-block .text-block {
+  padding: 20px;
+}
+/* line 295, ../scss/partials/blocks/_user-line-d.scss */
+.block-productions .row-block .content-block .item-block .title {
+  color: #373737;
+  font-size: 26px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+}
+/* line 303, ../scss/partials/blocks/_user-line-d.scss */
+.block-productions .row-block .content-block .item-block .desc {
+  color: #373737;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  padding-top: 20px;
+  line-height: 1.44;
+}
+
+/* line 1, ../scss/partials/blocks/_company-page.scss */
+.block-description-company {
+  background-color: #ffffff;
+}
+/* line 3, ../scss/partials/blocks/_company-page.scss */
+.block-description-company .row-block {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+/* line 18, ../scss/partials/blocks/_company-page.scss */
+.block-description-company .text-block {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 40px;
+}
+/* line 23, ../scss/partials/blocks/_company-page.scss */
+.block-description-company .text-block .title {
+  color: #658d1b;
+  font-size: 42px;
+  line-height: 0.62;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+/* line 31, ../scss/partials/blocks/_company-page.scss */
+.block-description-company .text-block .desc {
+  color: #373737;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  padding-top: 30px;
+}
+/* line 39, ../scss/partials/blocks/_company-page.scss */
+.block-description-company .text-block .desc p {
+  margin-bottom: 20px;
+}
+/* line 44, ../scss/partials/blocks/_company-page.scss */
+.block-description-company .img {
+  width: 54%;
+  display: inline-block;
+  position: relative;
+  text-align: right;
+}
+/* line 49, ../scss/partials/blocks/_company-page.scss */
+.block-description-company .img .icon-natural {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+
+/* line 57, ../scss/partials/blocks/_company-page.scss */
+.block-statistics .row-block {
+  margin: 0 -10px;
+  padding: 20px 0 20px;
+}
+/* line 60, ../scss/partials/blocks/_company-page.scss */
+.block-statistics .row-block .content-block {
+  padding: 0 10px;
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 65, ../scss/partials/blocks/_company-page.scss */
+.block-statistics .row-block .content-block .item-block {
+  text-align: center;
+  position: relative;
+}
+/* line 68, ../scss/partials/blocks/_company-page.scss */
+.block-statistics .row-block .content-block .item-block .img {
+  border-radius: 100%;
+  border: 3px dashed #dbc5aa;
+  height: 135px;
+  width: 135px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 76, ../scss/partials/blocks/_company-page.scss */
+.block-statistics .row-block .content-block .item-block .count {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  left: 0;
+  top: 40px;
+}
+/* line 94, ../scss/partials/blocks/_company-page.scss */
+.block-statistics .row-block .content-block .item-block .desc {
+  color: #373737;
+  font-size: 20px;
+  padding: 26px 40px 10px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* line 108, ../scss/partials/blocks/_company-page.scss */
+.block-certificates {
+  background-color: #3c312c;
+  height: 460px;
+}
+/* line 111, ../scss/partials/blocks/_company-page.scss */
+.block-certificates .row-block {
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
+/* line 115, ../scss/partials/blocks/_company-page.scss */
+.block-certificates .content-block {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 120, ../scss/partials/blocks/_company-page.scss */
+.block-certificates .item-block {
+  text-align: left;
+  position: relative;
+}
+/* line 125, ../scss/partials/blocks/_company-page.scss */
+.block-certificates .text-block .title {
+  color: #ffffff;
+  font-size: 42px;
+  line-height: 0.62;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  padding-top: 20px;
+}
+/* line 134, ../scss/partials/blocks/_company-page.scss */
+.block-certificates .text-block .desc {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  padding-top: 30px;
+}
+/* line 142, ../scss/partials/blocks/_company-page.scss */
+.block-certificates .text-block .desc p {
+  margin-bottom: 20px;
+}
+/* line 147, ../scss/partials/blocks/_company-page.scss */
+.block-certificates .img-block {
+  padding-left: 50px;
+}
+/* line 149, ../scss/partials/blocks/_company-page.scss */
+.block-certificates .img-block .img {
+  display: inline-block;
+  padding: 15px;
+  min-width: 130px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 2, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block {
+  margin: 0 -10px0;
+  padding: 50px 0;
+}
+/* line 5, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block {
+  padding: 0 10px;
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 11, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block .item-block {
+  text-align: center;
+  position: relative;
+}
+/* line 15, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block .item-block .img-block .count-step {
+  display: inline-block;
+}
+/* line 17, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block .item-block .img-block .count-step .oval {
+  width: 81px;
+  height: 81px;
+  border: dashed 3px #dbc5aa;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* line 23, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block .item-block .img-block .count-step .oval .count {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px;
+  font-size: 50px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  text-align: center;
+  color: #453934;
+}
+/* line 39, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block .item-block .img-block .title-step {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.3;
+  color: #373737;
+  vertical-align: middle;
+  padding: 15px;
+}
+/* line 49, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block .item-block .img-block .title-step .step {
+  font-weight: 300;
+}
+/* line 54, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block .item-block .img-block .arrow-step {
+  display: inline-block;
+}
+/* line 56, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block .item-block .img-block .arrow-step .icon-arrow {
+  background: transparent url("../images/arrow-right-ling.png") no-repeat scroll center center;
+  height: 20px;
+  width: 30px;
+  display: inline-block;
+}
+/* line 64, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block .item-block .text-block {
+  top: 0;
+  text-align: center;
+}
+
+/* line 1, ../scss/partials/blocks/_karjera-d.scss */
+.block-career {
+  background-color: #f3eeea;
+}
+/* line 3, ../scss/partials/blocks/_karjera-d.scss */
+.block-career .title-block {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 720px;
+}
+/* line 8, ../scss/partials/blocks/_karjera-d.scss */
+.block-career .title-block h2 {
+  padding-top: 30px;
+  color: #373737;
+  font-size: 50px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+/* line 19, ../scss/partials/blocks/_karjera-d.scss */
+.block-career .title-block .desc {
+  padding-top: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  line-height: 1.44;
+}
+/* line 29, ../scss/partials/blocks/_karjera-d.scss */
+.block-career .row-block {
+  margin: 0 -10px0;
+  padding: 50px 0;
+}
+/* line 32, ../scss/partials/blocks/_karjera-d.scss */
+.block-career .row-block .content-block {
+  padding: 0 10px;
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 38, ../scss/partials/blocks/_karjera-d.scss */
+.block-career .row-block .content-block .item-block {
+  text-align: center;
+  position: relative;
+}
+/* line 58, ../scss/partials/blocks/_karjera-d.scss */
+.block-career .row-block .content-block .item-block .text-block {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* line 66, ../scss/partials/blocks/_karjera-d.scss */
+.block-career .row-block .content-block .item-block .title {
+  padding-top: 71px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  line-height: 1.07;
+}
+/* line 76, ../scss/partials/blocks/_karjera-d.scss */
+.block-career .row-block .content-block .item-block .btn {
+  margin-top: 40px;
+  width: 180px;
+}

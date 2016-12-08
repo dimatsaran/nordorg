@@ -1,0 +1,91 @@
+.block-steps{
+    .row-block{
+      margin: 0 -10px0;
+      padding: 50px 0;
+      .content-block{
+        //margin: 0 0 10px;
+        padding: 0 10px;
+        width: 33%;
+        display: inline-block;
+        vertical-align: top;
+        .item-block{
+          text-align: center;
+          position: relative;
+          .img-block{
+            .count-step{
+              display: inline-block;
+              .oval{
+                width: 81px;
+                height: 81px;
+                border: dashed 3px #dbc5aa;
+                border-radius: 50%;
+                display: inline-block;
+                .count{
+                  width: 100%;
+                  height: 100%;
+                  display: inline-block;
+                  vertical-align: middle;
+                  padding: 15px;
+                  font-size: 5*$font-size;
+                  font-weight: 300;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: 1;
+                  text-align: center;
+                  color: $color-brown-dark;
+                }
+              }
+            }
+            .title-step{
+              display: inline-block;
+              font-size: 2*$font-size;
+              font-weight: 400;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.3;
+              color: $color-black;
+              vertical-align: middle;
+              padding: 15px;
+              .step{
+                font-weight: 300;
+              }
+              .title{}
+            }
+            .arrow-step{
+              display: inline-block;
+              .icon-arrow{
+                background:rgba(0, 0, 0, 0) url("../images/arrow-right-ling.png") no-repeat scroll  center center;
+                height: 20px;
+                width: 30px;
+                display: inline-block;
+              }
+            }
+          }
+          .text-block{
+            top: 0;
+            //width: 100%;
+            //height: 100%;
+            text-align: center;
+            //padding: 0 40px;
+          }
+          //.title{
+          //  padding-top: 71px;
+          //  color: $color-white-two;
+          //  font-size: 3*$font-size;
+          //  font-weight: 300;
+          //  font-style: normal;
+          //  font-stretch: normal;
+          //  text-align: center;
+          //  line-height: 1.07;
+          //}
+          //.btn{
+          //  margin-top: 40px;
+          //  //width: 180px;
+          //}
+        }
+      }
+    }
+  }
+.block-form-partner{
+
+}

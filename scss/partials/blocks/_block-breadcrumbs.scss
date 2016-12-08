@@ -1,0 +1,46 @@
+.block-breadcrumbs{
+  &.career{
+    background:rgba(0, 0, 0, 0) url("../images/bg-career.png") no-repeat scroll  center center;
+    height: 208px;
+  }
+  &.company{
+    background:rgba(0, 0, 0, 0) url("../images/bg-company.png") no-repeat scroll  center center;
+    height: 130px;
+  }
+  &.become-partner{
+    background:rgba(0, 0, 0, 0) url("../images/bg-become-partner.png") no-repeat scroll  center center;
+    height: 208px;
+  }
+  .list-breadcrumbs{
+    padding-top: 26px;
+    ul{
+      li{
+        display: inline-block;
+        font-size: 1.4*$font-size;
+        color: $color-white-two;
+
+        a{
+          padding: 0 5px;
+          color: $color-white-two;
+          font-size: 1.4*$font-size;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.86;
+          letter-spacing: -0.1px;
+        }
+      }
+    }
+  }
+
+  h1{
+    color: $color-white-two;
+    font-size: 5*$font-size;
+    font-family: $font-light;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.04;
+    letter-spacing: -0.5px;
+  }
+}

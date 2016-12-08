@@ -1,0 +1,88 @@
+.btn {
+  background-color: transparent;
+  display: inline-block;
+  color: $color-white-two;
+  font-size: 1.6*$font-size;
+  line-height: 32px;
+  font-weight: 300;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 222px;
+  height: 52px;
+  border-radius: 100px;
+  &.btn-sap-green{
+    background-color: $color-sap-green;
+  }
+  &.btn-sepia{
+    background-color: $color-sepia;
+  }
+  &.btn-rouge{
+    background-color: $color-rouge;
+  }
+  &:hover{
+    opacity:0.8;
+  }
+}
+.btn-play{
+  width: 75px;
+  height: 75px;
+  background: rgba(0, 0, 0, 0) url("../images/icon-play.png") no-repeat scroll;
+  display: block;
+  margin: 0 auto;
+  border: 0 none;
+  font-size: 0;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 10px;
+  &:hover{
+    opacity: .85;
+  }
+}
+.slick-slider{
+  .slick-arrow{
+    @include phone {
+      height: 47px;
+      top: 60%;
+      width: 14px;
+      z-index: 200;
+    }
+    @include small-phone {
+      height: 47px;
+      top: 40%;
+      width: 14px;
+      z-index: 200;
+    }
+  }
+  .slick-prev{
+    @include phone{
+      left: 11px;
+        &:before{
+        top: 0;
+        display: block;
+        height: 47px;
+        position: absolute;
+        width: 14px;
+        font-size: 0;
+        content: "";
+        //@include sprite($icon-carusel-gr-light-left);
+      }
+    }
+  }
+  .slick-next{
+    @include phone{
+      right: 11px;
+      &:before{
+        top: 0;
+        display: block;
+        height: 47px;
+        position: absolute;
+        width: 14px;
+        font-size: 0;
+        content: "";
+        //@include sprite($icon-carusel-gr-light-right);
+      }
+    }
+  }
+
+}

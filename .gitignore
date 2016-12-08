@@ -1,0 +1,27 @@
+# Ignore configuration files that may contain sensitive information.
+.git
+/.idea/*
+/config.rb
+.sass-cache/
+/bower_components
+#/content-images/*
+#/images/*
+
+# Ignore binaries.
+/bin
+
+# Ignore Composer-managed dependencies.
+#Other
+drush
+vendor
+node_modules
+
+# OS specific mess.
+Thumbs.db
+.DS_Store
+
+
+.idea/
+bower_components/
+content-images/
+images/

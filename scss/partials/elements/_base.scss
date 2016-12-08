@@ -1,0 +1,85 @@
+@mixin clearfix{
+  &:after{
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+  }
+}
+.clearfix{
+  @include clearfix
+}
+
+// Typography:
+$font-size: 10px;
+$line-height: 10px;
+$font-family: 'Rubik', sans-serif;
+$font-medium: 'Rubik', sans-serif;
+$font-light: 'Rubik', sans-serif;
+
+//$font-family: 'rubik-regular', sans-serif;
+//$font-medium: 'rubik-medium' , sans-serif;
+//$font-light: 'rubik-light', sans-serif;
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  color: $color-black;
+}
+h1,.h1{
+  color: $color-black;
+  font-size: 4.7*$font-size;
+  line-height: 5.2*$line-height;
+}
+h2,.h2{
+  color: $color-sap-green;
+  font-size: 4.2*$font-size;
+  line-height: 3.9*$line-height;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+h3,.h3{
+  color: $color-medium-grey;
+  font-size: 3*$font-size;
+  line-height: 3.2*$line-height;
+}
+h4,.h4{
+  color: $color-medium-grey;
+  font-size: 2.2*$font-size;
+  line-height: 2.6*$line-height;
+}
+@mixin circle{
+  width: 120px;
+  height: 120px;
+  background: $color-white;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid $color-yellow;
+  //display: inline-block;
+
+}
+*{
+  outline: none;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: $font-light;
+  color: $color-black;
+  font-size: 1.6*$font-size;
+  line-height: 2.6*$line-height;
+  min-width: 320px;
+
+}
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  @include clearfix;
+}
+img{
+  max-width: 100%;
+}
+/* overlap styles */
+
