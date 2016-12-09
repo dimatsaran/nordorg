@@ -1,6 +1,6 @@
 # Ignore configuration files that may contain sensitive information.
 .git
-/.idea/*
+/.idea
 /config.rb
 .sass-cache/
 /bower_components

@@ -243,7 +243,7 @@ img {
   padding: 0 0 11px;
   position: relative;
 }
-/* line 12, ../scss/partials/elements/_form.scss */
+/* line 11, ../scss/partials/elements/_form.scss */
 .nord-form .form-item input[type="text"],
 .nord-form .form-item input[type="tel"],
 .nord-form .form-item input[type="email"],
@@ -260,21 +260,179 @@ img {
 .nord-form .form-actions textarea {
   width: 100%;
   resize: none;
-  border-radius: 0 !important;
+  box-shadow: inset 0 1px 3px 0 rgba(55, 55, 55, 0.31);
+  border-radius: 10px;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+/* line 23, ../scss/partials/elements/_form.scss */
+.nord-form .form-item input[type="text"]::-webkit-input-placeholder,
+.nord-form .form-item input[type="tel"]::-webkit-input-placeholder,
+.nord-form .form-item input[type="email"]::-webkit-input-placeholder,
+.nord-form .form-item input[type="url"]::-webkit-input-placeholder,
+.nord-form .form-item input[type="password"]::-webkit-input-placeholder,
+.nord-form .form-item input[type="search"]::-webkit-input-placeholder,
+.nord-form .form-item textarea::-webkit-input-placeholder,
+.nord-form .form-actions input[type="text"]::-webkit-input-placeholder,
+.nord-form .form-actions input[type="tel"]::-webkit-input-placeholder,
+.nord-form .form-actions input[type="email"]::-webkit-input-placeholder,
+.nord-form .form-actions input[type="url"]::-webkit-input-placeholder,
+.nord-form .form-actions input[type="password"]::-webkit-input-placeholder,
+.nord-form .form-actions input[type="search"]::-webkit-input-placeholder,
+.nord-form .form-actions textarea::-webkit-input-placeholder {
+  color: #373737;
 }
 /* line 24, ../scss/partials/elements/_form.scss */
+.nord-form .form-item input[type="text"]::-moz-placeholder,
+.nord-form .form-item input[type="tel"]::-moz-placeholder,
+.nord-form .form-item input[type="email"]::-moz-placeholder,
+.nord-form .form-item input[type="url"]::-moz-placeholder,
+.nord-form .form-item input[type="password"]::-moz-placeholder,
+.nord-form .form-item input[type="search"]::-moz-placeholder,
+.nord-form .form-item textarea::-moz-placeholder,
+.nord-form .form-actions input[type="text"]::-moz-placeholder,
+.nord-form .form-actions input[type="tel"]::-moz-placeholder,
+.nord-form .form-actions input[type="email"]::-moz-placeholder,
+.nord-form .form-actions input[type="url"]::-moz-placeholder,
+.nord-form .form-actions input[type="password"]::-moz-placeholder,
+.nord-form .form-actions input[type="search"]::-moz-placeholder,
+.nord-form .form-actions textarea::-moz-placeholder {
+  color: #373737;
+}
+/* line 25, ../scss/partials/elements/_form.scss */
+.nord-form .form-item input[type="text"]:-moz-placeholder,
+.nord-form .form-item input[type="tel"]:-moz-placeholder,
+.nord-form .form-item input[type="email"]:-moz-placeholder,
+.nord-form .form-item input[type="url"]:-moz-placeholder,
+.nord-form .form-item input[type="password"]:-moz-placeholder,
+.nord-form .form-item input[type="search"]:-moz-placeholder,
+.nord-form .form-item textarea:-moz-placeholder,
+.nord-form .form-actions input[type="text"]:-moz-placeholder,
+.nord-form .form-actions input[type="tel"]:-moz-placeholder,
+.nord-form .form-actions input[type="email"]:-moz-placeholder,
+.nord-form .form-actions input[type="url"]:-moz-placeholder,
+.nord-form .form-actions input[type="password"]:-moz-placeholder,
+.nord-form .form-actions input[type="search"]:-moz-placeholder,
+.nord-form .form-actions textarea:-moz-placeholder {
+  color: #373737;
+}
+/* line 26, ../scss/partials/elements/_form.scss */
+.nord-form .form-item input[type="text"]:-ms-input-placeholder,
+.nord-form .form-item input[type="tel"]:-ms-input-placeholder,
+.nord-form .form-item input[type="email"]:-ms-input-placeholder,
+.nord-form .form-item input[type="url"]:-ms-input-placeholder,
+.nord-form .form-item input[type="password"]:-ms-input-placeholder,
+.nord-form .form-item input[type="search"]:-ms-input-placeholder,
+.nord-form .form-item textarea:-ms-input-placeholder,
+.nord-form .form-actions input[type="text"]:-ms-input-placeholder,
+.nord-form .form-actions input[type="tel"]:-ms-input-placeholder,
+.nord-form .form-actions input[type="email"]:-ms-input-placeholder,
+.nord-form .form-actions input[type="url"]:-ms-input-placeholder,
+.nord-form .form-actions input[type="password"]:-ms-input-placeholder,
+.nord-form .form-actions input[type="search"]:-ms-input-placeholder,
+.nord-form .form-actions textarea:-ms-input-placeholder {
+  color: #373737;
+}
+/* line 27, ../scss/partials/elements/_form.scss */
+.nord-form .form-item input[type="text"]:focus,
+.nord-form .form-item input[type="tel"]:focus,
+.nord-form .form-item input[type="email"]:focus,
+.nord-form .form-item input[type="url"]:focus,
+.nord-form .form-item input[type="password"]:focus,
+.nord-form .form-item input[type="search"]:focus,
+.nord-form .form-item textarea:focus,
+.nord-form .form-actions input[type="text"]:focus,
+.nord-form .form-actions input[type="tel"]:focus,
+.nord-form .form-actions input[type="email"]:focus,
+.nord-form .form-actions input[type="url"]:focus,
+.nord-form .form-actions input[type="password"]:focus,
+.nord-form .form-actions input[type="search"]:focus,
+.nord-form .form-actions textarea:focus {
+  box-shadow: inset 0 1px 3px 0 rgba(101, 141, 27, 0.31);
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+/* line 29, ../scss/partials/elements/_form.scss */
+.nord-form .form-item input[type="text"]:focus::-webkit-input-placeholder,
+.nord-form .form-item input[type="tel"]:focus::-webkit-input-placeholder,
+.nord-form .form-item input[type="email"]:focus::-webkit-input-placeholder,
+.nord-form .form-item input[type="url"]:focus::-webkit-input-placeholder,
+.nord-form .form-item input[type="password"]:focus::-webkit-input-placeholder,
+.nord-form .form-item input[type="search"]:focus::-webkit-input-placeholder,
+.nord-form .form-item textarea:focus::-webkit-input-placeholder,
+.nord-form .form-actions input[type="text"]:focus::-webkit-input-placeholder,
+.nord-form .form-actions input[type="tel"]:focus::-webkit-input-placeholder,
+.nord-form .form-actions input[type="email"]:focus::-webkit-input-placeholder,
+.nord-form .form-actions input[type="url"]:focus::-webkit-input-placeholder,
+.nord-form .form-actions input[type="password"]:focus::-webkit-input-placeholder,
+.nord-form .form-actions input[type="search"]:focus::-webkit-input-placeholder,
+.nord-form .form-actions textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+/* line 30, ../scss/partials/elements/_form.scss */
+.nord-form .form-item input[type="text"]:focus::-moz-placeholder,
+.nord-form .form-item input[type="tel"]:focus::-moz-placeholder,
+.nord-form .form-item input[type="email"]:focus::-moz-placeholder,
+.nord-form .form-item input[type="url"]:focus::-moz-placeholder,
+.nord-form .form-item input[type="password"]:focus::-moz-placeholder,
+.nord-form .form-item input[type="search"]:focus::-moz-placeholder,
+.nord-form .form-item textarea:focus::-moz-placeholder,
+.nord-form .form-actions input[type="text"]:focus::-moz-placeholder,
+.nord-form .form-actions input[type="tel"]:focus::-moz-placeholder,
+.nord-form .form-actions input[type="email"]:focus::-moz-placeholder,
+.nord-form .form-actions input[type="url"]:focus::-moz-placeholder,
+.nord-form .form-actions input[type="password"]:focus::-moz-placeholder,
+.nord-form .form-actions input[type="search"]:focus::-moz-placeholder,
+.nord-form .form-actions textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+/* line 31, ../scss/partials/elements/_form.scss */
+.nord-form .form-item input[type="text"]:focus:-moz-placeholder,
+.nord-form .form-item input[type="tel"]:focus:-moz-placeholder,
+.nord-form .form-item input[type="email"]:focus:-moz-placeholder,
+.nord-form .form-item input[type="url"]:focus:-moz-placeholder,
+.nord-form .form-item input[type="password"]:focus:-moz-placeholder,
+.nord-form .form-item input[type="search"]:focus:-moz-placeholder,
+.nord-form .form-item textarea:focus:-moz-placeholder,
+.nord-form .form-actions input[type="text"]:focus:-moz-placeholder,
+.nord-form .form-actions input[type="tel"]:focus:-moz-placeholder,
+.nord-form .form-actions input[type="email"]:focus:-moz-placeholder,
+.nord-form .form-actions input[type="url"]:focus:-moz-placeholder,
+.nord-form .form-actions input[type="password"]:focus:-moz-placeholder,
+.nord-form .form-actions input[type="search"]:focus:-moz-placeholder,
+.nord-form .form-actions textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+/* line 32, ../scss/partials/elements/_form.scss */
+.nord-form .form-item input[type="text"]:focus:-ms-input-placeholder,
+.nord-form .form-item input[type="tel"]:focus:-ms-input-placeholder,
+.nord-form .form-item input[type="email"]:focus:-ms-input-placeholder,
+.nord-form .form-item input[type="url"]:focus:-ms-input-placeholder,
+.nord-form .form-item input[type="password"]:focus:-ms-input-placeholder,
+.nord-form .form-item input[type="search"]:focus:-ms-input-placeholder,
+.nord-form .form-item textarea:focus:-ms-input-placeholder,
+.nord-form .form-actions input[type="text"]:focus:-ms-input-placeholder,
+.nord-form .form-actions input[type="tel"]:focus:-ms-input-placeholder,
+.nord-form .form-actions input[type="email"]:focus:-ms-input-placeholder,
+.nord-form .form-actions input[type="url"]:focus:-ms-input-placeholder,
+.nord-form .form-actions input[type="password"]:focus:-ms-input-placeholder,
+.nord-form .form-actions input[type="search"]:focus:-ms-input-placeholder,
+.nord-form .form-actions textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+/* line 36, ../scss/partials/elements/_form.scss */
 .nord-form .form-actions {
   padding-top: 16px;
   margin-bottom: 0;
 }
-/* line 28, ../scss/partials/elements/_form.scss */
+/* line 40, ../scss/partials/elements/_form.scss */
 .nord-form .form-actions .btn {
   min-width: 270px;
   max-width: 300px;
   border-radius: 0 !important;
   box-sizing: content-box;
 }
-/* line 36, ../scss/partials/elements/_form.scss */
+/* line 48, ../scss/partials/elements/_form.scss */
 .nord-form .form-item-pair {
   margin: 0 -10px;
 }
@@ -286,7 +444,7 @@ img {
   clear: both;
   height: 0;
 }
-/* line 39, ../scss/partials/elements/_form.scss */
+/* line 51, ../scss/partials/elements/_form.scss */
 .nord-form .form-item-pair .form-item {
   float: left;
   margin: 0 0 5px;
@@ -295,18 +453,18 @@ img {
   width: 50%;
 }
 @media screen and (max-width: 680px) {
-  /* line 39, ../scss/partials/elements/_form.scss */
+  /* line 51, ../scss/partials/elements/_form.scss */
   .nord-form .form-item-pair .form-item {
     width: 100%;
   }
 }
 @media (max-width: 420px) {
-  /* line 39, ../scss/partials/elements/_form.scss */
+  /* line 51, ../scss/partials/elements/_form.scss */
   .nord-form .form-item-pair .form-item {
     width: 100%;
   }
 }
-/* line 58, ../scss/partials/elements/_form.scss */
+/* line 70, ../scss/partials/elements/_form.scss */
 .nord-form label {
   display: block;
   font-weight: bold;
@@ -315,24 +473,24 @@ img {
   padding-bottom: 5px;
 }
 @media screen and (max-width: 680px) {
-  /* line 58, ../scss/partials/elements/_form.scss */
+  /* line 70, ../scss/partials/elements/_form.scss */
   .nord-form label {
     font-size: 12px;
     line-height: 15px;
   }
 }
 @media (max-width: 420px) {
-  /* line 58, ../scss/partials/elements/_form.scss */
+  /* line 70, ../scss/partials/elements/_form.scss */
   .nord-form label {
     font-size: 12px;
     line-height: 15px;
   }
 }
-/* line 74, ../scss/partials/elements/_form.scss */
+/* line 86, ../scss/partials/elements/_form.scss */
 .nord-form textarea {
   max-height: 122px;
 }
-/* line 77, ../scss/partials/elements/_form.scss */
+/* line 89, ../scss/partials/elements/_form.scss */
 .nord-form .red-description, .nord-form .error-message {
   bottom: 0;
   font-size: 10px;
@@ -340,7 +498,7 @@ img {
   position: absolute;
 }
 
-/* line 86, ../scss/partials/elements/_form.scss */
+/* line 98, ../scss/partials/elements/_form.scss */
 div.messages {
   font-size: 18px;
   line-height: 22px;
@@ -348,7 +506,7 @@ div.messages {
   margin: 3px 0;
   border: 1px solid;
 }
-/* line 94, ../scss/partials/elements/_form.scss */
+/* line 106, ../scss/partials/elements/_form.scss */
 div.messages p {
   font-size: 18px;
   line-height: 22px;
