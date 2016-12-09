@@ -1708,28 +1708,28 @@ body.index .item-block .text-block a {
   vertical-align: middle;
 }
 
-/* line 2, ../scss/partials/blocks/_become-partner.scss */
+/* line 3, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block {
-  margin: 0 -10px0;
-  padding: 50px 0;
+  width: 970px;
+  margin: 0 auto;
+  padding: 80px 0 50px;
 }
-/* line 5, ../scss/partials/blocks/_become-partner.scss */
+/* line 8, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block {
-  padding: 0 10px;
   width: 33%;
   display: inline-block;
   vertical-align: top;
-}
-/* line 11, ../scss/partials/blocks/_become-partner.scss */
-.block-steps .row-block .content-block .item-block {
-  text-align: center;
-  position: relative;
+  text-align: left;
 }
 /* line 15, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block .item-block {
+  position: relative;
+}
+/* line 19, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .count-step {
   display: inline-block;
 }
-/* line 17, ../scss/partials/blocks/_become-partner.scss */
+/* line 21, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .count-step .oval {
   width: 81px;
   height: 81px;
@@ -1737,7 +1737,7 @@ body.index .item-block .text-block a {
   border-radius: 50%;
   display: inline-block;
 }
-/* line 23, ../scss/partials/blocks/_become-partner.scss */
+/* line 27, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .count-step .oval .count {
   width: 100%;
   height: 100%;
@@ -1752,7 +1752,7 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #453934;
 }
-/* line 39, ../scss/partials/blocks/_become-partner.scss */
+/* line 43, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .title-step {
   display: inline-block;
   font-size: 20px;
@@ -1764,25 +1764,47 @@ body.index .item-block .text-block a {
   vertical-align: middle;
   padding: 15px;
 }
-/* line 49, ../scss/partials/blocks/_become-partner.scss */
+/* line 53, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .title-step .step {
   font-weight: 300;
 }
-/* line 54, ../scss/partials/blocks/_become-partner.scss */
+/* line 58, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .arrow-step {
   display: inline-block;
+  text-align: right;
+  width: 20%;
 }
-/* line 56, ../scss/partials/blocks/_become-partner.scss */
+/* line 62, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .arrow-step .icon-arrow {
   background: transparent url("../images/arrow-right-ling.png") no-repeat scroll center center;
   height: 20px;
   width: 30px;
   display: inline-block;
 }
-/* line 64, ../scss/partials/blocks/_become-partner.scss */
+/* line 70, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .text-block {
-  top: 0;
-  text-align: center;
+  text-align: left;
+  width: 240px;
+}
+/* line 73, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block .item-block .text-block .title {
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.73;
+}
+/* line 81, ../scss/partials/blocks/_become-partner.scss */
+.block-steps .row-block .content-block .item-block .text-block .link-step {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.73;
+  color: #658d1b;
 }
 
 /* line 1, ../scss/partials/blocks/_karjera-d.scss */

@@ -1,15 +1,19 @@
 .block-steps{
+
     .row-block{
-      margin: 0 -10px0;
-      padding: 50px 0;
+      width: 970px;
+      margin: 0 auto;
+      //margin: 0 -10px 0;
+      padding: 80px 0 50px;
       .content-block{
         //margin: 0 0 10px;
-        padding: 0 10px;
+        //padding: 0 10px;
         width: 33%;
         display: inline-block;
         vertical-align: top;
+        text-align: left;
         .item-block{
-          text-align: center;
+
           position: relative;
           .img-block{
             .count-step{
@@ -53,6 +57,8 @@
             }
             .arrow-step{
               display: inline-block;
+              text-align: right;
+              width: 20%;
               .icon-arrow{
                 background:rgba(0, 0, 0, 0) url("../images/arrow-right-ling.png") no-repeat scroll  center center;
                 height: 20px;
@@ -62,11 +68,26 @@
             }
           }
           .text-block{
-            top: 0;
-            //width: 100%;
-            //height: 100%;
-            text-align: center;
-            //padding: 0 40px;
+            text-align: left;
+            width: 240px;
+            .title{
+              padding-top: 20px;
+              font-size: 1.5*$font-size;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.73;
+            }
+            .link-step{
+              display: inline-block;
+              margin-top: 20px;
+              font-size: 1.5*$font-size;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.73;
+              color: $color-sap-green;
+            }
           }
           //.title{
           //  padding-top: 71px;
