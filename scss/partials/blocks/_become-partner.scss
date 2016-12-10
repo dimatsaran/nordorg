@@ -1,5 +1,4 @@
 .block-steps{
-
     .row-block{
       width: 970px;
       margin: 0 auto;
@@ -12,6 +11,12 @@
         display: inline-block;
         vertical-align: top;
         text-align: left;
+        //&:nth-of-type(2){
+        //  text-align: center;
+        //}
+        //&:last-of-type{
+        //  text-align: right;
+        //}
         .item-block{
 
           position: relative;
@@ -108,5 +113,55 @@
     }
   }
 .block-form-partner{
-
+    .row-block{
+      width: 970px;
+      margin: 0 auto;
+      .title{
+        font-size: 2.4*$font-size;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        color: $color-sap-green;
+      }
+      .nord-form{
+        padding-top: 20px;
+        input{
+          font-size: 1.6*$font-size;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.63;
+          color: $color-black;
+          border: 0 none;
+          padding: 8px 15px;
+        }
+        .form-item{
+          &.form-item-block{
+            margin: 0;
+            padding: 0 20px 0;
+            .w-sel{
+              margin: 0 0 5px;
+              padding: 0 0 11px;
+              position: relative;
+            }
+          }
+          textarea{
+            height: 100px;
+            border: 0 none;
+          }
+        }
+        .btn{
+          width: 274px;
+          height: 52px;
+          font-size: 1.6*$font-size;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          text-align: center;
+          color: $color-white-two;
+          font-family: $font-light;
+        }
+      }
+    }
 }

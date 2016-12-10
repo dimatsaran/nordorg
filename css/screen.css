@@ -229,6 +229,220 @@ img {
   background-position: -70px -35px;
 }
 
+/* --- EASYDROPDOWN DEFAULT THEME --- */
+/* PREFIXED CSS */
+/* line 5, ../scss/partials/elements/_easydropdown.scss */
+.dropdown,
+.dropdown div,
+.dropdown li,
+.dropdown div::after {
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+/* line 15, ../scss/partials/elements/_easydropdown.scss */
+.dropdown .selected::after,
+.dropdown.scrollable div::after {
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none;
+}
+
+/* WRAPPER */
+/* line 25, ../scss/partials/elements/_easydropdown.scss */
+.dropdown {
+  position: relative;
+  width: 160px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* line 39, ../scss/partials/elements/_easydropdown.scss */
+.dropdown.open {
+  z-index: 2;
+}
+
+/* line 43, ../scss/partials/elements/_easydropdown.scss */
+.dropdown:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+/* line 47, ../scss/partials/elements/_easydropdown.scss */
+.dropdown.focus {
+  box-shadow: 0 0 5px rgba(51, 102, 248, 0.4);
+}
+
+/* CARAT */
+/* line 53, ../scss/partials/elements/_easydropdown.scss */
+.dropdown .carat {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  margin-top: -4px;
+  border: 6px solid transparent;
+  border-top: 8px solid #000;
+}
+
+/* line 62, ../scss/partials/elements/_easydropdown.scss */
+.dropdown.open .carat {
+  margin-top: -10px;
+  border-top: 6px solid transparent;
+  border-bottom: 8px solid #000;
+}
+
+/* line 68, ../scss/partials/elements/_easydropdown.scss */
+.dropdown.disabled .carat {
+  border-top-color: #999;
+}
+
+/* OLD SELECT (HIDDEN) */
+/* line 74, ../scss/partials/elements/_easydropdown.scss */
+.dropdown .old {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+/* line 83, ../scss/partials/elements/_easydropdown.scss */
+.dropdown select {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+/* line 89, ../scss/partials/elements/_easydropdown.scss */
+.dropdown.touch .old {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 94, ../scss/partials/elements/_easydropdown.scss */
+.dropdown.touch select {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* SELECTED FEEDBACK ITEM */
+/* line 102, ../scss/partials/elements/_easydropdown.scss */
+.dropdown .selected,
+.dropdown li {
+  display: block;
+  font-size: 18px;
+  line-height: 1;
+  color: #000;
+  padding: 9px 12px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* line 113, ../scss/partials/elements/_easydropdown.scss */
+.dropdown.disabled .selected {
+  color: #999;
+}
+
+/* line 117, ../scss/partials/elements/_easydropdown.scss */
+.dropdown .selected::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  border-radius: 0 2px 2px 0;
+  box-shadow: inset -55px 0 25px -20px #fff;
+}
+
+/* DROP DOWN WRAPPER */
+/* line 131, ../scss/partials/elements/_easydropdown.scss */
+.dropdown div {
+  position: absolute;
+  height: 0;
+  left: -1px;
+  right: -1px;
+  top: 100%;
+  margin-top: -1px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: 1px solid #eee;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* Height is adjusted by JS on open */
+/* line 148, ../scss/partials/elements/_easydropdown.scss */
+.dropdown.open div {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* FADE OVERLAY FOR SCROLLING LISTS */
+/* line 155, ../scss/partials/elements/_easydropdown.scss */
+.dropdown.scrollable div::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  box-shadow: inset 0 -50px 30px -35px #fff;
+}
+
+/* line 166, ../scss/partials/elements/_easydropdown.scss */
+.dropdown.scrollable.bottom div::after {
+  opacity: 0;
+}
+
+/* DROP DOWN LIST */
+/* line 172, ../scss/partials/elements/_easydropdown.scss */
+.dropdown ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+}
+
+/* line 182, ../scss/partials/elements/_easydropdown.scss */
+.dropdown.scrollable.open ul {
+  overflow-y: auto;
+}
+
+/* DROP DOWN LIST ITEMS */
+/* line 188, ../scss/partials/elements/_easydropdown.scss */
+.dropdown li {
+  list-style: none;
+  padding: 8px 12px;
+}
+
+/* .focus class is also added on hover */
+/* line 195, ../scss/partials/elements/_easydropdown.scss */
+.dropdown li.focus {
+  background: #d24a67;
+  position: relative;
+  z-index: 3;
+  color: #fff;
+}
+
+/* line 202, ../scss/partials/elements/_easydropdown.scss */
+.dropdown li.active {
+  font-weight: 700;
+}
+
 /**
  * Form elements.
  */
@@ -244,6 +458,7 @@ img {
   position: relative;
 }
 /* line 11, ../scss/partials/elements/_form.scss */
+.nord-form .form-item select,
 .nord-form .form-item input[type="text"],
 .nord-form .form-item input[type="tel"],
 .nord-form .form-item input[type="email"],
@@ -251,6 +466,7 @@ img {
 .nord-form .form-item input[type="password"],
 .nord-form .form-item input[type="search"],
 .nord-form .form-item textarea,
+.nord-form .form-actions select,
 .nord-form .form-actions input[type="text"],
 .nord-form .form-actions input[type="tel"],
 .nord-form .form-actions input[type="email"],
@@ -258,14 +474,23 @@ img {
 .nord-form .form-actions input[type="password"],
 .nord-form .form-actions input[type="search"],
 .nord-form .form-actions textarea {
+  font-family: "Rubik", sans-serif;
   width: 100%;
   resize: none;
-  box-shadow: inset 0 1px 3px 0 rgba(55, 55, 55, 0.31);
+  box-shadow: inset 0 1px 3px 1px rgba(55, 55, 55, 0.31);
   border-radius: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+  padding: 8px 15px;
   /* Firefox 19+ */
   /* Firefox 18- */
 }
-/* line 23, ../scss/partials/elements/_form.scss */
+/* line 31, ../scss/partials/elements/_form.scss */
+.nord-form .form-item select::-webkit-input-placeholder,
 .nord-form .form-item input[type="text"]::-webkit-input-placeholder,
 .nord-form .form-item input[type="tel"]::-webkit-input-placeholder,
 .nord-form .form-item input[type="email"]::-webkit-input-placeholder,
@@ -273,6 +498,7 @@ img {
 .nord-form .form-item input[type="password"]::-webkit-input-placeholder,
 .nord-form .form-item input[type="search"]::-webkit-input-placeholder,
 .nord-form .form-item textarea::-webkit-input-placeholder,
+.nord-form .form-actions select::-webkit-input-placeholder,
 .nord-form .form-actions input[type="text"]::-webkit-input-placeholder,
 .nord-form .form-actions input[type="tel"]::-webkit-input-placeholder,
 .nord-form .form-actions input[type="email"]::-webkit-input-placeholder,
@@ -282,7 +508,8 @@ img {
 .nord-form .form-actions textarea::-webkit-input-placeholder {
   color: #373737;
 }
-/* line 24, ../scss/partials/elements/_form.scss */
+/* line 32, ../scss/partials/elements/_form.scss */
+.nord-form .form-item select::-moz-placeholder,
 .nord-form .form-item input[type="text"]::-moz-placeholder,
 .nord-form .form-item input[type="tel"]::-moz-placeholder,
 .nord-form .form-item input[type="email"]::-moz-placeholder,
@@ -290,6 +517,7 @@ img {
 .nord-form .form-item input[type="password"]::-moz-placeholder,
 .nord-form .form-item input[type="search"]::-moz-placeholder,
 .nord-form .form-item textarea::-moz-placeholder,
+.nord-form .form-actions select::-moz-placeholder,
 .nord-form .form-actions input[type="text"]::-moz-placeholder,
 .nord-form .form-actions input[type="tel"]::-moz-placeholder,
 .nord-form .form-actions input[type="email"]::-moz-placeholder,
@@ -299,7 +527,8 @@ img {
 .nord-form .form-actions textarea::-moz-placeholder {
   color: #373737;
 }
-/* line 25, ../scss/partials/elements/_form.scss */
+/* line 33, ../scss/partials/elements/_form.scss */
+.nord-form .form-item select:-moz-placeholder,
 .nord-form .form-item input[type="text"]:-moz-placeholder,
 .nord-form .form-item input[type="tel"]:-moz-placeholder,
 .nord-form .form-item input[type="email"]:-moz-placeholder,
@@ -307,6 +536,7 @@ img {
 .nord-form .form-item input[type="password"]:-moz-placeholder,
 .nord-form .form-item input[type="search"]:-moz-placeholder,
 .nord-form .form-item textarea:-moz-placeholder,
+.nord-form .form-actions select:-moz-placeholder,
 .nord-form .form-actions input[type="text"]:-moz-placeholder,
 .nord-form .form-actions input[type="tel"]:-moz-placeholder,
 .nord-form .form-actions input[type="email"]:-moz-placeholder,
@@ -316,7 +546,8 @@ img {
 .nord-form .form-actions textarea:-moz-placeholder {
   color: #373737;
 }
-/* line 26, ../scss/partials/elements/_form.scss */
+/* line 34, ../scss/partials/elements/_form.scss */
+.nord-form .form-item select:-ms-input-placeholder,
 .nord-form .form-item input[type="text"]:-ms-input-placeholder,
 .nord-form .form-item input[type="tel"]:-ms-input-placeholder,
 .nord-form .form-item input[type="email"]:-ms-input-placeholder,
@@ -324,6 +555,7 @@ img {
 .nord-form .form-item input[type="password"]:-ms-input-placeholder,
 .nord-form .form-item input[type="search"]:-ms-input-placeholder,
 .nord-form .form-item textarea:-ms-input-placeholder,
+.nord-form .form-actions select:-ms-input-placeholder,
 .nord-form .form-actions input[type="text"]:-ms-input-placeholder,
 .nord-form .form-actions input[type="tel"]:-ms-input-placeholder,
 .nord-form .form-actions input[type="email"]:-ms-input-placeholder,
@@ -333,7 +565,8 @@ img {
 .nord-form .form-actions textarea:-ms-input-placeholder {
   color: #373737;
 }
-/* line 27, ../scss/partials/elements/_form.scss */
+/* line 35, ../scss/partials/elements/_form.scss */
+.nord-form .form-item select:focus,
 .nord-form .form-item input[type="text"]:focus,
 .nord-form .form-item input[type="tel"]:focus,
 .nord-form .form-item input[type="email"]:focus,
@@ -341,6 +574,7 @@ img {
 .nord-form .form-item input[type="password"]:focus,
 .nord-form .form-item input[type="search"]:focus,
 .nord-form .form-item textarea:focus,
+.nord-form .form-actions select:focus,
 .nord-form .form-actions input[type="text"]:focus,
 .nord-form .form-actions input[type="tel"]:focus,
 .nord-form .form-actions input[type="email"]:focus,
@@ -348,11 +582,12 @@ img {
 .nord-form .form-actions input[type="password"]:focus,
 .nord-form .form-actions input[type="search"]:focus,
 .nord-form .form-actions textarea:focus {
-  box-shadow: inset 0 1px 3px 0 rgba(101, 141, 27, 0.31);
+  box-shadow: 0 0 8px 0 #658d1b, inset 0 1px 3px 0 rgba(0, 0, 0, 0.31);
   /* Firefox 19+ */
   /* Firefox 18- */
 }
-/* line 29, ../scss/partials/elements/_form.scss */
+/* line 37, ../scss/partials/elements/_form.scss */
+.nord-form .form-item select:focus::-webkit-input-placeholder,
 .nord-form .form-item input[type="text"]:focus::-webkit-input-placeholder,
 .nord-form .form-item input[type="tel"]:focus::-webkit-input-placeholder,
 .nord-form .form-item input[type="email"]:focus::-webkit-input-placeholder,
@@ -360,6 +595,7 @@ img {
 .nord-form .form-item input[type="password"]:focus::-webkit-input-placeholder,
 .nord-form .form-item input[type="search"]:focus::-webkit-input-placeholder,
 .nord-form .form-item textarea:focus::-webkit-input-placeholder,
+.nord-form .form-actions select:focus::-webkit-input-placeholder,
 .nord-form .form-actions input[type="text"]:focus::-webkit-input-placeholder,
 .nord-form .form-actions input[type="tel"]:focus::-webkit-input-placeholder,
 .nord-form .form-actions input[type="email"]:focus::-webkit-input-placeholder,
@@ -369,7 +605,8 @@ img {
 .nord-form .form-actions textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
-/* line 30, ../scss/partials/elements/_form.scss */
+/* line 38, ../scss/partials/elements/_form.scss */
+.nord-form .form-item select:focus::-moz-placeholder,
 .nord-form .form-item input[type="text"]:focus::-moz-placeholder,
 .nord-form .form-item input[type="tel"]:focus::-moz-placeholder,
 .nord-form .form-item input[type="email"]:focus::-moz-placeholder,
@@ -377,6 +614,7 @@ img {
 .nord-form .form-item input[type="password"]:focus::-moz-placeholder,
 .nord-form .form-item input[type="search"]:focus::-moz-placeholder,
 .nord-form .form-item textarea:focus::-moz-placeholder,
+.nord-form .form-actions select:focus::-moz-placeholder,
 .nord-form .form-actions input[type="text"]:focus::-moz-placeholder,
 .nord-form .form-actions input[type="tel"]:focus::-moz-placeholder,
 .nord-form .form-actions input[type="email"]:focus::-moz-placeholder,
@@ -386,7 +624,8 @@ img {
 .nord-form .form-actions textarea:focus::-moz-placeholder {
   color: transparent;
 }
-/* line 31, ../scss/partials/elements/_form.scss */
+/* line 39, ../scss/partials/elements/_form.scss */
+.nord-form .form-item select:focus:-moz-placeholder,
 .nord-form .form-item input[type="text"]:focus:-moz-placeholder,
 .nord-form .form-item input[type="tel"]:focus:-moz-placeholder,
 .nord-form .form-item input[type="email"]:focus:-moz-placeholder,
@@ -394,6 +633,7 @@ img {
 .nord-form .form-item input[type="password"]:focus:-moz-placeholder,
 .nord-form .form-item input[type="search"]:focus:-moz-placeholder,
 .nord-form .form-item textarea:focus:-moz-placeholder,
+.nord-form .form-actions select:focus:-moz-placeholder,
 .nord-form .form-actions input[type="text"]:focus:-moz-placeholder,
 .nord-form .form-actions input[type="tel"]:focus:-moz-placeholder,
 .nord-form .form-actions input[type="email"]:focus:-moz-placeholder,
@@ -403,7 +643,8 @@ img {
 .nord-form .form-actions textarea:focus:-moz-placeholder {
   color: transparent;
 }
-/* line 32, ../scss/partials/elements/_form.scss */
+/* line 40, ../scss/partials/elements/_form.scss */
+.nord-form .form-item select:focus:-ms-input-placeholder,
 .nord-form .form-item input[type="text"]:focus:-ms-input-placeholder,
 .nord-form .form-item input[type="tel"]:focus:-ms-input-placeholder,
 .nord-form .form-item input[type="email"]:focus:-ms-input-placeholder,
@@ -411,6 +652,7 @@ img {
 .nord-form .form-item input[type="password"]:focus:-ms-input-placeholder,
 .nord-form .form-item input[type="search"]:focus:-ms-input-placeholder,
 .nord-form .form-item textarea:focus:-ms-input-placeholder,
+.nord-form .form-actions select:focus:-ms-input-placeholder,
 .nord-form .form-actions input[type="text"]:focus:-ms-input-placeholder,
 .nord-form .form-actions input[type="tel"]:focus:-ms-input-placeholder,
 .nord-form .form-actions input[type="email"]:focus:-ms-input-placeholder,
@@ -420,21 +662,116 @@ img {
 .nord-form .form-actions textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
-/* line 36, ../scss/partials/elements/_form.scss */
+/* line 44, ../scss/partials/elements/_form.scss */
+.nord-form .w-sel {
+  float: left;
+  border: 0 none;
+  border-radius: 10px;
+  resize: none;
+  width: 100%;
+}
+/* line 51, ../scss/partials/elements/_form.scss */
+.nord-form .w-sel .dropdown {
+  width: 100%;
+  background-color: transparent;
+  border: 0 none;
+  transition: none;
+}
+/* line 56, ../scss/partials/elements/_form.scss */
+.nord-form .w-sel .dropdown .selected {
+  border-radius: 10px;
+  color: #373737;
+  box-shadow: inset 0 1px 3px 1px rgba(55, 55, 55, 0.31);
+  font-size: 16px;
+  padding: 8px 15px;
+  line-height: 1.63;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+/* line 65, ../scss/partials/elements/_form.scss */
+.nord-form .w-sel .dropdown .selected:hover {
+  outline: none;
+}
+/* line 68, ../scss/partials/elements/_form.scss */
+.nord-form .w-sel .dropdown .selected:after {
+  box-shadow: none;
+}
+/* line 72, ../scss/partials/elements/_form.scss */
+.nord-form .w-sel .dropdown .carat {
+  transition: none;
+  content: "";
+  position: absolute;
+  display: block;
+  margin: 0;
+  border-style: solid;
+  border-color: #cd3033;
+  border-width: 0 0 2px 2px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
+  height: 7px;
+  right: 12px;
+  top: 15px;
+  width: 8px;
+}
+/* line 91, ../scss/partials/elements/_form.scss */
+.nord-form .w-sel .dropdown.open {
+  position: relative;
+}
+/* line 93, ../scss/partials/elements/_form.scss */
+.nord-form .w-sel .dropdown.open .selected {
+  box-shadow: 0 0 8px 0 #72a219, inset 0 1px 3px 0 rgba(0, 0, 0, 0.31);
+}
+/* line 96, ../scss/partials/elements/_form.scss */
+.nord-form .w-sel .dropdown.open .carat {
+  margin: 0;
+}
+/* line 99, ../scss/partials/elements/_form.scss */
+.nord-form .w-sel .dropdown.open + .label {
+  display: block;
+  background-color: #ffffff;
+  z-index: 200;
+  padding: 2px 5px;
+}
+/* line 106, ../scss/partials/elements/_form.scss */
+.nord-form .w-sel .dropdown:hover {
+  box-shadow: none;
+}
+/* line 110, ../scss/partials/elements/_form.scss */
+.nord-form .w-sel .label {
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  color: #658d1b;
+  display: none;
+  background-color: #ffffff;
+  position: absolute;
+  top: -15px;
+  left: 30px;
+}
+/* line 125, ../scss/partials/elements/_form.scss */
+.nord-form .dropdown div {
+  border: 1px solid rgba(55, 55, 55, 0.31);
+}
+/* line 128, ../scss/partials/elements/_form.scss */
+.nord-form .dropdown div ul li {
+  color: #373737;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+/* line 136, ../scss/partials/elements/_form.scss */
 .nord-form .form-actions {
   padding-top: 16px;
   margin-bottom: 0;
 }
-/* line 40, ../scss/partials/elements/_form.scss */
-.nord-form .form-actions .btn {
-  min-width: 270px;
-  max-width: 300px;
-  border-radius: 0 !important;
-  box-sizing: content-box;
-}
-/* line 48, ../scss/partials/elements/_form.scss */
+/* line 140, ../scss/partials/elements/_form.scss */
 .nord-form .form-item-pair {
-  margin: 0 -10px;
+  margin: 0 -20px;
 }
 /* line 2, ../scss/partials/elements/_base.scss */
 .nord-form .form-item-pair:after {
@@ -444,27 +781,27 @@ img {
   clear: both;
   height: 0;
 }
-/* line 51, ../scss/partials/elements/_form.scss */
+/* line 143, ../scss/partials/elements/_form.scss */
 .nord-form .form-item-pair .form-item {
   float: left;
   margin: 0 0 5px;
-  padding: 0 10px 11px;
+  padding: 0 20px 11px;
   position: relative;
   width: 50%;
 }
 @media screen and (max-width: 680px) {
-  /* line 51, ../scss/partials/elements/_form.scss */
+  /* line 143, ../scss/partials/elements/_form.scss */
   .nord-form .form-item-pair .form-item {
     width: 100%;
   }
 }
 @media (max-width: 420px) {
-  /* line 51, ../scss/partials/elements/_form.scss */
+  /* line 143, ../scss/partials/elements/_form.scss */
   .nord-form .form-item-pair .form-item {
     width: 100%;
   }
 }
-/* line 70, ../scss/partials/elements/_form.scss */
+/* line 157, ../scss/partials/elements/_form.scss */
 .nord-form label {
   display: block;
   font-weight: bold;
@@ -473,24 +810,24 @@ img {
   padding-bottom: 5px;
 }
 @media screen and (max-width: 680px) {
-  /* line 70, ../scss/partials/elements/_form.scss */
+  /* line 157, ../scss/partials/elements/_form.scss */
   .nord-form label {
     font-size: 12px;
     line-height: 15px;
   }
 }
 @media (max-width: 420px) {
-  /* line 70, ../scss/partials/elements/_form.scss */
+  /* line 157, ../scss/partials/elements/_form.scss */
   .nord-form label {
     font-size: 12px;
     line-height: 15px;
   }
 }
-/* line 86, ../scss/partials/elements/_form.scss */
+/* line 172, ../scss/partials/elements/_form.scss */
 .nord-form textarea {
   max-height: 122px;
 }
-/* line 89, ../scss/partials/elements/_form.scss */
+/* line 175, ../scss/partials/elements/_form.scss */
 .nord-form .red-description, .nord-form .error-message {
   bottom: 0;
   font-size: 10px;
@@ -498,7 +835,7 @@ img {
   position: absolute;
 }
 
-/* line 98, ../scss/partials/elements/_form.scss */
+/* line 184, ../scss/partials/elements/_form.scss */
 div.messages {
   font-size: 18px;
   line-height: 22px;
@@ -506,7 +843,7 @@ div.messages {
   margin: 3px 0;
   border: 1px solid;
 }
-/* line 106, ../scss/partials/elements/_form.scss */
+/* line 192, ../scss/partials/elements/_form.scss */
 div.messages p {
   font-size: 18px;
   line-height: 22px;
@@ -526,25 +863,26 @@ div.messages p {
   width: 222px;
   height: 52px;
   border-radius: 100px;
+  font-family: "Rubik", sans-serif;
 }
-/* line 14, ../scss/partials/elements/_buttons.scss */
+/* line 15, ../scss/partials/elements/_buttons.scss */
 .btn.btn-sap-green {
   background-color: #658d1b;
 }
-/* line 17, ../scss/partials/elements/_buttons.scss */
+/* line 18, ../scss/partials/elements/_buttons.scss */
 .btn.btn-sepia {
   background-color: #8b5b29;
 }
-/* line 20, ../scss/partials/elements/_buttons.scss */
+/* line 21, ../scss/partials/elements/_buttons.scss */
 .btn.btn-rouge {
   background-color: #a7272a;
 }
-/* line 23, ../scss/partials/elements/_buttons.scss */
+/* line 24, ../scss/partials/elements/_buttons.scss */
 .btn:hover {
   opacity: 0.8;
 }
 
-/* line 27, ../scss/partials/elements/_buttons.scss */
+/* line 28, ../scss/partials/elements/_buttons.scss */
 .btn-play {
   width: 75px;
   height: 75px;
@@ -557,13 +895,13 @@ div.messages p {
   padding: 0;
   margin-top: 10px;
 }
-/* line 38, ../scss/partials/elements/_buttons.scss */
+/* line 39, ../scss/partials/elements/_buttons.scss */
 .btn-play:hover {
   opacity: .85;
 }
 
 @media screen and (max-width: 680px) {
-  /* line 43, ../scss/partials/elements/_buttons.scss */
+  /* line 44, ../scss/partials/elements/_buttons.scss */
   .slick-slider .slick-arrow {
     height: 47px;
     top: 60%;
@@ -572,7 +910,7 @@ div.messages p {
   }
 }
 @media (max-width: 420px) {
-  /* line 43, ../scss/partials/elements/_buttons.scss */
+  /* line 44, ../scss/partials/elements/_buttons.scss */
   .slick-slider .slick-arrow {
     height: 47px;
     top: 40%;
@@ -581,11 +919,11 @@ div.messages p {
   }
 }
 @media screen and (max-width: 680px) {
-  /* line 57, ../scss/partials/elements/_buttons.scss */
+  /* line 58, ../scss/partials/elements/_buttons.scss */
   .slick-slider .slick-prev {
     left: 11px;
   }
-  /* line 60, ../scss/partials/elements/_buttons.scss */
+  /* line 61, ../scss/partials/elements/_buttons.scss */
   .slick-slider .slick-prev:before {
     top: 0;
     display: block;
@@ -597,11 +935,11 @@ div.messages p {
   }
 }
 @media screen and (max-width: 680px) {
-  /* line 72, ../scss/partials/elements/_buttons.scss */
+  /* line 73, ../scss/partials/elements/_buttons.scss */
   .slick-slider .slick-next {
     right: 11px;
   }
-  /* line 75, ../scss/partials/elements/_buttons.scss */
+  /* line 76, ../scss/partials/elements/_buttons.scss */
   .slick-slider .slick-next:before {
     top: 0;
     display: block;
@@ -1408,7 +1746,7 @@ body.index .item-block .text-block a {
 }
 /* line 43, ../scss/partials/blocks/_user-line-d.scss */
 .block-header-slider .slick-dots li.slick-active button:before {
-  background-color: #da4947;
+  background-color: #cd3033;
 }
 
 /* line 51, ../scss/partials/blocks/_user-line-d.scss */
@@ -1866,28 +2204,28 @@ body.index .item-block .text-block a {
   vertical-align: middle;
 }
 
-/* line 3, ../scss/partials/blocks/_become-partner.scss */
+/* line 2, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block {
   width: 970px;
   margin: 0 auto;
   padding: 80px 0 50px;
 }
-/* line 8, ../scss/partials/blocks/_become-partner.scss */
+/* line 7, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block {
   width: 33%;
   display: inline-block;
   vertical-align: top;
   text-align: left;
 }
-/* line 15, ../scss/partials/blocks/_become-partner.scss */
+/* line 20, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block {
   position: relative;
 }
-/* line 19, ../scss/partials/blocks/_become-partner.scss */
+/* line 24, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .count-step {
   display: inline-block;
 }
-/* line 21, ../scss/partials/blocks/_become-partner.scss */
+/* line 26, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .count-step .oval {
   width: 81px;
   height: 81px;
@@ -1895,7 +2233,7 @@ body.index .item-block .text-block a {
   border-radius: 50%;
   display: inline-block;
 }
-/* line 27, ../scss/partials/blocks/_become-partner.scss */
+/* line 32, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .count-step .oval .count {
   width: 100%;
   height: 100%;
@@ -1910,7 +2248,7 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #453934;
 }
-/* line 43, ../scss/partials/blocks/_become-partner.scss */
+/* line 48, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .title-step {
   display: inline-block;
   font-size: 20px;
@@ -1922,29 +2260,29 @@ body.index .item-block .text-block a {
   vertical-align: middle;
   padding: 15px;
 }
-/* line 53, ../scss/partials/blocks/_become-partner.scss */
+/* line 58, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .title-step .step {
   font-weight: 300;
 }
-/* line 58, ../scss/partials/blocks/_become-partner.scss */
+/* line 63, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .arrow-step {
   display: inline-block;
   text-align: right;
   width: 20%;
 }
-/* line 62, ../scss/partials/blocks/_become-partner.scss */
+/* line 67, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .arrow-step .icon-arrow {
   background: transparent url("../images/arrow-right-ling.png") no-repeat scroll center center;
   height: 20px;
   width: 30px;
   display: inline-block;
 }
-/* line 70, ../scss/partials/blocks/_become-partner.scss */
+/* line 75, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .text-block {
   text-align: left;
   width: 240px;
 }
-/* line 73, ../scss/partials/blocks/_become-partner.scss */
+/* line 78, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .text-block .title {
   padding-top: 20px;
   font-size: 15px;
@@ -1953,7 +2291,7 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.73;
 }
-/* line 81, ../scss/partials/blocks/_become-partner.scss */
+/* line 86, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .text-block .link-step {
   display: inline-block;
   margin-top: 20px;
@@ -1963,6 +2301,122 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.73;
   color: #658d1b;
+}
+
+/* line 116, ../scss/partials/blocks/_become-partner.scss */
+.block-form-partner .row-block {
+  width: 970px;
+  margin: 0 auto;
+}
+/* line 119, ../scss/partials/blocks/_become-partner.scss */
+.block-form-partner .row-block .title {
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  color: #658d1b;
+}
+/* line 127, ../scss/partials/blocks/_become-partner.scss */
+.block-form-partner .row-block .nord-form {
+  padding-top: 20px;
+}
+/* line 129, ../scss/partials/blocks/_become-partner.scss */
+.block-form-partner .row-block .nord-form input {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+  border: 0 none;
+  padding: 8px 15px;
+}
+/* line 140, ../scss/partials/blocks/_become-partner.scss */
+.block-form-partner .row-block .nord-form .form-item.form-item-block {
+  margin: 0;
+  padding: 0 20px 0;
+}
+/* line 143, ../scss/partials/blocks/_become-partner.scss */
+.block-form-partner .row-block .nord-form .form-item.form-item-block .w-sel {
+  margin: 0 0 5px;
+  padding: 0 0 11px;
+  position: relative;
+}
+/* line 149, ../scss/partials/blocks/_become-partner.scss */
+.block-form-partner .row-block .nord-form .form-item textarea {
+  height: 100px;
+  border: 0 none;
+}
+/* line 154, ../scss/partials/blocks/_become-partner.scss */
+.block-form-partner .row-block .nord-form .btn {
+  width: 274px;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+}
+
+/* line 2, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block {
+  width: 970px;
+  margin: 0 auto;
+}
+/* line 5, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .title {
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  color: #658d1b;
+}
+/* line 13, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .nord-form {
+  padding-top: 20px;
+}
+/* line 15, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .nord-form input {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+  border: 0 none;
+  padding: 8px 15px;
+}
+/* line 26, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .nord-form .form-item.form-item-block {
+  margin: 0;
+  padding: 0 20px 0;
+}
+/* line 29, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .nord-form .form-item.form-item-block .w-sel {
+  margin: 0 0 5px;
+  padding: 0 0 11px;
+  position: relative;
+}
+/* line 35, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .nord-form .form-item textarea {
+  height: 100px;
+  border: 0 none;
+}
+/* line 40, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .nord-form .btn {
+  width: 274px;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
 }
 
 /* line 1, ../scss/partials/blocks/_karjera-d.scss */
