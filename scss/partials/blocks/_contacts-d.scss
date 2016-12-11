@@ -105,6 +105,13 @@
           border: 0 none;
         }
       }
+      .w-sel{
+        .dropdown{
+          .carat{
+            border-color: $color-sepia;
+          }
+        }
+      }
       .btn{
         width: 274px;
         height: 52px;
@@ -262,9 +269,7 @@
               color: $color-sap-green;
               text-decoration: none;
             }
-
           }
-
         }
         &:hover{
           cursor: pointer;

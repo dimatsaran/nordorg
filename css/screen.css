@@ -865,25 +865,26 @@ div.messages p {
   height: 52px;
   border-radius: 100px;
   font-family: "Rubik", sans-serif;
+  border: 0 none;
 }
-/* line 15, ../scss/partials/elements/_buttons.scss */
+/* line 16, ../scss/partials/elements/_buttons.scss */
 .btn.btn-sap-green {
   background-color: #658d1b;
 }
-/* line 18, ../scss/partials/elements/_buttons.scss */
+/* line 19, ../scss/partials/elements/_buttons.scss */
 .btn.btn-sepia {
   background-color: #8b5b29;
 }
-/* line 21, ../scss/partials/elements/_buttons.scss */
+/* line 22, ../scss/partials/elements/_buttons.scss */
 .btn.btn-rouge {
   background-color: #a7272a;
 }
-/* line 24, ../scss/partials/elements/_buttons.scss */
+/* line 25, ../scss/partials/elements/_buttons.scss */
 .btn:hover {
   opacity: 0.8;
 }
 
-/* line 28, ../scss/partials/elements/_buttons.scss */
+/* line 29, ../scss/partials/elements/_buttons.scss */
 .btn-play {
   width: 75px;
   height: 75px;
@@ -896,13 +897,13 @@ div.messages p {
   padding: 0;
   margin-top: 10px;
 }
-/* line 39, ../scss/partials/elements/_buttons.scss */
+/* line 40, ../scss/partials/elements/_buttons.scss */
 .btn-play:hover {
   opacity: .85;
 }
 
 @media screen and (max-width: 680px) {
-  /* line 44, ../scss/partials/elements/_buttons.scss */
+  /* line 45, ../scss/partials/elements/_buttons.scss */
   .slick-slider .slick-arrow {
     height: 47px;
     top: 60%;
@@ -911,7 +912,7 @@ div.messages p {
   }
 }
 @media (max-width: 420px) {
-  /* line 44, ../scss/partials/elements/_buttons.scss */
+  /* line 45, ../scss/partials/elements/_buttons.scss */
   .slick-slider .slick-arrow {
     height: 47px;
     top: 40%;
@@ -920,11 +921,11 @@ div.messages p {
   }
 }
 @media screen and (max-width: 680px) {
-  /* line 58, ../scss/partials/elements/_buttons.scss */
+  /* line 59, ../scss/partials/elements/_buttons.scss */
   .slick-slider .slick-prev {
     left: 11px;
   }
-  /* line 61, ../scss/partials/elements/_buttons.scss */
+  /* line 62, ../scss/partials/elements/_buttons.scss */
   .slick-slider .slick-prev:before {
     top: 0;
     display: block;
@@ -936,11 +937,11 @@ div.messages p {
   }
 }
 @media screen and (max-width: 680px) {
-  /* line 73, ../scss/partials/elements/_buttons.scss */
+  /* line 74, ../scss/partials/elements/_buttons.scss */
   .slick-slider .slick-next {
     right: 11px;
   }
-  /* line 76, ../scss/partials/elements/_buttons.scss */
+  /* line 77, ../scss/partials/elements/_buttons.scss */
   .slick-slider .slick-next:before {
     top: 0;
     display: block;
@@ -1222,37 +1223,46 @@ header .slicknav_menu.menu_show .hiddenBg {
   display: block;
 }
 
-/* line 2, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 1, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs {
+  position: relative;
+}
+/* line 3, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.career {
   background: transparent url("../images/bg-career.png") no-repeat scroll center center;
   height: 208px;
 }
-/* line 6, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 7, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.company {
   background: transparent url("../images/bg-company.png") no-repeat scroll center center;
   height: 130px;
 }
-/* line 10, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 11, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.contacts {
   background: transparent url("../images/bg-company.png") no-repeat scroll center center;
   height: 130px;
 }
-/* line 14, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 15, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.become-partner {
   background: transparent url("../images/bg-become-partner.png") no-repeat scroll center center;
   height: 208px;
 }
-/* line 18, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 19, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs.pagalba {
+  background: transparent url("../images/bg-tabs-gruond.png") no-repeat scroll center center;
+  height: 206px;
+}
+/* line 23, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs {
   padding-top: 26px;
 }
-/* line 21, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 26, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs ul li {
   display: inline-block;
   font-size: 14px;
   color: #ffffff;
 }
-/* line 26, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 31, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs ul li a {
   padding: 0 5px;
   color: #ffffff;
@@ -1263,7 +1273,7 @@ header .slicknav_menu.menu_show .hiddenBg {
   line-height: 1.86;
   letter-spacing: -0.1px;
 }
-/* line 40, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 45, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs h1 {
   color: #ffffff;
   font-size: 50px;
@@ -2493,7 +2503,11 @@ body.index .item-block .text-block a {
   height: 100px;
   border: 0 none;
 }
-/* line 108, ../scss/partials/blocks/_contacts-d.scss */
+/* line 110, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .nord-form .w-sel .dropdown .carat {
+  border-color: #8b5b29;
+}
+/* line 115, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .btn {
   width: 274px;
   height: 52px;
@@ -2505,17 +2519,17 @@ body.index .item-block .text-block a {
   color: #ffffff;
   font-family: "Rubik", sans-serif;
 }
-/* line 120, ../scss/partials/blocks/_contacts-d.scss */
+/* line 127, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .img-block {
   position: relative;
 }
-/* line 122, ../scss/partials/blocks/_contacts-d.scss */
+/* line 129, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .img-block .text-block {
   position: absolute;
   top: 50px;
   left: 50px;
 }
-/* line 126, ../scss/partials/blocks/_contacts-d.scss */
+/* line 133, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .img-block .text-block .title {
   font-size: 42px;
   font-weight: 300;
@@ -2524,18 +2538,18 @@ body.index .item-block .text-block a {
   line-height: 0.62;
   color: #ffffff;
 }
-/* line 134, ../scss/partials/blocks/_contacts-d.scss */
+/* line 141, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .img-block .text-block .btn {
   margin-top: 20px;
   width: 255px;
   height: 52px;
 }
-/* line 142, ../scss/partials/blocks/_contacts-d.scss */
+/* line 149, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block {
   padding-top: 65px;
   position: relative;
 }
-/* line 145, ../scss/partials/blocks/_contacts-d.scss */
+/* line 152, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .hover-block {
   width: 100%;
   height: 100%;
@@ -2543,28 +2557,28 @@ body.index .item-block .text-block a {
   top: 0;
   left: 0;
 }
-/* line 152, ../scss/partials/blocks/_contacts-d.scss */
+/* line 159, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor {
   position: absolute;
   display: inline-block;
   width: 280px;
 }
-/* line 156, ../scss/partials/blocks/_contacts-d.scss */
+/* line 163, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.one {
   left: 370px;
   top: 122px;
 }
-/* line 160, ../scss/partials/blocks/_contacts-d.scss */
+/* line 167, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.two {
   left: 258px;
   top: 182px;
 }
-/* line 164, ../scss/partials/blocks/_contacts-d.scss */
+/* line 171, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.three {
   left: 346px;
   top: 330px;
 }
-/* line 175, ../scss/partials/blocks/_contacts-d.scss */
+/* line 182, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .icon-paper {
   display: inline-block;
   background-image: url("../images/paper.svg");
@@ -2575,7 +2589,7 @@ body.index .item-block .text-block a {
   vertical-align: top;
   margin-right: 5px;
 }
-/* line 185, ../scss/partials/blocks/_contacts-d.scss */
+/* line 192, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block {
   width: 240px;
   padding: 20px;
@@ -2588,7 +2602,7 @@ body.index .item-block .text-block a {
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
-/* line 196, ../scss/partials/blocks/_contacts-d.scss */
+/* line 203, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block:after {
   z-index: 1000;
   content: '';
@@ -2600,7 +2614,7 @@ body.index .item-block .text-block a {
   border: 10px solid transparent;
   border-right: 10px solid #ffffff;
 }
-/* line 209, ../scss/partials/blocks/_contacts-d.scss */
+/* line 216, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .title {
   font-size: 16px;
   font-family: "Rubik", sans-serif;
@@ -2611,7 +2625,7 @@ body.index .item-block .text-block a {
   letter-spacing: -0.6px;
   color: #284734;
 }
-/* line 219, ../scss/partials/blocks/_contacts-d.scss */
+/* line 226, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .adress {
   font-size: 14px;
   font-weight: normal;
@@ -2621,7 +2635,7 @@ body.index .item-block .text-block a {
   letter-spacing: -0.5px;
   color: #636362;
 }
-/* line 228, ../scss/partials/blocks/_contacts-d.scss */
+/* line 235, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .phone {
   font-size: 14px;
   font-weight: normal;
@@ -2630,12 +2644,12 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 235, ../scss/partials/blocks/_contacts-d.scss */
+/* line 242, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .phone a {
   color: #636362;
   text-decoration: none;
 }
-/* line 241, ../scss/partials/blocks/_contacts-d.scss */
+/* line 248, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .mail {
   font-size: 14px;
   font-weight: normal;
@@ -2644,12 +2658,12 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 248, ../scss/partials/blocks/_contacts-d.scss */
+/* line 255, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .mail a {
   color: #658d1b;
   text-decoration: none;
 }
-/* line 254, ../scss/partials/blocks/_contacts-d.scss */
+/* line 261, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .web-link {
   font-size: 14px;
   font-weight: normal;
@@ -2658,19 +2672,199 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 261, ../scss/partials/blocks/_contacts-d.scss */
+/* line 268, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .web-link a {
   color: #658d1b;
   text-decoration: none;
 }
-/* line 269, ../scss/partials/blocks/_contacts-d.scss */
+/* line 274, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor:hover {
   cursor: pointer;
 }
-/* line 271, ../scss/partials/blocks/_contacts-d.scss */
+/* line 276, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor:hover .text-block {
   display: inline-block;
   top: -40px;
+}
+
+/* line 1, ../scss/partials/blocks/_pagalba-d.scss */
+.block-tabs {
+  position: absolute;
+  bottom: 0;
+}
+/* line 5, ../scss/partials/blocks/_pagalba-d.scss */
+.block-tabs .list-tabs li {
+  display: inline-block;
+  padding-right: 3px;
+  float: left;
+}
+/* line 9, ../scss/partials/blocks/_pagalba-d.scss */
+.block-tabs .list-tabs li:last-of-type {
+  padding-right: 0;
+}
+/* line 12, ../scss/partials/blocks/_pagalba-d.scss */
+.block-tabs .list-tabs li .tab {
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  text-align: center;
+  color: #ffffff;
+  display: inline-block;
+  background-color: #3c312c;
+  text-decoration: none;
+  width: 231px;
+  height: 52px;
+  padding: 15px 0;
+}
+/* line 26, ../scss/partials/blocks/_pagalba-d.scss */
+.block-tabs .list-tabs li .tab.active, .block-tabs .list-tabs li .tab:hover {
+  color: #658d1b;
+  background-color: #ffffff;
+}
+
+/* line 35, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block {
+  padding-top: 65px;
+  padding-bottom: 50px;
+}
+/* line 39, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .content-block:first-of-type {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+/* line 45, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .content-block:last-of-type {
+  width: 41%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 51, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .item-block {
+  text-align: left;
+  position: relative;
+}
+/* line 55, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .title {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  color: #373737;
+}
+/* line 64, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .block-contact .title {
+  padding-bottom: 20px;
+}
+/* line 67, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .block-contact .label {
+  width: 120px;
+  color: #658d1b;
+  display: inline-block;
+}
+/* line 72, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .block-contact .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+}
+/* line 80, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .block-contact .mail {
+  margin: 0 0 30px;
+  padding: 8px 0;
+}
+/* line 83, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .block-contact .mail a {
+  color: #373737;
+}
+/* line 88, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .title-form {
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  color: #658d1b;
+}
+/* line 99, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .nord-form input {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+  border: 0 none;
+  padding: 8px 15px;
+}
+/* line 109, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .nord-form .form-item {
+  width: 100%;
+}
+/* line 111, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .nord-form .form-item.form-item-block {
+  margin: 0;
+  padding: 0 20px 0;
+}
+/* line 114, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .nord-form .form-item.form-item-block .w-sel {
+  margin: 0 0 5px;
+  padding: 0 0 11px;
+  position: relative;
+}
+/* line 120, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .nord-form .form-item textarea {
+  height: 100px;
+  border: 0 none;
+}
+/* line 127, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .nord-form .w-sel .dropdown .carat {
+  border-color: #8b5b29;
+}
+/* line 132, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .nord-form .btn {
+  width: 274px;
+  height: 52px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Rubik", sans-serif;
+}
+/* line 144, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .img-block {
+  position: relative;
+}
+/* line 146, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .img-block .text-block {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+/* line 150, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .img-block .text-block .title {
+  font-size: 42px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.62;
+  color: #ffffff;
+}
+/* line 158, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .img-block .text-block .btn {
+  margin-top: 20px;
+  width: 255px;
+  height: 52px;
 }
 
 /* line 1, ../scss/partials/blocks/_karjera-d.scss */

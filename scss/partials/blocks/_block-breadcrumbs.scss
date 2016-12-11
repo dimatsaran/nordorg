@@ -1,4 +1,5 @@
 .block-breadcrumbs{
+  position: relative;
   &.career{
     background:rgba(0, 0, 0, 0) url("../images/bg-career.png") no-repeat scroll  center center;
     height: 208px;
@@ -14,6 +15,10 @@
   &.become-partner{
     background:rgba(0, 0, 0, 0) url("../images/bg-become-partner.png") no-repeat scroll  center center;
     height: 208px;
+  }
+  &.pagalba{
+    background:rgba(0, 0, 0, 0) url("../images/bg-tabs-gruond.png") no-repeat scroll  center center;
+    height: 206px;
   }
   .list-breadcrumbs{
     padding-top: 26px;
