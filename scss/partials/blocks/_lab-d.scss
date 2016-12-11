@@ -1,0 +1,183 @@
+.block-lab{
+  .row-block{
+    margin: 0 -20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .list-block{
+      .content-block{
+        margin: 0 0 10px;
+        padding: 0 20px;
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        float: left;
+        .item-block{
+          text-align: center;
+          position: relative;
+          .img{
+            width: 100%;
+            z-index: 50;
+            position: relative;
+          }
+          .text-block{
+            width: 100%;
+            z-index: 100;
+            position: relative;
+            .title{
+              color: $color-black;
+              font-size: 2.2*$font-size;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.18;
+              text-align: left;
+            }
+          }
+
+          .autor{
+            display: inline-block;
+            width: 100%;
+            .img-autor{
+              display: inline-block;
+              float: left;
+              margin: 10px;
+              width: 120px;
+              margin-top: -60px;
+            }
+            .name-autor{
+              float: left;
+              width: 70%;
+              color: $color-sepia;
+              font-size: 1.6*$font-size;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.63;
+              vertical-align: bottom;
+              display: inline-block;
+              text-align: left;
+            }
+            .date{
+              font-size: 1.4*$font-size;
+              font-weight: 300;
+              line-height: 1.86;
+              color: $color-black;
+              margin-left: 20px;
+            }
+          }
+        }
+
+      }
+    }
+    .add-list{
+      .btn{
+        margin-top: 30px;
+        font-size: 1.6*$font-size;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        text-align: center;
+        color: $color-white-two;
+        width: 332px;
+      }
+    }
+  }
+}
+.block-person{
+  background-color: $color-grey;
+  .row-block {
+    padding-top: 56px;
+    padding-bottom: 50px;
+    .title-block{
+      position: relative;
+      h2{
+        font-size: 30px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.07;
+        text-align: left;
+        color: $color-sap-green;
+      }
+      .select-person{
+        position: absolute;
+        width: 285px;
+        height: 44px;
+        right: 0;
+        top: 0;
+        .nord-form {
+          .form-item-pair {
+            .form-item{
+              width: 100% ;
+            }
+          }
+          .w-sel {
+            .dropdown{
+              .selected{
+                background-color: $color-white-two;
+              }
+            }
+          }
+        }
+      }
+    }
+    .list-block{
+      @include clearfix;
+      padding-top: 30px;
+      .content-block {
+        width: 25%;
+        padding: 10px 20px 30px;
+        display: inline-block;
+        vertical-align: top;
+        float: left;
+        .item-block {
+          text-align: center;
+          position: relative;
+          .img-autor{}
+          .name-autor{
+            color: $color-sepia;
+            font-size: 1.6*$font-size;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+            text-align: center;
+          }
+          .title{
+            font-size: 1.4*$font-size;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.86;
+            text-align: center;
+            color: $color-black;
+          }
+        }
+      }
+    }
+    .img-block-person{
+      position: relative;
+      .text-block{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        .title{
+          font-size: 4.2*$font-size;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 0.62;
+          color: $color-white-two;
+        }
+
+        .btn{
+          margin-top: 30px;
+          width: 255px;
+          height: 52px;
+
+        }
+      }
+    }
+  }
+
+}

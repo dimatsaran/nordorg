@@ -1247,16 +1247,21 @@ header .slicknav_menu.menu_show .hiddenBg {
   height: 206px;
 }
 /* line 23, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs.lab-d {
+  background: transparent url("../images/bg-lab-d.png") no-repeat scroll center center;
+  height: 208px;
+}
+/* line 27, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs {
   padding-top: 26px;
 }
-/* line 26, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 30, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs ul li {
   display: inline-block;
   font-size: 14px;
   color: #ffffff;
 }
-/* line 31, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 35, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs ul li a {
   padding: 0 5px;
   color: #ffffff;
@@ -1267,7 +1272,7 @@ header .slicknav_menu.menu_show .hiddenBg {
   line-height: 1.86;
   letter-spacing: -0.1px;
 }
-/* line 45, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 49, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs h1 {
   color: #ffffff;
   font-size: 50px;
@@ -3018,6 +3023,205 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #ffffff;
   width: 332px;
+}
+
+/* line 2, ../scss/partials/blocks/_lab-d.scss */
+.block-lab .row-block {
+  margin: 0 -20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* line 7, ../scss/partials/blocks/_lab-d.scss */
+.block-lab .row-block .list-block .content-block {
+  margin: 0 0 10px;
+  padding: 0 20px;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+/* line 14, ../scss/partials/blocks/_lab-d.scss */
+.block-lab .row-block .list-block .content-block .item-block {
+  text-align: center;
+  position: relative;
+}
+/* line 17, ../scss/partials/blocks/_lab-d.scss */
+.block-lab .row-block .list-block .content-block .item-block .img {
+  width: 100%;
+  z-index: 50;
+  position: relative;
+}
+/* line 22, ../scss/partials/blocks/_lab-d.scss */
+.block-lab .row-block .list-block .content-block .item-block .text-block {
+  width: 100%;
+  z-index: 100;
+  position: relative;
+}
+/* line 26, ../scss/partials/blocks/_lab-d.scss */
+.block-lab .row-block .list-block .content-block .item-block .text-block .title {
+  color: #373737;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  text-align: left;
+}
+/* line 37, ../scss/partials/blocks/_lab-d.scss */
+.block-lab .row-block .list-block .content-block .item-block .autor {
+  display: inline-block;
+  width: 100%;
+}
+/* line 40, ../scss/partials/blocks/_lab-d.scss */
+.block-lab .row-block .list-block .content-block .item-block .autor .img-autor {
+  display: inline-block;
+  float: left;
+  margin: 10px;
+  width: 120px;
+  margin-top: -60px;
+}
+/* line 47, ../scss/partials/blocks/_lab-d.scss */
+.block-lab .row-block .list-block .content-block .item-block .autor .name-autor {
+  float: left;
+  width: 70%;
+  color: #8b5b29;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  vertical-align: bottom;
+  display: inline-block;
+  text-align: left;
+}
+/* line 60, ../scss/partials/blocks/_lab-d.scss */
+.block-lab .row-block .list-block .content-block .item-block .autor .date {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.86;
+  color: #373737;
+  margin-left: 20px;
+}
+/* line 73, ../scss/partials/blocks/_lab-d.scss */
+.block-lab .row-block .add-list .btn {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  width: 332px;
+}
+
+/* line 86, ../scss/partials/blocks/_lab-d.scss */
+.block-person {
+  background-color: #f3eeea;
+}
+/* line 88, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block {
+  padding-top: 56px;
+  padding-bottom: 50px;
+}
+/* line 91, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .title-block {
+  position: relative;
+}
+/* line 93, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .title-block h2 {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  text-align: left;
+  color: #658d1b;
+}
+/* line 102, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .title-block .select-person {
+  position: absolute;
+  width: 285px;
+  height: 44px;
+  right: 0;
+  top: 0;
+}
+/* line 110, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .title-block .select-person .nord-form .form-item-pair .form-item {
+  width: 100%;
+}
+/* line 116, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .title-block .select-person .nord-form .w-sel .dropdown .selected {
+  background-color: #ffffff;
+}
+/* line 124, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .list-block {
+  padding-top: 30px;
+}
+/* line 2, ../scss/partials/elements/_base.scss */
+.block-person .row-block .list-block:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+/* line 127, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .list-block .content-block {
+  width: 25%;
+  padding: 10px 20px 30px;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+/* line 133, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .list-block .content-block .item-block {
+  text-align: center;
+  position: relative;
+}
+/* line 137, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .list-block .content-block .item-block .name-autor {
+  color: #8b5b29;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  text-align: center;
+}
+/* line 146, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .list-block .content-block .item-block .title {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  text-align: center;
+  color: #373737;
+}
+/* line 158, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .img-block-person {
+  position: relative;
+}
+/* line 160, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .img-block-person .text-block {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+/* line 164, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .img-block-person .text-block .title {
+  font-size: 42px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.62;
+  color: #ffffff;
+}
+/* line 173, ../scss/partials/blocks/_lab-d.scss */
+.block-person .row-block .img-block-person .text-block .btn {
+  margin-top: 30px;
+  width: 255px;
+  height: 52px;
 }
 
 /* line 1, ../scss/partials/blocks/_karjera-d.scss */
