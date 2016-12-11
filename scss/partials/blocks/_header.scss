@@ -1,6 +1,10 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * */
+.logo-svg{
+  fill: $color-brown;
+  width: 50%;
+}
 header{
   @include clearfix;
   top: 0;
@@ -31,6 +35,7 @@ header{
         width: 100%;
         height: 100%;
       }
+
     }
   }
   .user-block{

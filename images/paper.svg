@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="60px" viewBox="0 0 28 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
+    <title>3E358300-8EB7-4BA3-9F14-B7B8A555F573</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#608340" offset="0%"></stop>
+            <stop stop-color="#375511" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.759327168%" y1="0.759327168%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#789F5F" offset="0%"></stop>
+            <stop stop-color="#375511" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Web-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contacts-d" transform="translate(-1261.000000, -694.000000)">
+            <g id="Group-3-Copy-2" transform="translate(1261.000000, 694.000000)">
+                <path d="M1.28677725,31.0007348 C1.27264003,30.8682772 -5.23566557,48.6817075 11.1555004,53.7627068 C17.8452337,55.8363051 24.3756876,53.1777249 28,60 L28,57.1137435 C28,49.5886416 23.9049181,46.1070328 19.3565027,43.8052868 C8.74887407,38.436746 4.01808847,38.8030078 1.28677725,31.0007348 L1.28677725,31.0007348 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                <path d="M27,41.4947664 C27,14.6792484 8.57520001,19.3904466 2.76505671,0 C-6.12727193,42.3529521 21.1762848,35.7247676 27,50 L27,41.4947664 Z" id="Path" fill="url(#linearGradient-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

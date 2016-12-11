@@ -1,7 +1,24 @@
 .block-form-contact{
   .row-block{
-    width: 970px;
-    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    .content-block{
+      &:first-of-type{
+        width: 46%;
+        display: inline-block;
+        vertical-align: top;
+        float: left;
+      }
+      &:last-of-type{
+        width: 54%;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+    .item-block{
+      text-align: left;
+      position: relative;
+    }
     .title{
       font-size: 2.4*$font-size;
       font-weight: normal;
@@ -9,6 +26,26 @@
       font-stretch: normal;
       line-height: 1.33;
       color: $color-sap-green;
+
+    }
+    .block-contact{
+      .title{}
+      .label{
+        width: 100px;
+      }
+      .text{
+        font-size: 1.6*$font-size;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.63;
+        color: $color-black;
+      }
+      .mail{
+        a{
+          color: $color-black;
+        }
+      }
     }
     .nord-form{
       padding-top: 20px;
@@ -23,6 +60,7 @@
         padding: 8px 15px;
       }
       .form-item{
+        width: 90%;
         &.form-item-block{
           margin: 0;
           padding: 0 20px 0;
@@ -48,6 +86,150 @@
         color: $color-white-two;
         font-family: $font-light;
       }
+    }
+    .img-block{
+      position: relative;
+      .text-block{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        .title{
+          font-size: 4.2*$font-size;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 0.62;
+          color: $color-white-two;
+        }
+        .btn{
+          margin-top: 20px;
+          width: 255px;
+          height: 52px;
+
+        }
+      }
+    }
+    .map-block{
+      padding-top: 65px;
+      position: relative;
+      .anchor{
+        position: absolute;
+        &.one{
+          left: 370px;
+          top: 122px;
+        }
+        &.two{
+          left: 258px;
+          top: 182px;
+        }
+        &.three{
+          left: 346px;
+          top: 330px;
+        }
+        &[data-position-x]{
+
+        }
+        &[data-position-y]{
+
+        }
+        .icon-paper{
+          display: block;
+          background-image: url("../images/paper.svg");
+          background-color: transparent;
+          background-repeat: no-repeat;
+          float: left;
+          width: 28px;
+          height: 60px;
+          //vertical-align: middle;
+
+        }
+        .text-block{
+          padding: 10px;
+          display: none;
+          background-color: $color-white-two;
+          vertical-align: middle;
+          position: relative;
+          float: left;
+          &:after {
+            z-index: 1000;
+            content: '';
+            position: absolute; /* Абсолютное позиционирование */
+            left: -15px;
+            bottom: 40%; /* Положение треугольника */
+            border: 10px solid transparent;
+            border-right: 10px solid $color-white-two;
+          }
+
+          .title{
+            font-size: 1.6*$font-size;
+            font-family: $font-family;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+            letter-spacing: -0.6px;
+            color: $color-pine;
+          }
+          .adress{
+            font-size: 1.4*$font-size;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.86;
+            letter-spacing: -0.5px;
+            color: $color-medium-grey;
+          }
+          .phone{
+            font-size: 1.4*$font-size;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.86;
+            letter-spacing: -0.5px;
+            a{
+              color: $color-medium-grey;
+              text-decoration: none;
+            }
+
+          }
+          .mail{
+            font-size: 1.4*$font-size;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.86;
+            letter-spacing: -0.5px;
+            a{
+              color: $color-sap-green;
+              text-decoration: none;
+            }
+
+          }
+          .web-link{
+            font-size: 1.4*$font-size;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.86;
+            letter-spacing: -0.5px;
+            a{
+              color: $color-sap-green;
+              text-decoration: none;
+            }
+
+          }
+
+        }
+        &:hover{
+          cursor: pointer;
+          .text-block{
+            display: inline-block;
+            top: -40px;
+            margin-left: 10px;
+          }
+        }
+      }
+
     }
   }
 }

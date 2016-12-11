@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -955,6 +956,12 @@ div.messages p {
  * Import this file using the following HTML or equivalent:
  * */
 /* line 4, ../scss/partials/blocks/_header.scss */
+.logo-svg {
+  fill: #3c312c;
+  width: 50%;
+}
+
+/* line 8, ../scss/partials/blocks/_header.scss */
 header {
   top: 0;
   display: block;
@@ -971,7 +978,7 @@ header:after {
   clear: both;
   height: 0;
 }
-/* line 12, ../scss/partials/blocks/_header.scss */
+/* line 16, ../scss/partials/blocks/_header.scss */
 header .container {
   position: relative;
 }
@@ -984,30 +991,30 @@ header .container:after {
   height: 0;
 }
 @media screen and (max-width: 680px) {
-  /* line 12, ../scss/partials/blocks/_header.scss */
+  /* line 16, ../scss/partials/blocks/_header.scss */
   header .container {
     min-width: 320px;
   }
 }
-/* line 19, ../scss/partials/blocks/_header.scss */
+/* line 23, ../scss/partials/blocks/_header.scss */
 header .logo-block {
   padding-top: 17px;
   width: 20%;
   float: left;
 }
-/* line 23, ../scss/partials/blocks/_header.scss */
+/* line 27, ../scss/partials/blocks/_header.scss */
 header .logo-block .logo {
   position: relative;
   display: block;
 }
-/* line 26, ../scss/partials/blocks/_header.scss */
+/* line 30, ../scss/partials/blocks/_header.scss */
 header .logo-block .logo .logo-bg {
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 36, ../scss/partials/blocks/_header.scss */
+/* line 41, ../scss/partials/blocks/_header.scss */
 header .user-block {
   width: 80%;
   float: left;
@@ -1015,16 +1022,16 @@ header .user-block {
   text-align: right;
   padding-top: 18px;
 }
-/* line 43, ../scss/partials/blocks/_header.scss */
+/* line 48, ../scss/partials/blocks/_header.scss */
 header .user-block .user-nav li {
   display: inline-block;
   padding-left: 20px;
 }
-/* line 46, ../scss/partials/blocks/_header.scss */
+/* line 51, ../scss/partials/blocks/_header.scss */
 header .user-block .user-nav li:first-of-type {
   padding-left: 0;
 }
-/* line 49, ../scss/partials/blocks/_header.scss */
+/* line 54, ../scss/partials/blocks/_header.scss */
 header .user-block .user-nav li a {
   font-size: 14px;
   font-weight: normal;
@@ -1035,7 +1042,7 @@ header .user-block .user-nav li a {
   text-decoration: none;
   font-family: "Rubik", sans-serif;
 }
-/* line 62, ../scss/partials/blocks/_header.scss */
+/* line 67, ../scss/partials/blocks/_header.scss */
 header .menu-block {
   width: 80%;
   float: left;
@@ -1043,16 +1050,16 @@ header .menu-block {
   text-align: right;
   padding-top: 16px;
 }
-/* line 69, ../scss/partials/blocks/_header.scss */
+/* line 74, ../scss/partials/blocks/_header.scss */
 header .menu-block .main-nav li {
   display: inline-block;
   padding-left: 20px;
 }
-/* line 72, ../scss/partials/blocks/_header.scss */
+/* line 77, ../scss/partials/blocks/_header.scss */
 header .menu-block .main-nav li:first-of-type {
   padding-left: 0;
 }
-/* line 75, ../scss/partials/blocks/_header.scss */
+/* line 80, ../scss/partials/blocks/_header.scss */
 header .menu-block .main-nav li a {
   font-size: 16px;
   font-weight: 500;
@@ -1064,64 +1071,64 @@ header .menu-block .main-nav li a {
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
 }
-/* line 85, ../scss/partials/blocks/_header.scss */
+/* line 90, ../scss/partials/blocks/_header.scss */
 header .menu-block .main-nav li a:hover, header .menu-block .main-nav li a .active {
   color: #a7272a;
 }
-/* line 93, ../scss/partials/blocks/_header.scss */
+/* line 98, ../scss/partials/blocks/_header.scss */
 header .label-block {
   position: absolute;
   right: 0;
   top: 0;
 }
 @media screen and (max-width: 680px) {
-  /* line 93, ../scss/partials/blocks/_header.scss */
+  /* line 98, ../scss/partials/blocks/_header.scss */
   header .label-block {
     right: 10px;
     top: 10px;
   }
 }
-/* line 101, ../scss/partials/blocks/_header.scss */
+/* line 106, ../scss/partials/blocks/_header.scss */
 header .label-block > div {
   display: inline-block;
   padding: 10px 7px;
 }
 @media screen and (max-width: 1169px) {
-  /* line 109, ../scss/partials/blocks/_header.scss */
+  /* line 114, ../scss/partials/blocks/_header.scss */
   header .label-block > div.icon-9001 {
     display: none;
   }
 }
 @media screen and (max-width: 680px) {
-  /* line 109, ../scss/partials/blocks/_header.scss */
+  /* line 114, ../scss/partials/blocks/_header.scss */
   header .label-block > div.icon-9001 {
     display: none;
   }
 }
-/* line 119, ../scss/partials/blocks/_header.scss */
+/* line 124, ../scss/partials/blocks/_header.scss */
 header .navbar-nav {
   margin: 0;
 }
-/* line 122, ../scss/partials/blocks/_header.scss */
+/* line 127, ../scss/partials/blocks/_header.scss */
 header .navbar-nav li.btn-transparent {
   min-width: 100px;
 }
-/* line 126, ../scss/partials/blocks/_header.scss */
+/* line 131, ../scss/partials/blocks/_header.scss */
 header .navbar-nav li a {
   display: block;
   color: #efefef;
   padding: 0;
 }
-/* line 130, ../scss/partials/blocks/_header.scss */
+/* line 135, ../scss/partials/blocks/_header.scss */
 header .navbar-nav li a:hover {
   text-decoration: none;
 }
-/* line 178, ../scss/partials/blocks/_header.scss */
+/* line 183, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu {
   background: transparent;
   padding: 0;
 }
-/* line 182, ../scss/partials/blocks/_header.scss */
+/* line 187, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_btn {
   position: absolute;
   margin: 10px;
@@ -1129,26 +1136,26 @@ header .slicknav_menu .slicknav_btn {
   display: none;
 }
 @media screen and (max-width: 680px) {
-  /* line 182, ../scss/partials/blocks/_header.scss */
+  /* line 187, ../scss/partials/blocks/_header.scss */
   header .slicknav_menu .slicknav_btn {
     display: block;
   }
 }
-/* line 196, ../scss/partials/blocks/_header.scss */
+/* line 201, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_btn .slicknav_icon {
   height: 2em;
   width: 2em;
 }
-/* line 199, ../scss/partials/blocks/_header.scss */
+/* line 204, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_btn .slicknav_icon .slicknav_icon-bar {
   height: 0.3em;
   width: 2em;
 }
-/* line 203, ../scss/partials/blocks/_header.scss */
+/* line 208, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_btn .slicknav_icon .slicknav_icon-bar + .slicknav_icon-bar {
   margin-top: 0.5em;
 }
-/* line 210, ../scss/partials/blocks/_header.scss */
+/* line 215, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_nav {
   position: fixed;
   z-index: 800;
@@ -1158,14 +1165,14 @@ header .slicknav_menu .slicknav_nav {
   width: 77%;
   height: 100%;
 }
-/* line 218, ../scss/partials/blocks/_header.scss */
+/* line 223, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_nav ul {
   margin: 0;
   top: 50px;
   left: 10px;
   position: absolute;
 }
-/* line 224, ../scss/partials/blocks/_header.scss */
+/* line 229, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_nav ul li a {
   font-size: 14px;
   text-transform: uppercase;
@@ -1176,12 +1183,12 @@ header .slicknav_menu .slicknav_nav ul li a {
   border-radius: 0;
   display: inline-block;
 }
-/* line 233, ../scss/partials/blocks/_header.scss */
+/* line 238, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_nav ul li a:hover {
   color: #efefef;
   background-color: transparent;
 }
-/* line 242, ../scss/partials/blocks/_header.scss */
+/* line 247, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .hiddenBg {
   height: 100%;
   position: fixed;
@@ -1193,24 +1200,24 @@ header .slicknav_menu .hiddenBg {
   background-color: rgba(0, 0, 0, 0.4);
   display: none;
 }
-/* line 255, ../scss/partials/blocks/_header.scss */
+/* line 260, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu.menu_show {
   display: none;
 }
 @media screen and (max-width: 680px) {
-  /* line 255, ../scss/partials/blocks/_header.scss */
+  /* line 260, ../scss/partials/blocks/_header.scss */
   header .slicknav_menu.menu_show {
     display: block;
   }
 }
-/* line 266, ../scss/partials/blocks/_header.scss */
+/* line 271, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu.menu_show .slicknav_btn {
   z-index: 900;
   top: 0;
   position: absolute;
   margin: 0;
 }
-/* line 272, ../scss/partials/blocks/_header.scss */
+/* line 277, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu.menu_show .hiddenBg {
   display: block;
 }
@@ -1226,21 +1233,26 @@ header .slicknav_menu.menu_show .hiddenBg {
   height: 130px;
 }
 /* line 10, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs.contacts {
+  background: transparent url("../images/bg-company.png") no-repeat scroll center center;
+  height: 130px;
+}
+/* line 14, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.become-partner {
   background: transparent url("../images/bg-become-partner.png") no-repeat scroll center center;
   height: 208px;
 }
-/* line 14, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 18, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs {
   padding-top: 26px;
 }
-/* line 17, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 21, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs ul li {
   display: inline-block;
   font-size: 14px;
   color: #ffffff;
 }
-/* line 22, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 26, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs ul li a {
   padding: 0 5px;
   color: #ffffff;
@@ -1251,7 +1263,7 @@ header .slicknav_menu.menu_show .hiddenBg {
   line-height: 1.86;
   letter-spacing: -0.1px;
 }
-/* line 36, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 40, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs h1 {
   color: #ffffff;
   font-size: 50px;
@@ -2363,10 +2375,28 @@ body.index .item-block .text-block a {
 
 /* line 2, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block {
-  width: 970px;
-  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 50px;
 }
-/* line 5, ../scss/partials/blocks/_contacts-d.scss */
+/* line 6, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .content-block:first-of-type {
+  width: 46%;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+/* line 12, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .content-block:last-of-type {
+  width: 54%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 18, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .item-block {
+  text-align: left;
+  position: relative;
+}
+/* line 22, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .title {
   font-size: 24px;
   font-weight: normal;
@@ -2375,11 +2405,28 @@ body.index .item-block .text-block a {
   line-height: 1.33;
   color: #658d1b;
 }
-/* line 13, ../scss/partials/blocks/_contacts-d.scss */
+/* line 33, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .block-contact .label {
+  width: 100px;
+}
+/* line 36, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .block-contact .text {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+}
+/* line 45, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .block-contact .mail a {
+  color: #373737;
+}
+/* line 50, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form {
   padding-top: 20px;
 }
-/* line 15, ../scss/partials/blocks/_contacts-d.scss */
+/* line 52, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form input {
   font-size: 16px;
   font-weight: 300;
@@ -2390,23 +2437,27 @@ body.index .item-block .text-block a {
   border: 0 none;
   padding: 8px 15px;
 }
-/* line 26, ../scss/partials/blocks/_contacts-d.scss */
+/* line 62, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .nord-form .form-item {
+  width: 90%;
+}
+/* line 64, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .form-item.form-item-block {
   margin: 0;
   padding: 0 20px 0;
 }
-/* line 29, ../scss/partials/blocks/_contacts-d.scss */
+/* line 67, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .form-item.form-item-block .w-sel {
   margin: 0 0 5px;
   padding: 0 0 11px;
   position: relative;
 }
-/* line 35, ../scss/partials/blocks/_contacts-d.scss */
+/* line 73, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .form-item textarea {
   height: 100px;
   border: 0 none;
 }
-/* line 40, ../scss/partials/blocks/_contacts-d.scss */
+/* line 78, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .btn {
   width: 274px;
   height: 52px;
@@ -2417,6 +2468,159 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #ffffff;
   font-family: "Rubik", sans-serif;
+}
+/* line 90, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .img-block {
+  position: relative;
+}
+/* line 92, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .img-block .text-block {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+/* line 96, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .img-block .text-block .title {
+  font-size: 42px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.62;
+  color: #ffffff;
+}
+/* line 104, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .img-block .text-block .btn {
+  margin-top: 20px;
+  width: 255px;
+  height: 52px;
+}
+/* line 112, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block {
+  padding-top: 65px;
+  position: relative;
+}
+/* line 115, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor {
+  position: absolute;
+}
+/* line 117, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor.one {
+  left: 370px;
+  top: 122px;
+}
+/* line 121, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor.two {
+  left: 258px;
+  top: 182px;
+}
+/* line 125, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor.three {
+  left: 346px;
+  top: 330px;
+}
+/* line 135, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor .icon-paper {
+  display: block;
+  background-image: url("../images/paper.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  float: left;
+  width: 28px;
+  height: 60px;
+}
+/* line 146, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor .text-block {
+  padding: 10px;
+  display: none;
+  background-color: #ffffff;
+  vertical-align: middle;
+  position: relative;
+  float: left;
+}
+/* line 153, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor .text-block:after {
+  z-index: 1000;
+  content: '';
+  position: absolute;
+  /* ╨Р╨▒╤Б╨╛╨╗╤О╤В╨╜╨╛╨╡ ╨┐╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ */
+  left: -15px;
+  bottom: 40%;
+  /* ╨Я╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╤В╤А╨╡╤Г╨│╨╛╨╗╤М╨╜╨╕╨║╨░ */
+  border: 10px solid transparent;
+  border-right: 10px solid #ffffff;
+}
+/* line 163, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor .text-block .title {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: -0.6px;
+  color: #284734;
+}
+/* line 173, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor .text-block .adress {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  letter-spacing: -0.5px;
+  color: #636362;
+}
+/* line 182, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor .text-block .phone {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  letter-spacing: -0.5px;
+}
+/* line 189, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor .text-block .phone a {
+  color: #636362;
+  text-decoration: none;
+}
+/* line 195, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor .text-block .mail {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  letter-spacing: -0.5px;
+}
+/* line 202, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor .text-block .mail a {
+  color: #658d1b;
+  text-decoration: none;
+}
+/* line 208, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor .text-block .web-link {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  letter-spacing: -0.5px;
+}
+/* line 215, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor .text-block .web-link a {
+  color: #658d1b;
+  text-decoration: none;
+}
+/* line 223, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor:hover {
+  cursor: pointer;
+}
+/* line 225, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor:hover .text-block {
+  display: inline-block;
+  top: -40px;
+  margin-left: 10px;
 }
 
 /* line 1, ../scss/partials/blocks/_karjera-d.scss */
