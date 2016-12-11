@@ -1,0 +1,228 @@
+.block-lab-article{
+  .row-block{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    width: 728px;
+    .title-block{
+      h1{
+        font-family: $font-light;
+        font-size: 5*$font-size;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.04;
+        letter-spacing: -0.5px;
+        color: $color-black;
+      }
+    }
+    .content-block{
+      display: inline-block;
+      vertical-align: top;
+
+      .item-block{
+        text-align: left;
+        position: relative;
+
+        .autor{
+          padding-top: 20px;
+          padding-bottom: 20px;
+          position: relative;
+          .img-autor{
+            display: inline-block;
+            float: left;
+            margin-right: 10px;
+          }
+          .name-autor{
+            color: $color-sepia;
+            font-size: 1.6*$font-size;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+          }
+          .date{
+            font-size: 1.4*$font-size;
+            font-weight: 300;
+            line-height: 1.86;
+            color: $color-black;
+          }
+          .social-block{
+            position: absolute;
+            right: 0;
+            top: 30%;
+            .facebook{
+              background-image: url("../images/facebook-like.jpg");
+              background-repeat: no-repeat;
+              width: 120px;
+              height: 30px;
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 0;
+            }
+            .like{
+              text-transform: uppercase;
+              color: $color-sap-green;
+              display: inline-block;
+              vertical-align: middle;
+            }
+            .icon-heart{
+              margin-left: 5px;
+              vertical-align: middle;
+              background-image: url("../images/add-to-bookmarks.png");
+              background-image: url("../images/add-to-bookmarks.svg");
+              background-repeat: no-repeat;
+              width: 30px;
+              height: 26px;
+              display: inline-block;
+            }
+          }
+        }
+        .img{
+          width: 100%;
+          z-index: 50;
+          position: relative;
+          padding-bottom: 20px;
+        }
+        .text-block{
+          width: 100%;
+          z-index: 100;
+          position: relative;
+          .title{
+            color: $color-black;
+            font-size: 2.2*$font-size;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.18;
+            text-align: left;
+            padding-bottom: 20px;
+          }
+          .desc{
+            font-size: 1.6*$font-size;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+            color: $color-black;
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+    .add-list{
+      .btn{
+        margin-top: 30px;
+        font-size: 1.6*$font-size;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        text-align: center;
+        color: $color-white-two;
+        width: 332px;
+      }
+    }
+  }
+}
+.block-lab-articles {
+  background-color: $color-grey;
+  .row-block {
+    margin: 0 -20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include clearfix;
+    .list-block {
+      .content-block {
+        margin: 0 0 10px;
+        padding: 0 20px;
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        float: left;
+        .item-block {
+          text-align: center;
+          position: relative;
+          .title-block {
+            h1 {
+              font-size: 50px;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.04;
+              letter-spacing: -0.5px;
+              color: $color-black;
+            }
+          }
+          .autor {
+            display: inline-block;
+            width: 100%;
+            .img-autor {
+              display: inline-block;
+              float: left;
+              margin: 10px;
+              width: 120px;
+              margin-top: -60px;
+            }
+            .name-autor {
+              float: left;
+              width: 70%;
+              color: $color-sepia;
+              font-size: 1.6*$font-size;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.63;
+              vertical-align: bottom;
+              display: inline-block;
+              text-align: left;
+            }
+            .date {
+              font-size: 1.4*$font-size;
+              font-weight: 300;
+              line-height: 1.86;
+              color: $color-black;
+              margin-left: 20px;
+            }
+            .social-block {
+              .facebook {
+              }
+              .like {
+              }
+            }
+          }
+          .img {
+            width: 100%;
+            z-index: 50;
+            position: relative;
+          }
+          .text-block {
+            width: 100%;
+            z-index: 100;
+            position: relative;
+            .title {
+              color: $color-black;
+              font-size: 2.2*$font-size;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.18;
+              text-align: left;
+            }
+          }
+        }
+      }
+      .add-list {
+        .btn {
+          margin-top: 30px;
+          font-size: 1.6*$font-size;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          text-align: center;
+          color: $color-white-two;
+          width: 332px;
+        }
+      }
+    }
+  }
+}
