@@ -956,12 +956,6 @@ div.messages p {
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * */
-/* line 4, ../scss/partials/blocks/_header.scss */
-.logo-svg {
-  fill: #3c312c;
-  width: 50%;
-}
-
 /* line 8, ../scss/partials/blocks/_header.scss */
 header {
   top: 0;
@@ -1248,7 +1242,7 @@ header .slicknav_menu.menu_show .hiddenBg {
   height: 208px;
 }
 /* line 19, ../scss/partials/blocks/_block-breadcrumbs.scss */
-.block-breadcrumbs.pagalba {
+.block-breadcrumbs.pagalba, .block-breadcrumbs.knowledge-d {
   background: transparent url("../images/bg-tabs-gruond.png") no-repeat scroll center center;
   height: 206px;
 }
@@ -2865,6 +2859,165 @@ body.index .item-block .text-block a {
   margin-top: 20px;
   width: 255px;
   height: 52px;
+}
+
+/* line 2, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block {
+  padding-top: 45px;
+  padding-bottom: 20px;
+}
+/* line 7, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .item-block {
+  text-align: left;
+  position: relative;
+}
+/* line 14, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .block-category-button .list-button li {
+  display: inline-block;
+  padding-right: 10px;
+}
+/* line 17, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .block-category-button .list-button li:last-of-type {
+  padding-right: 0;
+}
+/* line 20, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .block-category-button .list-button li .btn {
+  width: auto;
+  min-width: 170px;
+  height: 36px;
+  padding: 8px 15px;
+  line-height: 1.2;
+  border-radius: 100px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #373737;
+  background-color: #dbc5aa;
+  cursor: pointer;
+}
+/* line 36, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .block-category-button .list-button li .btn.active, .block-knowledge .row-block .block-category-button .list-button li .btn:hover {
+  color: #ffffff;
+  background-color: #658d1b;
+}
+/* line 44, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .img-block {
+  position: relative;
+  padding-top: 52px;
+}
+/* line 2, ../scss/partials/elements/_base.scss */
+.block-knowledge .row-block .img-block:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+/* line 48, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .img-block .img {
+  display: inline-block;
+  float: left;
+  width: 32%;
+}
+/* line 53, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .img-block .text-block {
+  display: inline-block;
+  float: left;
+  width: 55%;
+}
+/* line 57, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .img-block .text-block .title {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  color: #373737;
+}
+/* line 65, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .img-block .text-block .desc {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+}
+/* line 74, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .img-block .text-block .autor {
+  padding-top: 20px;
+}
+/* line 76, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .img-block .text-block .autor .img-autor {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+}
+/* line 81, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .img-block .text-block .autor .name-autor {
+  color: #8b5b29;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+}
+/* line 89, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .img-block .text-block .autor .date {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.86;
+  color: #373737;
+}
+
+/* line 101, ../scss/partials/blocks/_knowledge-d.scss */
+.block-tags .row-block {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+/* line 104, ../scss/partials/blocks/_knowledge-d.scss */
+.block-tags .row-block .content-block {
+  width: 45%;
+}
+/* line 107, ../scss/partials/blocks/_knowledge-d.scss */
+.block-tags .row-block .item-block {
+  text-align: left;
+  position: relative;
+}
+/* line 112, ../scss/partials/blocks/_knowledge-d.scss */
+.block-tags .row-block .list-block .text-block {
+  padding-bottom: 20px;
+}
+/* line 114, ../scss/partials/blocks/_knowledge-d.scss */
+.block-tags .row-block .list-block .text-block .title {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  color: #373737;
+}
+/* line 122, ../scss/partials/blocks/_knowledge-d.scss */
+.block-tags .row-block .list-block .text-block .date {
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.86;
+  color: #373737;
+}
+/* line 132, ../scss/partials/blocks/_knowledge-d.scss */
+.block-tags .row-block .add-list .btn {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #ffffff;
+  width: 332px;
 }
 
 /* line 1, ../scss/partials/blocks/_karjera-d.scss */
