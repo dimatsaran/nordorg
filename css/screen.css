@@ -2399,17 +2399,34 @@ body.index .item-block .text-block a {
 /* line 22, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .title {
   font-size: 24px;
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.33;
-  color: #658d1b;
+  color: #373737;
 }
-/* line 33, ../scss/partials/blocks/_contacts-d.scss */
+/* line 31, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .block-contact .title {
+  padding-bottom: 20px;
+}
+/* line 34, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .block-contact .title-nord {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  color: #373737;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 45, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .block-contact .label {
-  width: 100px;
+  width: 120px;
+  color: #658d1b;
+  display: inline-block;
 }
-/* line 36, ../scss/partials/blocks/_contacts-d.scss */
+/* line 50, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .block-contact .text {
   font-size: 16px;
   font-weight: normal;
@@ -2418,15 +2435,34 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   color: #373737;
 }
-/* line 45, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .block-contact .mail a {
+/* line 59, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .block-contact .mail a, .block-form-contact .row-block .block-contact .phone a {
   color: #373737;
 }
-/* line 50, ../scss/partials/blocks/_contacts-d.scss */
+/* line 63, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .block-contact .phone {
+  padding-bottom: 20px;
+}
+/* line 65, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .block-contact .phone a {
+  color: #373737;
+  text-decoration: none;
+}
+/* line 71, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .title-form {
+  padding-top: 20px;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  color: #658d1b;
+}
+/* line 80, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form {
   padding-top: 20px;
 }
-/* line 52, ../scss/partials/blocks/_contacts-d.scss */
+/* line 82, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form input {
   font-size: 16px;
   font-weight: 300;
@@ -2437,27 +2473,27 @@ body.index .item-block .text-block a {
   border: 0 none;
   padding: 8px 15px;
 }
-/* line 62, ../scss/partials/blocks/_contacts-d.scss */
+/* line 92, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .form-item {
   width: 90%;
 }
-/* line 64, ../scss/partials/blocks/_contacts-d.scss */
+/* line 94, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .form-item.form-item-block {
   margin: 0;
   padding: 0 20px 0;
 }
-/* line 67, ../scss/partials/blocks/_contacts-d.scss */
+/* line 97, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .form-item.form-item-block .w-sel {
   margin: 0 0 5px;
   padding: 0 0 11px;
   position: relative;
 }
-/* line 73, ../scss/partials/blocks/_contacts-d.scss */
+/* line 103, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .form-item textarea {
   height: 100px;
   border: 0 none;
 }
-/* line 78, ../scss/partials/blocks/_contacts-d.scss */
+/* line 108, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .btn {
   width: 274px;
   height: 52px;
@@ -2469,17 +2505,17 @@ body.index .item-block .text-block a {
   color: #ffffff;
   font-family: "Rubik", sans-serif;
 }
-/* line 90, ../scss/partials/blocks/_contacts-d.scss */
+/* line 120, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .img-block {
   position: relative;
 }
-/* line 92, ../scss/partials/blocks/_contacts-d.scss */
+/* line 122, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .img-block .text-block {
   position: absolute;
   top: 50px;
   left: 50px;
 }
-/* line 96, ../scss/partials/blocks/_contacts-d.scss */
+/* line 126, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .img-block .text-block .title {
   font-size: 42px;
   font-weight: 300;
@@ -2488,56 +2524,71 @@ body.index .item-block .text-block a {
   line-height: 0.62;
   color: #ffffff;
 }
-/* line 104, ../scss/partials/blocks/_contacts-d.scss */
+/* line 134, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .img-block .text-block .btn {
   margin-top: 20px;
   width: 255px;
   height: 52px;
 }
-/* line 112, ../scss/partials/blocks/_contacts-d.scss */
+/* line 142, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block {
   padding-top: 65px;
   position: relative;
 }
-/* line 115, ../scss/partials/blocks/_contacts-d.scss */
+/* line 145, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .hover-block {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 152, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor {
   position: absolute;
+  display: inline-block;
+  width: 280px;
 }
-/* line 117, ../scss/partials/blocks/_contacts-d.scss */
+/* line 156, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.one {
   left: 370px;
   top: 122px;
 }
-/* line 121, ../scss/partials/blocks/_contacts-d.scss */
+/* line 160, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.two {
   left: 258px;
   top: 182px;
 }
-/* line 125, ../scss/partials/blocks/_contacts-d.scss */
+/* line 164, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.three {
   left: 346px;
   top: 330px;
 }
-/* line 135, ../scss/partials/blocks/_contacts-d.scss */
+/* line 175, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .icon-paper {
-  display: block;
+  display: inline-block;
   background-image: url("../images/paper.svg");
   background-color: transparent;
   background-repeat: no-repeat;
-  float: left;
   width: 28px;
   height: 60px;
+  vertical-align: top;
+  margin-right: 5px;
 }
-/* line 146, ../scss/partials/blocks/_contacts-d.scss */
+/* line 185, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block {
-  padding: 10px;
+  width: 240px;
+  padding: 20px;
   display: none;
   background-color: #ffffff;
-  vertical-align: middle;
+  vertical-align: top;
   position: relative;
-  float: left;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
-/* line 153, ../scss/partials/blocks/_contacts-d.scss */
+/* line 196, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block:after {
   z-index: 1000;
   content: '';
@@ -2549,18 +2600,18 @@ body.index .item-block .text-block a {
   border: 10px solid transparent;
   border-right: 10px solid #ffffff;
 }
-/* line 163, ../scss/partials/blocks/_contacts-d.scss */
+/* line 209, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .title {
   font-size: 16px;
   font-family: "Rubik", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.63;
   letter-spacing: -0.6px;
   color: #284734;
 }
-/* line 173, ../scss/partials/blocks/_contacts-d.scss */
+/* line 219, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .adress {
   font-size: 14px;
   font-weight: normal;
@@ -2570,7 +2621,7 @@ body.index .item-block .text-block a {
   letter-spacing: -0.5px;
   color: #636362;
 }
-/* line 182, ../scss/partials/blocks/_contacts-d.scss */
+/* line 228, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .phone {
   font-size: 14px;
   font-weight: normal;
@@ -2579,12 +2630,12 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 189, ../scss/partials/blocks/_contacts-d.scss */
+/* line 235, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .phone a {
   color: #636362;
   text-decoration: none;
 }
-/* line 195, ../scss/partials/blocks/_contacts-d.scss */
+/* line 241, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .mail {
   font-size: 14px;
   font-weight: normal;
@@ -2593,12 +2644,12 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 202, ../scss/partials/blocks/_contacts-d.scss */
+/* line 248, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .mail a {
   color: #658d1b;
   text-decoration: none;
 }
-/* line 208, ../scss/partials/blocks/_contacts-d.scss */
+/* line 254, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .web-link {
   font-size: 14px;
   font-weight: normal;
@@ -2607,20 +2658,19 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 215, ../scss/partials/blocks/_contacts-d.scss */
+/* line 261, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .web-link a {
   color: #658d1b;
   text-decoration: none;
 }
-/* line 223, ../scss/partials/blocks/_contacts-d.scss */
+/* line 269, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor:hover {
   cursor: pointer;
 }
-/* line 225, ../scss/partials/blocks/_contacts-d.scss */
+/* line 271, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor:hover .text-block {
   display: inline-block;
   top: -40px;
-  margin-left: 10px;
 }
 
 /* line 1, ../scss/partials/blocks/_karjera-d.scss */
