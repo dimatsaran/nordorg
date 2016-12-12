@@ -1,8 +1,22 @@
 .block-header-slider{
-  .slide{
-    position: relative;
+  &:first-of-type{
+    //display: none;
   }
-  img{}
+  .block-visual{
+    //@include  clearfix;
+    //max-width: 1170px;
+    //margin: 0 auto;
+    //width: 100%;
+  }
+  .slick-list{
+    padding: 0!important;
+  }
+  .slide{
+    //position: relative;
+  }
+  img{
+    width: 100%;
+  }
   .text-holder{
     position: absolute;
     top: 0;
