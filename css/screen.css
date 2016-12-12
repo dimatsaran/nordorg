@@ -1257,16 +1257,21 @@ header .slicknav_menu.menu_show .hiddenBg {
   height: 208px;
 }
 /* line 31, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs.distributoriai-d {
+  background: transparent url("../images/bg-company.png") no-repeat scroll center center;
+  height: 130px;
+}
+/* line 35, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs {
   padding-top: 26px;
 }
-/* line 34, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 38, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs ul li {
   display: inline-block;
   font-size: 14px;
   color: #ffffff;
 }
-/* line 39, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 43, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs ul li a {
   padding: 0 5px;
   color: #ffffff;
@@ -1277,7 +1282,7 @@ header .slicknav_menu.menu_show .hiddenBg {
   line-height: 1.86;
   letter-spacing: -0.1px;
 }
-/* line 53, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 57, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs h1 {
   color: #ffffff;
   font-size: 50px;
@@ -3474,6 +3479,148 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #ffffff;
   width: 332px;
+}
+
+/* line 2, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .row-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 6, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .content-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+/* line 10, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .content-block .item-block {
+  text-align: left;
+  position: relative;
+}
+/* line 15, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .title-block {
+  position: relative;
+}
+/* line 17, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .title-block h2 {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.73;
+  color: #658d1b;
+}
+/* line 25, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .title-block .select-person {
+  position: absolute;
+  height: 44px;
+  right: 0;
+  top: 10%;
+}
+/* line 31, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .title-block .select-person .nord-form .form-item-pair {
+  margin: 0 -9px;
+}
+/* line 33, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .title-block .select-person .nord-form .form-item-pair .form-item {
+  width: auto;
+  min-width: 250px;
+  margin: 0 0 5px;
+  padding: 0 9px 11px;
+}
+/* line 42, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .title-block .select-person .nord-form .w-sel .dropdown .selected {
+  background-color: #ffffff;
+}
+/* line 50, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .table-distributoriai {
+  padding-top: 30px;
+  width: 100%;
+}
+/* line 53, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .table-distributoriai table {
+  width: 100%;
+  border: 0 none;
+  border-collapse: collapse;
+}
+/* line 60, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .table-distributoriai thead tr th {
+  height: 70px;
+  vertical-align: middle;
+  border-bottom: 2px dotted #8b5b29;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.73;
+  color: #8b5b29;
+  width: 20%;
+}
+/* line 72, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .table-distributoriai thead tr th.pavadinimas {
+  width: 20%;
+}
+/* line 73, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .table-distributoriai thead tr th.adresas {
+  width: 30%;
+}
+/* line 74, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .table-distributoriai thead tr th.telefonas {
+  width: 20%;
+}
+/* line 75, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .table-distributoriai thead tr th.svetain─Ч {
+  width: 20%;
+}
+/* line 76, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .table-distributoriai thead tr th.elpa┼бtas {
+  width: 10%;
+}
+/* line 81, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .table-distributoriai tbody tr {
+  border-bottom: 2px dotted #636362;
+}
+/* line 83, ../scss/partials/blocks/_distributoria-d.scss */
+.block-distributoriai .table-distributoriai tbody tr td {
+  height: 70px;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.73;
+  color: #373737;
+  vertical-align: middle;
+}
+
+/* line 101, ../scss/partials/blocks/_distributoria-d.scss */
+.block-tapkite .row-block {
+  padding-top: 56px;
+  padding-bottom: 50px;
+}
+/* line 104, ../scss/partials/blocks/_distributoria-d.scss */
+.block-tapkite .row-block .img-block-tapkite {
+  position: relative;
+}
+/* line 106, ../scss/partials/blocks/_distributoria-d.scss */
+.block-tapkite .row-block .img-block-tapkite .text-block {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+/* line 110, ../scss/partials/blocks/_distributoria-d.scss */
+.block-tapkite .row-block .img-block-tapkite .text-block .title {
+  font-size: 42px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.62;
+  color: #ffffff;
+}
+/* line 118, ../scss/partials/blocks/_distributoria-d.scss */
+.block-tapkite .row-block .img-block-tapkite .text-block .btn {
+  margin-top: 30px;
+  width: 255px;
+  height: 52px;
 }
 
 /* line 1, ../scss/partials/blocks/_karjera-d.scss */

@@ -1,0 +1,127 @@
+.block-distributoriai{
+  .row-block{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .content-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    .item-block {
+      text-align: left;
+      position: relative;
+    }
+  }
+  .title-block{
+    position: relative;
+    h2{
+      font-size: 3*$font-size;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.73;
+      color: $color-sap-green;
+    }
+    .select-person{
+      position: absolute;
+      height: 44px;
+      right: 0;
+      top: 10%;
+      .nord-form {
+        .form-item-pair {
+          margin: 0 -9px;
+          .form-item{
+            width: auto;
+            min-width: 250px;
+            margin: 0 0 5px;
+            padding: 0 9px 11px;
+          }
+        }
+        .w-sel {
+          .dropdown{
+            .selected{
+              background-color: $color-white-two;
+            }
+          }
+        }
+      }
+    }
+  }
+  .table-distributoriai{
+    padding-top: 30px;
+    width: 100%;
+    table{
+      width: 100%;
+      border: 0 none;
+      border-collapse: collapse;
+    }
+    thead{
+      tr{
+        th{
+          height: 70px;
+          vertical-align: middle;
+          border-bottom: 2px dotted $color-sepia;
+          font-size: 1.5*$font-size;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.73;
+          color: $color-sepia;
+          width: 20%;
+          
+          &.pavadinimas{          width: 20%;}
+          &.adresas{          width: 30%;}
+          &.telefonas{          width: 20%;}
+          &.svetainė{          width: 20%;}
+          &.elpaštas{          width: 10%;}
+        }
+      }
+    }
+    tbody{
+      tr{
+        border-bottom: 2px dotted $color-medium-grey;
+        td{
+          height: 70px;
+          //border-bottom: 2px dotted $color-medium-grey;
+          font-size: 1.5*$font-size;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.73;
+          color: $color-black;
+          vertical-align: middle;
+
+
+        }
+      }
+    }
+  }
+}
+.block-tapkite{
+  .row-block {
+    padding-top: 56px;
+    padding-bottom: 50px;
+    .img-block-tapkite{
+      position: relative;
+      .text-block{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        .title{
+          font-size: 4.2*$font-size;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 0.62;
+          color: $color-white-two;
+        }
+        .btn{
+          margin-top: 30px;
+          width: 255px;
+          height: 52px;
+        }
+      }
+    }
+  }
+
+}
