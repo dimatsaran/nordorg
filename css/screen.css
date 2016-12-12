@@ -956,7 +956,7 @@ div.messages p {
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * */
-/* line 8, ../scss/partials/blocks/_header.scss */
+/* line 4, ../scss/partials/blocks/_header.scss */
 header {
   top: 0;
   display: block;
@@ -973,7 +973,7 @@ header:after {
   clear: both;
   height: 0;
 }
-/* line 16, ../scss/partials/blocks/_header.scss */
+/* line 12, ../scss/partials/blocks/_header.scss */
 header .container {
   position: relative;
 }
@@ -986,30 +986,30 @@ header .container:after {
   height: 0;
 }
 @media screen and (max-width: 680px) {
-  /* line 16, ../scss/partials/blocks/_header.scss */
+  /* line 12, ../scss/partials/blocks/_header.scss */
   header .container {
     min-width: 320px;
   }
 }
-/* line 23, ../scss/partials/blocks/_header.scss */
+/* line 19, ../scss/partials/blocks/_header.scss */
 header .logo-block {
   padding-top: 17px;
   width: 20%;
   float: left;
 }
-/* line 27, ../scss/partials/blocks/_header.scss */
+/* line 23, ../scss/partials/blocks/_header.scss */
 header .logo-block .logo {
   position: relative;
   display: block;
 }
-/* line 30, ../scss/partials/blocks/_header.scss */
+/* line 26, ../scss/partials/blocks/_header.scss */
 header .logo-block .logo .logo-bg {
   position: absolute;
   display: block;
   width: 100%;
   height: 100%;
 }
-/* line 41, ../scss/partials/blocks/_header.scss */
+/* line 37, ../scss/partials/blocks/_header.scss */
 header .user-block {
   width: 80%;
   float: left;
@@ -1017,17 +1017,17 @@ header .user-block {
   text-align: right;
   padding-top: 18px;
 }
-/* line 48, ../scss/partials/blocks/_header.scss */
-header .user-block .user-nav li {
+/* line 44, ../scss/partials/blocks/_header.scss */
+header .user-block .user-nav > li {
   display: inline-block;
   padding-left: 20px;
 }
-/* line 51, ../scss/partials/blocks/_header.scss */
-header .user-block .user-nav li:first-of-type {
+/* line 47, ../scss/partials/blocks/_header.scss */
+header .user-block .user-nav > li:first-of-type {
   padding-left: 0;
 }
-/* line 54, ../scss/partials/blocks/_header.scss */
-header .user-block .user-nav li a {
+/* line 50, ../scss/partials/blocks/_header.scss */
+header .user-block .user-nav > li a {
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -1037,7 +1037,29 @@ header .user-block .user-nav li a {
   text-decoration: none;
   font-family: "Rubik", sans-serif;
 }
-/* line 67, ../scss/partials/blocks/_header.scss */
+/* line 61, ../scss/partials/blocks/_header.scss */
+header .user-block .user-nav i {
+  vertical-align: middle;
+  background-image: url("../images/language.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 70, ../scss/partials/blocks/_header.scss */
+header .user-block .user-nav .icon-language {
+  background-image: url("../images/language.svg");
+}
+/* line 73, ../scss/partials/blocks/_header.scss */
+header .user-block .user-nav .icon-search {
+  background-image: url("../images/search.svg");
+}
+/* line 76, ../scss/partials/blocks/_header.scss */
+header .user-block .user-nav .icon-login {
+  background-image: url("../images/login.svg");
+}
+/* line 81, ../scss/partials/blocks/_header.scss */
 header .menu-block {
   width: 80%;
   float: left;
@@ -1045,17 +1067,27 @@ header .menu-block {
   text-align: right;
   padding-top: 16px;
 }
-/* line 74, ../scss/partials/blocks/_header.scss */
-header .menu-block .main-nav li {
+/* line 88, ../scss/partials/blocks/_header.scss */
+header .menu-block .main-nav > li {
   display: inline-block;
   padding-left: 20px;
+  position: relative;
+  height: 50px;
 }
-/* line 77, ../scss/partials/blocks/_header.scss */
-header .menu-block .main-nav li:first-of-type {
+/* line 94, ../scss/partials/blocks/_header.scss */
+header .menu-block .main-nav > li:hover > a {
+  color: #a7272a;
+}
+/* line 97, ../scss/partials/blocks/_header.scss */
+header .menu-block .main-nav > li:hover .submenu {
+  display: block;
+}
+/* line 101, ../scss/partials/blocks/_header.scss */
+header .menu-block .main-nav > li:first-of-type {
   padding-left: 0;
 }
-/* line 80, ../scss/partials/blocks/_header.scss */
-header .menu-block .main-nav li a {
+/* line 104, ../scss/partials/blocks/_header.scss */
+header .menu-block .main-nav > li a {
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -1065,65 +1097,127 @@ header .menu-block .main-nav li a {
   text-decoration: none;
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
+  display: block;
+  height: 100%;
 }
-/* line 90, ../scss/partials/blocks/_header.scss */
-header .menu-block .main-nav li a:hover, header .menu-block .main-nav li a .active {
+/* line 116, ../scss/partials/blocks/_header.scss */
+header .menu-block .main-nav > li a:hover, header .menu-block .main-nav > li a .active {
   color: #a7272a;
 }
-/* line 98, ../scss/partials/blocks/_header.scss */
+/* line 122, ../scss/partials/blocks/_header.scss */
+header .menu-block .submenu {
+  min-width: 280px;
+  position: absolute;
+  margin-top: 35px;
+  top: 0;
+  padding: 10px;
+  display: none;
+  z-index: 500;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+/* line 137, ../scss/partials/blocks/_header.scss */
+header .menu-block .submenu:after {
+  z-index: 1000;
+  content: '';
+  position: absolute;
+  top: -18px;
+  left: 45%;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #ffffff;
+}
+/* line 150, ../scss/partials/blocks/_header.scss */
+header .menu-block .submenu li a {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: none;
+  line-height: 2.44;
+  letter-spacing: -0.6px;
+  text-align: center;
+  color: #284734;
+}
+/* line 163, ../scss/partials/blocks/_header.scss */
+header .menu-block .icon-submenu {
+  transition: none;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  margin-left: 5px;
+  margin-top: -5px;
+  border-style: solid;
+  border-color: #a7272a;
+  border-width: 0 0 2px 2px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
+  height: 7px;
+  right: 12px;
+  top: 0;
+  width: 8px;
+}
+/* line 188, ../scss/partials/blocks/_header.scss */
 header .label-block {
   position: absolute;
   right: 0;
   top: 0;
 }
 @media screen and (max-width: 680px) {
-  /* line 98, ../scss/partials/blocks/_header.scss */
+  /* line 188, ../scss/partials/blocks/_header.scss */
   header .label-block {
     right: 10px;
     top: 10px;
   }
 }
-/* line 106, ../scss/partials/blocks/_header.scss */
+/* line 196, ../scss/partials/blocks/_header.scss */
 header .label-block > div {
   display: inline-block;
   padding: 10px 7px;
 }
 @media screen and (max-width: 1169px) {
-  /* line 114, ../scss/partials/blocks/_header.scss */
+  /* line 204, ../scss/partials/blocks/_header.scss */
   header .label-block > div.icon-9001 {
     display: none;
   }
 }
 @media screen and (max-width: 680px) {
-  /* line 114, ../scss/partials/blocks/_header.scss */
+  /* line 204, ../scss/partials/blocks/_header.scss */
   header .label-block > div.icon-9001 {
     display: none;
   }
 }
-/* line 124, ../scss/partials/blocks/_header.scss */
+/* line 214, ../scss/partials/blocks/_header.scss */
 header .navbar-nav {
   margin: 0;
 }
-/* line 127, ../scss/partials/blocks/_header.scss */
+/* line 217, ../scss/partials/blocks/_header.scss */
 header .navbar-nav li.btn-transparent {
   min-width: 100px;
 }
-/* line 131, ../scss/partials/blocks/_header.scss */
+/* line 221, ../scss/partials/blocks/_header.scss */
 header .navbar-nav li a {
   display: block;
   color: #efefef;
   padding: 0;
 }
-/* line 135, ../scss/partials/blocks/_header.scss */
+/* line 225, ../scss/partials/blocks/_header.scss */
 header .navbar-nav li a:hover {
   text-decoration: none;
 }
-/* line 183, ../scss/partials/blocks/_header.scss */
+/* line 273, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu {
   background: transparent;
   padding: 0;
 }
-/* line 187, ../scss/partials/blocks/_header.scss */
+/* line 277, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_btn {
   position: absolute;
   margin: 10px;
@@ -1131,26 +1225,26 @@ header .slicknav_menu .slicknav_btn {
   display: none;
 }
 @media screen and (max-width: 680px) {
-  /* line 187, ../scss/partials/blocks/_header.scss */
+  /* line 277, ../scss/partials/blocks/_header.scss */
   header .slicknav_menu .slicknav_btn {
     display: block;
   }
 }
-/* line 201, ../scss/partials/blocks/_header.scss */
+/* line 291, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_btn .slicknav_icon {
   height: 2em;
   width: 2em;
 }
-/* line 204, ../scss/partials/blocks/_header.scss */
+/* line 294, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_btn .slicknav_icon .slicknav_icon-bar {
   height: 0.3em;
   width: 2em;
 }
-/* line 208, ../scss/partials/blocks/_header.scss */
+/* line 298, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_btn .slicknav_icon .slicknav_icon-bar + .slicknav_icon-bar {
   margin-top: 0.5em;
 }
-/* line 215, ../scss/partials/blocks/_header.scss */
+/* line 305, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_nav {
   position: fixed;
   z-index: 800;
@@ -1160,14 +1254,14 @@ header .slicknav_menu .slicknav_nav {
   width: 77%;
   height: 100%;
 }
-/* line 223, ../scss/partials/blocks/_header.scss */
+/* line 313, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_nav ul {
   margin: 0;
   top: 50px;
   left: 10px;
   position: absolute;
 }
-/* line 229, ../scss/partials/blocks/_header.scss */
+/* line 319, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_nav ul li a {
   font-size: 14px;
   text-transform: uppercase;
@@ -1178,12 +1272,12 @@ header .slicknav_menu .slicknav_nav ul li a {
   border-radius: 0;
   display: inline-block;
 }
-/* line 238, ../scss/partials/blocks/_header.scss */
+/* line 328, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .slicknav_nav ul li a:hover {
   color: #efefef;
   background-color: transparent;
 }
-/* line 247, ../scss/partials/blocks/_header.scss */
+/* line 337, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu .hiddenBg {
   height: 100%;
   position: fixed;
@@ -1195,24 +1289,24 @@ header .slicknav_menu .hiddenBg {
   background-color: rgba(0, 0, 0, 0.4);
   display: none;
 }
-/* line 260, ../scss/partials/blocks/_header.scss */
+/* line 350, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu.menu_show {
   display: none;
 }
 @media screen and (max-width: 680px) {
-  /* line 260, ../scss/partials/blocks/_header.scss */
+  /* line 350, ../scss/partials/blocks/_header.scss */
   header .slicknav_menu.menu_show {
     display: block;
   }
 }
-/* line 271, ../scss/partials/blocks/_header.scss */
+/* line 361, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu.menu_show .slicknav_btn {
   z-index: 900;
   top: 0;
   position: absolute;
   margin: 0;
 }
-/* line 277, ../scss/partials/blocks/_header.scss */
+/* line 367, ../scss/partials/blocks/_header.scss */
 header .slicknav_menu.menu_show .hiddenBg {
   display: block;
 }

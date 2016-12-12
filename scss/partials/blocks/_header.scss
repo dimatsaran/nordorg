@@ -1,10 +1,6 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * */
-.logo-svg{
-  //fill: $color-brown;
-  //width: 50%;
-}
 header{
   @include clearfix;
   top: 0;
@@ -45,7 +41,7 @@ header{
     text-align: right;
     padding-top: 18px;
     .user-nav{
-      li{
+      >li{
         display: inline-block;
         padding-left: 20px;
         &:first-of-type{
@@ -62,6 +58,24 @@ header{
           font-family: $font-medium;
         }
       }
+      i{
+        vertical-align: middle;
+        background-image: url("../images/language.svg");
+        background-repeat: no-repeat;
+        width: 13px;
+        height: 13px;
+        display: inline-block;
+        margin-right: 5px;
+      }
+      .icon-language{
+        background-image: url("../images/language.svg");
+      }
+      .icon-search{
+        background-image: url("../images/search.svg");
+      }
+      .icon-login{
+        background-image: url("../images/login.svg");
+      }
     }
   }
   .menu-block{
@@ -71,9 +85,19 @@ header{
     text-align: right;
     padding-top: 16px;
     .main-nav{
-      li{
+      >li{
         display: inline-block;
         padding-left: 20px;
+        position: relative;
+        height: 50px;
+        &:hover{
+          >a{
+            color: $color-rouge;
+          }
+          .submenu{
+            display: block;
+          }
+        }
         &:first-of-type{
           padding-left: 0;
         }
@@ -87,11 +111,77 @@ header{
           text-decoration: none;
           font-family: $font-medium;
           text-transform: uppercase;
+          display: block;
+          height: 100%;
           &:hover,.active{
             color: $color-rouge;
           }
         }
       }
+    }
+    .submenu{
+      min-width: 280px;
+      position: absolute;
+      margin-top: 35px;
+      //top: 35px;
+      top: 0;
+      padding: 10px;
+      display: none;
+      z-index: 500;
+      background-color: $color-white-two;
+      text-align: center;
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+      &:after {
+        z-index: 1000;
+        content: '';
+        position: absolute;
+        top: -18px;
+        left: 45%;
+        border: 10px solid transparent;
+        border-bottom: 10px solid $color-white-two;
+        //-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        //-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        //box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+      }
+      li{
+        a{
+          font-size: 1.6*$font-size;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          text-transform: none;
+          line-height: 2.44;
+          letter-spacing: -0.6px;
+          text-align: center;
+          color: $color-pine;
+        }
+      }
+    }
+    .icon-submenu{
+      transition: none;
+      content: "";
+      //position: absolute;
+
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      margin-left: 5px;
+      margin-top: -5px;
+      border-style: solid;
+      border-color: $color-rouge;
+      border-width: 0 0 2px 2px;
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
+      height: 7px;
+      right: 12px;
+      top: 0;
+      width: 8px;
     }
    }
 
