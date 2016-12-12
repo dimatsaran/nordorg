@@ -1,0 +1,191 @@
+.block-faq{
+  .block-category-button{
+    padding-top: 20px;
+    text-align: left;
+    .list-button{
+      li{
+        display: inline-block;
+        padding-right: 10px;
+        &:last-of-type{
+          padding-right: 0;
+        }
+        .btn{
+          width: auto;
+          min-width: 170px;
+          height: 36px;
+          padding: 8px 15px;
+          line-height: 1.2;
+          border-radius: 100px;
+          display: inline-block;
+          font-size: 1.6*$font-size;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          text-align: center;
+          color: $color-black;
+          background-color: $color-very-light-brown;
+          cursor: pointer;
+          &.active,&:hover{
+            color: $color-white-two ;
+            background-color: $color-sap-green;
+          }
+        }
+      }
+    }
+  }
+  .dropdown-block{
+      margin-bottom: 30px;
+      .title-block{
+        padding-bottom: 20px;
+        i{
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 39px;
+            display: inline-block;
+            margin-right: 15px;
+          }
+        .icon-home-line{
+            background-image: url("../images/home-line.svg");
+          }
+        .icon-pro-line{
+          background-image: url("../images/pro-line.svg");
+          width: 38px;
+          height: 31px;
+        }
+        .icon-industrial-line{
+          background-image: url("../images/industrial-line.svg");
+          width: 37px;
+          height: 36px;
+        }
+        .title{
+          font-size: 3*$font-size;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.07;
+          color: $color-sap-green;
+          vertical-align: middle;
+          display: inline-block;
+          &.home-line{
+            color: $color-sap-green;
+          }
+          &.pro-line{
+            color: $color-sepia;
+          }
+          &.industrial-line{
+            color: $color-rouge;
+          }
+        }
+      }
+      .icon-plus{
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin-right: 15px;
+        background-image: url("../images/plus.svg");
+        background-position: center center;
+      }
+      .catalog-menu{
+        >li{
+          .title-menu{
+            cursor: pointer;
+            padding: 15px 0;
+          }
+          &.show{
+            .icon-plus{
+              background-image: url("../images/m-inus.svg");
+            }
+          }
+          >a{
+            text-decoration: none;
+            font-size: 1.6*$font-size;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+            color: $color-black;
+          }
+        }
+        .title-menu{
+          .title{
+            font-size: 2.2*$font-size;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.18;
+            color: $color-black;
+          }
+        }
+      }
+      .sub-menu{
+        padding: 0 20px 15px;
+        display: none;
+        &[data-display="none"]{
+          display: none;
+        }
+        &[data-display="block"]{
+          display: block;
+        }
+        li{
+          a{
+            font-size: 1.5*$font-size;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.73;
+            color: $color-black;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  .row-block{
+      margin: 0 -9px;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      .content-block{
+        width: 100%;
+        .item-block{
+          text-align: left;
+          width: 60%;
+          .autor{
+            padding-top: 20px;
+            .img-autor{
+              display: inline-block;
+              float: left;
+              margin-right: 10px;
+              width: 104px;
+              height: 104px;
+              text-align: center;
+              img{
+                //width: 100%;
+              }
+            }
+            .name-autor{
+              color: $color-sepia;
+              font-size: 1.6*$font-size;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.63;
+            }
+            .desc{
+              display: inline-block;
+              font-size: 1.4*$font-size;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.86;
+              color: $color-black;
+              width: 40%;
+            }
+          }
+
+        }
+      }
+
+    }
+}

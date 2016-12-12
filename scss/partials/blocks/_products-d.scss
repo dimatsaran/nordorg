@@ -27,6 +27,23 @@
           text-transform: uppercase
         }
       }
+      i{
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        width: 23px;
+        height: 23px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .icon-plants{
+        background-image: url("../images/plants.svg");
+      }
+      .icon-soil{
+        background-image: url("../images/soil.svg");
+      }
+      .icon-agro{
+        background-image: url("../images/agro.svg");
+      }
       .catalog-menu{
 
         >li{

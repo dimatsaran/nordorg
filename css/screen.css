@@ -1336,7 +1336,7 @@ header .slicknav_menu.menu_show .hiddenBg {
   height: 208px;
 }
 /* line 19, ../scss/partials/blocks/_block-breadcrumbs.scss */
-.block-breadcrumbs.pagalba, .block-breadcrumbs.knowledge-d {
+.block-breadcrumbs.pagalba, .block-breadcrumbs.knowledge-d, .block-breadcrumbs.faq-d {
   background: transparent url("../images/bg-tabs-gruond.png") no-repeat scroll center center;
   height: 206px;
 }
@@ -3761,16 +3761,37 @@ body.index .item-block .text-block a {
   text-align: left;
   text-transform: uppercase;
 }
-/* line 33, ../scss/partials/blocks/_products-d.scss */
+/* line 30, ../scss/partials/blocks/_products-d.scss */
+.block-products .left-sidebar .menu-block i {
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 38, ../scss/partials/blocks/_products-d.scss */
+.block-products .left-sidebar .menu-block .icon-plants {
+  background-image: url("../images/plants.svg");
+}
+/* line 41, ../scss/partials/blocks/_products-d.scss */
+.block-products .left-sidebar .menu-block .icon-soil {
+  background-image: url("../images/soil.svg");
+}
+/* line 44, ../scss/partials/blocks/_products-d.scss */
+.block-products .left-sidebar .menu-block .icon-agro {
+  background-image: url("../images/agro.svg");
+}
+/* line 50, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .menu-block .catalog-menu > li .title-menu {
   cursor: pointer;
   padding: 10px;
 }
-/* line 37, ../scss/partials/blocks/_products-d.scss */
+/* line 54, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .menu-block .catalog-menu > li.show {
   background-color: #f8f2ec;
 }
-/* line 40, ../scss/partials/blocks/_products-d.scss */
+/* line 57, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .menu-block .catalog-menu > li > a {
   text-decoration: none;
   font-size: 16px;
@@ -3780,20 +3801,20 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   color: #373737;
 }
-/* line 52, ../scss/partials/blocks/_products-d.scss */
+/* line 69, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .menu-block .sub-menu {
   padding: 10px;
   display: none;
 }
-/* line 55, ../scss/partials/blocks/_products-d.scss */
+/* line 72, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .menu-block .sub-menu[data-display="none"] {
   display: none;
 }
-/* line 58, ../scss/partials/blocks/_products-d.scss */
+/* line 75, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .menu-block .sub-menu[data-display="block"] {
   display: block;
 }
-/* line 62, ../scss/partials/blocks/_products-d.scss */
+/* line 79, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .menu-block .sub-menu li a {
   font-size: 15px;
   font-weight: normal;
@@ -3803,14 +3824,14 @@ body.index .item-block .text-block a {
   color: #373737;
   text-decoration: none;
 }
-/* line 75, ../scss/partials/blocks/_products-d.scss */
+/* line 92, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .special-recomend .title-block {
   border-radius: 5px 5px 0 0;
   background-color: #cd3033;
   vertical-align: middle;
   padding: 5px;
 }
-/* line 80, ../scss/partials/blocks/_products-d.scss */
+/* line 97, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .special-recomend .title-block i {
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -3819,11 +3840,11 @@ body.index .item-block .text-block a {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 88, ../scss/partials/blocks/_products-d.scss */
+/* line 105, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .special-recomend .title-block .icon-apple {
   background-image: url("../images/apple.svg");
 }
-/* line 92, ../scss/partials/blocks/_products-d.scss */
+/* line 109, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .special-recomend .title-block .title {
   font-size: 18px;
   font-weight: normal;
@@ -3837,11 +3858,11 @@ body.index .item-block .text-block a {
   vertical-align: middle;
   width: 50%;
 }
-/* line 106, ../scss/partials/blocks/_products-d.scss */
+/* line 123, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .special-recomend .img-block {
   position: relative;
 }
-/* line 108, ../scss/partials/blocks/_products-d.scss */
+/* line 125, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .special-recomend .img-block .text-block {
   position: absolute;
   width: 100%;
@@ -3849,7 +3870,7 @@ body.index .item-block .text-block a {
   text-align: center;
   top: 30px;
 }
-/* line 114, ../scss/partials/blocks/_products-d.scss */
+/* line 131, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .special-recomend .img-block .text-block .title {
   font-size: 26px;
   font-weight: normal;
@@ -3859,26 +3880,26 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #ffffff;
 }
-/* line 127, ../scss/partials/blocks/_products-d.scss */
+/* line 144, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog {
   display: inline-block;
   width: 75%;
 }
-/* line 130, ../scss/partials/blocks/_products-d.scss */
+/* line 147, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .block-category-button {
   padding-top: 20px;
   text-align: center;
 }
-/* line 134, ../scss/partials/blocks/_products-d.scss */
+/* line 151, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .block-category-button .list-button li {
   display: inline-block;
   padding-right: 10px;
 }
-/* line 137, ../scss/partials/blocks/_products-d.scss */
+/* line 154, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .block-category-button .list-button li:last-of-type {
   padding-right: 0;
 }
-/* line 140, ../scss/partials/blocks/_products-d.scss */
+/* line 157, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .block-category-button .list-button li .btn {
   width: auto;
   min-width: 170px;
@@ -3896,41 +3917,41 @@ body.index .item-block .text-block a {
   background-color: #dbc5aa;
   cursor: pointer;
 }
-/* line 156, ../scss/partials/blocks/_products-d.scss */
+/* line 173, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .block-category-button .list-button li .btn.active, .block-products .block-products-catalog .block-category-button .list-button li .btn:hover {
   color: #ffffff;
   background-color: #658d1b;
 }
-/* line 164, ../scss/partials/blocks/_products-d.scss */
+/* line 181, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block {
   margin: 0 -9px;
   padding-top: 50px;
   padding-bottom: 20px;
 }
-/* line 168, ../scss/partials/blocks/_products-d.scss */
+/* line 185, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block {
   width: 33%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 174, ../scss/partials/blocks/_products-d.scss */
+/* line 191, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block {
   text-align: center;
   position: relative;
   padding: 20px;
 }
-/* line 178, ../scss/partials/blocks/_products-d.scss */
+/* line 195, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .img {
   width: 160px;
   position: relative;
   text-align: center;
   display: inline-block;
 }
-/* line 183, ../scss/partials/blocks/_products-d.scss */
+/* line 200, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .img img {
   vertical-align: bottom;
 }
-/* line 186, ../scss/partials/blocks/_products-d.scss */
+/* line 203, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .img .icon-category {
   position: absolute;
   bottom: 0;
@@ -3944,11 +3965,11 @@ body.index .item-block .text-block a {
   height: 40px;
   display: inline-block;
 }
-/* line 200, ../scss/partials/blocks/_products-d.scss */
+/* line 217, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .text-block {
   padding: 0 40px;
 }
-/* line 203, ../scss/partials/blocks/_products-d.scss */
+/* line 220, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .title {
   padding-top: 10px;
   font-size: 20px;
@@ -3959,12 +3980,12 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #373737;
 }
-/* line 213, ../scss/partials/blocks/_products-d.scss */
+/* line 230, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .desc {
   padding-top: 10px;
   display: inline-block;
 }
-/* line 216, ../scss/partials/blocks/_products-d.scss */
+/* line 233, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .desc .icon-bag {
   vertical-align: middle;
   background-image: url("../images/t-a-r-a.svg");
@@ -3974,7 +3995,7 @@ body.index .item-block .text-block a {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 225, ../scss/partials/blocks/_products-d.scss */
+/* line 242, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .desc .count-size {
   font-size: 15px;
   font-weight: normal;
@@ -3986,12 +4007,12 @@ body.index .item-block .text-block a {
   vertical-align: middle;
   display: inline-block;
 }
-/* line 243, ../scss/partials/blocks/_products-d.scss */
+/* line 260, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .list-pagination ul li {
   display: inline-block;
   padding: 0 5px;
 }
-/* line 246, ../scss/partials/blocks/_products-d.scss */
+/* line 263, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .list-pagination ul li a {
   display: inline-block;
   color: #373737;
@@ -4006,14 +4027,218 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   min-width: 45px;
 }
-/* line 259, ../scss/partials/blocks/_products-d.scss */
+/* line 276, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .list-pagination ul li a.first-page {
   min-width: 60px;
 }
-/* line 262, ../scss/partials/blocks/_products-d.scss */
+/* line 279, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .list-pagination ul li a:hover, .block-products .block-products-catalog .list-pagination ul li a.active {
   color: #ffffff;
   background-color: #658d1b;
+}
+
+/* line 2, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .block-category-button {
+  padding-top: 20px;
+  text-align: left;
+}
+/* line 6, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .block-category-button .list-button li {
+  display: inline-block;
+  padding-right: 10px;
+}
+/* line 9, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .block-category-button .list-button li:last-of-type {
+  padding-right: 0;
+}
+/* line 12, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .block-category-button .list-button li .btn {
+  width: auto;
+  min-width: 170px;
+  height: 36px;
+  padding: 8px 15px;
+  line-height: 1.2;
+  border-radius: 100px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: center;
+  color: #373737;
+  background-color: #dbc5aa;
+  cursor: pointer;
+}
+/* line 28, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .block-category-button .list-button li .btn.active, .block-faq .block-category-button .list-button li .btn:hover {
+  color: #ffffff;
+  background-color: #658d1b;
+}
+/* line 36, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block {
+  margin-bottom: 30px;
+}
+/* line 38, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .title-block {
+  padding-bottom: 20px;
+}
+/* line 40, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .title-block i {
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 39px;
+  display: inline-block;
+  margin-right: 15px;
+}
+/* line 48, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .title-block .icon-home-line {
+  background-image: url("../images/home-line.svg");
+}
+/* line 51, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .title-block .icon-pro-line {
+  background-image: url("../images/pro-line.svg");
+  width: 38px;
+  height: 31px;
+}
+/* line 56, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .title-block .icon-industrial-line {
+  background-image: url("../images/industrial-line.svg");
+  width: 37px;
+  height: 36px;
+}
+/* line 61, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .title-block .title {
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  color: #658d1b;
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 70, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .title-block .title.home-line {
+  color: #658d1b;
+}
+/* line 73, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .title-block .title.pro-line {
+  color: #8b5b29;
+}
+/* line 76, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .title-block .title.industrial-line {
+  color: #a7272a;
+}
+/* line 81, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .icon-plus {
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 15px;
+  background-image: url("../images/plus.svg");
+  background-position: center center;
+}
+/* line 93, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .catalog-menu > li .title-menu {
+  cursor: pointer;
+  padding: 15px 0;
+}
+/* line 98, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .catalog-menu > li.show .icon-plus {
+  background-image: url("../images/m-inus.svg");
+}
+/* line 102, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .catalog-menu > li > a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+}
+/* line 113, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .catalog-menu .title-menu .title {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  color: #373737;
+}
+/* line 123, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .sub-menu {
+  padding: 0 20px 15px;
+  display: none;
+}
+/* line 126, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .sub-menu[data-display="none"] {
+  display: none;
+}
+/* line 129, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .sub-menu[data-display="block"] {
+  display: block;
+}
+/* line 133, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .sub-menu li a {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.73;
+  color: #373737;
+  text-decoration: none;
+}
+/* line 145, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .row-block {
+  margin: 0 -9px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+/* line 149, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .row-block .content-block {
+  width: 100%;
+}
+/* line 151, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .row-block .content-block .item-block {
+  text-align: left;
+  width: 60%;
+}
+/* line 154, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .row-block .content-block .item-block .autor {
+  padding-top: 20px;
+}
+/* line 156, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .row-block .content-block .item-block .autor .img-autor {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  width: 104px;
+  height: 104px;
+  text-align: center;
+}
+/* line 167, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .row-block .content-block .item-block .autor .name-autor {
+  color: #8b5b29;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+}
+/* line 175, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .row-block .content-block .item-block .autor .desc {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  color: #373737;
+  width: 40%;
 }
 
 /* line 1, ../scss/partials/blocks/_karjera-d.scss */
