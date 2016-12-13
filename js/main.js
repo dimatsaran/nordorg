@@ -52,11 +52,12 @@ $(".slider-visual").slick({
   slidesToScroll: 1
 });
 $(".carusel-visual").slick({
-  arrows: true,
+  // arrows: true,
   dots: false,
+  // centerPadding: '60px',
   centerMode: true,
   slidesToShow: 3,
-  slidesToScroll: 1
+  // slidesToScroll: 1
 });
 $(".catalog-menu").find('.menu-slide').on("click",function(){
   if (!$(this).parent().hasClass('show')) {

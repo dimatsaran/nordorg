@@ -212,20 +212,7 @@
 }
 .block-probiotik{
   background-color: $color-grey;
-  //position: relative;
-  //overflow: hidden;
   &:before{
-    //background-image: url("../images/line.svg");
-    //background-attachment: scroll;
-    //transform: rotate(180deg);
-    //background-size: contain;
-    //min-width: 1920px;
-    //width: 100%;
-    //height: 11px;
-    //display: block;
-    //position: absolute;
-    //content: '';
-    //top: -3px;
     background-image: url('../images/line.svg');
     background-attachment: scroll;
     background-size: cover;
@@ -251,16 +238,6 @@
     position: relative;
     content: '';
     bottom: -4px;
-    //background-image: url("../images/line.svg");
-    //background-attachment: scroll;
-    //background-size: contain;
-    //min-width: 1920px;
-    //width: 100%;
-    //height: 11px;
-    //display: inline-block;
-    //position: absolute;
-    //content: '';
-    //bottom: -4px;
   }
   .title-block{
     //text-align: center;
