@@ -1,4 +1,4 @@
-.block-lab-distributor{
+.block-product-page{
   .left-sidebar{
     display: inline-block;
     float: left;
@@ -8,7 +8,6 @@
     padding-top: 52px;
     text-align: center;
     .btn{
-      margin-top: 20px;
       text-align: left;
       position: relative;
       padding: 10px 20px;
@@ -16,15 +15,15 @@
         text-align: left;
         display: inline-block;
       }
-      .icon-email{
-        vertical-align: middle;
-        background-image: url("../images/email.svg");
-        background-repeat: no-repeat;
-        width: 32px;
-        height: 32px;
-        display: inline-block;
-        margin-right: 5px;
-        position: absolute;
+      .icon-map{
+          vertical-align: middle;
+          background-image: url("../images/geolocalization.svg");
+          background-repeat: no-repeat;
+          width: 32px;
+          height: 32px;
+          display: inline-block;
+          margin-right: 5px;
+           position: absolute;
         right: 5px;
       }
     }
@@ -32,7 +31,7 @@
   .block-product{
     padding-top: 52px;
     display: inline-block;
-    width: 722px;
+    width: 60%;
     .block-product-single{
       h2{
         font-size: 5*$font-size;
@@ -54,37 +53,36 @@
         .icon-agro{
           margin-right: 10px;
           vertical-align: middle;
-          background-image: url("../images/tractor-1.svg");
+          background-image: url("../images/icon-agro-prob.svg");
           background-attachment: scroll;
           background-size: contain;
           background-repeat: no-repeat;
-          background-position: center;
-          width: 30px;
-          height: 25px;
+          width: 40px;
+          height: 40px;
           display: inline-block;
         }
       }
-      .country{
+      .bag{
         padding-top: 20px;
-        .icon-country{
+        .icon-bag{
           vertical-align: middle;
-          background-image: url("../images/geolocalization-brown.svg");
-          background-attachment: scroll;
-          background-size: contain;
+          background-image: url("../images/t-a-r-a.svg");
           background-repeat: no-repeat;
-          background-position: center;
-          width: 30px;
-          height: 25px;
+          width: 14px;
+          height: 20px;
           display: inline-block;
           margin-right: 5px;
         }
-        .countries{
-          font-size: 2*$font-size;
-          font-weight: 300;
+        .count-size{
+          font-size: 1.5*$font-size;
+          font-weight: normal;
           font-style: normal;
           font-stretch: normal;
-          line-height: 1.3;
-          color: $color-black;
+          line-height: 1.73;
+          color: $color-sepia;
+          text-align: center;
+          vertical-align: middle;
+          display: inline-block;
         }
       }
       .desc{
@@ -95,21 +93,92 @@
         font-stretch: normal;
         line-height: 1.63;
         color: $color-black;
-        width: 80%;
-        padding-bottom:  20px;
       }
-      .link{
-        font-size: 1.6*$font-size;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.63;
-        text-transform: uppercase;
-        color: $color-sepia;
+    }
+    .block-characteristics{
+      .dropdown-block{
+        margin-bottom: 40px;
+        .icon-fill{
+          vertical-align: middle;
+          background-repeat: no-repeat;
+          width: 23px;
+          height: 23px;
+          display: inline-block;
+          margin-right: 15px;
+          background-image: url("../images/fill-8.svg");
+          background-position: center center;
+        }
+        .icon-plus{
+          vertical-align: middle;
+          background-repeat: no-repeat;
+          width: 15px;
+          height: 15px;
+          display: inline-block;
+          background-image: url("../images/plus.svg");
+          background-position: center center;
+          position: absolute;
+          right: 15px;
+          margin: 5px;
+        }
+        .catalog-menu{
+          >li{
+            &.show{
+              background-color: $color-light-grey;
+              .icon-plus{
+                background-image: url("../images/m-inus.svg");
+              }
+            }
+            >a{
+              text-decoration: none;
+              font-size: 1.6*$font-size;
+              font-weight: 600;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.63;
+              color: $color-black;
+            }
+          }
+          .title-menu{
+            height: 51px;
+            background-color: $color-light-grey;
+            padding: 15px;
+            margin: 20px 0;
+            position: relative;
+            cursor: pointer;
+            .title{
+              font-size: 2.2*$font-size;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.18;
+              color: $color-black;
+            }
+          }
+        }
+        .sub-menu{
+          padding: 0 20px 15px;
+          display: none;
+          &[data-display="none"]{
+            display: none;
+          }
+          &[data-display="block"]{
+            display: block;
+          }
+          li{
+            a{
+              font-size: 1.5*$font-size;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.73;
+              color: $color-black;
+              text-decoration: none;
+            }
+          }
+        }
       }
     }
     .block-products-catalog{
-      padding-top: 20px;
       .title-block{
         .title{
           font-size: 3*$font-size;
@@ -212,8 +281,7 @@
         margin: 0 -10px;
         padding-bottom: 50px;
         .content-block {
-          width: 50%;
-          float: left;
+          width: 49%;
           display: inline-block;
           padding: 0 10px 26px;
         }
@@ -245,46 +313,6 @@
             width: 70%;
             vertical-align: middle;
           }
-        }
-      }
-    }
-    .block-product-news{
-      .title-block{
-        .title{
-          font-size: 3*$font-size;
-          font-weight: 300;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1.07;
-          color: $color-sap-light-green
-        }
-      }
-      .row-block {
-        padding-top: 20px;
-        margin: 0 -15px;
-        padding-bottom: 50px;
-        .content-block {
-          width: 50%;
-          float: left;
-          display: inline-block;
-          padding: 0 15px 30px;
-        }
-        .item-block {
-          text-align: left;
-          position: relative;
-
-          .text-block{
-            padding-top: 20px;
-            .title{
-              font-size: 2.2*$font-size;
-              font-weight: 300;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1.18;
-              color: $color-black;
-            }
-          }
-
         }
       }
     }

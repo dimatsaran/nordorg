@@ -83,17 +83,17 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-/* line 22, ../scss/partials/elements/_colors.scss */
+/* line 23, ../scss/partials/elements/_colors.scss */
 .color-sap-green {
   background-color: #658d1b;
 }
 
-/* line 25, ../scss/partials/elements/_colors.scss */
+/* line 26, ../scss/partials/elements/_colors.scss */
 .color-sepia {
   background-color: #8b5b29;
 }
 
-/* line 28, ../scss/partials/elements/_colors.scss */
+/* line 29, ../scss/partials/elements/_colors.scss */
 .color-rouge {
   background-color: #a7272a;
 }
@@ -1361,16 +1361,26 @@ header .slicknav_menu.menu_show .hiddenBg {
   height: 208px;
 }
 /* line 39, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs.produkto-vidinis-d {
+  background: transparent url("../images/bg-produkto-vidinis-d.png") no-repeat scroll center center;
+  height: 208px;
+}
+/* line 43, ../scss/partials/blocks/_block-breadcrumbs.scss */
+.block-breadcrumbs.lab-distributor-inner-d {
+  background: transparent url("../images/bg-lab-d.png") no-repeat scroll center center;
+  height: 208px;
+}
+/* line 47, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs {
   padding-top: 26px;
 }
-/* line 42, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 50, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs ul li {
   display: inline-block;
   font-size: 14px;
   color: #ffffff;
 }
-/* line 47, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 55, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs ul li a {
   padding: 0 5px;
   color: #ffffff;
@@ -1381,7 +1391,7 @@ header .slicknav_menu.menu_show .hiddenBg {
   line-height: 1.86;
   letter-spacing: -0.1px;
 }
-/* line 61, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 69, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs h1 {
   color: #ffffff;
   font-size: 50px;
@@ -1569,6 +1579,18 @@ footer .footer-mail .form-item .btn {
   position: absolute;
   right: 5px;
   top: 5px;
+  padding: 0;
+}
+/* line 128, ../scss/partials/blocks/_footer.scss */
+footer .footer-mail .form-item .btn .icon-mail {
+  vertical-align: middle;
+  background-image: url("../images/mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 43px;
+  height: 43px;
+  display: inline-block;
+  text-align: center;
 }
 
 /* line 1, ../scss/partials/blocks/_main-page.scss */
@@ -3586,6 +3608,315 @@ body.index .item-block .text-block a {
   width: 332px;
 }
 
+/* line 2, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .left-sidebar {
+  display: inline-block;
+  float: left;
+  width: 446px;
+  z-index: 200;
+  position: relative;
+  padding-top: 52px;
+  text-align: center;
+}
+/* line 10, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .left-sidebar .btn {
+  margin-top: 20px;
+  text-align: left;
+  position: relative;
+  padding: 10px 20px;
+}
+/* line 15, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .left-sidebar .btn .title-link {
+  text-align: left;
+  display: inline-block;
+}
+/* line 19, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .left-sidebar .btn .icon-email {
+  vertical-align: middle;
+  background-image: url("../images/email.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 5px;
+  position: absolute;
+  right: 5px;
+}
+/* line 32, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product {
+  padding-top: 52px;
+  display: inline-block;
+  width: 722px;
+}
+/* line 37, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-single h2 {
+  font-size: 50px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: -0.5px;
+  color: #373737;
+}
+/* line 46, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-single .title-block {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.3;
+  color: #373737;
+}
+/* line 54, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-single .title-block .icon-agro {
+  margin-right: 10px;
+  vertical-align: middle;
+  background-image: url("../images/tractor-1.svg");
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 25px;
+  display: inline-block;
+}
+/* line 67, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-single .country {
+  padding-top: 20px;
+}
+/* line 69, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-single .country .icon-country {
+  vertical-align: middle;
+  background-image: url("../images/geolocalization-brown.svg");
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 81, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-single .country .countries {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.3;
+  color: #373737;
+}
+/* line 90, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-single .desc {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+  width: 80%;
+  padding-bottom: 20px;
+}
+/* line 101, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-single .link {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  text-transform: uppercase;
+  color: #8b5b29;
+}
+/* line 111, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-products-catalog {
+  padding-top: 20px;
+}
+/* line 114, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-products-catalog .title-block .title {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  color: #689146;
+}
+/* line 123, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-products-catalog .row-block {
+  padding-bottom: 20px;
+}
+/* line 127, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-products-catalog .row-block .content-block {
+  width: 33%;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 132, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+/* line 136, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .img {
+  width: 160px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+/* line 141, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .img img {
+  vertical-align: bottom;
+}
+/* line 144, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .img .icon-category {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  vertical-align: middle;
+  background-image: url("../images/icon-agro-prob.svg");
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+/* line 161, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .title {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.3;
+  text-align: center;
+  color: #373737;
+}
+/* line 171, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .desc {
+  padding-top: 10px;
+  display: inline-block;
+}
+/* line 174, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .desc .icon-bag {
+  vertical-align: middle;
+  background-image: url("../images/t-a-r-a.svg");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 183, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .desc .count-size {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.73;
+  color: #8b5b29;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 201, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-advantages .title-block .title {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  color: #689146;
+}
+/* line 210, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-advantages .row-block {
+  padding-top: 20px;
+  margin: 0 -10px;
+  padding-bottom: 50px;
+}
+/* line 214, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-advantages .row-block .content-block {
+  width: 50%;
+  float: left;
+  display: inline-block;
+  padding: 0 10px 26px;
+}
+/* line 220, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-advantages .row-block .item-block {
+  background-color: #f8f2ec;
+  text-align: left;
+  position: relative;
+  padding: 30px 20px 26px;
+  border-radius: 5px;
+}
+/* line 226, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-advantages .row-block .item-block .icon-category {
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  margin-right: 15px;
+  background-image: url("../images/fill-8.svg");
+  background-position: center center;
+  background-size: contain;
+}
+/* line 237, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-advantages .row-block .item-block .desc {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.3;
+  color: #8b5b29;
+  width: 70%;
+  vertical-align: middle;
+}
+/* line 253, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-news .title-block .title {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  color: #689146;
+}
+/* line 262, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-news .row-block {
+  padding-top: 20px;
+  margin: 0 -15px;
+  padding-bottom: 50px;
+}
+/* line 266, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-news .row-block .content-block {
+  width: 50%;
+  float: left;
+  display: inline-block;
+  padding: 0 15px 30px;
+}
+/* line 272, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-news .row-block .item-block {
+  text-align: left;
+  position: relative;
+}
+/* line 276, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-news .row-block .item-block .text-block {
+  padding-top: 20px;
+}
+/* line 278, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-news .row-block .item-block .text-block .title {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  color: #373737;
+}
+
 /* line 2, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .row-block {
   padding-top: 30px;
@@ -4035,6 +4366,343 @@ body.index .item-block .text-block a {
 .block-products .block-products-catalog .list-pagination ul li a:hover, .block-products .block-products-catalog .list-pagination ul li a.active {
   color: #ffffff;
   background-color: #658d1b;
+}
+
+/* line 2, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .left-sidebar {
+  display: inline-block;
+  float: left;
+  width: 446px;
+  z-index: 200;
+  position: relative;
+  padding-top: 52px;
+  text-align: center;
+}
+/* line 10, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .left-sidebar .btn {
+  text-align: left;
+  position: relative;
+  padding: 10px 20px;
+}
+/* line 14, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .left-sidebar .btn .title-link {
+  text-align: left;
+  display: inline-block;
+}
+/* line 18, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .left-sidebar .btn .icon-map {
+  vertical-align: middle;
+  background-image: url("../images/geolocalization.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 5px;
+  position: absolute;
+  right: 5px;
+}
+/* line 31, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product {
+  padding-top: 52px;
+  display: inline-block;
+  width: 60%;
+}
+/* line 36, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-single h2 {
+  font-size: 50px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.04;
+  letter-spacing: -0.5px;
+  color: #373737;
+}
+/* line 45, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-single .title-block {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.3;
+  color: #373737;
+}
+/* line 53, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-single .title-block .icon-agro {
+  margin-right: 10px;
+  vertical-align: middle;
+  background-image: url("../images/icon-agro-prob.svg");
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+/* line 65, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-single .bag {
+  padding-top: 20px;
+}
+/* line 67, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-single .bag .icon-bag {
+  vertical-align: middle;
+  background-image: url("../images/t-a-r-a.svg");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 76, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-single .bag .count-size {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.73;
+  color: #8b5b29;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 88, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-single .desc {
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+}
+/* line 99, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-characteristics .dropdown-block {
+  margin-bottom: 40px;
+}
+/* line 101, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-characteristics .dropdown-block .icon-fill {
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  margin-right: 15px;
+  background-image: url("../images/fill-8.svg");
+  background-position: center center;
+}
+/* line 111, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-characteristics .dropdown-block .icon-plus {
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-image: url("../images/plus.svg");
+  background-position: center center;
+  position: absolute;
+  right: 15px;
+  margin: 5px;
+}
+/* line 125, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-characteristics .dropdown-block .catalog-menu > li.show {
+  background-color: #f8f2ec;
+}
+/* line 127, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-characteristics .dropdown-block .catalog-menu > li.show .icon-plus {
+  background-image: url("../images/m-inus.svg");
+}
+/* line 131, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-characteristics .dropdown-block .catalog-menu > li > a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
+}
+/* line 141, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-characteristics .dropdown-block .catalog-menu .title-menu {
+  height: 51px;
+  background-color: #f8f2ec;
+  padding: 15px;
+  margin: 20px 0;
+  position: relative;
+  cursor: pointer;
+}
+/* line 148, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-characteristics .dropdown-block .catalog-menu .title-menu .title {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.18;
+  color: #373737;
+}
+/* line 158, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-characteristics .dropdown-block .sub-menu {
+  padding: 0 20px 15px;
+  display: none;
+}
+/* line 161, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-characteristics .dropdown-block .sub-menu[data-display="none"] {
+  display: none;
+}
+/* line 164, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-characteristics .dropdown-block .sub-menu[data-display="block"] {
+  display: block;
+}
+/* line 168, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-characteristics .dropdown-block .sub-menu li a {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.73;
+  color: #373737;
+  text-decoration: none;
+}
+/* line 183, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-products-catalog .title-block .title {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  color: #689146;
+}
+/* line 192, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-products-catalog .row-block {
+  padding-bottom: 20px;
+}
+/* line 196, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-products-catalog .row-block .content-block {
+  width: 33%;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 201, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-products-catalog .row-block .content-block .item-block {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+/* line 205, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .img {
+  width: 160px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+/* line 210, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .img img {
+  vertical-align: bottom;
+}
+/* line 213, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .img .icon-category {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  vertical-align: middle;
+  background-image: url("../images/icon-agro-prob.svg");
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+/* line 230, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .title {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.3;
+  text-align: center;
+  color: #373737;
+}
+/* line 240, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .desc {
+  padding-top: 10px;
+  display: inline-block;
+}
+/* line 243, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .desc .icon-bag {
+  vertical-align: middle;
+  background-image: url("../images/t-a-r-a.svg");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 252, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .desc .count-size {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.73;
+  color: #8b5b29;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 270, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-advantages .title-block .title {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  color: #689146;
+}
+/* line 279, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-advantages .row-block {
+  padding-top: 20px;
+  margin: 0 -10px;
+  padding-bottom: 50px;
+}
+/* line 283, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-advantages .row-block .content-block {
+  width: 49%;
+  display: inline-block;
+  padding: 0 10px 26px;
+}
+/* line 288, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-advantages .row-block .item-block {
+  background-color: #f8f2ec;
+  text-align: left;
+  position: relative;
+  padding: 30px 20px 26px;
+  border-radius: 5px;
+}
+/* line 294, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-advantages .row-block .item-block .icon-category {
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  margin-right: 15px;
+  background-image: url("../images/fill-8.svg");
+  background-position: center center;
+  background-size: contain;
+}
+/* line 305, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+.block-product-page .block-product .block-product-advantages .row-block .item-block .desc {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.3;
+  color: #8b5b29;
+  width: 70%;
+  vertical-align: middle;
 }
 
 /* line 2, ../scss/partials/blocks/_faq-d.scss */
