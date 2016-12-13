@@ -181,13 +181,6 @@ img {
 }
 
 /* overlap styles */
-/* line 1, ../scss/partials/elements/_sprites.scss */
-.social {
-  background-image: url("../images/social.png");
-  background-repeat: no-repeat;
-  display: block;
-}
-
 /* line 6, ../scss/partials/elements/_sprites.scss */
 .social-f-b {
   width: 11px;
@@ -1503,20 +1496,24 @@ footer .footer-social .title-block {
 /* line 88, ../scss/partials/blocks/_footer.scss */
 footer .footer-social ul li {
   display: inline-block;
+  padding: 10px;
 }
-/* line 90, ../scss/partials/blocks/_footer.scss */
+/* line 91, ../scss/partials/blocks/_footer.scss */
 footer .footer-social ul li a {
   display: inline-block;
-  padding: 10px;
   vertical-align: middle;
 }
-/* line 101, ../scss/partials/blocks/_footer.scss */
+/* line 96, ../scss/partials/blocks/_footer.scss */
+footer .footer-social ul li a:hover #social-f-b, footer .footer-social ul li a:hover #social-g, footer .footer-social ul li a:hover #social-y-t-b-e, footer .footer-social ul li a:hover #social-i-n, footer .footer-social ul li a:hover #social-pinterest, footer .footer-social ul li a:hover #social-t-w {
+  fill: #a7272a;
+}
+/* line 106, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail {
   float: left;
   width: 50%;
   padding-top: 10px;
 }
-/* line 105, ../scss/partials/blocks/_footer.scss */
+/* line 110, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item {
   width: 418px;
   height: 52px;
@@ -1525,7 +1522,7 @@ footer .footer-mail .form-item {
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.31);
   position: relative;
 }
-/* line 112, ../scss/partials/blocks/_footer.scss */
+/* line 117, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input {
   font-size: 16px;
   font-weight: 300;
@@ -1540,44 +1537,44 @@ footer .footer-mail .form-item input {
   /* Firefox 19+ */
   /* Firefox 18- */
 }
-/* line 123, ../scss/partials/blocks/_footer.scss */
+/* line 128, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input::-webkit-input-placeholder {
   color: #373737;
 }
-/* line 124, ../scss/partials/blocks/_footer.scss */
+/* line 129, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input::-moz-placeholder {
   color: #373737;
 }
-/* line 125, ../scss/partials/blocks/_footer.scss */
+/* line 130, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:-moz-placeholder {
   color: #373737;
 }
-/* line 126, ../scss/partials/blocks/_footer.scss */
+/* line 131, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:-ms-input-placeholder {
   color: #373737;
 }
-/* line 127, ../scss/partials/blocks/_footer.scss */
+/* line 132, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:focus {
   /* Firefox 19+ */
   /* Firefox 18- */
 }
-/* line 128, ../scss/partials/blocks/_footer.scss */
+/* line 133, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:focus::-webkit-input-placeholder {
   color: transparent;
 }
-/* line 129, ../scss/partials/blocks/_footer.scss */
+/* line 134, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:focus::-moz-placeholder {
   color: transparent;
 }
-/* line 130, ../scss/partials/blocks/_footer.scss */
+/* line 135, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:focus:-moz-placeholder {
   color: transparent;
 }
-/* line 131, ../scss/partials/blocks/_footer.scss */
+/* line 136, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:focus:-ms-input-placeholder {
   color: transparent;
 }
-/* line 135, ../scss/partials/blocks/_footer.scss */
+/* line 140, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item .btn {
   width: 43px;
   height: 43px;
@@ -1591,7 +1588,7 @@ footer .footer-mail .form-item .btn {
   top: 5px;
   padding: 0;
 }
-/* line 147, ../scss/partials/blocks/_footer.scss */
+/* line 152, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item .btn .icon-mail {
   vertical-align: middle;
   background-image: url("../images/mail.svg");
