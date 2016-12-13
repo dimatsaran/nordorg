@@ -1390,19 +1390,33 @@ header .slicknav_menu.menu_show .hiddenBg {
 footer {
   position: relative;
   background-color: #f3eeea;
-  padding: 50px 0;
 }
-/* line 6, ../scss/partials/blocks/_footer.scss */
+/* line 5, ../scss/partials/blocks/_footer.scss */
 footer:before {
   background-image: url("../images/line.svg");
   background-attachment: scroll;
-  transform: rotate(180deg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 11px;
   display: block;
-  position: absolute;
+  position: relative;
   content: '';
-  top: -3px;
+  top: -2px;
+  transform: rotate(180deg);
+}
+/* line 19, ../scss/partials/blocks/_footer.scss */
+footer .row-block {
+  padding: 50px 0;
+}
+/* line 2, ../scss/partials/elements/_base.scss */
+footer .row-block:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
 }
 /* line 2, ../scss/partials/elements/_base.scss */
 footer:after {
@@ -1412,12 +1426,12 @@ footer:after {
   clear: both;
   height: 0;
 }
-/* line 20, ../scss/partials/blocks/_footer.scss */
+/* line 26, ../scss/partials/blocks/_footer.scss */
 footer .logo-block {
   width: 20%;
   float: left;
 }
-/* line 25, ../scss/partials/blocks/_footer.scss */
+/* line 31, ../scss/partials/blocks/_footer.scss */
 footer .content-block {
   float: left;
   width: 80%;
@@ -1430,25 +1444,25 @@ footer .footer-nav:after {
   clear: both;
   height: 0;
 }
-/* line 33, ../scss/partials/blocks/_footer.scss */
+/* line 39, ../scss/partials/blocks/_footer.scss */
 footer .footer-nav .box {
   display: inline-block;
   padding-left: 40px;
   vertical-align: top;
   text-align: left;
 }
-/* line 38, ../scss/partials/blocks/_footer.scss */
+/* line 44, ../scss/partials/blocks/_footer.scss */
 footer .footer-nav .box:first-of-type {
   padding-left: 0;
 }
-/* line 42, ../scss/partials/blocks/_footer.scss */
+/* line 48, ../scss/partials/blocks/_footer.scss */
 footer .footer-nav .title-menu {
   color: #658d1b;
   text-transform: uppercase;
   padding-bottom: 20px;
   font-family: "Rubik", sans-serif;
 }
-/* line 50, ../scss/partials/blocks/_footer.scss */
+/* line 56, ../scss/partials/blocks/_footer.scss */
 footer .footer-nav ul li a {
   font-size: 16px;
   font-weight: 300;
@@ -1459,7 +1473,7 @@ footer .footer-nav ul li a {
   text-decoration: none;
   font-family: "Rubik", sans-serif;
 }
-/* line 63, ../scss/partials/blocks/_footer.scss */
+/* line 69, ../scss/partials/blocks/_footer.scss */
 footer .footer-bottom {
   padding-top: 20px;
 }
@@ -1471,12 +1485,12 @@ footer .footer-bottom:after {
   clear: both;
   height: 0;
 }
-/* line 67, ../scss/partials/blocks/_footer.scss */
+/* line 73, ../scss/partials/blocks/_footer.scss */
 footer .footer-social {
   float: left;
   width: 50%;
 }
-/* line 70, ../scss/partials/blocks/_footer.scss */
+/* line 76, ../scss/partials/blocks/_footer.scss */
 footer .footer-social .title-block {
   font-weight: 500;
   font-size: 16px;
@@ -1486,23 +1500,23 @@ footer .footer-social .title-block {
   font-family: "Rubik", sans-serif;
   text-transform: uppercase;
 }
-/* line 82, ../scss/partials/blocks/_footer.scss */
+/* line 88, ../scss/partials/blocks/_footer.scss */
 footer .footer-social ul li {
   display: inline-block;
 }
-/* line 84, ../scss/partials/blocks/_footer.scss */
+/* line 90, ../scss/partials/blocks/_footer.scss */
 footer .footer-social ul li a {
   display: inline-block;
   padding: 10px;
   vertical-align: middle;
 }
-/* line 95, ../scss/partials/blocks/_footer.scss */
+/* line 101, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail {
   float: left;
   width: 50%;
   padding-top: 10px;
 }
-/* line 99, ../scss/partials/blocks/_footer.scss */
+/* line 105, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item {
   width: 418px;
   height: 52px;
@@ -1511,7 +1525,7 @@ footer .footer-mail .form-item {
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.31);
   position: relative;
 }
-/* line 106, ../scss/partials/blocks/_footer.scss */
+/* line 112, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input {
   font-size: 16px;
   font-weight: 300;
@@ -1526,44 +1540,44 @@ footer .footer-mail .form-item input {
   /* Firefox 19+ */
   /* Firefox 18- */
 }
-/* line 117, ../scss/partials/blocks/_footer.scss */
+/* line 123, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input::-webkit-input-placeholder {
   color: #373737;
 }
-/* line 118, ../scss/partials/blocks/_footer.scss */
+/* line 124, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input::-moz-placeholder {
   color: #373737;
 }
-/* line 119, ../scss/partials/blocks/_footer.scss */
+/* line 125, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:-moz-placeholder {
   color: #373737;
 }
-/* line 120, ../scss/partials/blocks/_footer.scss */
+/* line 126, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:-ms-input-placeholder {
   color: #373737;
 }
-/* line 121, ../scss/partials/blocks/_footer.scss */
+/* line 127, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:focus {
   /* Firefox 19+ */
   /* Firefox 18- */
 }
-/* line 122, ../scss/partials/blocks/_footer.scss */
+/* line 128, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:focus::-webkit-input-placeholder {
   color: transparent;
 }
-/* line 123, ../scss/partials/blocks/_footer.scss */
+/* line 129, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:focus::-moz-placeholder {
   color: transparent;
 }
-/* line 124, ../scss/partials/blocks/_footer.scss */
+/* line 130, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:focus:-moz-placeholder {
   color: transparent;
 }
-/* line 125, ../scss/partials/blocks/_footer.scss */
+/* line 131, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item input:focus:-ms-input-placeholder {
   color: transparent;
 }
-/* line 129, ../scss/partials/blocks/_footer.scss */
+/* line 135, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item .btn {
   width: 43px;
   height: 43px;
@@ -1577,7 +1591,7 @@ footer .footer-mail .form-item .btn {
   top: 5px;
   padding: 0;
 }
-/* line 141, ../scss/partials/blocks/_footer.scss */
+/* line 147, ../scss/partials/blocks/_footer.scss */
 footer .footer-mail .form-item .btn .icon-mail {
   vertical-align: middle;
   background-image: url("../images/mail.svg");
@@ -1870,39 +1884,30 @@ body.index .item-block .text-block a {
   vertical-align: middle;
 }
 
-/* line 5, ../scss/partials/blocks/_user-line-d.scss */
+/* line 4, ../scss/partials/blocks/_user-line-d.scss */
 .block-slider-header .slick-list {
   padding: 0 !important;
 }
-/* line 9, ../scss/partials/blocks/_user-line-d.scss */
+/* line 7, ../scss/partials/blocks/_user-line-d.scss */
+.block-slider-header .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+/* line 10, ../scss/partials/blocks/_user-line-d.scss */
 .block-slider-header .slide {
   position: relative;
 }
-/* line 11, ../scss/partials/blocks/_user-line-d.scss */
-.block-slider-header .slide:after {
-  background-image: url("../images/line.svg");
-  background-attachment: scroll;
-  background-size: contain;
-  min-width: 1920px;
-  width: 100%;
-  height: 11px;
-  display: inline-block;
-  position: absolute;
-  content: '';
-  bottom: -4px;
-}
-/* line 24, ../scss/partials/blocks/_user-line-d.scss */
+/* line 25, ../scss/partials/blocks/_user-line-d.scss */
 .block-slider-header .text-holder {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
-/* line 29, ../scss/partials/blocks/_user-line-d.scss */
+/* line 30, ../scss/partials/blocks/_user-line-d.scss */
 .block-slider-header .text-holder .info {
-  margin-top: 200px;
+  margin-top: 180px;
 }
-/* line 31, ../scss/partials/blocks/_user-line-d.scss */
+/* line 32, ../scss/partials/blocks/_user-line-d.scss */
 .block-slider-header .text-holder .info .title-block {
   font-size: 60px;
   font-style: normal;
@@ -1914,12 +1919,12 @@ body.index .item-block .text-block a {
   color: #ffffff;
   text-shadow: 1px 1px 3px rgba(55, 55, 55, 0.61);
 }
-/* line 44, ../scss/partials/blocks/_user-line-d.scss */
+/* line 45, ../scss/partials/blocks/_user-line-d.scss */
 .block-slider-header .slick-dots {
   position: absolute;
   bottom: 34px;
 }
-/* line 49, ../scss/partials/blocks/_user-line-d.scss */
+/* line 50, ../scss/partials/blocks/_user-line-d.scss */
 .block-slider-header .slick-dots li button:before {
   border-radius: 100%;
   background-color: #ffffff;
@@ -1928,18 +1933,74 @@ body.index .item-block .text-block a {
   width: 11px;
   height: 11px;
 }
-/* line 61, ../scss/partials/blocks/_user-line-d.scss */
+/* line 62, ../scss/partials/blocks/_user-line-d.scss */
 .block-slider-header .slick-dots li.slick-active button:before {
   background-color: #cd3033;
 }
 
-/* line 71, ../scss/partials/blocks/_user-line-d.scss */
+/* line 72, ../scss/partials/blocks/_user-line-d.scss */
+.block-description:before {
+  background-image: url("../images/line.svg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 11px;
+  display: block;
+  position: relative;
+  content: '';
+  top: -9px;
+}
+/* line 96, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .title-block {
-  padding-top: 78px;
+  padding-top: 30px;
   text-align: center;
 }
-/* line 74, ../scss/partials/blocks/_user-line-d.scss */
+/* line 101, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .title-block.user-line-d h2:before {
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 56px;
+  display: inline-block;
+  margin-right: 15px;
+  background-image: url("../images/home-icon.svg");
+  content: '';
+  position: relative;
+}
+/* line 116, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .title-block.industrial-line-d h2 {
+  color: #a7272a;
+}
+/* line 118, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .title-block.industrial-line-d h2:before {
+  background-repeat: no-repeat;
+  width: 54px;
+  height: 52px;
+  display: inline-block;
+  margin-right: 15px;
+  background-image: url("../images/industrial.svg");
+  content: '';
+  position: relative;
+}
+/* line 132, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .title-block.product-line-prof h2 {
+  color: #8b5b29;
+}
+/* line 134, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .title-block.product-line-prof h2:before {
+  background-repeat: no-repeat;
+  width: 54px;
+  height: 43px;
+  display: inline-block;
+  margin-right: 15px;
+  background-image: url("../images/tractor.svg");
+  content: '';
+  position: relative;
+}
+/* line 147, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .title-block h2 {
+  vertical-align: middle;
   color: #658d1b;
   font-size: 42px;
   line-height: 0.62;
@@ -1948,37 +2009,33 @@ body.index .item-block .text-block a {
   font-style: normal;
   font-stretch: normal;
 }
-/* line 84, ../scss/partials/blocks/_user-line-d.scss */
+/* line 158, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .row-block {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 88, ../scss/partials/blocks/_user-line-d.scss */
+/* line 162, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .row-block .content-block {
   padding: 0 25px;
   width: 49%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 94, ../scss/partials/blocks/_user-line-d.scss */
+/* line 168, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .row-block .content-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 99, ../scss/partials/blocks/_user-line-d.scss */
-.block-description .row-block .content-block .item-block .text-block {
-  padding: 20px;
-}
-/* line 102, ../scss/partials/blocks/_user-line-d.scss */
+/* line 176, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .row-block .content-block .item-block .title {
-  color: #373737;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.23;
+  line-height: 1.07;
+  color: #373737;
 }
-/* line 110, ../scss/partials/blocks/_user-line-d.scss */
+/* line 184, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .row-block .content-block .item-block .desc {
   color: #373737;
   font-size: 16px;
@@ -1988,48 +2045,63 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   padding-top: 20px;
 }
-/* line 118, ../scss/partials/blocks/_user-line-d.scss */
-.block-description .row-block .content-block .item-block .desc ul {
+/* line 192, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .row-block .content-block .item-block .desc .icon-svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 196, ../scss/partials/blocks/_user-line-d.scss */
+.block-description .row-block .content-block .item-block .desc .text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70%;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  color: #373737;
   padding-left: 20px;
-  list-style: disc;
 }
 
-/* line 131, ../scss/partials/blocks/_user-line-d.scss */
+/* line 213, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik {
   background-color: #f3eeea;
-  position: relative;
-  overflow: hidden;
 }
-/* line 135, ../scss/partials/blocks/_user-line-d.scss */
+/* line 217, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik:before {
   background-image: url("../images/line.svg");
   background-attachment: scroll;
-  transform: rotate(180deg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 11px;
   display: block;
-  position: absolute;
+  position: relative;
   content: '';
-  top: -3px;
+  top: -2px;
+  transform: rotate(180deg);
 }
-/* line 146, ../scss/partials/blocks/_user-line-d.scss */
+/* line 242, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik:after {
   background-image: url("../images/line.svg");
   background-attachment: scroll;
-  background-size: contain;
-  min-width: 1920px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: 11px;
-  display: inline-block;
-  position: absolute;
+  display: block;
+  position: relative;
   content: '';
   bottom: -4px;
 }
-/* line 161, ../scss/partials/blocks/_user-line-d.scss */
+/* line 265, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .title-block {
   padding-top: 78px;
 }
-/* line 167, ../scss/partials/blocks/_user-line-d.scss */
+/* line 271, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .title-block h2 {
   color: #658d1b;
   font-size: 42px;
@@ -2037,7 +2109,7 @@ body.index .item-block .text-block a {
   font-weight: 300;
   text-align: center;
 }
-/* line 174, ../scss/partials/blocks/_user-line-d.scss */
+/* line 278, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .title-block .desc {
   padding-top: 30px;
   font-size: 22px;
@@ -2047,12 +2119,13 @@ body.index .item-block .text-block a {
   line-height: 1.18;
   text-align: center;
 }
-/* line 184, ../scss/partials/blocks/_user-line-d.scss */
+/* line 288, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block {
   margin: 0 -10px;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
-/* line 187, ../scss/partials/blocks/_user-line-d.scss */
+/* line 292, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block .content-block {
   margin: 0 0 26px;
   padding: 0 11px;
@@ -2060,28 +2133,29 @@ body.index .item-block .text-block a {
   display: inline-block;
   vertical-align: top;
 }
-/* line 193, ../scss/partials/blocks/_user-line-d.scss */
+/* line 298, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block .content-block .item-block {
+  padding: 10px;
   text-align: center;
   width: 275px;
   height: 260px;
   border-radius: 5px;
   position: relative;
   background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
-/* line 202, ../scss/partials/blocks/_user-line-d.scss */
-.block-probiotik .row-block .content-block .item-block .img {
-  width: 100%;
+/* line 310, ../scss/partials/blocks/_user-line-d.scss */
+.block-probiotik .row-block .content-block .item-block .icon-svg {
+  padding-top: 15px;
+  display: block;
 }
-/* line 204, ../scss/partials/blocks/_user-line-d.scss */
-.block-probiotik .row-block .content-block .item-block .img img {
-  border-radius: 10px;
-}
-/* line 208, ../scss/partials/blocks/_user-line-d.scss */
+/* line 314, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block .content-block .item-block .text-block {
   padding: 20px 40px;
 }
-/* line 211, ../scss/partials/blocks/_user-line-d.scss */
+/* line 317, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block .content-block .item-block .title {
   color: #8b5b29;
   font-size: 20px;
@@ -2091,7 +2165,7 @@ body.index .item-block .text-block a {
   line-height: 1.6;
   text-align: center;
 }
-/* line 220, ../scss/partials/blocks/_user-line-d.scss */
+/* line 326, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block .content-block .item-block .desc {
   color: #373737;
   font-size: 15px;
@@ -2103,16 +2177,16 @@ body.index .item-block .text-block a {
   padding: 10px;
 }
 
-/* line 234, ../scss/partials/blocks/_user-line-d.scss */
+/* line 340, ../scss/partials/blocks/_user-line-d.scss */
 .block-information {
   background-color: #ffffff;
 }
-/* line 236, ../scss/partials/blocks/_user-line-d.scss */
+/* line 342, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .title-block {
   padding-top: 78px;
   text-align: center;
 }
-/* line 239, ../scss/partials/blocks/_user-line-d.scss */
+/* line 345, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .title-block h2 {
   color: #658d1b;
   font-size: 42px;
@@ -2122,29 +2196,29 @@ body.index .item-block .text-block a {
   font-style: normal;
   font-stretch: normal;
 }
-/* line 249, ../scss/partials/blocks/_user-line-d.scss */
+/* line 355, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block {
   margin: 0 -10px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 253, ../scss/partials/blocks/_user-line-d.scss */
+/* line 359, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block .content-block {
   padding: 0 10px;
   width: 33%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 259, ../scss/partials/blocks/_user-line-d.scss */
+/* line 365, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block .content-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 264, ../scss/partials/blocks/_user-line-d.scss */
+/* line 370, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block .content-block .item-block .text-block {
   padding: 20px;
 }
-/* line 267, ../scss/partials/blocks/_user-line-d.scss */
+/* line 373, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block .content-block .item-block .title {
   color: #373737;
   font-size: 26px;
@@ -2153,7 +2227,7 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.23;
 }
-/* line 275, ../scss/partials/blocks/_user-line-d.scss */
+/* line 381, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block .content-block .item-block .desc {
   color: #373737;
   font-size: 16px;
@@ -2163,41 +2237,41 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   padding-top: 20px;
 }
-/* line 283, ../scss/partials/blocks/_user-line-d.scss */
+/* line 389, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block .content-block .item-block .desc ul {
   padding-left: 20px;
   list-style: disc;
 }
 
-/* line 296, ../scss/partials/blocks/_user-line-d.scss */
+/* line 402, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions {
   background-color: #ffffff;
 }
-/* line 298, ../scss/partials/blocks/_user-line-d.scss */
+/* line 404, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .title-block {
   padding-top: 78px;
   width: 600px;
   text-align: center;
   margin: 0 auto;
 }
-/* line 303, ../scss/partials/blocks/_user-line-d.scss */
+/* line 409, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .title-block h2 {
   line-height: 0.62;
   text-align: center;
 }
-/* line 307, ../scss/partials/blocks/_user-line-d.scss */
+/* line 413, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .title-block .desc {
   padding-top: 50px;
   font-size: 22px;
   font-weight: 300;
   line-height: 1.18;
 }
-/* line 313, ../scss/partials/blocks/_user-line-d.scss */
+/* line 419, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .title-block .btn {
   width: 255px;
   margin-top: 50px;
 }
-/* line 317, ../scss/partials/blocks/_user-line-d.scss */
+/* line 423, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .title-block .title {
   padding-top: 50px;
   color: #8b5b29;
@@ -2205,29 +2279,29 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   font-weight: 300;
 }
-/* line 325, ../scss/partials/blocks/_user-line-d.scss */
+/* line 431, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .row-block {
   margin: 0 -10px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 329, ../scss/partials/blocks/_user-line-d.scss */
+/* line 435, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .row-block .content-block {
   padding: 0 10px;
   width: 24%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 335, ../scss/partials/blocks/_user-line-d.scss */
+/* line 441, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .row-block .content-block .item-block {
   text-align: center;
   padding: 0 30px;
 }
-/* line 338, ../scss/partials/blocks/_user-line-d.scss */
+/* line 444, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .row-block .content-block .item-block .text-block {
   padding: 20px;
 }
-/* line 341, ../scss/partials/blocks/_user-line-d.scss */
+/* line 447, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .row-block .content-block .item-block .title {
   color: #373737;
   font-size: 26px;
@@ -2236,7 +2310,7 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.23;
 }
-/* line 349, ../scss/partials/blocks/_user-line-d.scss */
+/* line 455, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .row-block .content-block .item-block .desc {
   color: #373737;
   font-size: 18px;
