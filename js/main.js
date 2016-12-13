@@ -37,15 +37,20 @@ $(document).ready(function(){
   });
 });
 
-
-
+$(".slider-visual-header").slick({
+  arrows: false,
+  dots: true,
+  centerMode: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
 $(".slider-visual").slick({
-      arrows: false,
-      dots: true,
-      centerMode: true,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    });
+        arrows: false,
+  dots: true,
+  centerMode: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
 
   $(".catalog-menu").find('.menu-slide').on("click",function(){
     if (!$(this).parent().hasClass('show')) {

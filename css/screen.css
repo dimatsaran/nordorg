@@ -956,23 +956,6 @@ div.messages p {
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * */
-/* line 4, ../scss/partials/blocks/_header.scss */
-header {
-  top: 0;
-  display: block;
-  z-index: 900;
-  width: 100%;
-  background-color: #ffffff;
-  height: 105px;
-}
-/* line 2, ../scss/partials/elements/_base.scss */
-header:after {
-  visibility: hidden;
-  display: block;
-  content: "";
-  clear: both;
-  height: 0;
-}
 /* line 12, ../scss/partials/blocks/_header.scss */
 header .container {
   position: relative;
@@ -1780,21 +1763,25 @@ body.index .item-block .text-block a {
 }
 
 /* line 176, ../scss/partials/blocks/_main-page.scss */
+.block-slider .slick-list {
+  padding: 0 !important;
+}
+/* line 179, ../scss/partials/blocks/_main-page.scss */
 .block-slider .slide {
   position: relative;
 }
-/* line 180, ../scss/partials/blocks/_main-page.scss */
+/* line 183, ../scss/partials/blocks/_main-page.scss */
 .block-slider .text-holder {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
-/* line 185, ../scss/partials/blocks/_main-page.scss */
+/* line 188, ../scss/partials/blocks/_main-page.scss */
 .block-slider .text-holder .info {
   margin-top: 200px;
 }
-/* line 187, ../scss/partials/blocks/_main-page.scss */
+/* line 190, ../scss/partials/blocks/_main-page.scss */
 .block-slider .text-holder .info .title-block {
   font-size: 42px;
   font-style: normal;
@@ -1804,7 +1791,7 @@ body.index .item-block .text-block a {
   font-weight: 400;
   color: #ffffff;
 }
-/* line 196, ../scss/partials/blocks/_main-page.scss */
+/* line 199, ../scss/partials/blocks/_main-page.scss */
 .block-slider .text-holder .info .desc {
   font-size: 30px;
   font-weight: 300;
@@ -1815,69 +1802,82 @@ body.index .item-block .text-block a {
   color: #ffffff;
   padding-top: 20px;
 }
-/* line 208, ../scss/partials/blocks/_main-page.scss */
+/* line 215, ../scss/partials/blocks/_main-page.scss */
 .block-slider .slick-dots {
   position: absolute;
-  bottom: 0;
+  bottom: 34px;
+}
+/* line 220, ../scss/partials/blocks/_main-page.scss */
+.block-slider .slick-dots li button:before {
+  border-radius: 100%;
+  background-color: #ffffff;
+  opacity: 1;
+  content: '';
+  width: 11px;
+  height: 11px;
+}
+/* line 232, ../scss/partials/blocks/_main-page.scss */
+.block-slider .slick-dots li.slick-active button:before {
+  background-color: #cd3033;
 }
 
-/* line 213, ../scss/partials/blocks/_main-page.scss */
+/* line 240, ../scss/partials/blocks/_main-page.scss */
 .block-partner {
   height: 130px;
   padding: 30px 0;
 }
-/* line 216, ../scss/partials/blocks/_main-page.scss */
+/* line 243, ../scss/partials/blocks/_main-page.scss */
 .block-partner .titleBlock {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 220, ../scss/partials/blocks/_main-page.scss */
+/* line 247, ../scss/partials/blocks/_main-page.scss */
 .block-partner h3 {
   color: #8b5b29;
   line-height: 26px;
   font-size: 30px;
   font-family: "Rubik", sans-serif;
 }
-/* line 226, ../scss/partials/blocks/_main-page.scss */
+/* line 253, ../scss/partials/blocks/_main-page.scss */
 .block-partner .partner-logos {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 229, ../scss/partials/blocks/_main-page.scss */
+/* line 256, ../scss/partials/blocks/_main-page.scss */
 .block-partner .partner-logos li {
   display: inline-block;
   padding: 0 8px;
 }
-/* line 233, ../scss/partials/blocks/_main-page.scss */
+/* line 260, ../scss/partials/blocks/_main-page.scss */
 .block-partner .partner-logos li a {
   display: inline-block;
 }
-/* line 236, ../scss/partials/blocks/_main-page.scss */
+/* line 263, ../scss/partials/blocks/_main-page.scss */
 .block-partner .partner-logos li a img {
   vertical-align: middle;
 }
 
-/* line 11, ../scss/partials/blocks/_user-line-d.scss */
-.block-header-slider .slick-list {
+/* line 8, ../scss/partials/blocks/_user-line-d.scss */
+.block-slider-header .slick-list {
   padding: 0 !important;
 }
-/* line 17, ../scss/partials/blocks/_user-line-d.scss */
-.block-header-slider img {
-  width: 100%;
+/* line 11, ../scss/partials/blocks/_user-line-d.scss */
+.block-slider-header .slide {
+  position: relative;
 }
-/* line 20, ../scss/partials/blocks/_user-line-d.scss */
-.block-header-slider .text-holder {
+/* line 14, ../scss/partials/blocks/_user-line-d.scss */
+.block-slider-header .text-holder {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
 }
-/* line 25, ../scss/partials/blocks/_user-line-d.scss */
-.block-header-slider .text-holder .info {
+/* line 19, ../scss/partials/blocks/_user-line-d.scss */
+.block-slider-header .text-holder .info {
   margin-top: 200px;
 }
-/* line 27, ../scss/partials/blocks/_user-line-d.scss */
-.block-header-slider .text-holder .info .title-block {
+/* line 21, ../scss/partials/blocks/_user-line-d.scss */
+.block-slider-header .text-holder .info .title-block {
   font-size: 60px;
   font-style: normal;
   font-stretch: normal;
@@ -1888,13 +1888,13 @@ body.index .item-block .text-block a {
   color: #ffffff;
   text-shadow: 1px 1px 3px rgba(55, 55, 55, 0.61);
 }
-/* line 40, ../scss/partials/blocks/_user-line-d.scss */
-.block-header-slider .slick-dots {
+/* line 34, ../scss/partials/blocks/_user-line-d.scss */
+.block-slider-header .slick-dots {
   position: absolute;
   bottom: 34px;
 }
-/* line 45, ../scss/partials/blocks/_user-line-d.scss */
-.block-header-slider .slick-dots li button:before {
+/* line 39, ../scss/partials/blocks/_user-line-d.scss */
+.block-slider-header .slick-dots li button:before {
   border-radius: 100%;
   background-color: #ffffff;
   opacity: 1;
@@ -1902,21 +1902,21 @@ body.index .item-block .text-block a {
   width: 11px;
   height: 11px;
 }
-/* line 57, ../scss/partials/blocks/_user-line-d.scss */
-.block-header-slider .slick-dots li.slick-active button:before {
+/* line 51, ../scss/partials/blocks/_user-line-d.scss */
+.block-slider-header .slick-dots li.slick-active button:before {
   background-color: #cd3033;
 }
 
-/* line 65, ../scss/partials/blocks/_user-line-d.scss */
+/* line 59, ../scss/partials/blocks/_user-line-d.scss */
 .block-description {
   background-color: #ffffff;
 }
-/* line 67, ../scss/partials/blocks/_user-line-d.scss */
+/* line 61, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .title-block {
   padding-top: 78px;
   text-align: center;
 }
-/* line 70, ../scss/partials/blocks/_user-line-d.scss */
+/* line 64, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .title-block h2 {
   color: #658d1b;
   font-size: 42px;
@@ -1926,28 +1926,28 @@ body.index .item-block .text-block a {
   font-style: normal;
   font-stretch: normal;
 }
-/* line 80, ../scss/partials/blocks/_user-line-d.scss */
+/* line 74, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .row-block {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 84, ../scss/partials/blocks/_user-line-d.scss */
+/* line 78, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .row-block .content-block {
   padding: 0 25px;
   width: 49%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 90, ../scss/partials/blocks/_user-line-d.scss */
+/* line 84, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .row-block .content-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 95, ../scss/partials/blocks/_user-line-d.scss */
+/* line 89, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .row-block .content-block .item-block .text-block {
   padding: 20px;
 }
-/* line 98, ../scss/partials/blocks/_user-line-d.scss */
+/* line 92, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .row-block .content-block .item-block .title {
   color: #373737;
   font-size: 26px;
@@ -1956,7 +1956,7 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.23;
 }
-/* line 106, ../scss/partials/blocks/_user-line-d.scss */
+/* line 100, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .row-block .content-block .item-block .desc {
   color: #373737;
   font-size: 16px;
@@ -1966,21 +1966,21 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   padding-top: 20px;
 }
-/* line 114, ../scss/partials/blocks/_user-line-d.scss */
+/* line 108, ../scss/partials/blocks/_user-line-d.scss */
 .block-description .row-block .content-block .item-block .desc ul {
   padding-left: 20px;
   list-style: disc;
 }
 
-/* line 127, ../scss/partials/blocks/_user-line-d.scss */
+/* line 121, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik {
   background-color: #f3eeea;
 }
-/* line 129, ../scss/partials/blocks/_user-line-d.scss */
+/* line 123, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .title-block {
   padding-top: 78px;
 }
-/* line 135, ../scss/partials/blocks/_user-line-d.scss */
+/* line 129, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .title-block h2 {
   color: #658d1b;
   font-size: 42px;
@@ -1988,7 +1988,7 @@ body.index .item-block .text-block a {
   font-weight: 300;
   text-align: center;
 }
-/* line 142, ../scss/partials/blocks/_user-line-d.scss */
+/* line 136, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .title-block .desc {
   padding-top: 30px;
   font-size: 22px;
@@ -1998,12 +1998,12 @@ body.index .item-block .text-block a {
   line-height: 1.18;
   text-align: center;
 }
-/* line 152, ../scss/partials/blocks/_user-line-d.scss */
+/* line 146, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block {
   margin: 0 -10px;
   padding-top: 50px;
 }
-/* line 155, ../scss/partials/blocks/_user-line-d.scss */
+/* line 149, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block .content-block {
   margin: 0 0 26px;
   padding: 0 11px;
@@ -2011,7 +2011,7 @@ body.index .item-block .text-block a {
   display: inline-block;
   vertical-align: top;
 }
-/* line 161, ../scss/partials/blocks/_user-line-d.scss */
+/* line 155, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block .content-block .item-block {
   text-align: center;
   width: 275px;
@@ -2020,19 +2020,19 @@ body.index .item-block .text-block a {
   position: relative;
   background-color: #ffffff;
 }
-/* line 170, ../scss/partials/blocks/_user-line-d.scss */
+/* line 164, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block .content-block .item-block .img {
   width: 100%;
 }
-/* line 172, ../scss/partials/blocks/_user-line-d.scss */
+/* line 166, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block .content-block .item-block .img img {
   border-radius: 10px;
 }
-/* line 176, ../scss/partials/blocks/_user-line-d.scss */
+/* line 170, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block .content-block .item-block .text-block {
   padding: 20px 40px;
 }
-/* line 179, ../scss/partials/blocks/_user-line-d.scss */
+/* line 173, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block .content-block .item-block .title {
   color: #8b5b29;
   font-size: 20px;
@@ -2042,7 +2042,7 @@ body.index .item-block .text-block a {
   line-height: 1.6;
   text-align: center;
 }
-/* line 188, ../scss/partials/blocks/_user-line-d.scss */
+/* line 182, ../scss/partials/blocks/_user-line-d.scss */
 .block-probiotik .row-block .content-block .item-block .desc {
   color: #373737;
   font-size: 15px;
@@ -2054,16 +2054,16 @@ body.index .item-block .text-block a {
   padding: 10px;
 }
 
-/* line 202, ../scss/partials/blocks/_user-line-d.scss */
+/* line 196, ../scss/partials/blocks/_user-line-d.scss */
 .block-information {
   background-color: #ffffff;
 }
-/* line 204, ../scss/partials/blocks/_user-line-d.scss */
+/* line 198, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .title-block {
   padding-top: 78px;
   text-align: center;
 }
-/* line 207, ../scss/partials/blocks/_user-line-d.scss */
+/* line 201, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .title-block h2 {
   color: #658d1b;
   font-size: 42px;
@@ -2073,29 +2073,29 @@ body.index .item-block .text-block a {
   font-style: normal;
   font-stretch: normal;
 }
-/* line 217, ../scss/partials/blocks/_user-line-d.scss */
+/* line 211, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block {
   margin: 0 -10px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 221, ../scss/partials/blocks/_user-line-d.scss */
+/* line 215, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block .content-block {
   padding: 0 10px;
   width: 33%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 227, ../scss/partials/blocks/_user-line-d.scss */
+/* line 221, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block .content-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 232, ../scss/partials/blocks/_user-line-d.scss */
+/* line 226, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block .content-block .item-block .text-block {
   padding: 20px;
 }
-/* line 235, ../scss/partials/blocks/_user-line-d.scss */
+/* line 229, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block .content-block .item-block .title {
   color: #373737;
   font-size: 26px;
@@ -2104,7 +2104,7 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.23;
 }
-/* line 243, ../scss/partials/blocks/_user-line-d.scss */
+/* line 237, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block .content-block .item-block .desc {
   color: #373737;
   font-size: 16px;
@@ -2114,41 +2114,41 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   padding-top: 20px;
 }
-/* line 251, ../scss/partials/blocks/_user-line-d.scss */
+/* line 245, ../scss/partials/blocks/_user-line-d.scss */
 .block-information .row-block .content-block .item-block .desc ul {
   padding-left: 20px;
   list-style: disc;
 }
 
-/* line 264, ../scss/partials/blocks/_user-line-d.scss */
+/* line 258, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions {
   background-color: #ffffff;
 }
-/* line 266, ../scss/partials/blocks/_user-line-d.scss */
+/* line 260, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .title-block {
   padding-top: 78px;
   width: 600px;
   text-align: center;
   margin: 0 auto;
 }
-/* line 271, ../scss/partials/blocks/_user-line-d.scss */
+/* line 265, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .title-block h2 {
   line-height: 0.62;
   text-align: center;
 }
-/* line 275, ../scss/partials/blocks/_user-line-d.scss */
+/* line 269, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .title-block .desc {
   padding-top: 50px;
   font-size: 22px;
   font-weight: 300;
   line-height: 1.18;
 }
-/* line 281, ../scss/partials/blocks/_user-line-d.scss */
+/* line 275, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .title-block .btn {
   width: 255px;
   margin-top: 50px;
 }
-/* line 285, ../scss/partials/blocks/_user-line-d.scss */
+/* line 279, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .title-block .title {
   padding-top: 50px;
   color: #8b5b29;
@@ -2156,29 +2156,29 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   font-weight: 300;
 }
-/* line 293, ../scss/partials/blocks/_user-line-d.scss */
+/* line 287, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .row-block {
   margin: 0 -10px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 297, ../scss/partials/blocks/_user-line-d.scss */
+/* line 291, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .row-block .content-block {
   padding: 0 10px;
   width: 24%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 303, ../scss/partials/blocks/_user-line-d.scss */
+/* line 297, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .row-block .content-block .item-block {
   text-align: center;
   padding: 0 30px;
 }
-/* line 306, ../scss/partials/blocks/_user-line-d.scss */
+/* line 300, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .row-block .content-block .item-block .text-block {
   padding: 20px;
 }
-/* line 309, ../scss/partials/blocks/_user-line-d.scss */
+/* line 303, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .row-block .content-block .item-block .title {
   color: #373737;
   font-size: 26px;
@@ -2187,7 +2187,7 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.23;
 }
-/* line 317, ../scss/partials/blocks/_user-line-d.scss */
+/* line 311, ../scss/partials/blocks/_user-line-d.scss */
 .block-productions .row-block .content-block .item-block .desc {
   color: #373737;
   font-size: 18px;

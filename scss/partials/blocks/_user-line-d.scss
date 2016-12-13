@@ -1,7 +1,4 @@
-.block-header-slider{
-  &:first-of-type{
-    //display: none;
-  }
+.block-slider-header{
   .block-visual{
     //@include  clearfix;
     //max-width: 1170px;
@@ -12,10 +9,7 @@
     padding: 0!important;
   }
   .slide{
-    //position: relative;
-  }
-  img{
-    width: 100%;
+    position: relative;
   }
   .text-holder{
     position: absolute;

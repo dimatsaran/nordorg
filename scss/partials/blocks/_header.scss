@@ -2,13 +2,13 @@
  * Import this file using the following HTML or equivalent:
  * */
 header{
-  @include clearfix;
-  top: 0;
-  display: block;
-  z-index: 900;
-  width: 100%;
-  background-color: $color-white-two;
-  height: 105px;
+  //@include clearfix;
+  //top: 0;
+  //display: block;
+  //z-index: 900;
+  //width: 100%;
+  //background-color: $color-white-two;
+  //height: 105px;
   .container{
     position: relative;
     @include  clearfix;

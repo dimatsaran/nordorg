@@ -173,6 +173,9 @@ body{
   }
 }
 .block-slider{
+  .slick-list{
+    padding: 0!important;
+  }
   .slide{
     position: relative;
   }
@@ -205,9 +208,33 @@ body{
       }
     }
   }
+  //.slick-dots{
+  //  position: absolute;
+  //  bottom: 0;
+  //}
   .slick-dots{
     position: absolute;
-    bottom: 0;
+    bottom: 34px;
+    li{
+      button{
+        &:before{
+          border-radius: 100%;
+          background-color: $color-white-two;
+          opacity: 1;
+          content: '';
+          width: 11px;
+          height: 11px;
+        }
+
+      }
+      &.slick-active{
+        button{
+          &:before{
+            background-color: $color-rouge-v1;
+          }
+        }
+      }
+    }
   }
 }
 .block-partner{
