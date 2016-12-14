@@ -24,12 +24,24 @@ body{
 .block-head-main-bg{
   background: rgba(0, 0, 0, 0) url("../images/main-bg.png") no-repeat scroll top center;
   display: block;
-  //content: '';
   position: absolute;
   top: 0;
   height: 390px;
   width: 100%;
   z-index: -10;
+  &:before {
+    background-image: url('../images/gradient-head.svg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 300px;
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+  }
   &:after {
     background-image: url('../images/line.svg');
     background-attachment: scroll;
@@ -61,22 +73,53 @@ body{
         width: 370px;
         height: 468px;
         position: relative;
+        overflow: hidden;
+        a{
+          text-decoration: none;
+          display: block;
+          margin-top: 0px;
+          -webkit-transition: all 0 1s ease-out 0.5s;
+          -moz-transition: all 0 1s ease-out 0.5s;
+          -o-transition: all 0 1s ease-out 0.5s;
+          transition: all 0 1s ease-out 0.5s;
+          &:hover{
+            margin-top: -20px;
+            .img{
+              >img{
+                opacity: 0.5;
+              }
+            }
+            .icon-hover{
+              display: inline-block;
+              img{
+                //opacity: 1;
+              }
+            }
+
+          }
+        }
         .img{
           width: 100%;
           position: relative;
-          img{
+          >img{
             border-radius: 10px;
-
+            opacity: 1;
+            -webkit-transition: all 0 1s ease-out 0.5s;
+            -moz-transition: all 0 1s ease-out 0.5s;
+            -o-transition: all 0 1s ease-out 0.5s;
+            transition: all 0 1s ease-out 0.5s;
           }
-          .icon-tractor{
+          .icon-hover{
             position: absolute;
             width: 100%;
-            height: 100%;
+            //height: 100%;
             text-align: center;
             vertical-align: middle;
-            display: inline-block;
+            //display: inline-block;
+            display: none;
             top: 80px;
-            background: rgba(0, 0, 0, 0) url("../images/icon-tractor.png") no-repeat scroll top center;
+            z-index: 100;
+            //background: rgba(0, 0, 0, 0) url("../images/tractor-white.svg") no-repeat scroll top center;
           }
         }
         .text-block{
@@ -451,7 +494,7 @@ body{
     padding: 0!important;
   }
   .slick-dotted{
-    .slick-slider{
+    &.slick-slider{
       margin-bottom: 0;
   }
   }
@@ -490,10 +533,6 @@ body{
       }
     }
   }
-  //.slick-dots{
-  //  position: absolute;
-  //  bottom: 0;
-  //}
   .slick-dots{
     position: absolute;
     bottom: 34px;
@@ -509,7 +548,7 @@ body{
         }
 
       }
-      &.slick-active{
+      &.slick-active,&:hover{
         button{
           &:before{
             background-color: $color-rouge-v1;
