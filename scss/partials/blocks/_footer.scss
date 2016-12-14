@@ -75,8 +75,6 @@ footer{
     width: 50%;
     .title-block{
       font-weight: 500;
-      //font-style: normal;
-      //font-stretch: normal;
       font-size: 1.6*$font-size;
       line-height: 1.63;
       color: $color-sap-green;
@@ -85,6 +83,8 @@ footer{
       text-transform: uppercase;
     }
     ul{
+      padding-top: 10px;
+      margin: 0 -10px;
       li{
         display: inline-block;
         padding: 10px;
@@ -96,8 +96,6 @@ footer{
             #social-f-b,#social-g,#social-y-t-b-e,#social-i-n,#social-pinterest,#social-t-w{
               fill: $color-rouge;
             }
-          }
-          i{
           }
         }
       }

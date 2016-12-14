@@ -47,7 +47,7 @@ body{
 .block-category{
   .row-block{
     margin: 0 -9px;
-    padding-top: 50px;
+    padding-top: 130px;
     padding-bottom: 50px;
     .content-block{
       margin: 0 0 10px;
@@ -106,7 +106,7 @@ body{
   }
 }
 .block-catalog{
-  position: relative;
+  //position: relative;
   //&:after{
   //  background-image: url('../images/line.svg');
   //  background-attachment: scroll;
@@ -145,7 +145,7 @@ body{
   }
   .row-block{
     margin: 0 -9px;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 50px;
     .content-block{
       margin: 0 0 10px;
@@ -154,20 +154,53 @@ body{
       display: inline-block;
       vertical-align: top;
       .item-block{
-        //min-height: 360px;
-        //padding: 10px 20px 20px;
         text-align: center;
-        //border-radius: 10px;
-        //width: 370px;
-        //height: 468px;
         position: relative;
         .img{
           width: 100%;
           height: 450px;
           display: table;
-          padding: 24px 40px 0;
+          position: relative;
+          .category-quality{
+            border-radius: 50%;
+            background-color: $color-white-two;
+            padding: 5px;
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+            width: 60px;
+            height: 60px;
+          }
+          .icon-category{
+            background-image: url('../images/plants.svg');
+            background-attachment: scroll;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 52px;
+            height: 52px;
+            display: inline-block;
+            &.icon-plants{
+              background-image: url('../images/plants.svg');
+            }
+            &.icon-agro{
+              background-image: url('../images/agro.svg');
+            }
+            &.icon-soil{
+              background-image: url('../images/soil.svg');
+            }
+            img{
+              width: 60px;
+              height: 60px;
+            }
+
+          }
           &.upper{
-            padding: 10px 40px 0;
+            margin-top: -24px;
+            margin-bottom: 24px;
           }
           img{
             vertical-align: bottom;
@@ -204,20 +237,21 @@ body{
 .block-carusel{
   background-color: $color-grey;
   position: relative;
-  //&:before{
-  //  background-image: url('../images/line.svg');
-  //  background-attachment: scroll;
-  //  background-size: cover;
-  //  background-repeat: no-repeat;
-  //  background-position: center;
-  //  width: 100%;
-  //  height: 11px;
-  //  //display: block;
-  //  position: relative;
-  //  content: '';
-  //  //top: -2px;
-  //  transform: rotate(180deg);
-  //}
+  &:before{
+    background-image: url('../images/line.svg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 12px;
+    display: block;
+    position: absolute;
+    content: '';
+    top: -2px;
+    transform: rotate(180deg);
+    z-index: 200;
+  }
   .row-block{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -229,15 +263,11 @@ body{
       padding: 0!important;
     }
     .slick-slide{
-      //padding: 50px;
       opacity: 0.3;
       &.slick-center{
         opacity: 1;
-        //margin-left: 30px;
-        //margin-right: 30px;
       }
     }
-
     .slick-arrow{
       z-index: 800;
       height: 40px;
@@ -283,10 +313,8 @@ body{
         }
       }
     }
-
   }
   .title-block{
-    //padding-top: 30px;
     text-align: center;
     .link-logo{
       padding-top: 20px;
@@ -297,7 +325,6 @@ body{
     vertical-align: middle;
     width: 33%;
     float: left;
-    //margin: 10px;
     text-align: center;
   }
   .text-block{
@@ -305,7 +332,6 @@ body{
     vertical-align: middle;
     width: 67%;
     float: left;
-    //width: 20%;
     padding:0 30px;
     .title{
       font-size: 3*$font-size;
@@ -349,6 +375,11 @@ body{
   .slick-list{
     padding: 0!important;
   }
+  .slick-dotted{
+    .slick-slider{
+      margin-bottom: 0;
+  }
+  }
   .slide{
     position: relative;
   }
@@ -378,6 +409,9 @@ body{
         text-align: center;
         color: $color-white-two;
         padding-top: 20px;
+      }
+      .btn-play{
+        margin-top: 23px;
       }
     }
   }
@@ -412,23 +446,26 @@ body{
 }
 .block-partner{
   height: 130px;
-  padding: 30px 0;
+  padding: 35px 0 35px;
   .titleBlock{
     display: inline-block;
     vertical-align: middle;
   }
   h3{
     color: $color-sepia;
-    line-height: 2.6*$line-height;
     font-size: 3*$font-size;
     font-family: $font-light;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.87;
   }
   .partner-logos{
     display: inline-block;
     vertical-align: middle;
     li{
       display: inline-block;
-      padding: 0 8px;
+      padding: 0 15px;
       //vertical-align: middle;
       a{
         display: inline-block;

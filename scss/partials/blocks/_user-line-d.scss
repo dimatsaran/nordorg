@@ -378,6 +378,21 @@
 }
 .block-productions{
   background-color: $color-white-two;
+  position: relative;
+  &:before{
+    background-image: url('../images/line.svg');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 12px;
+    display: block;
+    position: absolute;
+    content: '';
+    top: -11px;
+    z-index: 200;
+  }
   .title-block{
     padding-top: 78px;
     width: 600px;
