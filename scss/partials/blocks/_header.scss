@@ -40,6 +40,9 @@ header{
     display: inline-block;
     text-align: right;
     padding-top: 18px;
+    @include small-phone{
+      display: none;
+    }
     .user-nav{
       >li{
         display: inline-block;
@@ -84,6 +87,9 @@ header{
     display: inline-block;
     text-align: right;
     padding-top: 16px;
+    @include small-phone{
+      display: none;
+    }
     .main-nav{
       >li{
         display: inline-block;

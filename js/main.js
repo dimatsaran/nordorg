@@ -36,7 +36,7 @@ $(document).ready(function(){
     $slicknavMenu.removeClass('menu_show').find('.slicknav_nav').css('display', 'none');
   });
 });
-
+/* slider in header*/
 $(".slider-visual-header").slick({
   arrows: false,
   dots: true,
@@ -44,21 +44,55 @@ $(".slider-visual-header").slick({
   slidesToShow: 1,
   slidesToScroll: 1
 });
+/* slider*/
+$(".slider-catalog").slick({
+  arrows: false,
+  dots: false,
+  // centerMode: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 321,
+      settings: {
+        arrows: false,
+        // dots: true,
+        slidesToShow: 1
+      }
+    }]
+});
+/* slider*/
 $(".slider-visual").slick({
   arrows: false,
   dots: true,
   centerMode: true,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 321,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 1
+      }
+    }]
 });
+/* carusel slider*/
 $(".carusel-visual").slick({
-  // arrows: true,
   dots: false,
-  // centerPadding: '60px',
   centerMode: true,
   slidesToShow: 3,
-  // slidesToScroll: 1
+  responsive: [
+    {
+      breakpoint: 321,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      }
+    }]
 });
+/* dropdown elements*/
 $(".catalog-menu").find('.menu-slide').on("click",function(){
   if (!$(this).parent().hasClass('show')) {
     $(this).parent().addClass('show');

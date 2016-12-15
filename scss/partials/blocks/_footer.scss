@@ -19,6 +19,9 @@ footer{
   .row-block{
     @include clearfix;
     padding: 50px 0;
+    @include small-phone{
+      padding: 20px 0;
+    }
   }
   &.block-footer{
   }
@@ -27,10 +30,18 @@ footer{
     width: 20%;
     float: left;
     a{}
+    @include small-phone{
+      display: none;
+    }
   }
   .content-block{
     float: left;
     width: 80%;
+    @include small-phone{
+      float: none;
+      width: 100%;
+      padding: 0 15px;
+    }
   }
   .footer-top{
   }
@@ -73,6 +84,10 @@ footer{
   .footer-social{
     float: left;
     width: 50%;
+    @include small-phone{
+      //float: none;
+      width: 100%;
+    }
     .title-block{
       font-weight: 500;
       font-size: 1.6*$font-size;
@@ -81,10 +96,17 @@ footer{
       text-decoration: none;
       font-family: $font-medium;
       text-transform: uppercase;
+      @include small-phone{
+        //display: none;
+      }
     }
     ul{
       padding-top: 10px;
       margin: 0 -10px;
+      @include small-phone{
+        margin: 0;
+        text-align: center;
+      }
       li{
         display: inline-block;
         padding: 10px;
@@ -105,6 +127,10 @@ footer{
     float: left;
     width: 50%;
     padding-top: 10px;
+    @include small-phone{
+      //float: none;
+      width: 100%;
+    }
     .form-item{
       width: 418px;
       height: 52px;
@@ -112,6 +138,9 @@ footer{
       background-color: $color-white-two;
       box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.31);
       position: relative;
+      @include small-phone{
+         width: 100%;
+      }
       input{
         font-size: 1.6*$font-size;
         font-weight: 300;

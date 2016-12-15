@@ -55,18 +55,47 @@ body{
     content: '';
     bottom: -4px;
   }
+
 }
 .block-category{
+  @include small-phone{
+    position: relative;
+    background-color: $color-grey;
+    &:after {
+      background-image: url('../images/line.svg');
+      background-attachment: scroll;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 11px;
+      display: block;
+      position: absolute;
+      content: '';
+      bottom: -4px;
+    }
+  }
   .row-block{
+    @include clearfix;
     margin: 0 -15px;
-    padding-top: 125px;
+    padding-top: 130px;
     padding-bottom: 50px;
+    @include small-phone{
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 45px;
+    }
     .content-block{
       margin: 0 0 10px;
       padding: 0 15px;
       width: 33%;
       display: inline-block;
       vertical-align: top;
+      float: left;
+      @include small-phone{
+        width: 100%;
+        padding: 0 10px;
+      }
       .item-block{
         text-align: center;
         border-radius: 10px;
@@ -74,6 +103,9 @@ body{
         height: 468px;
         position: relative;
         overflow: hidden;
+        @include small-phone{
+          width: 100%;
+        }
         a{
           text-decoration: none;
           display: block;
@@ -170,11 +202,19 @@ body{
     display: block;
     margin: 0 auto;
     width: 600px;
+    padding-top: 40px;
+    @include small-phone{
+      width: 100%;
+      padding: 20px 10px 0;
+    }
     h2{
       color: $color-sap-green;
       font-size: 4.2*$font-size;
-      line-height: 2.6*$line-height;
+      line-height: 0.62;
       font-weight: 300;
+      @include small-phone{
+        line-height: 1.05;
+      }
     }
     .desc{
       padding-top: 30px;
@@ -184,26 +224,39 @@ body{
       font-stretch: normal;
       line-height: 1.18;
       text-align: center;
+      @include small-phone{
+        display: none;
+      }
     }
   }
   .row-block{
-    margin: 0 -9px;
+    margin: 0 -10px;
     padding-top: 70px;
     padding-bottom: 50px;
+    @include small-phone{
+      margin: 0;
+    }
     .content-block{
       margin: 0 0 10px;
-      padding: 0 11px;
+      padding: 0 10px;
       width: 33%;
       display: inline-block;
       vertical-align: top;
+      @include small-phone{
+        width: 100%;
+      }
       .item-block{
         text-align: center;
         position: relative;
         .img{
           width: 100%;
           height: 450px;
-          display: table;
+          display: inline-block;
           position: relative;
+          img{
+            display: inline-block;
+            text-align: center;
+          }
           .category-quality{
             border-radius: 50%;
             background-color: $color-white-two;
@@ -216,6 +269,9 @@ body{
             vertical-align: middle;
             width: 60px;
             height: 60px;
+            @include small-phone{
+              right: 10%;
+            }
           }
           .icon-category{
             background-image: url('../images/plants.svg');
@@ -270,8 +326,6 @@ body{
           line-height: 1.63;
           text-align: center;
           padding: 30px 10px;
-
-
         }
       }
     }
@@ -309,75 +363,74 @@ body{
       opacity: 0.3;
       &.slick-active{}
       &.slick-center{
-        //width: 110%!important;
         opacity: 1;
-        .item-block{
-          width: 120%;
-          padding: 0;
-          margin-left: 0;
-          .img-block{
-            width: 260px;
-            height: 260px;
-            float: left;
-            text-align: center;
-            img{
-              border-radius: 50%;
-              background-color: $color-white-two;
-              display: inline-block;
-              width: 260px;
-              height: 260px;
-            }
-          }
-          .text-block{
-            display: inline-block;
-            vertical-align: middle;
-            width: 55%;
-            float: left;
-            padding:0 0 0 30px;
-            .title{
-              font-size: 3*$font-size;
-              font-weight: 300;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1.07;
-              color: $color-sepia;
-            }
-            .desc{
-              padding-top: 20px;
-              font-size: 1.6*$font-size;
-              font-weight: 300;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1.63;
-              color: $color-black;
-
-            }
-            .name-autor{
-              padding-top: 25px;
-              font-size: 1.6*$font-size;
-              font-weight: normal;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1.63;
-              color: $color-sepia;
-            }
-            .spec-autor{
-              font-size: 1.4*$font-size;
-              font-weight: 300;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1.86;
-              color: $color-black;
-            }
-          }
-        }
+        //.item-block{
+        //  //width: 120%;
+        //  padding: 0;
+        //  margin-left: 0;
+        //  .img-block{
+        //    width: 260px;
+        //    height: 260px;
+        //    float: left;
+        //    text-align: center;
+        //    img{
+        //      border-radius: 50%;
+        //      background-color: $color-white-two;
+        //      display: inline-block;
+        //      width: 260px;
+        //      height: 260px;
+        //    }
+        //  }
+        //  .text-block{
+        //    display: inline-block;
+        //    vertical-align: middle;
+        //    width: 55%;
+        //    float: left;
+        //    padding:0 0 0 30px;
+        //    .title{
+        //      font-size: 3*$font-size;
+        //      font-weight: 300;
+        //      font-style: normal;
+        //      font-stretch: normal;
+        //      line-height: 1.07;
+        //      color: $color-sepia;
+        //    }
+        //    .desc{
+        //      padding-top: 20px;
+        //      font-size: 1.6*$font-size;
+        //      font-weight: 300;
+        //      font-style: normal;
+        //      font-stretch: normal;
+        //      line-height: 1.63;
+        //      color: $color-black;
+        //
+        //    }
+        //    .name-autor{
+        //      padding-top: 25px;
+        //      font-size: 1.6*$font-size;
+        //      font-weight: normal;
+        //      font-style: normal;
+        //      font-stretch: normal;
+        //      line-height: 1.63;
+        //      color: $color-sepia;
+        //    }
+        //    .spec-autor{
+        //      font-size: 1.4*$font-size;
+        //      font-weight: 300;
+        //      font-style: normal;
+        //      font-stretch: normal;
+        //      line-height: 1.86;
+        //      color: $color-black;
+        //    }
+        //  }
+        //}
       }
     }
     .slick-arrow{
       z-index: 800;
       height: 40px;
       &.slick-prev{
-        left: 31%;
+        left: 32%;
         &:before{
           background-image: url('../images/slider/arrow-left.svg');
           background-attachment: scroll;
@@ -397,7 +450,7 @@ body{
 
       }
       &.slick-next{
-        right: 31%;
+        right: 32%;
         &:before{
           background-image: url('../images/slider/arrow-right.svg');
           background-attachment: scroll;
@@ -424,69 +477,138 @@ body{
     }
   }
   .item-block{
-    padding: 0 30px;
+    //padding: 0 30px;
     display: block;
-    margin-left: 20px;
-  }
-  .img-block{
-    display: inline-block;
-    vertical-align: middle;
-    //width: 260px;
-    //height: 260px;
-    width: 200px;
-    float: left;
-    text-align: center;
-    img{
-      border-radius: 50%;
-      background-color: $color-white-two;
-      display: inline-block;
+    //margin-left: 20px;
+    @include small-phone{
+      padding: 0 15px;
+      text-align: center;
+    }
+    .img-block{
+      width: 40%;
       //width: 260px;
       //height: 260px;
-      width: 200px;
+      height: auto;
+      float: left;
+      text-align: center;
+      @include small-phone{
+        width: 100%;
+      }
+      img{
+        border-radius: 50%;
+        background-color: $color-white-two;
+        display: inline-block;
+        //width: 260px;
+        //height: 260px;
+        max-width: 100%;
+        height: auto;
+      }
     }
-  }
-  .text-block{
-    display: inline-block;
-    vertical-align: middle;
-    width: 55%;
-    float: left;
-    padding:0 0 0 10px;
-    .title{
-      font-size: 2*$font-size;
-      font-weight: 300;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.07;
-      color: $color-sepia;
-    }
-    .desc{
-      padding-top: 20px;
-      font-size: 1.4*$font-size;
-      font-weight: 300;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.63;
-      color: $color-black;
+    .text-block{
+      display: inline-block;
+      vertical-align: middle;
+      width: 60%;
+      float: left;
+      @include small-phone{
+        width: 100%;
+      }
+      //padding: 0 0 0 30px;
+      .title{
+        font-size: 3*$font-size;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.07;
+        color: $color-sepia;
+      }
+      .desc{
+        padding-top: 20px;
+        font-size: 1.6*$font-size;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.63;
+        color: $color-black;
 
-    }
-    .name-autor{
-      padding-top: 25px;
-      font-size: 1.4*$font-size;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.63;
-      color: $color-sepia;
-    }
-    .spec-autor{
-      font-size: 1.2*$font-size;
-      font-weight: 300;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.86;
-      color: $color-black;
+      }
+      .name-autor{
+        padding-top: 25px;
+        font-size: 1.6*$font-size;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.63;
+        color: $color-sepia;
+      }
+      .spec-autor{
+        font-size: 1.4*$font-size;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.86;
+        color: $color-black;
+      }
     }
   }
+  //.img-block{
+  //  display: inline-block;
+  //  vertical-align: middle;
+  //  //width: 260px;
+  //  //height: 260px;
+  //  width: 200px;
+  //  float: left;
+  //  text-align: center;
+  //  img{
+  //    border-radius: 50%;
+  //    background-color: $color-white-two;
+  //    display: inline-block;
+  //    //width: 260px;
+  //    //height: 260px;
+  //    width: 200px;
+  //  }
+  //}
+  //.text-block{
+  //  display: inline-block;
+  //  vertical-align: middle;
+  //  width: 55%;
+  //  float: left;
+  //  padding:0 0 0 10px;
+  //  .title{
+  //    font-size: 2*$font-size;
+  //    font-weight: 300;
+  //    font-style: normal;
+  //    font-stretch: normal;
+  //    line-height: 1.07;
+  //    color: $color-sepia;
+  //  }
+  //  .desc{
+  //    padding-top: 20px;
+  //    font-size: 1.4*$font-size;
+  //    font-weight: 300;
+  //    font-style: normal;
+  //    font-stretch: normal;
+  //    line-height: 1.63;
+  //    color: $color-black;
+  //
+  //  }
+  //  .name-autor{
+  //    padding-top: 25px;
+  //    font-size: 1.4*$font-size;
+  //    font-weight: normal;
+  //    font-style: normal;
+  //    font-stretch: normal;
+  //    line-height: 1.63;
+  //    color: $color-sepia;
+  //  }
+  //  .spec-autor{
+  //    font-size: 1.2*$font-size;
+  //    font-weight: 300;
+  //    font-style: normal;
+  //    font-stretch: normal;
+  //    line-height: 1.86;
+  //    color: $color-black;
+  //  }
+  //}
 
 }
 .block-slider{
@@ -500,15 +622,36 @@ body{
   }
   .slide{
     position: relative;
+    &.slick-slide{
+      img{
+        min-height: 390px;
+        min-width: 1198px;
+      }
+    }
   }
-  img{}
   .text-holder{
     position: absolute;
-    top: 0;
+    top: 40%;
     width: 100%;
-    height: 100%;
+    //height: 100%;
+    text-align: center;
+    @include small-phone{
+      top: 16%;
+    }
+    .container{
+      //width: 100%;
+      //height: 100%;
+    }
     .info{
-      margin-top: 200px;
+      //width: 100%;
+      //height: 100%;
+      vertical-align: middle;
+      display: inline-block;
+      //margin-top: 200px;
+      @include small-phone{
+        width: 100%;
+        height: 100%;
+      }
       .title-block{
         font-size: 4.2*$font-size;
         font-style: normal;
@@ -517,6 +660,9 @@ body{
         text-align: center;
         font-weight: 400;
         color: $color-white-two;
+        @include small-phone{
+          line-height: 1.24;
+        }
       }
       .desc{
         font-size: 3*$font-size;
@@ -527,6 +673,9 @@ body{
         text-align: center;
         color: $color-white-two;
         padding-top: 20px;
+        @include small-phone{
+          display: none;
+        }
       }
       .btn-play{
         margin-top: 23px;
@@ -536,6 +685,9 @@ body{
   .slick-dots{
     position: absolute;
     bottom: 34px;
+    @include small-phone{
+      bottom: 16px;
+    }
     li{
       button{
         &:before{
@@ -559,11 +711,18 @@ body{
   }
 }
 .block-partner{
-  height: 130px;
+  //height: 130px;
   padding: 35px 0 35px;
+  @include small-phone{
+    padding: 35px 10px 35px;
+  }
   .titleBlock{
     display: inline-block;
     vertical-align: middle;
+    @include small-phone{
+      text-align: center;
+      width: 100%;
+    }
   }
   h3{
     color: $color-sepia;
@@ -577,10 +736,18 @@ body{
   .partner-logos{
     display: inline-block;
     vertical-align: middle;
+    @include small-phone{
+      text-align: center;
+      padding-top: 15px;
+    }
     li{
       display: inline-block;
       padding: 0 15px;
       //vertical-align: middle;
+      @include small-phone{
+        width: 24%;
+        padding: 0 5px;
+      }
       a{
         display: inline-block;
         //vertical-align: middle;
