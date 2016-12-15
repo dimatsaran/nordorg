@@ -55,7 +55,9 @@ body{
     content: '';
     bottom: -4px;
   }
-
+  @include small-phone{
+      display: none;
+  }
 }
 .block-category{
   @include small-phone{
@@ -79,7 +81,7 @@ body{
     @include clearfix;
     margin: 0 -15px;
     padding-top: 130px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     @include small-phone{
       margin: 0;
       padding-top: 10px;
@@ -181,22 +183,6 @@ body{
   }
 }
 .block-catalog{
-  //position: relative;
-  //&:after{
-  //  background-image: url('../images/line.svg');
-  //  background-attachment: scroll;
-  //  background-size: cover;
-  //  background-repeat: no-repeat;
-  //  background-position: center;
-  //  width: 100%;
-  //  height: 12px;
-  //  display: block;
-  //  position: absolute;
-  //  content: '';
-  //  bottom: -11px;
-  //  transform: rotate(180deg);
-  //  z-index: 200;
-  //}
   .title-block{
     text-align: center;
     display: block;
@@ -330,6 +316,26 @@ body{
       }
     }
   }
+  .slick-dots {
+    @include small-phone {
+      bottom: -40px;
+    }
+    li{
+      button{
+        &:before{
+          background-color: $color-grey;
+        }
+
+      }
+      &.slick-active,&:hover{
+        button{
+          &:before{
+            background-color: $color-rouge-v1;
+          }
+        }
+      }
+    }
+  }
 }
 .block-carusel{
   background-color: $color-grey;
@@ -356,6 +362,9 @@ body{
   .block-visual{
     overflow-x: hidden;
     padding-top: 30px;
+    @include small-phone {
+      overflow-x: visible;
+    }
     .slick-list{
       padding: 0!important;
     }
@@ -465,6 +474,26 @@ body{
         &:hover{
           &:before {
             background-image: url('../images/slider/arrow-right-active.svg');
+          }
+        }
+      }
+    }
+    .slick-dots {
+      @include small-phone {
+        bottom: -50px;
+      }
+      li{
+        button{
+          &:before{
+            //background-color: $color-grey;
+          }
+
+        }
+        &.slick-active,&:hover{
+          button{
+            &:before{
+              background-color: $color-rouge-v1;
+            }
           }
         }
       }
@@ -714,7 +743,7 @@ body{
   //height: 130px;
   padding: 35px 0 35px;
   @include small-phone{
-    padding: 35px 10px 35px;
+    padding: 25px 10px 5px;
   }
   .titleBlock{
     display: inline-block;
@@ -746,13 +775,20 @@ body{
       //vertical-align: middle;
       @include small-phone{
         width: 24%;
-        padding: 0 5px;
+        padding: 10px 5px;
+        &:nth-last-of-type(1){
+          width: 35%;
+        }
+        &:nth-last-of-type(2){
+          width: 35%;
+        }
       }
       a{
         display: inline-block;
         //vertical-align: middle;
         img{
           vertical-align: middle;
+          width: 100%;
         }
       }
     }

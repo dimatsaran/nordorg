@@ -21,9 +21,14 @@
 
 $(document).ready(function(){
   var $mainMenu = jQuery('#nav');
-  $('#nav').slicknav();
+  $('#nav').slicknav(
+      {
+        prependTo: '.main-header .container',
+        label: ''
+      }
+  );
   var $slicknavMenu = jQuery('.slicknav_menu');
-  $slicknavMenu.append('<span class="hiddenBg"></span>');
+  // $slicknavMenu.append('<span class="hiddenBg"></span>');
   $(".slicknav_btn").on("click",function(){
     if (!$slicknavMenu.hasClass('menu_show')) {
       $slicknavMenu.addClass('menu_show').find('.slicknav_nav').css('display', 'block');
@@ -56,7 +61,7 @@ $(".slider-catalog").slick({
       breakpoint: 321,
       settings: {
         arrows: false,
-        // dots: true,
+        dots: true,
         slidesToShow: 1
       }
     }]
@@ -87,6 +92,7 @@ $(".carusel-visual").slick({
     {
       breakpoint: 321,
       settings: {
+        dots: true,
         arrows: false,
         slidesToShow: 1
       }

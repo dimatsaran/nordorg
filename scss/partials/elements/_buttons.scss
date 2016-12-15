@@ -86,5 +86,34 @@
       }
     }
   }
+  .slick-dotted.slick-slider{
+    margin-bottom: 0;
+  }
+  .slick-dots{
+    position: absolute;
+    bottom: 34px;
+    @include small-phone{
+      bottom: 0;
+    }
+    li{
+      button{
+        &:before{
+          border-radius: 100%;
+          background-color: $color-white-two;
+          opacity: 1;
+          content: '';
+          width: 11px;
+          height: 11px;
+        }
 
+      }
+      &.slick-active,&:hover{
+        button{
+          &:before{
+            background-color: $color-rouge-v1;
+          }
+        }
+      }
+    }
+  }
 }

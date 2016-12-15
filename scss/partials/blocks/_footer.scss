@@ -55,12 +55,53 @@ footer{
       &:first-of-type{
         padding-left: 0;
       }
+      @include small-phone{
+        padding-left: 0;
+        width: 100%;
+      }
+      &.footer-products{
+        padding-bottom: 18px;
+      }
+      &.footer-product{
+        padding-bottom: 18px;
+      }
+      &.footer-contact{
+        @include small-phone{
+          ul{
+            display: none;
+          }
+        }
+      }
+      &.footer-information{
+        @include small-phone{
+          ul{
+            display: none;
+          }
+        }
+      }
     }
     .title-menu{
       color: $color-sap-green;
       text-transform: uppercase;
       padding-bottom: 20px;
       font-family: $font-medium;
+      @include small-phone{
+        padding-bottom: 7px;
+      }
+      a{
+        color: $color-sap-green;
+        text-transform: uppercase;
+        font-family: $font-medium;
+        text-decoration: none;
+        @include small-phone{
+          font-size: 1.6*$font-size;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.63;
+          color: $color-sap-green;
+        }
+      }
     }
     ul{
       li{
@@ -97,7 +138,7 @@ footer{
       font-family: $font-medium;
       text-transform: uppercase;
       @include small-phone{
-        //display: none;
+        display: none;
       }
     }
     ul{
@@ -128,7 +169,6 @@ footer{
     width: 50%;
     padding-top: 10px;
     @include small-phone{
-      //float: none;
       width: 100%;
     }
     .form-item{
