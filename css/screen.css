@@ -1671,14 +1671,14 @@ body.index .item-block .text-block a {
 
 /* line 60, ../scss/partials/blocks/_main-page.scss */
 .block-category .row-block {
-  margin: 0 -9px;
-  padding-top: 130px;
+  margin: 0 -15px;
+  padding-top: 125px;
   padding-bottom: 50px;
 }
 /* line 64, ../scss/partials/blocks/_main-page.scss */
 .block-category .row-block .content-block {
   margin: 0 0 10px;
-  padding: 0 11px;
+  padding: 0 15px;
   width: 33%;
   display: inline-block;
   vertical-align: top;
