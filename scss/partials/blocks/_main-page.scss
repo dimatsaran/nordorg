@@ -1,5 +1,8 @@
 body{
-  background:rgba(0, 0, 0, 0) url("../images/pattern.png") no-repeat scroll  center 250px;
+  background:rgba(0, 0, 0, 0) url("../images/pattern.svg") no-repeat scroll  center 250px;
+  &.karjiera-d{
+    background: none;
+  }
   &.index{
     .item-block{
       height: 100px!important;
@@ -18,7 +21,6 @@ body{
         }
       }
     }
-
   }
 }
 .block-head-main-bg{
@@ -109,9 +111,11 @@ body{
           width: 100%;
         }
         a{
+          width: 100%;
+          height: 100%;
           text-decoration: none;
           display: block;
-          margin-top: 0px;
+          margin-top: 0;
           -webkit-transition: all 0 1s ease-out 0.5s;
           -moz-transition: all 0 1s ease-out 0.5s;
           -o-transition: all 0 1s ease-out 0.5s;

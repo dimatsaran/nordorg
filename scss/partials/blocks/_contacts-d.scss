@@ -47,6 +47,20 @@
         color: $color-sap-green;
         display: inline-block;
       }
+      .mail {
+        margin: 0 0 30px;
+        padding: 8px 0;
+        .icon-mail {
+          vertical-align: middle;
+          background-repeat: no-repeat;
+          width: 35px;
+          height: 34px;
+          display: inline-block;
+          margin-right: 17px;
+          background-image: url("../images/email-green.svg");
+          background-position: center center;
+        }
+      }
       .text{
         font-size: 1.6*$font-size;
         font-weight: normal;

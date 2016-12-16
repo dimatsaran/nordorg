@@ -1,6 +1,6 @@
 .block-faq{
   .block-category-button{
-    padding-top: 20px;
+    padding-top: 45px;
     text-align: left;
     .list-button{
       li{
@@ -84,9 +84,29 @@
         width: 15px;
         height: 15px;
         display: inline-block;
-        margin-right: 15px;
-        background-image: url("../images/plus.svg");
+        margin-right: 10px;
+        background-image: url("../images/plus-green.svg");
         background-position: center center;
+      }
+      .icon-plus-sepia{
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin-right: 15px;
+        background-position: center center;
+        background-image: url("../images/plus-sepia.svg");
+      }
+      .icon-plus-rouge{
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin-right: 15px;
+        background-position: center center;
+        background-image: url("../images/plus-rouge.svg");
       }
       .catalog-menu{
         >li{
@@ -96,7 +116,13 @@
           }
           &.show{
             .icon-plus{
-              background-image: url("../images/m-inus.svg");
+              background-image: url("../images/minus-green.svg");
+            }
+            .icon-plus-sepia{
+              background-image: url("../images/minus-sepia.svg");
+            }
+            .icon-plus-rouge{
+              background-image: url("../images/minus-rouge.svg");
             }
           }
           >a{
@@ -121,7 +147,7 @@
         }
       }
       .sub-menu{
-        padding: 0 20px 15px;
+        padding: 0 25px 15px;
         display: none;
         &[data-display="none"]{
           display: none;
@@ -143,14 +169,14 @@
       }
     }
   .row-block{
-      margin: 0 -9px;
       padding-top: 50px;
       padding-bottom: 20px;
       .content-block{
         width: 100%;
         .item-block{
           text-align: left;
-          width: 60%;
+          width: 65%;
+          padding-left: 23px;
           .autor{
             padding-top: 20px;
             .img-autor{
