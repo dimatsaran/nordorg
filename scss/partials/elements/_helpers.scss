@@ -1,6 +1,6 @@
 
 // Responsive breakpoints. "Include media" settings.
-$menu-tablet:1024px;
+//$menu-tablet:1024px;
 $desktop: 1170px;
 $tablet: 768px;
 $phone: 640px;
@@ -8,11 +8,11 @@ $custom-phone: 450px;
 $small-phone: 320px;
 
 /* for mobile header */
-@mixin menu-tablet {
-  @media screen and (min-device-width: 640px) and (max-device-width: 1024px)and (-webkit-min-device-pixel-ratio: 1)  {
-    @content;
-  }
-}
+//@mixin menu-tablet {
+//  @media screen and (min-device-width: 640px) and (max-device-width: 1024px)and (-webkit-min-device-pixel-ratio: 1)  {
+//    @content;
+//  }
+//}
 
 @mixin desktop {
   @media (min-width: #{$desktop + 1px}) {
@@ -42,7 +42,7 @@ $small-phone: 320px;
   }
 }
 @mixin small-phone {
-  @media (max-width: #{$small-phone}) {
+  @media (max-width: #{$tablet}) {
     @content;
   }
 }

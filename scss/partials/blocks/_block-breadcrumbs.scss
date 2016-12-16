@@ -1,6 +1,6 @@
 .block-breadcrumbs{
   position: relative;
-  &.career{
+  &.karjiera-d{
     background:rgba(0, 0, 0, 0) url("../images/bg-career.png") no-repeat scroll  center center;
     height: 208px;
   }
@@ -16,7 +16,7 @@
     background:rgba(0, 0, 0, 0) url("../images/bg-become-partner.png") no-repeat scroll  center center;
     height: 208px;
   }
-  &.pagalba,&.knowledge-d,&.faq-d{
+  &.pagalba,&.knowledge-d,&.faq-d,&.naujienos-d{
     background:rgba(0, 0, 0, 0) url("../images/bg-tabs-gruond.png") no-repeat scroll  center center;
     height: 206px;
   }

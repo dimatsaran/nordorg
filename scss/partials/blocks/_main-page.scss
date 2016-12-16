@@ -740,7 +740,6 @@ body{
   }
 }
 .block-partner{
-  //height: 130px;
   padding: 35px 0 35px;
   @include small-phone{
     padding: 25px 10px 5px;
@@ -771,8 +770,9 @@ body{
     }
     li{
       display: inline-block;
-      padding: 0 15px;
+      //padding: 0 15px;
       //vertical-align: middle;
+      padding: 0 23px;
       @include small-phone{
         width: 24%;
         padding: 10px 5px;
@@ -782,6 +782,9 @@ body{
         &:nth-last-of-type(2){
           width: 35%;
         }
+      }
+      &:last-of-type{
+        padding-right: 0;
       }
       a{
         display: inline-block;

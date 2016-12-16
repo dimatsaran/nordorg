@@ -58,7 +58,7 @@ $(".slider-catalog").slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 321,
+      breakpoint: 768,
       settings: {
         arrows: false,
         dots: true,
@@ -75,7 +75,7 @@ $(".slider-visual").slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 321,
+      breakpoint: 768,
       settings: {
         arrows: false,
         dots: true,
@@ -90,7 +90,7 @@ $(".carusel-visual").slick({
   slidesToShow: 3,
   responsive: [
     {
-      breakpoint: 321,
+      breakpoint: 768,
       settings: {
         dots: true,
         arrows: false,

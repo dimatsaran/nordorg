@@ -450,19 +450,31 @@
     }
   }
   .row-block{
+    @include clearfix;
     margin: 0 -10px ;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+    width: 790px;
+    margin: 0 auto;
     .content-block{
       padding: 0 10px;
-      width: 24%;
+      width: 25%;
+      float: left;
       display: inline-block;
       vertical-align: top;
       .item-block{
         text-align: center;
-         padding: 0 30px;
+         //padding: 0 30px;
         .text-block{
-          padding: 20px;
+          //padding: 20px;
+        }
+        .icon-svg{
+          display: inline-block;
+          height: 120px;
+          line-height: 120px;
+          img{
+            vertical-align: middle;
+          }
         }
         .title{
           color: $color-black;
