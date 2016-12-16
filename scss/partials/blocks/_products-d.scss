@@ -26,6 +26,7 @@
           text-align: left;
           text-transform: uppercase
         }
+
       }
       i{
         vertical-align: middle;
@@ -50,12 +51,26 @@
           .title-menu{
             cursor: pointer;
             padding: 10px;
+            .selected{
+              background-image: url("../images/plus-grey.svg");
+              background-position: center;
+              vertical-align: middle;
+              background-repeat: no-repeat;
+              width: 23px;
+              height: 23px;
+              display: inline-block;
+              //margin-right: 10px;
+              position: absolute;
+              right: 20px;
+            }
           }
           &.show{
             background-color: $color-light-grey;
+            .selected{
+              background-image: url("../images/minus-grey.svg");
+            }
           }
           >a{
-
             text-decoration: none;
             font-size: 1.6*$font-size;
             font-weight: 600;
