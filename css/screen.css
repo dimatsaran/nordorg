@@ -1987,7 +1987,7 @@ body.index .item-block .text-block a {
   /* line 92, ../scss/partials/blocks/_main-page.scss */
   .block-category .row-block .content-block {
     width: 100%;
-    padding: 0 10px 10px;
+    padding: 0 20px 10px;
   }
 }
 /* line 103, ../scss/partials/blocks/_main-page.scss */
@@ -3290,14 +3290,34 @@ body.index .item-block .text-block a {
   padding-top: 50px;
   padding-bottom: 10px;
 }
-/* line 18, ../scss/partials/blocks/_company-page.scss */
+@media (max-width: 768px) {
+  /* line 3, ../scss/partials/blocks/_company-page.scss */
+  .block-description-company .row-block {
+    margin: 0;
+    padding: 30px 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 11, ../scss/partials/blocks/_company-page.scss */
+  .block-description-company .content-block {
+    padding: 20px;
+  }
+}
+/* line 24, ../scss/partials/blocks/_company-page.scss */
 .block-description-company .text-block {
   width: 45%;
   display: inline-block;
   vertical-align: top;
   padding-top: 40px;
 }
-/* line 23, ../scss/partials/blocks/_company-page.scss */
+@media (max-width: 768px) {
+  /* line 24, ../scss/partials/blocks/_company-page.scss */
+  .block-description-company .text-block {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+/* line 33, ../scss/partials/blocks/_company-page.scss */
 .block-description-company .text-block .title {
   color: #658d1b;
   font-size: 42px;
@@ -3306,7 +3326,13 @@ body.index .item-block .text-block a {
   font-style: normal;
   font-stretch: normal;
 }
-/* line 31, ../scss/partials/blocks/_company-page.scss */
+@media (max-width: 768px) {
+  /* line 33, ../scss/partials/blocks/_company-page.scss */
+  .block-description-company .text-block .title {
+    line-height: 1.17;
+  }
+}
+/* line 44, ../scss/partials/blocks/_company-page.scss */
 .block-description-company .text-block .desc {
   color: #373737;
   font-size: 16px;
@@ -3316,42 +3342,61 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   padding-top: 30px;
 }
-/* line 39, ../scss/partials/blocks/_company-page.scss */
+/* line 52, ../scss/partials/blocks/_company-page.scss */
 .block-description-company .text-block .desc p {
   margin-bottom: 20px;
 }
-/* line 44, ../scss/partials/blocks/_company-page.scss */
+/* line 57, ../scss/partials/blocks/_company-page.scss */
 .block-description-company .img {
   width: 54%;
   display: inline-block;
   position: relative;
   text-align: right;
 }
-/* line 49, ../scss/partials/blocks/_company-page.scss */
+@media (max-width: 768px) {
+  /* line 57, ../scss/partials/blocks/_company-page.scss */
+  .block-description-company .img {
+    width: 100%;
+  }
+}
+/* line 65, ../scss/partials/blocks/_company-page.scss */
 .block-description-company .img .icon-natural {
   position: absolute;
   top: 35%;
   left: 20%;
 }
 
-/* line 57, ../scss/partials/blocks/_company-page.scss */
+/* line 73, ../scss/partials/blocks/_company-page.scss */
 .block-statistics .row-block {
   margin: 0 -10px;
   padding: 20px 0 30px;
 }
-/* line 60, ../scss/partials/blocks/_company-page.scss */
+@media (max-width: 768px) {
+  /* line 73, ../scss/partials/blocks/_company-page.scss */
+  .block-statistics .row-block {
+    margin: 0;
+    padding: 30px 0 20px;
+  }
+}
+/* line 80, ../scss/partials/blocks/_company-page.scss */
 .block-statistics .row-block .content-block {
   padding: 0 10px;
   width: 24%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 65, ../scss/partials/blocks/_company-page.scss */
+@media (max-width: 768px) {
+  /* line 80, ../scss/partials/blocks/_company-page.scss */
+  .block-statistics .row-block .content-block {
+    width: 100%;
+  }
+}
+/* line 88, ../scss/partials/blocks/_company-page.scss */
 .block-statistics .row-block .content-block .item-block {
   text-align: center;
   position: relative;
 }
-/* line 68, ../scss/partials/blocks/_company-page.scss */
+/* line 91, ../scss/partials/blocks/_company-page.scss */
 .block-statistics .row-block .content-block .item-block .img {
   border-radius: 100%;
   border: 3px dashed #dbc5aa;
@@ -3360,7 +3405,7 @@ body.index .item-block .text-block a {
   margin: 0 auto;
   position: relative;
 }
-/* line 76, ../scss/partials/blocks/_company-page.scss */
+/* line 99, ../scss/partials/blocks/_company-page.scss */
 .block-statistics .row-block .content-block .item-block .count {
   display: inline-block;
   position: absolute;
@@ -3375,7 +3420,7 @@ body.index .item-block .text-block a {
   left: 0;
   top: 40px;
 }
-/* line 94, ../scss/partials/blocks/_company-page.scss */
+/* line 117, ../scss/partials/blocks/_company-page.scss */
 .block-statistics .row-block .content-block .item-block .desc {
   color: #373737;
   font-size: 20px;
@@ -3387,17 +3432,23 @@ body.index .item-block .text-block a {
   text-align: center;
 }
 
-/* line 108, ../scss/partials/blocks/_company-page.scss */
+/* line 131, ../scss/partials/blocks/_company-page.scss */
 .block-certificates {
   height: 450px;
   position: relative;
   background: transparent url("../images/bg-certificates-group-2.png") no-repeat scroll center -250px;
 }
-/* line 112, ../scss/partials/blocks/_company-page.scss */
+@media (max-width: 768px) {
+  /* line 131, ../scss/partials/blocks/_company-page.scss */
+  .block-certificates {
+    height: 870px;
+    background-size: cover;
+  }
+}
+/* line 140, ../scss/partials/blocks/_company-page.scss */
 .block-certificates:after {
   background-image: url("../images/line.svg");
   background-attachment: scroll;
-  background-size: contain;
   background-repeat: repeat-x;
   width: 100%;
   height: 10px;
@@ -3406,31 +3457,59 @@ body.index .item-block .text-block a {
   content: '';
   bottom: -2px;
 }
-/* line 125, ../scss/partials/blocks/_company-page.scss */
+/* line 153, ../scss/partials/blocks/_company-page.scss */
 .block-certificates .row-block {
   padding-top: 100px;
   padding-bottom: 10px;
 }
-/* line 129, ../scss/partials/blocks/_company-page.scss */
+/* line 2, ../scss/partials/elements/_base.scss */
+.block-certificates .row-block:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+@media (max-width: 768px) {
+  /* line 153, ../scss/partials/blocks/_company-page.scss */
+  .block-certificates .row-block {
+    line-height: 1.17;
+  }
+}
+/* line 161, ../scss/partials/blocks/_company-page.scss */
 .block-certificates .content-block {
   display: inline-block;
   vertical-align: top;
   float: left;
 }
-/* line 134, ../scss/partials/blocks/_company-page.scss */
+/* line 166, ../scss/partials/blocks/_company-page.scss */
 .block-certificates .content-block:first-of-type {
   width: 52%;
 }
-/* line 137, ../scss/partials/blocks/_company-page.scss */
+@media (max-width: 768px) {
+  /* line 166, ../scss/partials/blocks/_company-page.scss */
+  .block-certificates .content-block:first-of-type {
+    width: 100%;
+    padding: 0 20px 10px;
+  }
+}
+/* line 174, ../scss/partials/blocks/_company-page.scss */
 .block-certificates .content-block:last-of-type {
   width: 45%;
 }
-/* line 141, ../scss/partials/blocks/_company-page.scss */
+@media (max-width: 768px) {
+  /* line 174, ../scss/partials/blocks/_company-page.scss */
+  .block-certificates .content-block:last-of-type {
+    width: 100%;
+    padding: 0 20px 10px;
+  }
+}
+/* line 182, ../scss/partials/blocks/_company-page.scss */
 .block-certificates .item-block {
   text-align: left;
   position: relative;
 }
-/* line 146, ../scss/partials/blocks/_company-page.scss */
+/* line 187, ../scss/partials/blocks/_company-page.scss */
 .block-certificates .text-block .title {
   color: #ffffff;
   font-size: 42px;
@@ -3440,7 +3519,13 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   padding-top: 20px;
 }
-/* line 155, ../scss/partials/blocks/_company-page.scss */
+@media (max-width: 768px) {
+  /* line 187, ../scss/partials/blocks/_company-page.scss */
+  .block-certificates .text-block .title {
+    line-height: 1.17;
+  }
+}
+/* line 199, ../scss/partials/blocks/_company-page.scss */
 .block-certificates .text-block .desc {
   color: #ffffff;
   font-size: 16px;
@@ -3450,11 +3535,11 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   padding-top: 30px;
 }
-/* line 168, ../scss/partials/blocks/_company-page.scss */
+/* line 209, ../scss/partials/blocks/_company-page.scss */
 .block-certificates .img-block {
   padding-left: 50px;
 }
-/* line 170, ../scss/partials/blocks/_company-page.scss */
+/* line 211, ../scss/partials/blocks/_company-page.scss */
 .block-certificates .img-block .img {
   display: inline-block;
   padding: 15px;
@@ -4216,21 +4301,39 @@ body.index .item-block .text-block a {
   padding-top: 45px;
   padding-bottom: 20px;
 }
-/* line 7, ../scss/partials/blocks/_knowledge-d.scss */
+@media (max-width: 768px) {
+  /* line 5, ../scss/partials/blocks/_knowledge-d.scss */
+  .block-knowledge .row-block .content-block {
+    padding: 0 20px;
+  }
+}
+/* line 10, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 14, ../scss/partials/blocks/_knowledge-d.scss */
+@media (max-width: 768px) {
+  /* line 16, ../scss/partials/blocks/_knowledge-d.scss */
+  .block-knowledge .row-block .block-category-button .list-button {
+    text-align: center;
+  }
+}
+/* line 20, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .block-category-button .list-button li {
   display: inline-block;
   padding-right: 10px;
 }
-/* line 17, ../scss/partials/blocks/_knowledge-d.scss */
+@media (max-width: 768px) {
+  /* line 20, ../scss/partials/blocks/_knowledge-d.scss */
+  .block-knowledge .row-block .block-category-button .list-button li {
+    padding: 5px;
+  }
+}
+/* line 26, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .block-category-button .list-button li:last-of-type {
   padding-right: 0;
 }
-/* line 20, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 29, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .block-category-button .list-button li .btn {
   width: auto;
   min-width: 170px;
@@ -4248,12 +4351,12 @@ body.index .item-block .text-block a {
   background-color: #dbc5aa;
   cursor: pointer;
 }
-/* line 36, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 45, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .block-category-button .list-button li .btn.active, .block-knowledge .row-block .block-category-button .list-button li .btn:hover {
   color: #ffffff;
   background-color: #658d1b;
 }
-/* line 44, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 53, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block {
   position: relative;
   padding-top: 52px;
@@ -4266,19 +4369,31 @@ body.index .item-block .text-block a {
   clear: both;
   height: 0;
 }
-/* line 48, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 57, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .img {
   display: inline-block;
   float: left;
   width: 32%;
 }
-/* line 53, ../scss/partials/blocks/_knowledge-d.scss */
+@media (max-width: 768px) {
+  /* line 57, ../scss/partials/blocks/_knowledge-d.scss */
+  .block-knowledge .row-block .img-block .img {
+    width: 100%;
+  }
+}
+/* line 65, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block {
   display: inline-block;
   float: left;
   width: 55%;
 }
-/* line 57, ../scss/partials/blocks/_knowledge-d.scss */
+@media (max-width: 768px) {
+  /* line 65, ../scss/partials/blocks/_knowledge-d.scss */
+  .block-knowledge .row-block .img-block .text-block {
+    width: 100%;
+  }
+}
+/* line 72, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -4287,7 +4402,7 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #373737;
 }
-/* line 65, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 80, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block .desc {
   padding-top: 20px;
   font-size: 16px;
@@ -4297,17 +4412,17 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   color: #373737;
 }
-/* line 74, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 89, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block .autor {
   padding-top: 20px;
 }
-/* line 76, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 91, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block .autor .img-autor {
   display: inline-block;
   float: left;
   margin-right: 10px;
 }
-/* line 81, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 96, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block .autor .name-autor {
   color: #8b5b29;
   font-size: 16px;
@@ -4316,7 +4431,7 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.63;
 }
-/* line 89, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 104, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block .autor .date {
   font-size: 14px;
   font-weight: 300;
@@ -4324,25 +4439,37 @@ body.index .item-block .text-block a {
   color: #373737;
 }
 
-/* line 101, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 116, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block {
   padding-top: 20px;
   padding-bottom: 50px;
 }
-/* line 104, ../scss/partials/blocks/_knowledge-d.scss */
+@media (max-width: 768px) {
+  /* line 116, ../scss/partials/blocks/_knowledge-d.scss */
+  .block-tags .row-block {
+    padding: 20px  20px 10px;
+  }
+}
+/* line 122, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .content-block {
   width: 45%;
 }
-/* line 107, ../scss/partials/blocks/_knowledge-d.scss */
+@media (max-width: 768px) {
+  /* line 122, ../scss/partials/blocks/_knowledge-d.scss */
+  .block-tags .row-block .content-block {
+    width: 100%;
+  }
+}
+/* line 128, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 112, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 133, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .list-block .text-block {
   padding-bottom: 20px;
 }
-/* line 114, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 135, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .list-block .text-block .title {
   font-size: 22px;
   font-weight: 300;
@@ -4351,7 +4478,7 @@ body.index .item-block .text-block a {
   line-height: 1.18;
   color: #373737;
 }
-/* line 122, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 143, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .list-block .text-block .date {
   padding-top: 10px;
   font-size: 14px;
@@ -4359,7 +4486,7 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   color: #373737;
 }
-/* line 132, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 153, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .add-list .btn {
   font-size: 16px;
   font-weight: 300;
@@ -4826,19 +4953,28 @@ body.index .item-block .text-block a {
   padding-top: 52px;
   text-align: center;
 }
-/* line 10, ../scss/partials/blocks/_lab-distributor-inner.scss */
+@media (max-width: 768px) {
+  /* line 2, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  .block-lab-distributor .left-sidebar {
+    margin-top: 0;
+    float: none;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+/* line 16, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .left-sidebar .btn {
   margin-top: 20px;
   text-align: left;
   position: relative;
   padding: 10px 20px;
 }
-/* line 15, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 21, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .left-sidebar .btn .title-link {
   text-align: left;
   display: inline-block;
 }
-/* line 19, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 25, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .left-sidebar .btn .icon-email {
   vertical-align: middle;
   background-image: url("../images/email.svg");
@@ -4850,13 +4986,27 @@ body.index .item-block .text-block a {
   position: absolute;
   right: 5px;
 }
-/* line 32, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 38, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product {
   padding-top: 52px;
   display: inline-block;
   width: 722px;
 }
-/* line 37, ../scss/partials/blocks/_lab-distributor-inner.scss */
+@media (max-width: 768px) {
+  /* line 38, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  .block-lab-distributor .block-product {
+    margin-top: 0;
+    float: none;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 47, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  .block-lab-distributor .block-product .block-product-single {
+    padding: 0 20px;
+  }
+}
+/* line 51, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single h2 {
   font-size: 50px;
   font-weight: 300;
@@ -4866,7 +5016,7 @@ body.index .item-block .text-block a {
   letter-spacing: -0.5px;
   color: #373737;
 }
-/* line 46, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 60, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .title-block {
   padding-top: 20px;
   font-size: 20px;
@@ -4876,7 +5026,7 @@ body.index .item-block .text-block a {
   line-height: 1.3;
   color: #373737;
 }
-/* line 54, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 68, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .title-block .icon-agro {
   margin-right: 10px;
   vertical-align: middle;
@@ -4889,11 +5039,11 @@ body.index .item-block .text-block a {
   height: 25px;
   display: inline-block;
 }
-/* line 67, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 81, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .country {
   padding-top: 20px;
 }
-/* line 69, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 83, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .country .icon-country {
   vertical-align: middle;
   background-image: url("../images/geolocalization-brown.svg");
@@ -4906,7 +5056,7 @@ body.index .item-block .text-block a {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 81, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 95, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .country .countries {
   font-size: 20px;
   font-weight: 300;
@@ -4915,7 +5065,7 @@ body.index .item-block .text-block a {
   line-height: 1.3;
   color: #373737;
 }
-/* line 90, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 104, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .desc {
   padding-top: 20px;
   font-size: 16px;
@@ -4927,7 +5077,13 @@ body.index .item-block .text-block a {
   width: 80%;
   padding-bottom: 20px;
 }
-/* line 101, ../scss/partials/blocks/_lab-distributor-inner.scss */
+@media (max-width: 768px) {
+  /* line 104, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  .block-lab-distributor .block-product .block-product-single .desc {
+    width: 100%;
+  }
+}
+/* line 118, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .link {
   font-size: 16px;
   font-weight: normal;
@@ -4937,11 +5093,17 @@ body.index .item-block .text-block a {
   text-transform: uppercase;
   color: #8b5b29;
 }
-/* line 111, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 128, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog {
   padding-top: 20px;
 }
-/* line 114, ../scss/partials/blocks/_lab-distributor-inner.scss */
+@media (max-width: 768px) {
+  /* line 128, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  .block-lab-distributor .block-product .block-products-catalog {
+    padding: 20px 20px 0;
+  }
+}
+/* line 134, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .title-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -4950,35 +5112,44 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #689146;
 }
-/* line 123, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 143, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block {
   padding-bottom: 20px;
 }
-/* line 127, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 147, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block {
   width: 33%;
   float: left;
   display: inline-block;
   vertical-align: top;
 }
-/* line 132, ../scss/partials/blocks/_lab-distributor-inner.scss */
+@media (max-width: 768px) {
+  /* line 147, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  .block-lab-distributor .block-product .block-products-catalog .row-block .content-block {
+    margin-top: 0;
+    float: none;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+/* line 158, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block {
   text-align: center;
   position: relative;
   padding: 20px;
 }
-/* line 136, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 162, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .img {
   width: 160px;
   position: relative;
   text-align: center;
   display: inline-block;
 }
-/* line 141, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 167, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .img img {
   vertical-align: bottom;
 }
-/* line 144, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 170, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .img .icon-category {
   position: absolute;
   bottom: 0;
@@ -4992,7 +5163,7 @@ body.index .item-block .text-block a {
   height: 40px;
   display: inline-block;
 }
-/* line 161, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 187, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .title {
   padding-top: 10px;
   font-size: 20px;
@@ -5003,12 +5174,12 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #373737;
 }
-/* line 171, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 197, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .desc {
   padding-top: 10px;
   display: inline-block;
 }
-/* line 174, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 200, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .desc .icon-bag {
   vertical-align: middle;
   background-image: url("../images/t-a-r-a.svg");
@@ -5018,7 +5189,7 @@ body.index .item-block .text-block a {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 183, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 209, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .desc .count-size {
   font-size: 15px;
   font-weight: normal;
@@ -5030,7 +5201,13 @@ body.index .item-block .text-block a {
   vertical-align: middle;
   display: inline-block;
 }
-/* line 201, ../scss/partials/blocks/_lab-distributor-inner.scss */
+@media (max-width: 768px) {
+  /* line 225, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  .block-lab-distributor .block-product .block-product-advantages {
+    padding: 20px 20px 0;
+  }
+}
+/* line 230, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-advantages .title-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -5039,20 +5216,42 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #689146;
 }
-/* line 210, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 239, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-advantages .row-block {
   padding-top: 20px;
   margin: 0 -10px;
   padding-bottom: 50px;
 }
-/* line 214, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 2, ../scss/partials/elements/_base.scss */
+.block-lab-distributor .block-product .block-product-advantages .row-block:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+@media (max-width: 768px) {
+  /* line 239, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  .block-lab-distributor .block-product .block-product-advantages .row-block {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+}
+/* line 248, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-advantages .row-block .content-block {
   width: 50%;
   display: inline-block;
   padding: 0 10px 25px;
   float: left;
 }
-/* line 220, ../scss/partials/blocks/_lab-distributor-inner.scss */
+@media (max-width: 768px) {
+  /* line 248, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  .block-lab-distributor .block-product .block-product-advantages .row-block .content-block {
+    width: 100%;
+    padding: 0 0 20px;
+  }
+}
+/* line 258, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-advantages .row-block .item-block {
   background-color: #f8f2ec;
   text-align: left;
@@ -5060,14 +5259,14 @@ body.index .item-block .text-block a {
   padding: 30px 5px 30px 20px;
   border-radius: 5px;
 }
-/* line 226, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 264, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-advantages .row-block .item-block .icon-category {
   vertical-align: middle;
   background-repeat: no-repeat;
   display: inline-block;
   margin-right: 15px;
 }
-/* line 237, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 275, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-advantages .row-block .item-block .desc {
   display: inline-block;
   font-size: 20px;
@@ -5079,7 +5278,19 @@ body.index .item-block .text-block a {
   width: 78%;
   vertical-align: middle;
 }
-/* line 253, ../scss/partials/blocks/_lab-distributor-inner.scss */
+@media (max-width: 768px) {
+  /* line 275, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  .block-lab-distributor .block-product .block-product-advantages .row-block .item-block .desc {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 292, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  .block-lab-distributor .block-product .block-product-news {
+    padding: 0 20px 0;
+  }
+}
+/* line 297, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-news .title-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -5088,29 +5299,35 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #689146;
 }
-/* line 262, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 306, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-news .row-block {
   padding-top: 20px;
   margin: 0 -15px;
   padding-bottom: 50px;
 }
-/* line 266, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 310, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-news .row-block .content-block {
   width: 50%;
   float: left;
   display: inline-block;
   padding: 0 15px 30px;
 }
-/* line 272, ../scss/partials/blocks/_lab-distributor-inner.scss */
+@media (max-width: 768px) {
+  /* line 310, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  .block-lab-distributor .block-product .block-product-news .row-block .content-block {
+    width: 100%;
+  }
+}
+/* line 319, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-news .row-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 276, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 323, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-news .row-block .item-block .text-block {
   padding-top: 20px;
 }
-/* line 278, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 325, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-news .row-block .item-block .text-block .title {
   font-size: 22px;
   font-weight: 300;
@@ -5900,7 +6117,13 @@ body.index .item-block .text-block a {
   color: #373737;
   text-decoration: none;
 }
-/* line 212, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+@media (max-width: 768px) {
+  /* line 210, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  .block-product-page .block-product .block-products-catalog {
+    padding: 0 20px;
+  }
+}
+/* line 215, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .title-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -5909,11 +6132,11 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #689146;
 }
-/* line 221, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 224, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block {
   padding-bottom: 20px;
 }
-/* line 225, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 228, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block {
   width: 33%;
   float: left;
@@ -5921,30 +6144,30 @@ body.index .item-block .text-block a {
   vertical-align: top;
 }
 @media (max-width: 768px) {
-  /* line 225, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 228, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product .block-products-catalog .row-block .content-block {
     width: 100%;
     float: none;
   }
 }
-/* line 234, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 237, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block {
   text-align: center;
   position: relative;
   padding: 20px;
 }
-/* line 238, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 241, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .img {
   width: 160px;
   position: relative;
   text-align: center;
   display: inline-block;
 }
-/* line 243, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 246, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .img img {
   vertical-align: bottom;
 }
-/* line 246, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 249, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .img .icon-category {
   position: absolute;
   bottom: 0;
@@ -5958,7 +6181,7 @@ body.index .item-block .text-block a {
   height: 40px;
   display: inline-block;
 }
-/* line 263, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 266, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .title {
   padding-top: 10px;
   font-size: 20px;
@@ -5969,12 +6192,12 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #373737;
 }
-/* line 273, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 276, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .desc {
   padding-top: 10px;
   display: inline-block;
 }
-/* line 276, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 279, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .desc .icon-bag {
   vertical-align: middle;
   background-image: url("../images/t-a-r-a.svg");
@@ -5984,7 +6207,7 @@ body.index .item-block .text-block a {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 285, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 288, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .desc .count-size {
   font-size: 15px;
   font-weight: normal;
@@ -5996,7 +6219,13 @@ body.index .item-block .text-block a {
   vertical-align: middle;
   display: inline-block;
 }
-/* line 303, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+@media (max-width: 768px) {
+  /* line 304, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  .block-product-page .block-product .block-product-advantages {
+    padding: 0 20px;
+  }
+}
+/* line 309, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-advantages .title-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -6005,21 +6234,21 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #689146;
 }
-/* line 312, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 318, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-advantages .row-block {
   padding-top: 20px;
   margin: 0 -10px;
   padding-bottom: 50px;
 }
 @media (max-width: 768px) {
-  /* line 312, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 318, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product .block-product-advantages .row-block {
     margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
-/* line 321, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 327, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-advantages .row-block .content-block {
   width: 50%;
   display: inline-block;
@@ -6027,12 +6256,12 @@ body.index .item-block .text-block a {
   float: left;
 }
 @media (max-width: 768px) {
-  /* line 321, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 327, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product .block-product-advantages .row-block .content-block {
     width: 100%;
   }
 }
-/* line 330, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 336, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-advantages .row-block .item-block {
   background-color: #f8f2ec;
   text-align: left;
@@ -6040,14 +6269,14 @@ body.index .item-block .text-block a {
   padding: 30px 5px 30px 20px;
   border-radius: 5px;
 }
-/* line 336, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 342, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-advantages .row-block .item-block .icon-category {
   vertical-align: middle;
   background-repeat: no-repeat;
   display: inline-block;
   margin-right: 15px;
 }
-/* line 347, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 353, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-advantages .row-block .item-block .desc {
   display: inline-block;
   font-size: 20px;
@@ -6060,7 +6289,7 @@ body.index .item-block .text-block a {
   vertical-align: middle;
 }
 @media (max-width: 768px) {
-  /* line 347, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 353, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product .block-product-advantages .row-block .item-block .desc {
     width: 70%;
   }

@@ -3,6 +3,9 @@
     padding-top: 45px;
     padding-bottom: 20px;
     .content-block{
+      @include small-phone{
+        padding: 0 20px;
+      }
     }
     .item-block{
       text-align: left;
@@ -11,9 +14,15 @@
     .block-category-button{
       //padding-bottom: 20px;
       .list-button{
+        @include small-phone{
+          text-align: center;
+        }
         li{
           display: inline-block;
           padding-right: 10px;
+          @include small-phone{
+            padding: 5px;
+          }
           &:last-of-type{
             padding-right: 0;
           }
@@ -49,11 +58,17 @@
         display: inline-block;
         float: left;
         width: 32%;
+        @include small-phone{
+          width: 100%;
+        }
       }
       .text-block{
         display: inline-block;
         float: left;
         width: 55%;
+        @include small-phone{
+          width: 100%;
+        }
         .title{
           font-size: 3*$font-size;
           font-weight: 300;
@@ -101,8 +116,14 @@
   .row-block{
     padding-top: 20px;
     padding-bottom: 50px;
+    @include small-phone{
+      padding: 20px  20px 10px;
+    }
     .content-block{
       width: 45%;
+      @include small-phone{
+        width: 100%;
+      }
     }
     .item-block{
       text-align: left;

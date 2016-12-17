@@ -7,6 +7,12 @@
     position: relative;
     padding-top: 52px;
     text-align: center;
+    @include small-phone{
+      margin-top: 0;
+      float: none;
+      width: 100%;
+      padding: 0 20px;
+    }
     .btn{
       margin-top: 20px;
       text-align: left;
@@ -33,7 +39,15 @@
     padding-top: 52px;
     display: inline-block;
     width: 722px;
+    @include small-phone{
+      margin-top: 0;
+      float: none;
+      width: 100%;
+    }
     .block-product-single{
+      @include small-phone{
+        padding: 0 20px;
+      }
       h2{
         font-size: 5*$font-size;
         font-weight: 300;
@@ -97,6 +111,9 @@
         color: $color-black;
         width: 80%;
         padding-bottom:  20px;
+        @include small-phone{
+          width: 100%;
+        }
       }
       .link{
         font-size: 1.6*$font-size;
@@ -110,6 +127,9 @@
     }
     .block-products-catalog{
       padding-top: 20px;
+      @include small-phone{
+        padding: 20px 20px 0;
+      }
       .title-block{
         .title{
           font-size: 3*$font-size;
@@ -129,6 +149,12 @@
           float: left;
           display: inline-block;
           vertical-align: top;
+          @include small-phone{
+            margin-top: 0;
+            float: none;
+            width: 100%;
+            padding: 0 20px;
+          }
           .item-block{
             text-align: center;
             position: relative;
@@ -197,6 +223,9 @@
       }
     }
     .block-product-advantages{
+      @include small-phone{
+        padding: 20px 20px 0;
+      }
       .title-block{
         .title{
           font-size: 3*$font-size;
@@ -211,11 +240,20 @@
         padding-top: 20px;
         margin: 0 -10px;
         padding-bottom: 50px;
+        @include clearfix;
+        @include small-phone{
+          margin: 0;
+          padding-bottom: 20px;
+        }
         .content-block {
           width: 50%;
           display: inline-block;
           padding: 0 10px 25px;
           float: left;
+          @include small-phone{
+            width: 100%;
+            padding: 0 0 20px;
+          }
         }
         .item-block {
           background-color: $color-light-grey;
@@ -244,11 +282,17 @@
             color: $color-sepia;
             width: 78%;
             vertical-align: middle;
+            @include small-phone{
+              width: 70%;
+            }
           }
         }
       }
     }
     .block-product-news{
+      @include small-phone{
+        padding: 0 20px 0;
+      }
       .title-block{
         .title{
           font-size: 3*$font-size;
@@ -268,6 +312,9 @@
           float: left;
           display: inline-block;
           padding: 0 15px 30px;
+          @include small-phone{
+            width: 100%;
+          }
         }
         .item-block {
           text-align: left;

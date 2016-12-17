@@ -208,6 +208,9 @@
       }
     }
     .block-products-catalog{
+      @include small-phone{
+        padding: 0 20px;
+      }
       .title-block{
         .title{
           font-size: 3*$font-size;
@@ -299,6 +302,9 @@
       }
     }
     .block-product-advantages{
+      @include small-phone{
+        padding: 0 20px;
+      }
       .title-block{
         .title{
           font-size: 3*$font-size;
