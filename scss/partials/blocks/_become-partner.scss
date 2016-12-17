@@ -4,6 +4,10 @@
       margin: 0 auto;
       //margin: 0 -10px 0;
       padding: 80px 0 50px;
+      @include small-phone{
+        width: 100%;
+        padding:  20px 0 20px;
+      }
       .content-block{
         //margin: 0 0 10px;
         //padding: 0 10px;
@@ -11,6 +15,10 @@
         display: inline-block;
         vertical-align: top;
         text-align: left;
+        @include small-phone{
+          width: 100%;
+          padding: 0 20px 10px;
+        }
         //&:nth-of-type(2){
         //  text-align: center;
         //}
@@ -116,6 +124,10 @@
     .row-block{
       width: 970px;
       margin: 0 auto;
+      @include small-phone{
+        width: 100%;
+        padding: 0 20px 10px;
+      }
       .title{
         font-size: 2.4*$font-size;
         font-weight: normal;

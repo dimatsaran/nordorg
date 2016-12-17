@@ -44,11 +44,19 @@
         display: inline-block;
         vertical-align: top;
         float: left;
+        @include small-phone{
+          width: 100%;
+          padding: 0 20px 10px;
+        }
       }
       &:last-of-type{
         width: 41%;
         display: inline-block;
         vertical-align: top;
+        @include small-phone{
+          width: 100%;
+          padding: 0 20px 10px;
+        }
       }
     }
     .item-block{
@@ -160,6 +168,13 @@
         position: absolute;
         top: 50px;
         left: 50px;
+        @include small-phone{
+          width: 100%;
+          position: absolute;
+          text-align: center;
+          top: 20%;
+          left: 0;
+        }
         .title{
           font-size: 4.2*$font-size;
           font-weight: 300;

@@ -3554,22 +3554,36 @@ body.index .item-block .text-block a {
   margin: 0 auto;
   padding: 80px 0 50px;
 }
-/* line 7, ../scss/partials/blocks/_become-partner.scss */
+@media (max-width: 768px) {
+  /* line 2, ../scss/partials/blocks/_become-partner.scss */
+  .block-steps .row-block {
+    width: 100%;
+    padding: 20px 0 20px;
+  }
+}
+/* line 11, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block {
   width: 33%;
   display: inline-block;
   vertical-align: top;
   text-align: left;
 }
-/* line 20, ../scss/partials/blocks/_become-partner.scss */
+@media (max-width: 768px) {
+  /* line 11, ../scss/partials/blocks/_become-partner.scss */
+  .block-steps .row-block .content-block {
+    width: 100%;
+    padding: 0 20px 10px;
+  }
+}
+/* line 28, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block {
   position: relative;
 }
-/* line 24, ../scss/partials/blocks/_become-partner.scss */
+/* line 32, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .count-step {
   display: inline-block;
 }
-/* line 26, ../scss/partials/blocks/_become-partner.scss */
+/* line 34, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .count-step .oval {
   width: 81px;
   height: 81px;
@@ -3577,7 +3591,7 @@ body.index .item-block .text-block a {
   border-radius: 50%;
   display: inline-block;
 }
-/* line 32, ../scss/partials/blocks/_become-partner.scss */
+/* line 40, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .count-step .oval .count {
   width: 100%;
   height: 100%;
@@ -3592,7 +3606,7 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #453934;
 }
-/* line 48, ../scss/partials/blocks/_become-partner.scss */
+/* line 56, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .title-step {
   display: inline-block;
   font-size: 20px;
@@ -3604,29 +3618,29 @@ body.index .item-block .text-block a {
   vertical-align: middle;
   padding: 15px;
 }
-/* line 58, ../scss/partials/blocks/_become-partner.scss */
+/* line 66, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .title-step .step {
   font-weight: 300;
 }
-/* line 63, ../scss/partials/blocks/_become-partner.scss */
+/* line 71, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .arrow-step {
   display: inline-block;
   text-align: right;
   width: 20%;
 }
-/* line 67, ../scss/partials/blocks/_become-partner.scss */
+/* line 75, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .img-block .arrow-step .icon-arrow {
   background: transparent url("../images/arrow-right-ling.png") no-repeat scroll center center;
   height: 20px;
   width: 30px;
   display: inline-block;
 }
-/* line 75, ../scss/partials/blocks/_become-partner.scss */
+/* line 83, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .text-block {
   text-align: left;
   width: 240px;
 }
-/* line 78, ../scss/partials/blocks/_become-partner.scss */
+/* line 86, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .text-block .title {
   padding-top: 20px;
   font-size: 15px;
@@ -3635,7 +3649,7 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.73;
 }
-/* line 86, ../scss/partials/blocks/_become-partner.scss */
+/* line 94, ../scss/partials/blocks/_become-partner.scss */
 .block-steps .row-block .content-block .item-block .text-block .link-step {
   display: inline-block;
   margin-top: 20px;
@@ -3647,12 +3661,19 @@ body.index .item-block .text-block a {
   color: #658d1b;
 }
 
-/* line 116, ../scss/partials/blocks/_become-partner.scss */
+/* line 124, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block {
   width: 970px;
   margin: 0 auto;
 }
-/* line 119, ../scss/partials/blocks/_become-partner.scss */
+@media (max-width: 768px) {
+  /* line 124, ../scss/partials/blocks/_become-partner.scss */
+  .block-form-partner .row-block {
+    width: 100%;
+    padding: 0 20px 10px;
+  }
+}
+/* line 131, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .title {
   font-size: 24px;
   font-weight: normal;
@@ -3661,11 +3682,11 @@ body.index .item-block .text-block a {
   line-height: 1.33;
   color: #658d1b;
 }
-/* line 127, ../scss/partials/blocks/_become-partner.scss */
+/* line 139, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form {
   padding-top: 20px;
 }
-/* line 129, ../scss/partials/blocks/_become-partner.scss */
+/* line 141, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form input {
   font-size: 16px;
   font-weight: 300;
@@ -3676,23 +3697,23 @@ body.index .item-block .text-block a {
   border: 0 none;
   padding: 8px 15px;
 }
-/* line 140, ../scss/partials/blocks/_become-partner.scss */
+/* line 152, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form .form-item.form-item-block {
   margin: 0;
   padding: 0 20px 0;
 }
-/* line 143, ../scss/partials/blocks/_become-partner.scss */
+/* line 155, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form .form-item.form-item-block .w-sel {
   margin: 0 0 5px;
   padding: 0 0 11px;
   position: relative;
 }
-/* line 149, ../scss/partials/blocks/_become-partner.scss */
+/* line 161, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form .form-item textarea {
   height: 100px;
   border: 0 none;
 }
-/* line 154, ../scss/partials/blocks/_become-partner.scss */
+/* line 166, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form .btn {
   width: 274px;
   height: 52px;
@@ -4154,18 +4175,32 @@ body.index .item-block .text-block a {
   vertical-align: top;
   float: left;
 }
-/* line 48, ../scss/partials/blocks/_pagalba-d.scss */
+@media (max-width: 768px) {
+  /* line 42, ../scss/partials/blocks/_pagalba-d.scss */
+  .block-pagalba .row-block .content-block:first-of-type {
+    width: 100%;
+    padding: 0 20px 10px;
+  }
+}
+/* line 52, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .content-block:last-of-type {
   width: 41%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 54, ../scss/partials/blocks/_pagalba-d.scss */
+@media (max-width: 768px) {
+  /* line 52, ../scss/partials/blocks/_pagalba-d.scss */
+  .block-pagalba .row-block .content-block:last-of-type {
+    width: 100%;
+    padding: 0 20px 10px;
+  }
+}
+/* line 62, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 58, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 66, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .title {
   font-size: 24px;
   font-weight: 300;
@@ -4174,17 +4209,17 @@ body.index .item-block .text-block a {
   line-height: 1.33;
   color: #373737;
 }
-/* line 67, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 75, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .block-contact .title {
   padding-bottom: 20px;
 }
-/* line 70, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 78, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .block-contact .label {
   width: 120px;
   color: #658d1b;
   display: inline-block;
 }
-/* line 75, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 83, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .block-contact .text {
   font-size: 16px;
   font-weight: normal;
@@ -4193,12 +4228,12 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   color: #373737;
 }
-/* line 83, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 91, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .block-contact .mail {
   margin: 0 0 30px;
   padding: 8px 0;
 }
-/* line 86, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 94, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .block-contact .mail .icon-mail {
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -4209,11 +4244,11 @@ body.index .item-block .text-block a {
   background-image: url("../images/email-green.svg");
   background-position: center center;
 }
-/* line 96, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 104, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .block-contact .mail a {
   color: #373737;
 }
-/* line 101, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 109, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .title-form {
   padding-bottom: 20px;
   font-size: 24px;
@@ -4223,7 +4258,7 @@ body.index .item-block .text-block a {
   line-height: 1.33;
   color: #658d1b;
 }
-/* line 112, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 120, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form input {
   font-size: 16px;
   font-weight: 300;
@@ -4234,31 +4269,31 @@ body.index .item-block .text-block a {
   border: 0 none;
   padding: 8px 15px;
 }
-/* line 122, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 130, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form .form-item {
   width: 100%;
 }
-/* line 124, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 132, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form .form-item.form-item-block {
   margin: 0;
   padding: 0 20px 0;
 }
-/* line 127, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 135, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form .form-item.form-item-block .w-sel {
   margin: 0 0 5px;
   padding: 0 0 11px;
   position: relative;
 }
-/* line 133, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 141, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form .form-item textarea {
   height: 100px;
   border: 0 none;
 }
-/* line 140, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 148, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form .w-sel .dropdown .carat {
   border-color: #8b5b29;
 }
-/* line 145, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 153, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form .btn {
   width: 274px;
   height: 52px;
@@ -4270,17 +4305,27 @@ body.index .item-block .text-block a {
   color: #ffffff;
   font-family: "Rubik", sans-serif;
 }
-/* line 157, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 165, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .img-block {
   position: relative;
 }
-/* line 159, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 167, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .img-block .text-block {
   position: absolute;
   top: 50px;
   left: 50px;
 }
-/* line 163, ../scss/partials/blocks/_pagalba-d.scss */
+@media (max-width: 768px) {
+  /* line 167, ../scss/partials/blocks/_pagalba-d.scss */
+  .block-pagalba .row-block .img-block .text-block {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 0;
+  }
+}
+/* line 178, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .img-block .text-block .title {
   font-size: 42px;
   font-weight: 300;
@@ -4289,7 +4334,7 @@ body.index .item-block .text-block a {
   line-height: 0.62;
   color: #ffffff;
 }
-/* line 171, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 186, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .img-block .text-block .btn {
   margin-top: 20px;
   width: 255px;
@@ -5477,16 +5522,30 @@ body.index .item-block .text-block a {
   vertical-align: top;
   width: 100%;
 }
-/* line 10, ../scss/partials/blocks/_distributoria-d.scss */
+@media (max-width: 768px) {
+  /* line 6, ../scss/partials/blocks/_distributoria-d.scss */
+  .block-distributoriai .content-block {
+    overflow-x: auto;
+  }
+}
+/* line 13, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .content-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 15, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 18, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .title-block {
   position: relative;
 }
-/* line 17, ../scss/partials/blocks/_distributoria-d.scss */
+@media (max-width: 768px) {
+  /* line 18, ../scss/partials/blocks/_distributoria-d.scss */
+  .block-distributoriai .title-block {
+    width: 100%;
+    padding: 0 20px 10px;
+    text-align: center;
+  }
+}
+/* line 25, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .title-block h2 {
   font-size: 30px;
   font-weight: 300;
@@ -5495,40 +5554,55 @@ body.index .item-block .text-block a {
   line-height: 1.73;
   color: #658d1b;
 }
-/* line 25, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 34, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .title-block .select-person {
   position: absolute;
   height: 44px;
   right: 0;
   top: 10%;
 }
-/* line 31, ../scss/partials/blocks/_distributoria-d.scss */
+@media (max-width: 768px) {
+  /* line 34, ../scss/partials/blocks/_distributoria-d.scss */
+  .block-distributoriai .title-block .select-person {
+    width: 100%;
+    position: relative;
+    height: 44px;
+    right: 0;
+  }
+}
+/* line 47, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .title-block .select-person .nord-form .form-item-pair {
   margin: 0 -9px;
 }
-/* line 33, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 49, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .title-block .select-person .nord-form .form-item-pair .form-item {
   width: auto;
   min-width: 250px;
   margin: 0 0 5px;
   padding: 0 9px 11px;
 }
-/* line 42, ../scss/partials/blocks/_distributoria-d.scss */
+@media (max-width: 768px) {
+  /* line 49, ../scss/partials/blocks/_distributoria-d.scss */
+  .block-distributoriai .title-block .select-person .nord-form .form-item-pair .form-item {
+    width: 100%;
+  }
+}
+/* line 61, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .title-block .select-person .nord-form .w-sel .dropdown .selected {
   background-color: #ffffff;
 }
-/* line 50, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 69, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai {
   padding-top: 30px;
   width: 100%;
 }
-/* line 53, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 72, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai table {
   width: 100%;
   border: 0 none;
   border-collapse: collapse;
 }
-/* line 60, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 79, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai thead tr th {
   height: 70px;
   vertical-align: middle;
@@ -5541,35 +5615,35 @@ body.index .item-block .text-block a {
   width: 20%;
   padding: 5px;
 }
-/* line 71, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 90, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai thead tr th.pavadinimas {
   width: 20%;
 }
-/* line 72, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 91, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai thead tr th.adresas {
   width: 30%;
 }
-/* line 73, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 92, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai thead tr th.telefonas {
   width: 20%;
 }
-/* line 74, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 93, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai thead tr th.svetain─Ч {
   width: 20%;
 }
-/* line 75, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 94, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai thead tr th.elpa┼бtas {
   width: 10%;
 }
-/* line 80, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 99, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai tbody tr {
   position: relative;
 }
-/* line 83, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 102, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai tbody tr:first-of-type:after {
   border-bottom: 2px dotted #8b5b29;
 }
-/* line 87, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 106, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai tbody tr:after {
   content: '';
   position: absolute;
@@ -5580,7 +5654,7 @@ body.index .item-block .text-block a {
   opacity: 0.5;
   display: table-row;
 }
-/* line 98, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 117, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai tbody tr td {
   height: 70px;
   font-size: 15px;
@@ -5593,22 +5667,22 @@ body.index .item-block .text-block a {
   padding: 5px;
 }
 
-/* line 117, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 136, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block {
   padding-top: 56px;
   padding-bottom: 50px;
 }
-/* line 120, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 139, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block .img-block-tapkite {
   position: relative;
 }
-/* line 122, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 141, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block .img-block-tapkite .text-block {
   position: absolute;
   top: 50px;
   left: 50px;
 }
-/* line 126, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 145, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block .img-block-tapkite .text-block .title {
   font-size: 42px;
   font-weight: 300;
@@ -5617,7 +5691,7 @@ body.index .item-block .text-block a {
   line-height: 0.62;
   color: #ffffff;
 }
-/* line 134, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 153, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block .img-block-tapkite .text-block .btn {
   margin-top: 30px;
   width: 255px;
@@ -6696,7 +6770,14 @@ body.index .item-block .text-block a {
   margin: 0 auto;
   width: 720px;
 }
-/* line 8, ../scss/partials/blocks/_karjera-d.scss */
+@media (max-width: 768px) {
+  /* line 3, ../scss/partials/blocks/_karjera-d.scss */
+  .block-career .title-block {
+    width: 100%;
+    padding: 0 20px 10px;
+  }
+}
+/* line 12, ../scss/partials/blocks/_karjera-d.scss */
 .block-career .title-block h2 {
   padding-top: 30px;
   color: #373737;
@@ -6708,7 +6789,7 @@ body.index .item-block .text-block a {
   letter-spacing: -0.5px;
   text-align: center;
 }
-/* line 19, ../scss/partials/blocks/_karjera-d.scss */
+/* line 23, ../scss/partials/blocks/_karjera-d.scss */
 .block-career .title-block .desc {
   padding-top: 30px;
   font-size: 18px;
@@ -6718,24 +6799,37 @@ body.index .item-block .text-block a {
   text-align: center;
   line-height: 1.44;
 }
-/* line 29, ../scss/partials/blocks/_karjera-d.scss */
+/* line 33, ../scss/partials/blocks/_karjera-d.scss */
 .block-career .row-block {
   margin: 0 -10px0;
   padding: 50px 0;
 }
-/* line 32, ../scss/partials/blocks/_karjera-d.scss */
+@media (max-width: 768px) {
+  /* line 33, ../scss/partials/blocks/_karjera-d.scss */
+  .block-career .row-block {
+    margin: 0;
+  }
+}
+/* line 39, ../scss/partials/blocks/_karjera-d.scss */
 .block-career .row-block .content-block {
   padding: 0 10px;
   width: 33%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 38, ../scss/partials/blocks/_karjera-d.scss */
+@media (max-width: 768px) {
+  /* line 39, ../scss/partials/blocks/_karjera-d.scss */
+  .block-career .row-block .content-block {
+    width: 100%;
+    padding: 0 20px 10px;
+  }
+}
+/* line 49, ../scss/partials/blocks/_karjera-d.scss */
 .block-career .row-block .content-block .item-block {
   text-align: center;
   position: relative;
 }
-/* line 58, ../scss/partials/blocks/_karjera-d.scss */
+/* line 69, ../scss/partials/blocks/_karjera-d.scss */
 .block-career .row-block .content-block .item-block .text-block {
   position: absolute;
   top: 0;
@@ -6743,7 +6837,7 @@ body.index .item-block .text-block a {
   height: 100%;
   text-align: center;
 }
-/* line 66, ../scss/partials/blocks/_karjera-d.scss */
+/* line 77, ../scss/partials/blocks/_karjera-d.scss */
 .block-career .row-block .content-block .item-block .title {
   padding-top: 71px;
   color: #ffffff;
@@ -6754,7 +6848,7 @@ body.index .item-block .text-block a {
   text-align: center;
   line-height: 1.07;
 }
-/* line 76, ../scss/partials/blocks/_karjera-d.scss */
+/* line 87, ../scss/partials/blocks/_karjera-d.scss */
 .block-career .row-block .content-block .item-block .btn {
   margin-top: 40px;
   width: 180px;

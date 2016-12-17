@@ -7,6 +7,9 @@
     display: inline-block;
     vertical-align: top;
     width: 100%;
+    @include small-phone{
+      overflow-x: auto;
+    }
     .item-block {
       text-align: left;
       position: relative;
@@ -14,6 +17,11 @@
   }
   .title-block{
     position: relative;
+    @include small-phone{
+      width: 100%;
+      padding: 0 20px 10px;
+      text-align: center;
+    }
     h2{
       font-size: 3*$font-size;
       font-weight: 300;
@@ -21,12 +29,20 @@
       font-stretch: normal;
       line-height: 1.73;
       color: $color-sap-green;
+
     }
     .select-person{
       position: absolute;
       height: 44px;
       right: 0;
       top: 10%;
+      @include small-phone{
+        width: 100%;
+        position: relative;
+        height: 44px;
+        right: 0;
+        //top: 10%;
+      }
       .nord-form {
         .form-item-pair {
           margin: 0 -9px;
@@ -35,6 +51,9 @@
             min-width: 250px;
             margin: 0 0 5px;
             padding: 0 9px 11px;
+            @include small-phone{
+              width: 100%;
+            }
           }
         }
         .w-sel {
