@@ -2,10 +2,21 @@
   .block-category-button{
     padding-top: 45px;
     text-align: left;
+    @include small-phone{
+      width: 100%;
+    }
     .list-button{
+      @include small-phone{
+        text-align: center;
+      }
       li{
         display: inline-block;
         padding-right: 10px;
+        @include small-phone{
+          width: 100%;
+          padding-right: 0;
+          padding-bottom: 10px;
+        }
         &:last-of-type{
           padding-right: 0;
         }
@@ -177,6 +188,10 @@
           text-align: left;
           width: 65%;
           padding-left: 23px;
+          @include small-phone{
+            width: 100%;
+            padding: 0 20px;
+          }
           .autor{
             padding-top: 20px;
             .img-autor{

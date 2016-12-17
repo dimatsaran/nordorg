@@ -3,6 +3,10 @@
     margin: 0 -20px;
     padding-top: 50px;
     padding-bottom: 50px;
+    @include small-phone{
+      margin: 0;
+      padding: 20px 0 20px;
+    }
     .list-block{
       .content-block{
         margin: 0 0 10px;
@@ -11,6 +15,10 @@
         display: inline-block;
         vertical-align: top;
         float: left;
+        @include small-phone{
+          width: 100%;
+          margin: 0 0 20px;
+        }
         .item-block{
           text-align: center;
           position: relative;
@@ -43,6 +51,9 @@
               margin: 10px;
               width: 120px;
               margin-top: -60px;
+              @include small-phone{
+                margin-top: 0;
+              }
             }
             .name-autor{
               float: left;
@@ -70,6 +81,10 @@
       }
     }
     .add-list{
+      @include clearfix;
+      @include small-phone{
+        padding: 0 20px;
+      }
       .btn{
         margin-top: 30px;
         font-size: 1.6*$font-size;
@@ -79,6 +94,9 @@
         text-align: center;
         color: $color-white-two;
         width: 332px;
+        @include small-phone{
+          width: 100%;
+        }
       }
     }
   }
@@ -90,6 +108,10 @@
     padding-bottom: 50px;
     .title-block{
       position: relative;
+      @include clearfix;
+      @include small-phone{
+        padding: 0 20px;
+      }
       h2{
         font-size: 30px;
         font-weight: 300;
@@ -98,6 +120,9 @@
         line-height: 1.07;
         text-align: left;
         color: $color-sap-green;
+        @include small-phone{
+         text-align: center;
+        }
       }
       .select-person{
         position: absolute;
@@ -105,6 +130,10 @@
         height: 44px;
         right: 0;
         top: 0;
+        @include small-phone{
+          position: relative;
+          margin-top: 20px;
+        }
         .nord-form {
           .form-item-pair {
             .form-item{
@@ -130,6 +159,9 @@
         display: inline-block;
         vertical-align: top;
         float: left;
+        @include small-phone{
+          width: 100%;
+        }
         .item-block {
           text-align: center;
           position: relative;
@@ -157,10 +189,24 @@
     }
     .img-block-person{
       position: relative;
+      @include small-phone{
+        //padding: 0 20px;
+      }
+      img{
+        @include small-phone{
+
+        }
+      }
       .text-block{
         position: absolute;
         top: 50px;
         left: 50px;
+        @include small-phone{
+          top: 0;
+          left: 0;
+          width: 100%;
+          text-align: center;
+        }
         .title{
           font-size: 4.2*$font-size;
           font-weight: 300;
