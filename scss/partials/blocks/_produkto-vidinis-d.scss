@@ -7,6 +7,11 @@
     position: relative;
     padding-top: 52px;
     text-align: center;
+    @include small-phone{
+      margin-top: 0;
+      float: none;
+      width: 100%;
+    }
     .btn{
       text-align: left;
       position: relative;
@@ -32,7 +37,16 @@
     padding-top: 52px;
     display: inline-block;
     width: 60%;
+    @include small-phone{
+      //padding: 30px 20px 20px;
+      padding: 30px 0 20px;
+      width: 100%;
+    }
     .block-product-single{
+      @include small-phone{
+        text-align: center;
+        padding: 0  20px ;
+      }
       h2{
         font-size: 5*$font-size;
         font-weight: 300;
@@ -96,6 +110,9 @@
       }
     }
     .block-characteristics{
+      @include small-phone{
+        padding: 0  20px ;
+      }
       .dropdown-block{
         margin-bottom: 40px;
         .icon-fill{
@@ -210,6 +227,10 @@
           float: left;
           display: inline-block;
           vertical-align: top;
+          @include small-phone{
+            width: 100%;
+            float: none;
+          }
           .item-block{
             text-align: center;
             position: relative;
@@ -292,11 +313,19 @@
         padding-top: 20px;
         margin: 0 -10px;
         padding-bottom: 50px;
+        @include small-phone{
+          margin: 0;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
         .content-block {
           width: 50%;
           display: inline-block;
           padding: 0 10px 25px;
           float: left;
+          @include small-phone{
+            width: 100%;
+          }
         }
         .item-block {
           background-color: $color-light-grey;
@@ -325,6 +354,9 @@
             color: $color-sepia;
             width: 78%;
             vertical-align: middle;
+            @include small-phone{
+              width: 70%;
+            }
           }
         }
       }

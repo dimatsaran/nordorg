@@ -6,6 +6,11 @@
     z-index: 200;
     margin-top: -10px;
     position: relative;
+    @include small-phone{
+      margin-top: 0;
+      float: none;
+      width: 100%;
+    }
     .menu-block{
       border-radius: 5px;
       background-color: $color-light-grey-v2;
@@ -46,11 +51,11 @@
         background-image: url("../images/agro.svg");
       }
       .catalog-menu{
-
         >li{
           .title-menu{
             cursor: pointer;
             padding: 10px;
+            position: relative;
             .selected{
               background-image: url("../images/plus-grey.svg");
               background-position: center;
@@ -153,12 +158,23 @@
             color: $color-white-two;
           }
         }
+        .img{
+          img{
+            @include small-phone{
+              width: 100%;
+            }
+          }
+        }
+
       }
     }
   }
   .block-products-catalog{
     display: inline-block;
     width: 75%;
+    @include small-phone{
+      width: 100%;
+    }
     .block-category-button{
       padding-top: 20px;
       text-align: center;
@@ -166,6 +182,11 @@
         li{
           display: inline-block;
           padding-right: 10px;
+          @include small-phone{
+            width: 100%;
+            padding-right: 0;
+            padding-bottom: 10px;
+          }
           &:last-of-type{
             padding-right: 0;
           }
@@ -197,10 +218,19 @@
       margin: 0 -9px;
       padding-top: 50px;
       padding-bottom: 20px;
+      @include small-phone{
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
       .content-block{
         width: 33%;
         display: inline-block;
         vertical-align: top;
+        @include small-phone{
+          width: 100%;
+        }
+
         .item-block{
           text-align: center;
           position: relative;
@@ -269,10 +299,20 @@
 
     }
     .list-pagination{
+      @include small-phone{
+        padding: 0 20px;
+      }
       ul{
+        @include small-phone{
+          text-align: center;
+        }
         li{
           display: inline-block;
           padding: 0 5px;
+          @include small-phone{
+            text-align: center;
+            padding: 5px;
+          }
           a{
             display: inline-block;
             color: $color-black;

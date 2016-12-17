@@ -30,6 +30,12 @@
   }
   .slide{
     position: relative;
+    &.slick-slide{
+      img{
+        min-height: 390px;
+        min-width: 1198px;
+      }
+    }
     &:before{
       background-color: rgba($color-dark-green, 0.5);
       width: 100%;
@@ -49,6 +55,9 @@
     z-index: 11;
     .info{
       margin-top: 180px;
+      @include small-phone{
+        margin-top: 20px;
+      }
       .title-block{
         font-size: 6*$font-size;
         font-style: normal;
@@ -59,6 +68,9 @@
         font-weight: 400;
         color: $color-white-two;
         text-shadow: 1px 1px 3px rgba(55, 55, 55, 0.61);
+        @include small-phone{
+          line-height: 1.17;
+        }
       }
     }
   }
@@ -90,17 +102,6 @@
 .block-description{
   //position: relative;
   &:before{
-    //background-image: url("../images/line.svg");
-    //background-attachment: scroll;
-    //transform: rotate(180deg);
-    //background-size: contain;
-    //min-width: 1920px;
-    //width: 100%;
-    //height: 11px;
-    //display: block;
-    //position: relative;
-    //content: '';
-    //top: -3px;
     background-image: url('../images/line.svg');
     background-attachment: scroll;
     background-size: cover;
@@ -116,6 +117,9 @@
   .title-block{
     padding-top: 35px;
     text-align: center;
+    @include small-phone{
+      padding: 30px 20px 0;
+    }
     &.user-line-d{
       h2{
         &:before{
@@ -173,6 +177,10 @@
       text-align: center;
       font-style: normal;
       font-stretch: normal;
+      @include small-phone{
+        line-height: 1.17;
+        font-size: 4*$font-size;
+      }
     }
   }
   .row-block{
@@ -180,11 +188,14 @@
     padding-top: 50px;
     padding-bottom: 50px;
     .content-block{
-      //margin: 0 0 26px;
       padding: 0 25px;
       width: 49%;
       display: inline-block;
       vertical-align: top;
+      @include small-phone{
+        padding: 0 20px 10px;
+        width: 100%;
+      }
       .item-block{
         //min-height: 360px;
         //padding: 10px 20px 20px;
@@ -232,20 +243,6 @@
 }
 .block-probiotik{
   background-color: $color-grey;
-  //&:before{
-  //  background-image: url('../images/line.svg');
-  //  background-attachment: scroll;
-  //  background-size: cover;
-  //  background-repeat: no-repeat;
-  //  background-position: center;
-  //  width: 100%;
-  //  height: 11px;
-  //  display: block;
-  //  position: relative;
-  //  content: '';
-  //  top: -2px;
-  //  transform: rotate(180deg);
-  //}
   position: relative;
   &:before{
     background-image: url('../images/line.svg');
@@ -277,17 +274,19 @@
     bottom: -4px;
   }
   .title-block{
-    //text-align: center;
-    //display: block;
-    //margin: 0 auto;
-    //width: 600px;
     padding-top: 78px;
+    @include small-phone{
+      padding: 30px 20px 0;
+    }
     h2{
       color: $color-sap-green;
       font-size: 4.2*$font-size;
       line-height: 0.62;
       font-weight: 300;
       text-align: center;
+      @include small-phone{
+        line-height: 1.17;
+      }
     }
     .desc{
       padding-top: 30px;
@@ -303,12 +302,21 @@
     margin: 0 -10px ;
     padding-top: 50px;
     padding-bottom: 50px;
+    @include small-phone{
+      margin: 0;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
     .content-block{
       margin: 0 0 26px;
-      padding: 0 11px;
+      padding: 0 10px;
       width: 24%;
       display: inline-block;
       vertical-align: top;
+      @include small-phone{
+        padding: 0 20px;
+        width: 100%;
+      }
       .item-block{
         //min-height: 360px;
         padding: 10px;
@@ -321,6 +329,10 @@
         -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
         -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+        @include small-phone{
+          width: 100%;
+          //height: auto;
+        }
         .icon-svg{
           display: inline-block;
           height: 60px;
@@ -330,9 +342,6 @@
             vertical-align: middle;
           }
         }
-        //.text-block{
-        //  padding: 30px 40px 10px;
-        //}
         .title{
           padding-top: 10px;
           color: $color-sepia;
@@ -363,6 +372,9 @@
   .title-block{
     padding-top: 78px;
     text-align: center;
+    @include small-phone{
+      padding: 30px 20px 0;
+    }
     h2{
       color: $color-sap-green;
       font-size: 4.2*$font-size;
@@ -371,23 +383,38 @@
       text-align: center;
       font-style: normal;
       font-stretch: normal;
+      @include small-phone{
+        line-height: 1.17;
+      }
     }
   }
   .row-block{
     margin: 0 -10px ;
     padding-top: 50px;
     padding-bottom: 50px;
+    @include small-phone{
+      margin: 0;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
     .content-block{
       //margin: 0 0 26px;
       padding: 0 10px;
       width: 33%;
       display: inline-block;
       vertical-align: top;
+      @include small-phone{
+        padding: 0 20px;
+        width: 100%;
+      }
       .item-block{
         //min-height: 360px;
         //padding: 10px 20px 20px;
         text-align: left;
         position: relative;
+        @include small-phone{
+           text-align: center;
+        }
         .text-block{
           padding: 20px;
         }
@@ -424,12 +451,19 @@
   background-color: $color-white-two;
   .title-block{
     padding-top: 78px;
-    width: 600px;
+    max-width: 600px;
     text-align: center;
     margin: 0 auto;
+    @include small-phone{
+      padding: 30px 20px 0;
+      width: 100%;
+    }
     h2{
       line-height: 0.62;
       text-align: center;
+      @include small-phone{
+        line-height: 1.17;
+      }
     }
     .desc{
       padding-top: 50px;
@@ -454,14 +488,23 @@
     margin: 0 -10px ;
     padding-top: 50px;
     padding-bottom: 100px;
-    width: 790px;
+    max-width: 790px;
     margin: 0 auto;
+    @include small-phone{
+      padding: 30px 0 30px;
+      width: 100%;
+      margin: 0;
+    }
     .content-block{
       padding: 0 10px;
       width: 25%;
       float: left;
       display: inline-block;
       vertical-align: top;
+      @include small-phone{
+        padding: 0 20px 0;
+        width: 100%;
+      }
       .item-block{
         text-align: center;
          //padding: 0 30px;

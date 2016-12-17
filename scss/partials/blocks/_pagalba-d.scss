@@ -1,6 +1,9 @@
 .block-tabs{
   position: absolute;
   bottom: 0;
+  @include small-phone{
+    display: none;
+  }
   .list-tabs{
     li{
       display: inline-block;
