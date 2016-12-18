@@ -798,7 +798,8 @@ body{
   }
 }
 .block-partner{
-  padding: 35px 0 35px;
+  //padding: 35px 0 35px;
+  padding: 28px 0 28px;
   //position: relative;
   //z-index: 100;
   //&:after{
@@ -820,7 +821,7 @@ body{
   @include small-phone{
     padding: 25px 20px 5px;
   }
-  .titleBlock{
+  .title-block{
     display: inline-block;
     vertical-align: middle;
     @include small-phone{

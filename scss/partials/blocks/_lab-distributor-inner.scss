@@ -18,6 +18,7 @@
       text-align: left;
       position: relative;
       padding: 10px 20px;
+      background-color: $color-rouge-v1;
       .title-link{
         text-align: left;
         display: inline-block;
@@ -111,6 +112,22 @@
         color: $color-black;
         width: 80%;
         padding-bottom:  20px;
+        position: relative;
+        &:after{
+          vertical-align: middle;
+          //background-image: url("../images/geolocalization-brown.svg");
+          background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), $color-white-two);
+          background-attachment: scroll;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: absolute;
+          content: '';
+          bottom: 0;
+          left: 0;
+          height: 88px;
+          width: 100%;
+        }
         @include small-phone{
           width: 100%;
         }
@@ -126,7 +143,7 @@
       }
     }
     .block-products-catalog{
-      padding-top: 20px;
+      padding-top: 50px;
       @include small-phone{
         padding: 20px 20px 0;
       }
@@ -141,7 +158,8 @@
         }
       }
       .row-block{
-        //margin: 0 -9px;
+        @include  clearfix;
+        margin: 0 -15px;
         //padding-top: 50px;
         padding-bottom: 20px;
         .content-block{
@@ -224,7 +242,7 @@
     }
     .block-product-advantages{
       @include small-phone{
-        padding: 20px 20px 0;
+        padding: 0 20px;
       }
       .title-block{
         .title{
@@ -240,9 +258,9 @@
         padding-top: 20px;
         margin: 0 -10px;
         padding-bottom: 50px;
-        @include clearfix;
         @include small-phone{
           margin: 0;
+          padding-top: 20px;
           padding-bottom: 20px;
         }
         .content-block {
@@ -252,14 +270,13 @@
           float: left;
           @include small-phone{
             width: 100%;
-            padding: 0 0 20px;
           }
         }
         .item-block {
           background-color: $color-light-grey;
           text-align: left;
           position: relative;
-          padding: 30px 5px 30px 20px;
+          padding: 24px 5px 24px 20px;
           border-radius: 5px;
           .icon-category{
             vertical-align: middle;
@@ -304,14 +321,15 @@
         }
       }
       .row-block {
+        @include clearfix;
         padding-top: 20px;
         margin: 0 -15px;
-        padding-bottom: 50px;
+        padding-bottom: 35px;
         .content-block {
           width: 50%;
           float: left;
           display: inline-block;
-          padding: 0 15px 30px;
+          padding: 0 15px 50px;
           @include small-phone{
             width: 100%;
           }

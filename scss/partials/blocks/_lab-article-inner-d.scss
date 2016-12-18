@@ -107,6 +107,17 @@
             font-stretch: normal;
             line-height: 1.18;
             text-align: left;
+            padding-bottom: 25px;
+            padding-top: 25px;
+            width: 80%;
+          }
+          .description{
+            font-size: 1.8*$font-size;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.44;
+            color: $color-black;
             padding-bottom: 20px;
           }
           .desc{
@@ -116,7 +127,7 @@
             font-stretch: normal;
             line-height: 1.63;
             color: $color-black;
-            padding-bottom: 20px;
+            padding-bottom: 25px;
           }
         }
       }
@@ -137,11 +148,22 @@
 }
 .block-lab-articles {
   background-color: $color-grey;
+  .title-block{
+    padding-top: 47px;
+    .title{
+      font-size: 3*$font-size;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.07;
+      color: $color-sap-light-green;
+    }
+  }
   .row-block {
     @include clearfix;
     margin: 0 -20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 28px;
+    padding-bottom: 60px;
     @include small-phone{
       margin: 0;
       padding: 20px 0 20px;
@@ -175,12 +197,14 @@
           .autor {
             display: inline-block;
             width: 100%;
+            height: 42px;
             .img-autor {
               display: inline-block;
               float: left;
-              margin: 10px;
-              width: 120px;
+              margin-left: 10px;
+              width: 98px;
               margin-top: -60px;
+              max-height: 98px;
               @include small-phone{
                 margin-top: 0;
               }

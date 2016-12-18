@@ -98,6 +98,11 @@ table {
   background-color: #a7272a;
 }
 
+/* line 36, ../scss/partials/elements/_colors.scss */
+.color-rouge-v1 {
+  background-color: #cd3033;
+}
+
 /* for mobile header */
 /* line 2, ../scss/partials/elements/_base.scss */
 .clearfix:after {
@@ -2784,7 +2789,7 @@ body.index .item-block .text-block a {
 
 /* line 800, ../scss/partials/blocks/_main-page.scss */
 .block-partner {
-  padding: 35px 0 35px;
+  padding: 28px 0 28px;
 }
 @media (max-width: 768px) {
   /* line 800, ../scss/partials/blocks/_main-page.scss */
@@ -2792,19 +2797,19 @@ body.index .item-block .text-block a {
     padding: 25px 20px 5px;
   }
 }
-/* line 823, ../scss/partials/blocks/_main-page.scss */
-.block-partner .titleBlock {
+/* line 824, ../scss/partials/blocks/_main-page.scss */
+.block-partner .title-block {
   display: inline-block;
   vertical-align: middle;
 }
 @media (max-width: 768px) {
-  /* line 823, ../scss/partials/blocks/_main-page.scss */
-  .block-partner .titleBlock {
+  /* line 824, ../scss/partials/blocks/_main-page.scss */
+  .block-partner .title-block {
     text-align: center;
     width: 100%;
   }
 }
-/* line 831, ../scss/partials/blocks/_main-page.scss */
+/* line 832, ../scss/partials/blocks/_main-page.scss */
 .block-partner h3 {
   color: #8b5b29;
   font-size: 30px;
@@ -2814,48 +2819,48 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 0.87;
 }
-/* line 840, ../scss/partials/blocks/_main-page.scss */
+/* line 841, ../scss/partials/blocks/_main-page.scss */
 .block-partner .partner-logos {
   display: inline-block;
   vertical-align: middle;
 }
 @media (max-width: 768px) {
-  /* line 840, ../scss/partials/blocks/_main-page.scss */
+  /* line 841, ../scss/partials/blocks/_main-page.scss */
   .block-partner .partner-logos {
     text-align: center;
     padding-top: 15px;
     margin: 0 -15px;
   }
 }
-/* line 848, ../scss/partials/blocks/_main-page.scss */
+/* line 849, ../scss/partials/blocks/_main-page.scss */
 .block-partner .partner-logos li {
   display: inline-block;
   padding: 0 23px;
 }
 @media (max-width: 768px) {
-  /* line 848, ../scss/partials/blocks/_main-page.scss */
+  /* line 849, ../scss/partials/blocks/_main-page.scss */
   .block-partner .partner-logos li {
     width: 23%;
     padding: 10px 5px;
   }
-  /* line 857, ../scss/partials/blocks/_main-page.scss */
+  /* line 858, ../scss/partials/blocks/_main-page.scss */
   .block-partner .partner-logos li:nth-last-of-type(1) {
     width: 35%;
   }
-  /* line 860, ../scss/partials/blocks/_main-page.scss */
+  /* line 861, ../scss/partials/blocks/_main-page.scss */
   .block-partner .partner-logos li:nth-last-of-type(2) {
     width: 35%;
   }
 }
-/* line 864, ../scss/partials/blocks/_main-page.scss */
+/* line 865, ../scss/partials/blocks/_main-page.scss */
 .block-partner .partner-logos li:last-of-type {
   padding-right: 0;
 }
-/* line 867, ../scss/partials/blocks/_main-page.scss */
+/* line 868, ../scss/partials/blocks/_main-page.scss */
 .block-partner .partner-logos li a {
   display: inline-block;
 }
-/* line 870, ../scss/partials/blocks/_main-page.scss */
+/* line 871, ../scss/partials/blocks/_main-page.scss */
 .block-partner .partner-logos li a img {
   vertical-align: middle;
   width: 100%;
@@ -5165,9 +5170,21 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.18;
   text-align: left;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  width: 80%;
+}
+/* line 114, ../scss/partials/blocks/_lab-article-inner-d.scss */
+.block-lab-article .row-block .content-block .item-block .text-block .description {
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  color: #373737;
   padding-bottom: 20px;
 }
-/* line 112, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 123, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-article .row-block .content-block .item-block .text-block .desc {
   font-size: 16px;
   font-weight: 300;
@@ -5175,9 +5192,9 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.63;
   color: #373737;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
-/* line 125, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 136, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-article .row-block .add-list .btn {
   margin-top: 30px;
   font-size: 16px;
@@ -5189,15 +5206,28 @@ body.index .item-block .text-block a {
   width: 332px;
 }
 
-/* line 138, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 149, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles {
   background-color: #f3eeea;
 }
-/* line 140, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 151, ../scss/partials/blocks/_lab-article-inner-d.scss */
+.block-lab-articles .title-block {
+  padding-top: 47px;
+}
+/* line 153, ../scss/partials/blocks/_lab-article-inner-d.scss */
+.block-lab-articles .title-block .title {
+  font-size: 30px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.07;
+  color: #689146;
+}
+/* line 162, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles .row-block {
   margin: 0 -20px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 28px;
+  padding-bottom: 60px;
 }
 /* line 2, ../scss/partials/elements/_base.scss */
 .block-lab-articles .row-block:after {
@@ -5208,13 +5238,13 @@ body.index .item-block .text-block a {
   height: 0;
 }
 @media (max-width: 768px) {
-  /* line 140, ../scss/partials/blocks/_lab-article-inner-d.scss */
+  /* line 162, ../scss/partials/blocks/_lab-article-inner-d.scss */
   .block-lab-articles .row-block {
     margin: 0;
     padding: 20px 0 20px;
   }
 }
-/* line 150, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 172, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles .row-block .list-block .content-block {
   margin: 0 0 10px;
   padding: 0 20px;
@@ -5224,18 +5254,18 @@ body.index .item-block .text-block a {
   float: left;
 }
 @media (max-width: 768px) {
-  /* line 150, ../scss/partials/blocks/_lab-article-inner-d.scss */
+  /* line 172, ../scss/partials/blocks/_lab-article-inner-d.scss */
   .block-lab-articles .row-block .list-block .content-block {
     width: 100%;
     margin: 0 0 20px;
   }
 }
-/* line 161, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 183, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles .row-block .list-block .content-block .item-block {
   text-align: center;
   position: relative;
 }
-/* line 165, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 187, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles .row-block .list-block .content-block .item-block .title-block h1 {
   font-size: 50px;
   font-weight: 300;
@@ -5245,26 +5275,28 @@ body.index .item-block .text-block a {
   letter-spacing: -0.5px;
   color: #373737;
 }
-/* line 175, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 197, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles .row-block .list-block .content-block .item-block .autor {
   display: inline-block;
   width: 100%;
+  height: 42px;
 }
-/* line 178, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 201, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles .row-block .list-block .content-block .item-block .autor .img-autor {
   display: inline-block;
   float: left;
-  margin: 10px;
-  width: 120px;
+  margin-left: 10px;
+  width: 98px;
   margin-top: -60px;
+  max-height: 98px;
 }
 @media (max-width: 768px) {
-  /* line 178, ../scss/partials/blocks/_lab-article-inner-d.scss */
+  /* line 201, ../scss/partials/blocks/_lab-article-inner-d.scss */
   .block-lab-articles .row-block .list-block .content-block .item-block .autor .img-autor {
     margin-top: 0;
   }
 }
-/* line 188, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 212, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles .row-block .list-block .content-block .item-block .autor .name-autor {
   float: left;
   width: 70%;
@@ -5278,7 +5310,7 @@ body.index .item-block .text-block a {
   display: inline-block;
   text-align: left;
 }
-/* line 201, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 225, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles .row-block .list-block .content-block .item-block .autor .date {
   font-size: 14px;
   font-weight: 300;
@@ -5286,19 +5318,19 @@ body.index .item-block .text-block a {
   color: #373737;
   margin-left: 20px;
 }
-/* line 215, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 239, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles .row-block .list-block .content-block .item-block .img {
   width: 100%;
   z-index: 50;
   position: relative;
 }
-/* line 220, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 244, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles .row-block .list-block .content-block .item-block .text-block {
   width: 100%;
   z-index: 100;
   position: relative;
 }
-/* line 224, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 248, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles .row-block .list-block .content-block .item-block .text-block .title {
   color: #373737;
   font-size: 22px;
@@ -5308,7 +5340,7 @@ body.index .item-block .text-block a {
   line-height: 1.18;
   text-align: left;
 }
-/* line 237, ../scss/partials/blocks/_lab-article-inner-d.scss */
+/* line 261, ../scss/partials/blocks/_lab-article-inner-d.scss */
 .block-lab-articles .row-block .list-block .add-list .btn {
   margin-top: 30px;
   font-size: 16px;
@@ -5345,13 +5377,14 @@ body.index .item-block .text-block a {
   text-align: left;
   position: relative;
   padding: 10px 20px;
+  background-color: #cd3033;
 }
-/* line 21, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 22, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .left-sidebar .btn .title-link {
   text-align: left;
   display: inline-block;
 }
-/* line 25, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 26, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .left-sidebar .btn .icon-email {
   vertical-align: middle;
   background-image: url("../images/email.svg");
@@ -5363,14 +5396,14 @@ body.index .item-block .text-block a {
   position: absolute;
   right: 5px;
 }
-/* line 38, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 39, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product {
   padding-top: 52px;
   display: inline-block;
   width: 722px;
 }
 @media (max-width: 768px) {
-  /* line 38, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  /* line 39, ../scss/partials/blocks/_lab-distributor-inner.scss */
   .block-lab-distributor .block-product {
     margin-top: 0;
     float: none;
@@ -5378,12 +5411,12 @@ body.index .item-block .text-block a {
   }
 }
 @media (max-width: 768px) {
-  /* line 47, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  /* line 48, ../scss/partials/blocks/_lab-distributor-inner.scss */
   .block-lab-distributor .block-product .block-product-single {
     padding: 0 20px;
   }
 }
-/* line 51, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 52, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single h2 {
   font-size: 50px;
   font-weight: 300;
@@ -5393,7 +5426,7 @@ body.index .item-block .text-block a {
   letter-spacing: -0.5px;
   color: #373737;
 }
-/* line 60, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 61, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .title-block {
   padding-top: 20px;
   font-size: 20px;
@@ -5403,7 +5436,7 @@ body.index .item-block .text-block a {
   line-height: 1.3;
   color: #373737;
 }
-/* line 68, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 69, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .title-block .icon-agro {
   margin-right: 10px;
   vertical-align: middle;
@@ -5416,11 +5449,11 @@ body.index .item-block .text-block a {
   height: 25px;
   display: inline-block;
 }
-/* line 81, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 82, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .country {
   padding-top: 20px;
 }
-/* line 83, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 84, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .country .icon-country {
   vertical-align: middle;
   background-image: url("../images/geolocalization-brown.svg");
@@ -5433,7 +5466,7 @@ body.index .item-block .text-block a {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 95, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 96, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .country .countries {
   font-size: 20px;
   font-weight: 300;
@@ -5442,7 +5475,7 @@ body.index .item-block .text-block a {
   line-height: 1.3;
   color: #373737;
 }
-/* line 104, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 105, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .desc {
   padding-top: 20px;
   font-size: 16px;
@@ -5453,14 +5486,30 @@ body.index .item-block .text-block a {
   color: #373737;
   width: 80%;
   padding-bottom: 20px;
+  position: relative;
+}
+/* line 116, ../scss/partials/blocks/_lab-distributor-inner.scss */
+.block-lab-distributor .block-product .block-product-single .desc:after {
+  vertical-align: middle;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  height: 88px;
+  width: 100%;
 }
 @media (max-width: 768px) {
-  /* line 104, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  /* line 105, ../scss/partials/blocks/_lab-distributor-inner.scss */
   .block-lab-distributor .block-product .block-product-single .desc {
     width: 100%;
   }
 }
-/* line 118, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 135, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-single .link {
   font-size: 16px;
   font-weight: normal;
@@ -5470,17 +5519,17 @@ body.index .item-block .text-block a {
   text-transform: uppercase;
   color: #8b5b29;
 }
-/* line 128, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 145, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 @media (max-width: 768px) {
-  /* line 128, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  /* line 145, ../scss/partials/blocks/_lab-distributor-inner.scss */
   .block-lab-distributor .block-product .block-products-catalog {
     padding: 20px 20px 0;
   }
 }
-/* line 134, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 151, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .title-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -5489,11 +5538,20 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #689146;
 }
-/* line 143, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 160, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block {
+  margin: 0 -15px;
   padding-bottom: 20px;
 }
-/* line 147, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 2, ../scss/partials/elements/_base.scss */
+.block-lab-distributor .block-product .block-products-catalog .row-block:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+/* line 165, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block {
   width: 33%;
   float: left;
@@ -5501,7 +5559,7 @@ body.index .item-block .text-block a {
   vertical-align: top;
 }
 @media (max-width: 768px) {
-  /* line 147, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  /* line 165, ../scss/partials/blocks/_lab-distributor-inner.scss */
   .block-lab-distributor .block-product .block-products-catalog .row-block .content-block {
     margin-top: 0;
     float: none;
@@ -5509,24 +5567,24 @@ body.index .item-block .text-block a {
     padding: 0 20px;
   }
 }
-/* line 158, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 176, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block {
   text-align: center;
   position: relative;
   padding: 20px;
 }
-/* line 162, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 180, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .img {
   width: 160px;
   position: relative;
   text-align: center;
   display: inline-block;
 }
-/* line 167, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 185, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .img img {
   vertical-align: bottom;
 }
-/* line 170, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 188, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .img .icon-category {
   position: absolute;
   bottom: 0;
@@ -5540,7 +5598,7 @@ body.index .item-block .text-block a {
   height: 40px;
   display: inline-block;
 }
-/* line 187, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 205, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .title {
   padding-top: 10px;
   font-size: 20px;
@@ -5551,12 +5609,12 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #373737;
 }
-/* line 197, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 215, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .desc {
   padding-top: 10px;
   display: inline-block;
 }
-/* line 200, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 218, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .desc .icon-bag {
   vertical-align: middle;
   background-image: url("../images/t-a-r-a.svg");
@@ -5566,7 +5624,7 @@ body.index .item-block .text-block a {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 209, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 227, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-products-catalog .row-block .content-block .item-block .desc .count-size {
   font-size: 15px;
   font-weight: normal;
@@ -5579,12 +5637,12 @@ body.index .item-block .text-block a {
   display: inline-block;
 }
 @media (max-width: 768px) {
-  /* line 225, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  /* line 243, ../scss/partials/blocks/_lab-distributor-inner.scss */
   .block-lab-distributor .block-product .block-product-advantages {
-    padding: 20px 20px 0;
+    padding: 0 20px;
   }
 }
-/* line 230, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 248, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-advantages .title-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -5593,28 +5651,21 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #689146;
 }
-/* line 239, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 257, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-advantages .row-block {
   padding-top: 20px;
   margin: 0 -10px;
   padding-bottom: 50px;
 }
-/* line 2, ../scss/partials/elements/_base.scss */
-.block-lab-distributor .block-product .block-product-advantages .row-block:after {
-  visibility: hidden;
-  display: block;
-  content: "";
-  clear: both;
-  height: 0;
-}
 @media (max-width: 768px) {
-  /* line 239, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  /* line 257, ../scss/partials/blocks/_lab-distributor-inner.scss */
   .block-lab-distributor .block-product .block-product-advantages .row-block {
     margin: 0;
+    padding-top: 20px;
     padding-bottom: 20px;
   }
 }
-/* line 248, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 266, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-advantages .row-block .content-block {
   width: 50%;
   display: inline-block;
@@ -5622,28 +5673,27 @@ body.index .item-block .text-block a {
   float: left;
 }
 @media (max-width: 768px) {
-  /* line 248, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  /* line 266, ../scss/partials/blocks/_lab-distributor-inner.scss */
   .block-lab-distributor .block-product .block-product-advantages .row-block .content-block {
     width: 100%;
-    padding: 0 0 20px;
   }
 }
-/* line 258, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 275, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-advantages .row-block .item-block {
   background-color: #f8f2ec;
   text-align: left;
   position: relative;
-  padding: 30px 5px 30px 20px;
+  padding: 24px 5px 24px 20px;
   border-radius: 5px;
 }
-/* line 264, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 281, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-advantages .row-block .item-block .icon-category {
   vertical-align: middle;
   background-repeat: no-repeat;
   display: inline-block;
   margin-right: 15px;
 }
-/* line 275, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 292, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-advantages .row-block .item-block .desc {
   display: inline-block;
   font-size: 20px;
@@ -5656,18 +5706,18 @@ body.index .item-block .text-block a {
   vertical-align: middle;
 }
 @media (max-width: 768px) {
-  /* line 275, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  /* line 292, ../scss/partials/blocks/_lab-distributor-inner.scss */
   .block-lab-distributor .block-product .block-product-advantages .row-block .item-block .desc {
     width: 70%;
   }
 }
 @media (max-width: 768px) {
-  /* line 292, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  /* line 309, ../scss/partials/blocks/_lab-distributor-inner.scss */
   .block-lab-distributor .block-product .block-product-news {
     padding: 0 20px 0;
   }
 }
-/* line 297, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 314, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-news .title-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -5676,35 +5726,43 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #689146;
 }
-/* line 306, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 323, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-news .row-block {
   padding-top: 20px;
   margin: 0 -15px;
-  padding-bottom: 50px;
+  padding-bottom: 35px;
 }
-/* line 310, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 2, ../scss/partials/elements/_base.scss */
+.block-lab-distributor .block-product .block-product-news .row-block:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+/* line 328, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-news .row-block .content-block {
   width: 50%;
   float: left;
   display: inline-block;
-  padding: 0 15px 30px;
+  padding: 0 15px 50px;
 }
 @media (max-width: 768px) {
-  /* line 310, ../scss/partials/blocks/_lab-distributor-inner.scss */
+  /* line 328, ../scss/partials/blocks/_lab-distributor-inner.scss */
   .block-lab-distributor .block-product .block-product-news .row-block .content-block {
     width: 100%;
   }
 }
-/* line 319, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 337, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-news .row-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 323, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 341, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-news .row-block .item-block .text-block {
   padding-top: 20px;
 }
-/* line 325, ../scss/partials/blocks/_lab-distributor-inner.scss */
+/* line 343, ../scss/partials/blocks/_lab-distributor-inner.scss */
 .block-lab-distributor .block-product .block-product-news .row-block .item-block .text-block .title {
   font-size: 22px;
   font-weight: 300;
@@ -6305,13 +6363,14 @@ body.index .item-block .text-block a {
   text-align: left;
   position: relative;
   padding: 10px 20px;
+  background-color: #cd3033;
 }
-/* line 19, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 20, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .left-sidebar .btn .title-link {
   text-align: left;
   display: inline-block;
 }
-/* line 23, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 24, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .left-sidebar .btn .icon-map {
   vertical-align: middle;
   background-image: url("../images/geolocalization.svg");
@@ -6323,27 +6382,27 @@ body.index .item-block .text-block a {
   position: absolute;
   right: 5px;
 }
-/* line 36, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 37, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product {
   padding-top: 52px;
   display: inline-block;
   width: 60%;
 }
 @media (max-width: 768px) {
-  /* line 36, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 37, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product {
     padding: 30px 0 20px;
     width: 100%;
   }
 }
 @media (max-width: 768px) {
-  /* line 45, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 46, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product .block-product-single {
     text-align: center;
     padding: 0 20px;
   }
 }
-/* line 50, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 51, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-single h2 {
   font-size: 50px;
   font-weight: 300;
@@ -6353,7 +6412,7 @@ body.index .item-block .text-block a {
   letter-spacing: -0.5px;
   color: #373737;
 }
-/* line 59, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 60, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-single .title-block {
   padding-top: 20px;
   font-size: 20px;
@@ -6363,7 +6422,7 @@ body.index .item-block .text-block a {
   line-height: 1.3;
   color: #373737;
 }
-/* line 67, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 68, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-single .title-block .icon-agro {
   margin-right: 10px;
   vertical-align: middle;
@@ -6375,11 +6434,11 @@ body.index .item-block .text-block a {
   height: 40px;
   display: inline-block;
 }
-/* line 79, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 80, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-single .bag {
   padding-top: 20px;
 }
-/* line 81, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 82, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-single .bag .icon-bag {
   vertical-align: middle;
   background-image: url("../images/t-a-r-a.svg");
@@ -6389,7 +6448,7 @@ body.index .item-block .text-block a {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 90, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 91, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-single .bag .count-size {
   font-size: 15px;
   font-weight: normal;
@@ -6401,7 +6460,7 @@ body.index .item-block .text-block a {
   vertical-align: middle;
   display: inline-block;
 }
-/* line 102, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 103, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-single .desc {
   padding-top: 20px;
   font-size: 16px;
@@ -6412,16 +6471,16 @@ body.index .item-block .text-block a {
   color: #373737;
 }
 @media (max-width: 768px) {
-  /* line 112, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 113, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product .block-characteristics {
     padding: 0 20px;
   }
 }
-/* line 116, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 117, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block {
   margin-bottom: 40px;
 }
-/* line 118, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 119, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .icon-fill {
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -6432,7 +6491,7 @@ body.index .item-block .text-block a {
   background-image: url("../images/fill-8.svg");
   background-position: center center;
 }
-/* line 128, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 129, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .icon-plus {
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -6445,15 +6504,15 @@ body.index .item-block .text-block a {
   right: 15px;
   margin: 5px;
 }
-/* line 142, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 143, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .catalog-menu > li.show {
   background-color: #f8f2ec;
 }
-/* line 144, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 145, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .catalog-menu > li.show .icon-plus {
   background-image: url("../images/minus-grey.svg");
 }
-/* line 148, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 149, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .catalog-menu > li > a {
   text-decoration: none;
   font-size: 16px;
@@ -6463,7 +6522,7 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   color: #373737;
 }
-/* line 158, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 159, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .catalog-menu .title-menu {
   height: 51px;
   background-color: #f8f2ec;
@@ -6472,7 +6531,7 @@ body.index .item-block .text-block a {
   position: relative;
   cursor: pointer;
 }
-/* line 166, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 167, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .catalog-menu .title-menu .title {
   font-size: 22px;
   font-weight: 300;
@@ -6481,20 +6540,20 @@ body.index .item-block .text-block a {
   line-height: 1.18;
   color: #373737;
 }
-/* line 176, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 177, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .sub-menu {
   padding: 0 48px 15px 48px;
   display: none;
 }
-/* line 179, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 180, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .sub-menu[data-display="none"] {
   display: none;
 }
-/* line 182, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 183, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .sub-menu[data-display="block"] {
   display: block;
 }
-/* line 185, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 186, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .sub-menu .desc {
   font-size: 16px;
   font-weight: 300;
@@ -6503,11 +6562,11 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   color: #373737;
 }
-/* line 192, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 193, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .sub-menu .desc p {
   padding-bottom: 20px;
 }
-/* line 197, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 198, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-characteristics .dropdown-block .sub-menu li a {
   font-size: 15px;
   font-weight: normal;
@@ -6518,12 +6577,12 @@ body.index .item-block .text-block a {
   text-decoration: none;
 }
 @media (max-width: 768px) {
-  /* line 210, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 211, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product .block-products-catalog {
     padding: 0 20px;
   }
 }
-/* line 215, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 216, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .title-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -6532,11 +6591,11 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #689146;
 }
-/* line 224, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 225, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block {
   padding-bottom: 20px;
 }
-/* line 228, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 229, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block {
   width: 33%;
   float: left;
@@ -6544,30 +6603,30 @@ body.index .item-block .text-block a {
   vertical-align: top;
 }
 @media (max-width: 768px) {
-  /* line 228, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 229, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product .block-products-catalog .row-block .content-block {
     width: 100%;
     float: none;
   }
 }
-/* line 237, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 238, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block {
   text-align: center;
   position: relative;
   padding: 20px;
 }
-/* line 241, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 242, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .img {
   width: 160px;
   position: relative;
   text-align: center;
   display: inline-block;
 }
-/* line 246, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 247, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .img img {
   vertical-align: bottom;
 }
-/* line 249, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 250, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .img .icon-category {
   position: absolute;
   bottom: 0;
@@ -6581,7 +6640,7 @@ body.index .item-block .text-block a {
   height: 40px;
   display: inline-block;
 }
-/* line 266, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 267, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .title {
   padding-top: 10px;
   font-size: 20px;
@@ -6592,12 +6651,12 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #373737;
 }
-/* line 276, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 277, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .desc {
   padding-top: 10px;
   display: inline-block;
 }
-/* line 279, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 280, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .desc .icon-bag {
   vertical-align: middle;
   background-image: url("../images/t-a-r-a.svg");
@@ -6607,7 +6666,7 @@ body.index .item-block .text-block a {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 288, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 289, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-products-catalog .row-block .content-block .item-block .desc .count-size {
   font-size: 15px;
   font-weight: normal;
@@ -6620,12 +6679,12 @@ body.index .item-block .text-block a {
   display: inline-block;
 }
 @media (max-width: 768px) {
-  /* line 304, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 305, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product .block-product-advantages {
     padding: 0 20px;
   }
 }
-/* line 309, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 310, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-advantages .title-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -6634,21 +6693,21 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #689146;
 }
-/* line 318, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 319, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-advantages .row-block {
   padding-top: 20px;
   margin: 0 -10px;
   padding-bottom: 50px;
 }
 @media (max-width: 768px) {
-  /* line 318, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 319, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product .block-product-advantages .row-block {
     margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
-/* line 327, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 328, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-advantages .row-block .content-block {
   width: 50%;
   display: inline-block;
@@ -6656,12 +6715,12 @@ body.index .item-block .text-block a {
   float: left;
 }
 @media (max-width: 768px) {
-  /* line 327, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 328, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product .block-product-advantages .row-block .content-block {
     width: 100%;
   }
 }
-/* line 336, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 337, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-advantages .row-block .item-block {
   background-color: #f8f2ec;
   text-align: left;
@@ -6669,14 +6728,14 @@ body.index .item-block .text-block a {
   padding: 24px 5px 24px 20px;
   border-radius: 5px;
 }
-/* line 342, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 343, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-advantages .row-block .item-block .icon-category {
   vertical-align: middle;
   background-repeat: no-repeat;
   display: inline-block;
   margin-right: 15px;
 }
-/* line 353, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 354, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-product-advantages .row-block .item-block .desc {
   display: inline-block;
   font-size: 20px;
@@ -6689,7 +6748,7 @@ body.index .item-block .text-block a {
   vertical-align: middle;
 }
 @media (max-width: 768px) {
-  /* line 353, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 354, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product .block-product-advantages .row-block .item-block .desc {
     width: 70%;
   }
