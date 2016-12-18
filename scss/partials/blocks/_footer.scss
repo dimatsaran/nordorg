@@ -1,6 +1,7 @@
 footer{
   position: relative;
   background-color: $color-grey;
+  border-top: 0 none;
   //overflow-x: hidden;
   &:before{
     background-image: url('../images/line.svg');
@@ -9,10 +10,13 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 11px;
+    //height: 11px;
     display: block;
     position: relative;
+    //position: absolute;
     content: '';
+    //top: -1px;
+    height: 14px;
     top: -2px;
     transform: rotate(180deg);
   }
@@ -230,3 +234,23 @@ footer{
     }
   }
 }
+//.faq-d{
+//  footer{
+//    &:before{
+//      background-image: url('../images/line.svg');
+//      background-attachment: scroll;
+//      background-size: cover;
+//      background-repeat: no-repeat;
+//      background-position: center;
+//      width: 100%;
+//      height: 15px;
+//      display: block;
+//      position: relative;
+//      //position: absolute;
+//      content: '';
+//      top: -2px;
+//      //top: -2px;
+//      transform: rotate(180deg);
+//    }
+//  }
+//}

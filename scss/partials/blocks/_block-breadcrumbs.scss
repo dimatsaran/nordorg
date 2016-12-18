@@ -7,10 +7,10 @@
     background:rgba(0, 0, 0, 0) url("../images/bg-career.png") no-repeat scroll  center center;
     height: 208px;
   }
-  &.company{
-    background:rgba(0, 0, 0, 0) url("../images/bg-company.png") no-repeat scroll  center center;
-    height: 130px;
-  }
+  //&.company-page{
+  //  background:rgba(0, 0, 0, 0) url("../images/bg-company.png") no-repeat scroll  center center;
+  //  height: 208px;
+  //}
   &.contacts{
     background:rgba(0, 0, 0, 0) url("../images/bg-company.png") no-repeat scroll  center center;
     height: 130px;
@@ -19,9 +19,9 @@
     background:rgba(0, 0, 0, 0) url("../images/bg-become-partner.png") no-repeat scroll  center center;
     height: 208px;
   }
-  &.pagalba,&.knowledge-d,&.faq-d,&.naujienos-d{
+  &.pagalba,&.knowledge-d,&.faq-d,&.naujienos-d,&.company-page{
     background:rgba(0, 0, 0, 0) url("../images/bg-tabs-gruond.png") no-repeat scroll  center center;
-    height: 206px;
+    height: 208px;
   }
   &.lab-d{
     background:rgba(0, 0, 0, 0) url("../images/bg-lab-d.png") no-repeat scroll  center center;
