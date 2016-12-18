@@ -9,7 +9,7 @@
     }
     .list-block{
       .content-block{
-        margin: 0 0 10px;
+        margin: 0 0 70px;
         padding: 0 20px;
         width: 50%;
         display: inline-block;
@@ -189,6 +189,7 @@
     }
     .img-block-person{
       position: relative;
+      margin-top: 5px;
       @include small-phone{
         //padding: 0 20px;
       }

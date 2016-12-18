@@ -1192,8 +1192,8 @@ div.messages p {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
-  margin-left: 5px;
-  margin-top: -5px;
+  margin-left: 3px;
+  margin-top: -6px;
   border-style: solid;
   border-color: #a7272a;
   border-width: 0 0 2px 2px;
@@ -1609,53 +1609,53 @@ div.messages p {
 }
 /* line 6, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.karjiera-d {
-  background: transparent url("../images/bg-career.png") no-repeat scroll center center;
-  height: 208px;
+  background: transparent url("../images/bg-career.png") no-repeat scroll top center;
+  height: 206px;
 }
 /* line 14, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.contacts {
-  background: transparent url("../images/bg-company.png") no-repeat scroll center center;
+  background: transparent url("../images/bg-company.png") no-repeat scroll top center;
   height: 130px;
 }
 /* line 18, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.become-partner {
-  background: transparent url("../images/bg-become-partner.png") no-repeat scroll center center;
-  height: 208px;
+  background: transparent url("../images/bg-become-partner.png") no-repeat scroll top center;
+  height: 206px;
 }
 /* line 22, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.pagalba, .block-breadcrumbs.knowledge-d, .block-breadcrumbs.faq-d, .block-breadcrumbs.naujienos-d, .block-breadcrumbs.company-page {
-  background: transparent url("../images/bg-tabs-gruond.png") no-repeat scroll center center;
-  height: 208px;
+  background: transparent url("../images/bg-tabs-gruond.png") no-repeat scroll top center;
+  height: 206px;
 }
 /* line 26, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.lab-d {
-  background: transparent url("../images/bg-lab-d.png") no-repeat scroll center center;
-  height: 208px;
+  background: transparent url("../images/bg-lab-d.png") no-repeat scroll top center;
+  height: 206px;
 }
 /* line 30, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.lab-article-inner-d {
-  background: transparent url("../images/bg-lab-d.png") no-repeat scroll center center;
-  height: 208px;
+  background: transparent url("../images/bg-lab-d.png") no-repeat scroll top center;
+  height: 206px;
 }
 /* line 34, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.distributoriai-d {
-  background: transparent url("../images/bg-company.png") no-repeat scroll center center;
+  background: transparent url("../images/bg-company.png") no-repeat scroll top center;
   height: 130px;
 }
 /* line 38, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.products-d {
-  background: transparent url("../images/bg-products-d.png") no-repeat scroll center center;
-  height: 208px;
+  background: transparent url("../images/bg-products-d.png") no-repeat scroll top center;
+  height: 206px;
 }
 /* line 42, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.produkto-vidinis-d {
-  background: transparent url("../images/bg-produkto-vidinis-d.png") no-repeat scroll center center;
-  height: 208px;
+  background: transparent url("../images/bg-produkto-vidinis-d.png") no-repeat scroll top center;
+  height: 206px;
 }
 /* line 46, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs.lab-distributor-inner-d {
-  background: transparent url("../images/bg-lab-d.png") no-repeat scroll center center;
-  height: 208px;
+  background: transparent url("../images/bg-lab-d.png") no-repeat scroll top center;
+  height: 206px;
 }
 /* line 50, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs .list-breadcrumbs {
@@ -3551,14 +3551,14 @@ body.index .item-block .text-block a {
 /* line 65, ../scss/partials/blocks/_company-page.scss */
 .block-description-company .img .icon-natural {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 20%;
 }
 
 /* line 73, ../scss/partials/blocks/_company-page.scss */
 .block-statistics .row-block {
   margin: 0 -10px;
-  padding: 20px 0 30px;
+  padding: 20px 0 25px;
 }
 @media (max-width: 768px) {
   /* line 73, ../scss/partials/blocks/_company-page.scss */
@@ -4546,6 +4546,10 @@ body.index .item-block .text-block a {
   text-align: left;
   position: relative;
 }
+/* line 14, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .block-category-button {
+  padding-bottom: 60px;
+}
 @media (max-width: 768px) {
   /* line 16, ../scss/partials/blocks/_knowledge-d.scss */
   .block-knowledge .row-block .block-category-button .list-button {
@@ -4572,7 +4576,7 @@ body.index .item-block .text-block a {
   width: auto;
   min-width: 170px;
   height: 36px;
-  padding: 8px 15px;
+  padding: 8px 30px;
   line-height: 1.2;
   border-radius: 100px;
   display: inline-block;
@@ -4585,15 +4589,15 @@ body.index .item-block .text-block a {
   background-color: #dbc5aa;
   cursor: pointer;
 }
-/* line 45, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 46, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .block-category-button .list-button li .btn.active, .block-knowledge .row-block .block-category-button .list-button li .btn:hover {
   color: #ffffff;
   background-color: #658d1b;
 }
-/* line 53, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 54, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block {
   position: relative;
-  padding-top: 52px;
+  padding-bottom: 45px;
 }
 /* line 2, ../scss/partials/elements/_base.scss */
 .block-knowledge .row-block .img-block:after {
@@ -4603,31 +4607,35 @@ body.index .item-block .text-block a {
   clear: both;
   height: 0;
 }
-/* line 57, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 59, ../scss/partials/blocks/_knowledge-d.scss */
+.block-knowledge .row-block .img-block:last-of-type {
+  padding-bottom: 0;
+}
+/* line 62, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .img {
   display: inline-block;
   float: left;
   width: 32%;
 }
 @media (max-width: 768px) {
-  /* line 57, ../scss/partials/blocks/_knowledge-d.scss */
+  /* line 62, ../scss/partials/blocks/_knowledge-d.scss */
   .block-knowledge .row-block .img-block .img {
     width: 100%;
   }
 }
-/* line 65, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 70, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block {
   display: inline-block;
   float: left;
   width: 55%;
 }
 @media (max-width: 768px) {
-  /* line 65, ../scss/partials/blocks/_knowledge-d.scss */
+  /* line 70, ../scss/partials/blocks/_knowledge-d.scss */
   .block-knowledge .row-block .img-block .text-block {
     width: 100%;
   }
 }
-/* line 72, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 77, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -4636,7 +4644,7 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #373737;
 }
-/* line 80, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 85, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block .desc {
   padding-top: 20px;
   font-size: 16px;
@@ -4646,17 +4654,17 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   color: #373737;
 }
-/* line 89, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 94, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block .autor {
   padding-top: 20px;
 }
-/* line 91, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 96, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block .autor .img-autor {
   display: inline-block;
   float: left;
   margin-right: 10px;
 }
-/* line 96, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 101, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block .autor .name-autor {
   color: #8b5b29;
   font-size: 16px;
@@ -4665,7 +4673,7 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.63;
 }
-/* line 104, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 109, ../scss/partials/blocks/_knowledge-d.scss */
 .block-knowledge .row-block .img-block .text-block .autor .date {
   font-size: 14px;
   font-weight: 300;
@@ -4673,37 +4681,37 @@ body.index .item-block .text-block a {
   color: #373737;
 }
 
-/* line 116, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 121, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block {
   padding-top: 20px;
   padding-bottom: 50px;
 }
 @media (max-width: 768px) {
-  /* line 116, ../scss/partials/blocks/_knowledge-d.scss */
+  /* line 121, ../scss/partials/blocks/_knowledge-d.scss */
   .block-tags .row-block {
     padding: 20px  20px 10px;
   }
 }
-/* line 122, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 127, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .content-block {
   width: 45%;
 }
 @media (max-width: 768px) {
-  /* line 122, ../scss/partials/blocks/_knowledge-d.scss */
+  /* line 127, ../scss/partials/blocks/_knowledge-d.scss */
   .block-tags .row-block .content-block {
     width: 100%;
   }
 }
-/* line 128, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 133, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 133, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 138, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .list-block .text-block {
   padding-bottom: 20px;
 }
-/* line 135, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 140, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .list-block .text-block .title {
   font-size: 22px;
   font-weight: 300;
@@ -4712,7 +4720,7 @@ body.index .item-block .text-block a {
   line-height: 1.18;
   color: #373737;
 }
-/* line 143, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 148, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .list-block .text-block .date {
   padding-top: 10px;
   font-size: 14px;
@@ -4720,7 +4728,11 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   color: #373737;
 }
-/* line 153, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 157, ../scss/partials/blocks/_knowledge-d.scss */
+.block-tags .row-block .add-list {
+  margin-top: 35px;
+}
+/* line 159, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .add-list .btn {
   font-size: 16px;
   font-weight: 300;
@@ -4729,6 +4741,7 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #ffffff;
   width: 332px;
+  background-color: #658d1b;
 }
 
 /* line 2, ../scss/partials/blocks/_lab-d.scss */
@@ -4746,7 +4759,7 @@ body.index .item-block .text-block a {
 }
 /* line 11, ../scss/partials/blocks/_lab-d.scss */
 .block-lab .row-block .list-block .content-block {
-  margin: 0 0 10px;
+  margin: 0 0 70px;
   padding: 0 20px;
   width: 50%;
   display: inline-block;
@@ -4980,15 +4993,16 @@ body.index .item-block .text-block a {
 /* line 190, ../scss/partials/blocks/_lab-d.scss */
 .block-person .row-block .img-block-person {
   position: relative;
+  margin-top: 5px;
 }
-/* line 200, ../scss/partials/blocks/_lab-d.scss */
+/* line 201, ../scss/partials/blocks/_lab-d.scss */
 .block-person .row-block .img-block-person .text-block {
   position: absolute;
   top: 50px;
   left: 50px;
 }
 @media (max-width: 768px) {
-  /* line 200, ../scss/partials/blocks/_lab-d.scss */
+  /* line 201, ../scss/partials/blocks/_lab-d.scss */
   .block-person .row-block .img-block-person .text-block {
     top: 0;
     left: 0;
@@ -4996,7 +5010,7 @@ body.index .item-block .text-block a {
     text-align: center;
   }
 }
-/* line 210, ../scss/partials/blocks/_lab-d.scss */
+/* line 211, ../scss/partials/blocks/_lab-d.scss */
 .block-person .row-block .img-block-person .text-block .title {
   font-size: 42px;
   font-weight: 300;
@@ -5005,7 +5019,7 @@ body.index .item-block .text-block a {
   line-height: 0.62;
   color: #ffffff;
 }
-/* line 219, ../scss/partials/blocks/_lab-d.scss */
+/* line 220, ../scss/partials/blocks/_lab-d.scss */
 .block-person .row-block .img-block-person .text-block .btn {
   margin-top: 30px;
   width: 255px;
@@ -6108,7 +6122,7 @@ body.index .item-block .text-block a {
   width: auto;
   min-width: 170px;
   height: 36px;
-  padding: 8px 15px;
+  padding: 8px 30px;
   line-height: 1.2;
   border-radius: 100px;
   display: inline-block;
@@ -6454,7 +6468,7 @@ body.index .item-block .text-block a {
   height: 51px;
   background-color: #f8f2ec;
   padding: 15px;
-  margin: 5px 0;
+  margin: 2px 0;
   position: relative;
   cursor: pointer;
 }
@@ -6652,7 +6666,7 @@ body.index .item-block .text-block a {
   background-color: #f8f2ec;
   text-align: left;
   position: relative;
-  padding: 30px 5px 30px 20px;
+  padding: 24px 5px 24px 20px;
   border-radius: 5px;
 }
 /* line 342, ../scss/partials/blocks/_produkto-vidinis-d.scss */
