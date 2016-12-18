@@ -82,7 +82,7 @@ body{
   .row-block{
     @include clearfix;
     margin: 0 -15px;
-    padding-top: 130px;
+    padding-top: 125px;
     padding-bottom: 30px;
     @include small-phone{
       margin: 0;
@@ -95,7 +95,7 @@ body{
       width: 33%;
       display: inline-block;
       vertical-align: top;
-      float: left;
+      //float: left;
       @include small-phone{
         width: 100%;
         padding: 0 20px 10px;
@@ -221,8 +221,8 @@ body{
   }
   .row-block{
     margin: 0 -10px;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 80px;
     @include small-phone{
       margin: 0;
       padding: 30px 0 20px;
@@ -241,9 +241,10 @@ body{
         position: relative;
         .img{
           width: 100%;
-          height: 450px;
+          height: 480px;
           display: inline-block;
           position: relative;
+          padding-top: 60px;
           img{
             display: inline-block;
             text-align: center;
@@ -254,7 +255,7 @@ body{
             padding: 5px;
             position: absolute;
             right: 50px;
-            bottom: 50px;
+            bottom: 20px;
             text-align: center;
             display: inline-block;
             vertical-align: middle;
@@ -289,18 +290,23 @@ body{
 
           }
           &.upper{
-            margin-top: -24px;
-            margin-bottom: 24px;
+            //margin-top: -15px;
+            //margin-bottom: 15px;
+            padding-top: 40px;
+            .category-quality{
+              bottom: 50px;
+            }
           }
           img{
-            vertical-align: bottom;
+            //vertical-align: bottom;
           }
         }
         .text-block{
           padding: 0 40px;
+          //padding-top: 20px;
         }
         .title{
-          color: $color-sap-green;
+          color: $color-sap-light-green;
           font-size: 2.6*$font-size;
           font-weight: 300;
           font-style: normal;
@@ -380,8 +386,8 @@ body{
     }
   }
   .row-block{
-    padding-top: 80px;
-    padding-bottom: 110px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     @include small-phone{
       margin: 0;
       padding-top: 30px;
@@ -561,6 +567,7 @@ body{
       height: auto;
       float: left;
       text-align: center;
+      //margin-right: 20px;
       @include small-phone{
         width: 100%;
       }
@@ -568,10 +575,10 @@ body{
         border-radius: 50%;
         background-color: $color-white-two;
         display: inline-block;
-        //width: 260px;
-        //height: 260px;
+        width: 260px;
+        height: 260px;
         max-width: 100%;
-        height: auto;
+        //height: auto;
       }
     }
     .text-block{
@@ -579,6 +586,8 @@ body{
       vertical-align: middle;
       width: 60%;
       float: left;
+      padding-left: 20px;
+      padding-right: 20px;
       @include small-phone{
         width: 100%;
       }
@@ -703,7 +712,7 @@ body{
   }
   .text-holder{
     position: absolute;
-    top: 40%;
+    top: 34%;
     width: 100%;
     //height: 100%;
     text-align: center;
@@ -761,21 +770,27 @@ body{
       bottom: 16px;
     }
     li{
+      width: 12px;
+      height: 12px;
+      margin: 0 13px;
       button{
+        width: 12px;
+        height: 12px;
+        padding: 0;
         &:before{
           border-radius: 100%;
           background-color: $color-white-two;
           opacity: 1;
           content: '';
-          width: 11px;
-          height: 11px;
+          width: 12px;
+          height: 12px;
         }
 
       }
       &.slick-active,&:hover{
         button{
           &:before{
-            background-color: $color-rouge-v1;
+            background-color: $color-rouge-v2;
           }
         }
       }

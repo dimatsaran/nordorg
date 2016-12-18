@@ -20,7 +20,7 @@
         background-color: $color-rouge-v1;
         //height: 51px;
         vertical-align: middle;
-        padding: 15px 10px;
+        padding: 15px 20px;
         .title{
           font-size: 1.8*$font-size;
           font-weight: normal;
@@ -113,7 +113,7 @@
         border-radius: 5px 5px 0 0 ;
         background-color: $color-rouge-v1;
         vertical-align: middle;
-        padding: 5px;
+        padding: 10px 20px;
         i{
           vertical-align: middle;
           background-repeat: no-repeat;
@@ -171,13 +171,15 @@
   }
   .block-products-catalog{
     display: inline-block;
-    width: 75%;
+    //width: 75%;
+    max-width: 860px;
+    padding-left: 60px;
     @include small-phone{
       width: 100%;
     }
     .block-category-button{
-      padding-top: 20px;
-      text-align: center;
+      padding-top: 50px;
+      //text-align: center;
       .list-button{
         li{
           display: inline-block;
@@ -215,7 +217,7 @@
       }
     }
     .row-block{
-      margin: 0 -9px;
+      //margin: 0 -20px;
       padding-top: 50px;
       padding-bottom: 20px;
       @include small-phone{
@@ -236,12 +238,13 @@
           position: relative;
           padding: 20px;
           .img{
-            width: 160px;
+            //width: 160px;
             position: relative;
             text-align: center;
             display: inline-block;
             img{
-              vertical-align: bottom;
+              //vertical-align: bottom;
+              max-width: 156px;
             }
             .icon-category{
               position: absolute;
@@ -258,7 +261,7 @@
              }
           }
           .text-block{
-            padding: 0 40px;
+            //padding: 0 40px;
           }
           .title{
             padding-top: 10px;
