@@ -118,7 +118,11 @@
     .nord-form{
       padding-top: 20px;
       .form-item-pair{
-        margin: 0;
+        //margin: 0;
+        .form-item{
+          margin: 0 0 5px;
+          padding: 0 20px 15px;
+        }
       }
       input{
         font-size: 1.6*$font-size;
@@ -129,6 +133,7 @@
         color: $color-black;
         border: 0 none;
         padding: 8px 15px;
+        height: 44px;
       }
       .form-item{
         width: 90%;
@@ -141,17 +146,24 @@
           padding: 0 20px 0;
           .w-sel{
             margin: 0 0 5px;
-            padding: 0 0 11px;
+            padding: 0 0 15px;
             position: relative;
           }
         }
         textarea{
-          height: 100px;
+          height: 166px;
           border: 0 none;
         }
+
+      }
+      .form-actions{
+        //padding: 0 20px;
       }
       .w-sel{
         .dropdown{
+          .selected{
+            height: 44px;
+          }
           .carat{
             border-color: $color-sepia;
           }
@@ -171,6 +183,7 @@
           width: 100%;
         }
       }
+
     }
     .img-block{
       position: relative;

@@ -44,13 +44,16 @@
     }
     .content-block{
       &:first-of-type{
-        width: 50%;
+        //
+        margin-right: 60px;
+        width: 530px;
         display: inline-block;
         vertical-align: top;
         float: left;
         @include small-phone{
           width: 100%;
           padding: 0 20px 10px;
+          margin-right: 0;
           @include padding-mobile;
         }
       }
@@ -123,6 +126,9 @@
     }
     .nord-form{
       //padding-top: 20px;
+      .form-item-pair{
+        margin:  0;
+      }
       input{
         font-size: 1.6*$font-size;
         font-weight: 300;
@@ -135,6 +141,8 @@
       }
       .form-item{
         width: 100%;
+        margin: 0 0 5px;
+        padding: 0 0 15px;
         &.form-item-block{
           margin: 0;
           padding: 0 20px 0;
@@ -145,7 +153,7 @@
           }
         }
         textarea{
-          height: 100px;
+          height: 166px;
           border: 0 none;
         }
       }

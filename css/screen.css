@@ -485,10 +485,11 @@ img {
   line-height: 1.63;
   color: #373737;
   padding: 8px 15px;
+  height: 44px;
   /* Firefox 19+ */
   /* Firefox 18- */
 }
-/* line 31, ../scss/partials/elements/_form.scss */
+/* line 32, ../scss/partials/elements/_form.scss */
 .nord-form .form-item select::-webkit-input-placeholder,
 .nord-form .form-item input[type="text"]::-webkit-input-placeholder,
 .nord-form .form-item input[type="tel"]::-webkit-input-placeholder,
@@ -507,7 +508,7 @@ img {
 .nord-form .form-actions textarea::-webkit-input-placeholder {
   color: #373737;
 }
-/* line 32, ../scss/partials/elements/_form.scss */
+/* line 33, ../scss/partials/elements/_form.scss */
 .nord-form .form-item select::-moz-placeholder,
 .nord-form .form-item input[type="text"]::-moz-placeholder,
 .nord-form .form-item input[type="tel"]::-moz-placeholder,
@@ -526,7 +527,7 @@ img {
 .nord-form .form-actions textarea::-moz-placeholder {
   color: #373737;
 }
-/* line 33, ../scss/partials/elements/_form.scss */
+/* line 34, ../scss/partials/elements/_form.scss */
 .nord-form .form-item select:-moz-placeholder,
 .nord-form .form-item input[type="text"]:-moz-placeholder,
 .nord-form .form-item input[type="tel"]:-moz-placeholder,
@@ -545,7 +546,7 @@ img {
 .nord-form .form-actions textarea:-moz-placeholder {
   color: #373737;
 }
-/* line 34, ../scss/partials/elements/_form.scss */
+/* line 35, ../scss/partials/elements/_form.scss */
 .nord-form .form-item select:-ms-input-placeholder,
 .nord-form .form-item input[type="text"]:-ms-input-placeholder,
 .nord-form .form-item input[type="tel"]:-ms-input-placeholder,
@@ -564,7 +565,7 @@ img {
 .nord-form .form-actions textarea:-ms-input-placeholder {
   color: #373737;
 }
-/* line 35, ../scss/partials/elements/_form.scss */
+/* line 36, ../scss/partials/elements/_form.scss */
 .nord-form .form-item select:focus,
 .nord-form .form-item input[type="text"]:focus,
 .nord-form .form-item input[type="tel"]:focus,
@@ -585,7 +586,7 @@ img {
   /* Firefox 19+ */
   /* Firefox 18- */
 }
-/* line 37, ../scss/partials/elements/_form.scss */
+/* line 38, ../scss/partials/elements/_form.scss */
 .nord-form .form-item select:focus::-webkit-input-placeholder,
 .nord-form .form-item input[type="text"]:focus::-webkit-input-placeholder,
 .nord-form .form-item input[type="tel"]:focus::-webkit-input-placeholder,
@@ -604,7 +605,7 @@ img {
 .nord-form .form-actions textarea:focus::-webkit-input-placeholder {
   color: transparent;
 }
-/* line 38, ../scss/partials/elements/_form.scss */
+/* line 39, ../scss/partials/elements/_form.scss */
 .nord-form .form-item select:focus::-moz-placeholder,
 .nord-form .form-item input[type="text"]:focus::-moz-placeholder,
 .nord-form .form-item input[type="tel"]:focus::-moz-placeholder,
@@ -623,7 +624,7 @@ img {
 .nord-form .form-actions textarea:focus::-moz-placeholder {
   color: transparent;
 }
-/* line 39, ../scss/partials/elements/_form.scss */
+/* line 40, ../scss/partials/elements/_form.scss */
 .nord-form .form-item select:focus:-moz-placeholder,
 .nord-form .form-item input[type="text"]:focus:-moz-placeholder,
 .nord-form .form-item input[type="tel"]:focus:-moz-placeholder,
@@ -642,7 +643,7 @@ img {
 .nord-form .form-actions textarea:focus:-moz-placeholder {
   color: transparent;
 }
-/* line 40, ../scss/partials/elements/_form.scss */
+/* line 41, ../scss/partials/elements/_form.scss */
 .nord-form .form-item select:focus:-ms-input-placeholder,
 .nord-form .form-item input[type="text"]:focus:-ms-input-placeholder,
 .nord-form .form-item input[type="tel"]:focus:-ms-input-placeholder,
@@ -661,7 +662,7 @@ img {
 .nord-form .form-actions textarea:focus:-ms-input-placeholder {
   color: transparent;
 }
-/* line 44, ../scss/partials/elements/_form.scss */
+/* line 45, ../scss/partials/elements/_form.scss */
 .nord-form .w-sel {
   float: left;
   border: 0 none;
@@ -669,14 +670,14 @@ img {
   resize: none;
   width: 100%;
 }
-/* line 51, ../scss/partials/elements/_form.scss */
+/* line 52, ../scss/partials/elements/_form.scss */
 .nord-form .w-sel .dropdown {
   width: 100%;
   background-color: transparent;
   border: 0 none;
   transition: none;
 }
-/* line 56, ../scss/partials/elements/_form.scss */
+/* line 57, ../scss/partials/elements/_form.scss */
 .nord-form .w-sel .dropdown .selected {
   border-radius: 10px;
   color: #373737;
@@ -686,16 +687,17 @@ img {
   line-height: 1.63;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
+  height: 44px;
 }
-/* line 65, ../scss/partials/elements/_form.scss */
+/* line 67, ../scss/partials/elements/_form.scss */
 .nord-form .w-sel .dropdown .selected:hover {
   outline: none;
 }
-/* line 68, ../scss/partials/elements/_form.scss */
+/* line 70, ../scss/partials/elements/_form.scss */
 .nord-form .w-sel .dropdown .selected:after {
   box-shadow: none;
 }
-/* line 72, ../scss/partials/elements/_form.scss */
+/* line 74, ../scss/partials/elements/_form.scss */
 .nord-form .w-sel .dropdown .carat {
   transition: none;
   content: "";
@@ -715,30 +717,30 @@ img {
   top: 15px;
   width: 8px;
 }
-/* line 91, ../scss/partials/elements/_form.scss */
+/* line 93, ../scss/partials/elements/_form.scss */
 .nord-form .w-sel .dropdown.open {
   position: relative;
 }
-/* line 93, ../scss/partials/elements/_form.scss */
+/* line 95, ../scss/partials/elements/_form.scss */
 .nord-form .w-sel .dropdown.open .selected {
   box-shadow: 0 0 8px 0 #72a219, inset 0 1px 3px 0 rgba(0, 0, 0, 0.31);
 }
-/* line 96, ../scss/partials/elements/_form.scss */
+/* line 98, ../scss/partials/elements/_form.scss */
 .nord-form .w-sel .dropdown.open .carat {
   margin: 0;
 }
-/* line 99, ../scss/partials/elements/_form.scss */
+/* line 101, ../scss/partials/elements/_form.scss */
 .nord-form .w-sel .dropdown.open + .label {
   display: block;
   background-color: #ffffff;
   z-index: 200;
   padding: 2px 5px;
 }
-/* line 106, ../scss/partials/elements/_form.scss */
+/* line 108, ../scss/partials/elements/_form.scss */
 .nord-form .w-sel .dropdown:hover {
   box-shadow: none;
 }
-/* line 110, ../scss/partials/elements/_form.scss */
+/* line 112, ../scss/partials/elements/_form.scss */
 .nord-form .w-sel .label {
   font-size: 13px;
   font-weight: 300;
@@ -752,23 +754,23 @@ img {
   top: -15px;
   left: 30px;
 }
-/* line 125, ../scss/partials/elements/_form.scss */
+/* line 127, ../scss/partials/elements/_form.scss */
 .nord-form .dropdown div {
   border: 1px solid rgba(55, 55, 55, 0.31);
 }
-/* line 128, ../scss/partials/elements/_form.scss */
+/* line 130, ../scss/partials/elements/_form.scss */
 .nord-form .dropdown div ul li {
   color: #373737;
   font-size: 16px;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
 }
-/* line 136, ../scss/partials/elements/_form.scss */
+/* line 138, ../scss/partials/elements/_form.scss */
 .nord-form .form-actions {
   padding-top: 16px;
   margin-bottom: 0;
 }
-/* line 140, ../scss/partials/elements/_form.scss */
+/* line 142, ../scss/partials/elements/_form.scss */
 .nord-form .form-item-pair {
   margin: 0 -20px;
 }
@@ -780,7 +782,7 @@ img {
   clear: both;
   height: 0;
 }
-/* line 143, ../scss/partials/elements/_form.scss */
+/* line 145, ../scss/partials/elements/_form.scss */
 .nord-form .form-item-pair .form-item {
   float: left;
   margin: 0 0 5px;
@@ -789,18 +791,18 @@ img {
   width: 50%;
 }
 @media screen and (max-width: 640px) {
-  /* line 143, ../scss/partials/elements/_form.scss */
+  /* line 145, ../scss/partials/elements/_form.scss */
   .nord-form .form-item-pair .form-item {
     width: 100%;
   }
 }
 @media (max-width: 768px) {
-  /* line 143, ../scss/partials/elements/_form.scss */
+  /* line 145, ../scss/partials/elements/_form.scss */
   .nord-form .form-item-pair .form-item {
     width: 100%;
   }
 }
-/* line 157, ../scss/partials/elements/_form.scss */
+/* line 159, ../scss/partials/elements/_form.scss */
 .nord-form label {
   display: block;
   font-weight: bold;
@@ -809,24 +811,24 @@ img {
   padding-bottom: 5px;
 }
 @media screen and (max-width: 640px) {
-  /* line 157, ../scss/partials/elements/_form.scss */
+  /* line 159, ../scss/partials/elements/_form.scss */
   .nord-form label {
     font-size: 12px;
     line-height: 15px;
   }
 }
 @media (max-width: 768px) {
-  /* line 157, ../scss/partials/elements/_form.scss */
+  /* line 159, ../scss/partials/elements/_form.scss */
   .nord-form label {
     font-size: 12px;
     line-height: 15px;
   }
 }
-/* line 172, ../scss/partials/elements/_form.scss */
+/* line 174, ../scss/partials/elements/_form.scss */
 .nord-form textarea {
   max-height: 122px;
 }
-/* line 175, ../scss/partials/elements/_form.scss */
+/* line 177, ../scss/partials/elements/_form.scss */
 .nord-form .red-description, .nord-form .error-message {
   bottom: 0;
   font-size: 10px;
@@ -834,7 +836,7 @@ img {
   position: absolute;
 }
 
-/* line 184, ../scss/partials/elements/_form.scss */
+/* line 186, ../scss/partials/elements/_form.scss */
 div.messages {
   font-size: 18px;
   line-height: 22px;
@@ -842,7 +844,7 @@ div.messages {
   margin: 3px 0;
   border: 1px solid;
 }
-/* line 192, ../scss/partials/elements/_form.scss */
+/* line 194, ../scss/partials/elements/_form.scss */
 div.messages p {
   font-size: 18px;
   line-height: 22px;
@@ -1334,7 +1336,7 @@ div.messages p {
 .main-header .slicknav_menu .slicknav_nav ul li a {
   text-transform: uppercase;
   padding: 0;
-  border-bottom: 3px solid transparent;
+  border: 0 none;
   border-radius: 0;
   display: inline-block;
   font-size: 16px;
@@ -1345,16 +1347,16 @@ div.messages p {
   color: #ffffff;
   margin: 0;
 }
-/* line 346, ../scss/partials/blocks/_header.scss */
+/* line 347, ../scss/partials/blocks/_header.scss */
 .main-header .slicknav_menu .slicknav_nav ul li a:hover {
   color: #efefef;
   background-color: transparent;
 }
-/* line 352, ../scss/partials/blocks/_header.scss */
+/* line 353, ../scss/partials/blocks/_header.scss */
 .main-header .slicknav_menu .slicknav_nav ul li ul.submenu li {
   padding: 0;
 }
-/* line 354, ../scss/partials/blocks/_header.scss */
+/* line 355, ../scss/partials/blocks/_header.scss */
 .main-header .slicknav_menu .slicknav_nav ul li ul.submenu li a {
   text-transform: none;
   font-size: 16px;
@@ -1364,16 +1366,16 @@ div.messages p {
   line-height: 1.63;
   color: #ffffff;
 }
-/* line 365, ../scss/partials/blocks/_header.scss */
+/* line 366, ../scss/partials/blocks/_header.scss */
 .main-header .slicknav_menu .slicknav_nav ul li.slicknav_parent {
   padding: 5px 0 5px 30px;
 }
-/* line 368, ../scss/partials/blocks/_header.scss */
+/* line 369, ../scss/partials/blocks/_header.scss */
 .main-header .slicknav_menu .slicknav_nav ul li.slicknav_open {
   background-color: #704a22;
   padding: 25px 0 10px 30px;
 }
-/* line 371, ../scss/partials/blocks/_header.scss */
+/* line 372, ../scss/partials/blocks/_header.scss */
 .main-header .slicknav_menu .slicknav_nav ul li.slicknav_open .slicknav_arrow {
   transition: none;
   content: "";
@@ -1395,15 +1397,15 @@ div.messages p {
   top: 0;
   width: 8px;
 }
-/* line 392, ../scss/partials/blocks/_header.scss */
+/* line 393, ../scss/partials/blocks/_header.scss */
 .main-header .slicknav_menu .slicknav_nav ul li.slicknav_open ul.submenu {
   padding-top: 10px;
 }
-/* line 394, ../scss/partials/blocks/_header.scss */
+/* line 395, ../scss/partials/blocks/_header.scss */
 .main-header .slicknav_menu .slicknav_nav ul li.slicknav_open ul.submenu li {
   padding: 0;
 }
-/* line 396, ../scss/partials/blocks/_header.scss */
+/* line 397, ../scss/partials/blocks/_header.scss */
 .main-header .slicknav_menu .slicknav_nav ul li.slicknav_open ul.submenu li a {
   text-transform: none;
   font-size: 16px;
@@ -1413,7 +1415,7 @@ div.messages p {
   line-height: 1.63;
   color: #ffffff;
 }
-/* line 408, ../scss/partials/blocks/_header.scss */
+/* line 409, ../scss/partials/blocks/_header.scss */
 .main-header .slicknav_menu .slicknav_nav ul li .slicknav_arrow {
   font-size: 0;
   transition: none;
@@ -1436,24 +1438,24 @@ div.messages p {
   top: 0;
   width: 8px;
 }
-/* line 521, ../scss/partials/blocks/_header.scss */
+/* line 522, ../scss/partials/blocks/_header.scss */
 .main-header .search-block {
   display: none;
 }
 @media (max-width: 768px) {
-  /* line 521, ../scss/partials/blocks/_header.scss */
+  /* line 522, ../scss/partials/blocks/_header.scss */
   .main-header .search-block {
     display: block;
   }
 }
-/* line 526, ../scss/partials/blocks/_header.scss */
+/* line 527, ../scss/partials/blocks/_header.scss */
 .main-header .search-block .search-block-btn {
   position: absolute;
   right: 92px;
   top: 20px;
   z-index: 500;
 }
-/* line 531, ../scss/partials/blocks/_header.scss */
+/* line 532, ../scss/partials/blocks/_header.scss */
 .main-header .search-block .search-block-btn .icon-search {
   background-image: url("../images/search-block.svg");
   background-attachment: scroll;
@@ -1467,7 +1469,7 @@ div.messages p {
   vertical-align: middle;
   padding: 0;
 }
-/* line 545, ../scss/partials/blocks/_header.scss */
+/* line 546, ../scss/partials/blocks/_header.scss */
 .main-header .search-block .search-block-line {
   position: absolute;
   top: 65px;
@@ -1477,18 +1479,21 @@ div.messages p {
   z-index: 500;
   display: none;
 }
-/* line 553, ../scss/partials/blocks/_header.scss */
+/* line 554, ../scss/partials/blocks/_header.scss */
 .main-header .search-block .search-block-line .form-item-pair {
   margin: 0 -20px;
 }
-/* line 556, ../scss/partials/blocks/_header.scss */
+/* line 557, ../scss/partials/blocks/_header.scss */
 .main-header .search-block .search-block-line .form-item {
   position: relative;
   width: 100%;
   margin: 0;
   padding: 12px 15px;
+  -webkit-box-shadow: 0px -2px 2px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0px -2px 2px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: 0px -2px 2px 0px rgba(50, 50, 50, 0.2);
 }
-/* line 561, ../scss/partials/blocks/_header.scss */
+/* line 565, ../scss/partials/blocks/_header.scss */
 .main-header .search-block .search-block-line .form-item input {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.31) inset;
   border-radius: 10px;
@@ -1502,38 +1507,38 @@ div.messages p {
   padding: 8px 15px;
   width: 100%;
 }
-/* line 573, ../scss/partials/blocks/_header.scss */
+/* line 577, ../scss/partials/blocks/_header.scss */
 .main-header .search-block .search-block-line .form-item input:focus {
   box-shadow: 0 0 8px 0 #658d1b, inset 0 1px 3px 0 rgba(0, 0, 0, 0.31);
   /* Firefox 19+ */
   /* Firefox 18- */
 }
-/* line 575, ../scss/partials/blocks/_header.scss */
+/* line 579, ../scss/partials/blocks/_header.scss */
 .main-header .search-block .search-block-line .form-item input:focus::-webkit-input-placeholder {
   color: transparent;
 }
-/* line 576, ../scss/partials/blocks/_header.scss */
+/* line 580, ../scss/partials/blocks/_header.scss */
 .main-header .search-block .search-block-line .form-item input:focus::-moz-placeholder {
   color: transparent;
 }
-/* line 577, ../scss/partials/blocks/_header.scss */
+/* line 581, ../scss/partials/blocks/_header.scss */
 .main-header .search-block .search-block-line .form-item input:focus:-moz-placeholder {
   color: transparent;
 }
-/* line 578, ../scss/partials/blocks/_header.scss */
+/* line 582, ../scss/partials/blocks/_header.scss */
 .main-header .search-block .search-block-line .form-item input:focus:-ms-input-placeholder {
   color: transparent;
 }
-/* line 584, ../scss/partials/blocks/_header.scss */
+/* line 588, ../scss/partials/blocks/_header.scss */
 .main-header.menu_show {
   display: none;
 }
 @media (max-width: 768px) {
-  /* line 584, ../scss/partials/blocks/_header.scss */
+  /* line 588, ../scss/partials/blocks/_header.scss */
   .main-header.menu_show {
     display: block;
   }
-  /* line 588, ../scss/partials/blocks/_header.scss */
+  /* line 592, ../scss/partials/blocks/_header.scss */
   .main-header.menu_show:before {
     content: '';
     display: inline-block;
@@ -1544,19 +1549,26 @@ div.messages p {
     right: 0;
     top: 0;
     z-index: 100;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
   }
 }
-/* line 607, ../scss/partials/blocks/_header.scss */
+/* line 605, ../scss/partials/blocks/_header.scss */
+.main-header.menu_show .slicknav_nav {
+  -webkit-box-shadow: 0px -2px 2px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow: 0px -2px 2px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: 0px -2px 2px 0px rgba(50, 50, 50, 0.2);
+}
+/* line 615, ../scss/partials/blocks/_header.scss */
 .main-header.menu_show .slicknav_nav .user-nav {
   display: block;
 }
 @media (max-width: 768px) {
-  /* line 607, ../scss/partials/blocks/_header.scss */
+  /* line 615, ../scss/partials/blocks/_header.scss */
   .main-header.menu_show .slicknav_nav .user-nav {
     display: block;
   }
 }
-/* line 613, ../scss/partials/blocks/_header.scss */
+/* line 621, ../scss/partials/blocks/_header.scss */
 .main-header.menu_show .slicknav_nav .user-nav li a {
   font-size: 16px;
   font-weight: 300;
@@ -1566,7 +1578,7 @@ div.messages p {
   color: #ffffff;
   text-transform: none;
 }
-/* line 623, ../scss/partials/blocks/_header.scss */
+/* line 631, ../scss/partials/blocks/_header.scss */
 .main-header.menu_show .slicknav_nav .user-nav i {
   vertical-align: middle;
   background-image: url("../images/language.svg");
@@ -1580,21 +1592,21 @@ div.messages p {
   margin-right: 8px;
   margin-top: -5px;
 }
-/* line 636, ../scss/partials/blocks/_header.scss */
+/* line 644, ../scss/partials/blocks/_header.scss */
 .main-header.menu_show .slicknav_nav .user-nav .icon-language {
   background-image: url("../images/language-white.svg");
 }
-/* line 639, ../scss/partials/blocks/_header.scss */
+/* line 647, ../scss/partials/blocks/_header.scss */
 .main-header.menu_show .slicknav_nav .user-nav .icon-login {
   background-image: url("../images/login-white.svg");
 }
 @media (max-width: 768px) {
-  /* line 644, ../scss/partials/blocks/_header.scss */
+  /* line 652, ../scss/partials/blocks/_header.scss */
   .main-header.menu_show .slicknav_btn {
     background-image: url("../images/hamburger-white.svg");
   }
 }
-/* line 659, ../scss/partials/blocks/_header.scss */
+/* line 667, ../scss/partials/blocks/_header.scss */
 .main-header.search-show .search-block:before {
   content: '';
   display: inline-block;
@@ -1606,11 +1618,11 @@ div.messages p {
   top: 0;
   z-index: 100;
 }
-/* line 671, ../scss/partials/blocks/_header.scss */
+/* line 679, ../scss/partials/blocks/_header.scss */
 .main-header.search-show .search-block .search-block-btn .icon-search {
   background-image: url("../images/search-block-white.svg");
 }
-/* line 675, ../scss/partials/blocks/_header.scss */
+/* line 683, ../scss/partials/blocks/_header.scss */
 .main-header.search-show .search-block .search-block-line {
   display: block;
 }
@@ -3958,6 +3970,11 @@ body.index .item-block .text-block a {
   padding-top: 20px;
 }
 /* line 146, ../scss/partials/blocks/_become-partner.scss */
+.block-form-partner .row-block .nord-form .form-item {
+  margin: 0 0 5px;
+  padding: 0 20px 25px;
+}
+/* line 150, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form input {
   font-size: 16px;
   font-weight: 300;
@@ -3967,24 +3984,29 @@ body.index .item-block .text-block a {
   color: #373737;
   border: 0 none;
   padding: 8px 15px;
+  height: 44px;
 }
-/* line 157, ../scss/partials/blocks/_become-partner.scss */
+/* line 162, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form .form-item.form-item-block {
   margin: 0;
   padding: 0 20px 0;
 }
-/* line 160, ../scss/partials/blocks/_become-partner.scss */
+/* line 165, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form .form-item.form-item-block .w-sel {
   margin: 0 0 5px;
-  padding: 0 0 11px;
+  padding: 0 0 25px;
   position: relative;
 }
-/* line 166, ../scss/partials/blocks/_become-partner.scss */
+/* line 170, ../scss/partials/blocks/_become-partner.scss */
+.block-form-partner .row-block .nord-form .form-item.form-item-block .w-sel .dropdown .selected {
+  height: 44px;
+}
+/* line 176, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form .form-item textarea {
-  height: 100px;
+  height: 118px;
   border: 0 none;
 }
-/* line 171, ../scss/partials/blocks/_become-partner.scss */
+/* line 181, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form .btn {
   width: 274px;
   height: 52px;
@@ -4141,11 +4163,12 @@ body.index .item-block .text-block a {
 .block-form-contact .row-block .nord-form {
   padding-top: 20px;
 }
-/* line 120, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .nord-form .form-item-pair {
-  margin: 0;
+/* line 122, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .nord-form .form-item-pair .form-item {
+  margin: 0 0 5px;
+  padding: 0 20px 15px;
 }
-/* line 123, ../scss/partials/blocks/_contacts-d.scss */
+/* line 127, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form input {
   font-size: 16px;
   font-weight: 300;
@@ -4155,40 +4178,45 @@ body.index .item-block .text-block a {
   color: #373737;
   border: 0 none;
   padding: 8px 15px;
+  height: 44px;
 }
-/* line 133, ../scss/partials/blocks/_contacts-d.scss */
+/* line 138, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .form-item {
   width: 90%;
 }
 @media (max-width: 768px) {
-  /* line 133, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 138, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .nord-form .form-item {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-/* line 139, ../scss/partials/blocks/_contacts-d.scss */
+/* line 144, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .form-item.form-item-block {
   margin: 0;
   padding: 0 20px 0;
 }
-/* line 142, ../scss/partials/blocks/_contacts-d.scss */
+/* line 147, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .form-item.form-item-block .w-sel {
   margin: 0 0 5px;
-  padding: 0 0 11px;
+  padding: 0 0 15px;
   position: relative;
 }
-/* line 148, ../scss/partials/blocks/_contacts-d.scss */
+/* line 153, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .form-item textarea {
-  height: 100px;
+  height: 166px;
   border: 0 none;
 }
-/* line 155, ../scss/partials/blocks/_contacts-d.scss */
+/* line 164, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .nord-form .w-sel .dropdown .selected {
+  height: 44px;
+}
+/* line 167, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .w-sel .dropdown .carat {
   border-color: #8b5b29;
 }
-/* line 160, ../scss/partials/blocks/_contacts-d.scss */
+/* line 172, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .nord-form .btn {
   width: 274px;
   height: 52px;
@@ -4201,29 +4229,29 @@ body.index .item-block .text-block a {
   font-family: "Rubik", sans-serif;
 }
 @media (max-width: 768px) {
-  /* line 160, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 172, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .nord-form .btn {
     width: 100%;
   }
 }
-/* line 175, ../scss/partials/blocks/_contacts-d.scss */
+/* line 188, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .img-block {
   position: relative;
 }
 @media (max-width: 768px) {
-  /* line 175, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 188, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .img-block {
     overflow-x: hidden;
   }
 }
-/* line 180, ../scss/partials/blocks/_contacts-d.scss */
+/* line 193, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .img-block .text-block {
   position: absolute;
   top: 50px;
   left: 50px;
 }
 @media (max-width: 768px) {
-  /* line 180, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 193, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .img-block .text-block {
     left: 0;
     text-align: center;
@@ -4231,7 +4259,7 @@ body.index .item-block .text-block a {
     width: 100%;
   }
 }
-/* line 190, ../scss/partials/blocks/_contacts-d.scss */
+/* line 203, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .img-block .text-block .title {
   font-size: 42px;
   font-weight: 300;
@@ -4240,25 +4268,25 @@ body.index .item-block .text-block a {
   line-height: 0.62;
   color: #ffffff;
 }
-/* line 198, ../scss/partials/blocks/_contacts-d.scss */
+/* line 211, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .img-block .text-block .btn {
   margin-top: 20px;
   width: 255px;
   height: 52px;
 }
 @media (max-width: 768px) {
-  /* line 206, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 219, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .img-block .img img {
     min-height: 234px;
     min-width: 630px;
   }
 }
-/* line 214, ../scss/partials/blocks/_contacts-d.scss */
+/* line 227, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block {
   padding-top: 65px;
   position: relative;
 }
-/* line 217, ../scss/partials/blocks/_contacts-d.scss */
+/* line 230, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .hover-block {
   width: 100%;
   height: 100%;
@@ -4266,46 +4294,46 @@ body.index .item-block .text-block a {
   top: 0;
   left: 0;
 }
-/* line 224, ../scss/partials/blocks/_contacts-d.scss */
+/* line 237, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor {
   position: absolute;
   display: inline-block;
   width: 280px;
 }
-/* line 228, ../scss/partials/blocks/_contacts-d.scss */
+/* line 241, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.one {
   left: 370px;
   top: 122px;
 }
 @media (max-width: 768px) {
-  /* line 228, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 241, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .map-block .anchor.one {
     left: 0;
   }
 }
-/* line 235, ../scss/partials/blocks/_contacts-d.scss */
+/* line 248, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.two {
   left: 258px;
   top: 182px;
 }
 @media (max-width: 768px) {
-  /* line 235, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 248, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .map-block .anchor.two {
     left: 0;
   }
 }
-/* line 242, ../scss/partials/blocks/_contacts-d.scss */
+/* line 255, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.three {
   left: 346px;
   top: 330px;
 }
 @media (max-width: 768px) {
-  /* line 242, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 255, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .map-block .anchor.three {
     left: 0;
   }
 }
-/* line 256, ../scss/partials/blocks/_contacts-d.scss */
+/* line 269, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .icon-paper {
   display: inline-block;
   background-image: url("../images/paper.svg");
@@ -4316,7 +4344,7 @@ body.index .item-block .text-block a {
   vertical-align: top;
   margin-right: 5px;
 }
-/* line 266, ../scss/partials/blocks/_contacts-d.scss */
+/* line 279, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block {
   width: 240px;
   padding: 20px;
@@ -4329,7 +4357,7 @@ body.index .item-block .text-block a {
   -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
-/* line 277, ../scss/partials/blocks/_contacts-d.scss */
+/* line 290, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block:after {
   z-index: 1000;
   content: '';
@@ -4341,7 +4369,7 @@ body.index .item-block .text-block a {
   border: 10px solid transparent;
   border-right: 10px solid #ffffff;
 }
-/* line 290, ../scss/partials/blocks/_contacts-d.scss */
+/* line 303, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .title {
   font-size: 16px;
   font-family: "Rubik", sans-serif;
@@ -4352,7 +4380,7 @@ body.index .item-block .text-block a {
   letter-spacing: -0.6px;
   color: #284734;
 }
-/* line 300, ../scss/partials/blocks/_contacts-d.scss */
+/* line 313, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .adress {
   font-size: 14px;
   font-weight: normal;
@@ -4362,7 +4390,7 @@ body.index .item-block .text-block a {
   letter-spacing: -0.5px;
   color: #636362;
 }
-/* line 309, ../scss/partials/blocks/_contacts-d.scss */
+/* line 322, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .phone {
   font-size: 14px;
   font-weight: normal;
@@ -4371,12 +4399,12 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 316, ../scss/partials/blocks/_contacts-d.scss */
+/* line 329, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .phone a {
   color: #636362;
   text-decoration: none;
 }
-/* line 322, ../scss/partials/blocks/_contacts-d.scss */
+/* line 335, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .mail {
   font-size: 14px;
   font-weight: normal;
@@ -4385,12 +4413,12 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 329, ../scss/partials/blocks/_contacts-d.scss */
+/* line 342, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .mail a {
   color: #658d1b;
   text-decoration: none;
 }
-/* line 335, ../scss/partials/blocks/_contacts-d.scss */
+/* line 348, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .web-link {
   font-size: 14px;
   font-weight: normal;
@@ -4399,16 +4427,16 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 342, ../scss/partials/blocks/_contacts-d.scss */
+/* line 355, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .text-block .web-link a {
   color: #658d1b;
   text-decoration: none;
 }
-/* line 348, ../scss/partials/blocks/_contacts-d.scss */
+/* line 361, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor:hover {
   cursor: pointer;
 }
-/* line 350, ../scss/partials/blocks/_contacts-d.scss */
+/* line 363, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor:hover .text-block {
   display: inline-block;
   top: -40px;
@@ -4471,7 +4499,8 @@ body.index .item-block .text-block a {
 }
 /* line 46, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .content-block:first-of-type {
-  width: 50%;
+  margin-right: 60px;
+  width: 530px;
   display: inline-block;
   vertical-align: top;
   float: left;
@@ -4481,18 +4510,19 @@ body.index .item-block .text-block a {
   .block-pagalba .row-block .content-block:first-of-type {
     width: 100%;
     padding: 0 20px 10px;
+    margin-right: 0;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-/* line 57, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 60, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .content-block:last-of-type {
   width: 41%;
   display: inline-block;
   vertical-align: top;
 }
 @media (max-width: 768px) {
-  /* line 57, ../scss/partials/blocks/_pagalba-d.scss */
+  /* line 60, ../scss/partials/blocks/_pagalba-d.scss */
   .block-pagalba .row-block .content-block:last-of-type {
     width: 100%;
     padding: 0 20px 10px;
@@ -4500,12 +4530,12 @@ body.index .item-block .text-block a {
     padding-right: 10px;
   }
 }
-/* line 68, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 71, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 72, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 75, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .title {
   font-size: 24px;
   font-weight: 300;
@@ -4514,17 +4544,17 @@ body.index .item-block .text-block a {
   line-height: 1.33;
   color: #373737;
 }
-/* line 81, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 84, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .block-contact .title {
   padding-bottom: 20px;
 }
-/* line 84, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 87, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .block-contact .label {
   width: 120px;
   color: #658d1b;
   display: inline-block;
 }
-/* line 89, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 92, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .block-contact .text {
   font-size: 16px;
   font-weight: normal;
@@ -4533,12 +4563,12 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   color: #373737;
 }
-/* line 97, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 100, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .block-contact .mail {
   margin: 0 0 30px;
   padding: 8px 0;
 }
-/* line 100, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 103, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .block-contact .mail .icon-mail {
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -4549,11 +4579,11 @@ body.index .item-block .text-block a {
   background-image: url("../images/email-green.svg");
   background-position: center center;
 }
-/* line 110, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 113, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .block-contact .mail a {
   color: #373737;
 }
-/* line 115, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 118, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .title-form {
   padding-bottom: 20px;
   font-size: 24px;
@@ -4563,7 +4593,11 @@ body.index .item-block .text-block a {
   line-height: 1.33;
   color: #658d1b;
 }
-/* line 126, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 129, ../scss/partials/blocks/_pagalba-d.scss */
+.block-pagalba .row-block .nord-form .form-item-pair {
+  margin: 0;
+}
+/* line 132, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form input {
   font-size: 16px;
   font-weight: 300;
@@ -4574,31 +4608,33 @@ body.index .item-block .text-block a {
   border: 0 none;
   padding: 8px 15px;
 }
-/* line 136, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 142, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form .form-item {
   width: 100%;
+  margin: 0 0 5px;
+  padding: 0 0 15px;
 }
-/* line 138, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 146, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form .form-item.form-item-block {
   margin: 0;
   padding: 0 20px 0;
 }
-/* line 141, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 149, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form .form-item.form-item-block .w-sel {
   margin: 0 0 5px;
   padding: 0 0 11px;
   position: relative;
 }
-/* line 147, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 155, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form .form-item textarea {
-  height: 100px;
+  height: 166px;
   border: 0 none;
 }
-/* line 154, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 162, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form .w-sel .dropdown .carat {
   border-color: #8b5b29;
 }
-/* line 159, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 167, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .nord-form .btn {
   width: 274px;
   height: 52px;
@@ -4610,18 +4646,18 @@ body.index .item-block .text-block a {
   color: #ffffff;
   font-family: "Rubik", sans-serif;
 }
-/* line 171, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 179, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .img-block {
   position: relative;
 }
-/* line 173, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 181, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .img-block .text-block {
   position: absolute;
   top: 50px;
   left: 50px;
 }
 @media (max-width: 768px) {
-  /* line 173, ../scss/partials/blocks/_pagalba-d.scss */
+  /* line 181, ../scss/partials/blocks/_pagalba-d.scss */
   .block-pagalba .row-block .img-block .text-block {
     width: 100%;
     position: absolute;
@@ -4630,7 +4666,7 @@ body.index .item-block .text-block a {
     left: 0;
   }
 }
-/* line 184, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 192, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .img-block .text-block .title {
   font-size: 42px;
   font-weight: 300;
@@ -4639,7 +4675,7 @@ body.index .item-block .text-block a {
   line-height: 0.62;
   color: #ffffff;
 }
-/* line 192, ../scss/partials/blocks/_pagalba-d.scss */
+/* line 200, ../scss/partials/blocks/_pagalba-d.scss */
 .block-pagalba .row-block .img-block .text-block .btn {
   margin-top: 20px;
   width: 255px;

@@ -28,6 +28,7 @@
       line-height: 1.63;
       color: $color-black;
       padding: 8px 15px;
+      height: 44px;
       &::-webkit-input-placeholder {color:$color-black;}
       &::-moz-placeholder          {color:$color-black;}/* Firefox 19+ */
       &:-moz-placeholder           {color:$color-black;}/* Firefox 18- */
@@ -62,6 +63,7 @@
         line-height: 1.63;
         font-family: $font-light;
         font-weight: 300;
+        height: 44px;
         &:hover{
           outline: none;
         }
