@@ -3,6 +3,10 @@
     .row-block{
       padding-top: 50px;
       padding-bottom: 10px;
+      //@include tablet{
+      //  width: 100%;
+      //  @include padding-tablet;
+      //}
       @include small-phone{
         margin: 0;
         padding: 10px 0 10px;
@@ -23,6 +27,13 @@
       display: inline-block;
       vertical-align: top;
       padding-top: 40px;
+      @include tablet{
+        max-width: 530px;
+        //@include padding-tablet;
+        width: auto;
+        margin: 0 auto;
+        display: inherit;
+      }
       @include small-phone{
         width: 100%;
         padding-top: 0;
@@ -56,6 +67,11 @@
     display: inline-block;
     position: relative;
     text-align: right;
+    @include tablet{
+      width: 100%;
+      @include padding-tablet;
+      text-align: center;
+    }
     @include small-phone{
       width: 100%;
     }
@@ -70,6 +86,9 @@
   .row-block{
     margin: 0 -10px;
     padding: 20px 0 25px;
+    @include tablet{
+      margin: 0;
+    }
     @include small-phone{
       margin: 0;
       padding: 30px 0 20px;
@@ -130,6 +149,10 @@
   height: 450px;
   position: relative;
   background: rgba(0, 0, 0, 0) url("../images/bg-certificates-group-2.png") no-repeat scroll  center -250px;
+  @include tablet{
+    height: 600px;
+    //@include padding-tablet;
+  }
   @include small-phone{
     height: 620px;
     //background-position: center;
@@ -165,6 +188,13 @@
     float: left;
     &:first-of-type{
       width: 50%;
+      @include tablet{
+        max-width: 580px;
+        width: auto;
+        display: block;
+        float: none;
+        margin: 0 auto;
+      }
       @include small-phone{
         width: 100%;
         padding: 0 0 10px;
@@ -173,6 +203,10 @@
     }
     &:last-of-type{
       width: 49%;
+      @include tablet{
+        width: 100%;
+        @include padding-tablet;
+      }
       @include small-phone{
         width: 100%;
         padding: 0 0 10px;
@@ -193,6 +227,9 @@
       font-style: normal;
       font-stretch: normal;
       padding-top: 20px;
+      @include tablet{
+        line-height: 1.17;
+      }
       @include small-phone{
         line-height: 1.17;
         font-size: 2.2*$font-size;
@@ -217,6 +254,11 @@
   }
   .img-block{
     padding-left: 110px;
+    @include tablet{
+      padding-left: 0;
+      text-align: center;
+      padding-top: 20px;
+    }
     @include small-phone{
       padding: 0;
       text-align: center;

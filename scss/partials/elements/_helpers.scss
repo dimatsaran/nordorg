@@ -70,6 +70,16 @@ $small-phone: 320px;
     @content;
   }
 }
+
+@mixin padding-height {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@mixin padding-tablet {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 @mixin padding-mobile {
   padding-left: 10px;
   padding-right: 10px;

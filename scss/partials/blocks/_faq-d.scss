@@ -2,6 +2,10 @@
   .block-category-button{
     padding-top: 45px;
     text-align: left;
+    @include tablet{
+      width: 100%;
+      @include padding-tablet;
+    }
     @include small-phone{
       width: 100%;
     }
@@ -12,6 +16,7 @@
       li{
         display: inline-block;
         padding-right: 10px;
+        padding-bottom: 10px;
         @include small-phone{
           width: 100%;
           padding-right: 0;
@@ -203,6 +208,10 @@
           text-align: left;
           width: 65%;
           padding-left: 23px;
+          @include tablet{
+            width: 100%;
+            @include padding-tablet;
+          }
           @include small-phone{
             width: 100%;
             @include padding-mobile;

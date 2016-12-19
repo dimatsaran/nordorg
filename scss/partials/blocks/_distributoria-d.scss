@@ -7,10 +7,11 @@
     display: inline-block;
     vertical-align: top;
     width: 100%;
+    @include tablet{
+      @include padding-tablet;
+    }
     @include small-phone{
       overflow-x: auto;
-        //margin: 0 10px;
-
     }
     .item-block {
       text-align: left;
@@ -19,6 +20,11 @@
   }
   .title-block{
     position: relative;
+    @include tablet{
+      //@include padding-tablet;
+      margin: 0 auto;
+      max-width: 740px;
+    }
     @include small-phone{
       width: 100%;
       padding: 0 20px 10px;
@@ -38,6 +44,12 @@
       height: 44px;
       right: 0;
       top: 10%;
+      @include tablet{
+        position: relative;
+        height: auto;
+        right: 0;
+        top: 0;
+      }
       @include small-phone{
         width: 100%;
         position: relative;
@@ -141,6 +153,10 @@
   .row-block {
     padding-top: 56px;
     padding-bottom: 50px;
+    @include tablet {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
     .img-block-tapkite{
       position: relative;
       @include small-phone {

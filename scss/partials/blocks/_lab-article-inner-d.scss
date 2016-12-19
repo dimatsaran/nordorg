@@ -3,7 +3,10 @@
     padding-top: 50px;
     padding-bottom: 50px;
     margin: 0 auto;
-    width: 728px;
+    max-width: 728px;
+    @include tablet{
+      max-width: 530px;
+    }
     @include small-phone{
       width: 100%;
       padding: 20px 20px 20px;
@@ -154,6 +157,13 @@
   background-color: $color-grey;
   .title-block{
     padding-top: 47px;
+    @include tablet{
+      display: block;
+      float: none;
+      margin: 0 auto;
+      max-width: 580px;
+      width: auto;
+    }
     @include small-phone{
       width: 100%;
       text-align: center;
@@ -174,6 +184,9 @@
     margin: 0 -20px;
     padding-top: 28px;
     padding-bottom: 60px;
+    @include tablet{
+      margin: 0;
+    }
     @include small-phone{
       margin: 0;
       padding: 20px 0 20px;
@@ -186,6 +199,17 @@
         display: inline-block;
         vertical-align: top;
         float: left;
+        @include tablet{
+          display: block;
+          float: none;
+          margin: 0 auto;
+          max-width: 580px;
+          width: auto;
+          padding: 0 0 75px;
+          &:last-of-type{
+            padding-bottom: 0;
+          }
+        }
         @include small-phone{
           width: 100%;
           margin: 0 0 20px;

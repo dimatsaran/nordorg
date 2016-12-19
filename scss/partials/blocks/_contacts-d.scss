@@ -12,6 +12,10 @@
         display: inline-block;
         vertical-align: top;
         float: left;
+        @include tablet{
+          width: 100%;
+          @include padding-tablet;
+        }
         @include small-phone{
           width: 100%;
           @include padding-mobile;
@@ -21,6 +25,10 @@
         width: 54%;
         display: inline-block;
         vertical-align: top;
+        @include tablet{
+          width: 100%;
+          @include padding-tablet;
+        }
         @include small-phone{
           width: 100%;
         }
@@ -137,6 +145,10 @@
       }
       .form-item{
         width: 90%;
+        @include tablet{
+          width: 100%;
+          @include padding-tablet;
+        }
         @include small-phone{
           width: 100%;
           @include padding-mobile;

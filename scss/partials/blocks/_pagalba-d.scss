@@ -9,6 +9,9 @@
       display: inline-block;
       padding-right: 3px;
       float: left;
+      @include tablet{
+        //width: 20%;
+      }
       &:last-of-type{
         padding-right: 0;
       }
@@ -26,11 +29,15 @@
         width: 231px;
         height: 52px;
         padding: 15px 0;
+          @include tablet{
+            width: 150px;
+          }
         &.active,&:hover{
           color: $color-sap-green;
           background-color: $color-white-two;
         }
       }
+
     }
   }
 }
@@ -38,6 +45,10 @@
   .row-block{
     padding-top: 65px;
     padding-bottom: 50px;
+    @include tablet{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
     @include small-phone{
       padding-top: 10px;
       padding-bottom: 10px;
@@ -50,6 +61,10 @@
         display: inline-block;
         vertical-align: top;
         float: left;
+        @include tablet{
+          width: 100%;
+          @include padding-tablet;
+        }
         @include small-phone{
           width: 100%;
           padding: 0 20px 10px;
@@ -61,6 +76,10 @@
         width: 41%;
         display: inline-block;
         vertical-align: top;
+        @include tablet{
+          width: 100%;
+          @include padding-tablet;
+        }
         @include small-phone{
           width: 100%;
           padding: 0 20px 10px;

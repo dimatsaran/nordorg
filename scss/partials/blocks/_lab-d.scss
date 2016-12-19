@@ -3,6 +3,9 @@
     margin: 0 -20px;
     padding-top: 50px;
     padding-bottom: 50px;
+    @include tablet{
+      margin: 0;
+    }
     @include small-phone{
       margin: 0;
       padding: 20px 0 20px;
@@ -15,6 +18,17 @@
         display: inline-block;
         vertical-align: top;
         float: left;
+        @include tablet{
+          display: block;
+          float: none;
+          margin: 0 auto;
+          max-width: 580px;
+          width: auto;
+          padding: 0 0 75px;
+          &:last-of-type{
+            padding-bottom: 0;
+          }
+        }
         @include small-phone{
           width: 100%;
           margin: 0 0 20px;
@@ -83,7 +97,14 @@
     }
     .add-list{
       @include clearfix;
-
+        @include tablet{
+          display: block;
+          float: none;
+          margin: 0 auto;
+          max-width: 580px;
+          width: auto;
+          //padding: 0 0 75px;
+        }
         @include small-phone{
           width: 100%;
           @include padding-mobile;
@@ -112,6 +133,9 @@
     .title-block{
       position: relative;
       @include clearfix;
+      @include tablet{
+        display: none;
+      }
       @include small-phone{
         @include padding-mobile;
       }
@@ -161,12 +185,21 @@
     .list-block{
       @include clearfix;
       padding-top: 30px;
+      @include tablet{
+        //float: none;
+        //width: 33%;
+        @include padding-tablet;
+      }
       .content-block {
         width: 25%;
         padding: 10px 20px 30px;
         display: inline-block;
         vertical-align: top;
         float: left;
+        @include tablet{
+          width: 33%;
+          height: 220px;
+         }
         @include small-phone{
           width: 100%;
         }
@@ -198,10 +231,14 @@
     .img-block-person{
       position: relative;
       margin-top: 5px;
+      @include tablet{
+        float: none;
+        width: 100%;
+        @include padding-tablet;
+      }
       @include small-phone{
         //padding: 0 20px;
         overflow-x: hidden;
-
       }
       img{
         @include small-phone{

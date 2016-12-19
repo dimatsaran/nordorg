@@ -4,6 +4,10 @@
       margin: 0 auto;
       //margin: 0 -10px 0;
       padding: 80px 0 50px;
+      @include tablet{
+        width: 100%;
+        @include padding-tablet;
+      }
       @include small-phone{
         width: 100%;
         padding:  20px 0 20px;
@@ -15,6 +19,9 @@
         display: inline-block;
         vertical-align: top;
         text-align: left;
+        @include tablet{
+          width: 32%;
+        }
         @include small-phone{
           width: 100%;
           padding: 0 0 10px;
@@ -30,8 +37,15 @@
 
           position: relative;
           .img-block{
+            @include tablet{
+              position: relative;
+            }
             .count-step{
               display: inline-block;
+              @include tablet{
+                text-align: center;
+                display: block;
+              }
               .oval{
                 width: 81px;
                 height: 81px;
@@ -64,15 +78,26 @@
               color: $color-black;
               vertical-align: middle;
               padding: 15px;
+              @include tablet{
+                text-align: center;
+                display: block;
+              }
               .step{
                 font-weight: 300;
               }
-              .title{}
+              .title{
+
+              }
             }
             .arrow-step{
               display: inline-block;
               text-align: right;
               width: 20%;
+              @include tablet{
+                position: absolute;
+                right: -5%;
+                top: 20%;
+              }
               .icon-arrow{
                 background:rgba(0, 0, 0, 0) url("../images/arrow-right-ling.png") no-repeat scroll  center center;
                 height: 20px;
@@ -84,6 +109,10 @@
           .text-block{
             text-align: left;
             width: 240px;
+            @include tablet{
+              text-align: center;
+              width: 100%;
+            }
             .title{
               padding-top: 20px;
               font-size: 1.5*$font-size;
@@ -91,6 +120,9 @@
               font-style: normal;
               font-stretch: normal;
               line-height: 1.73;
+              @include tablet{
+                 height: 100px;
+              }
             }
             .link-step{
               display: inline-block;
@@ -125,6 +157,10 @@
     .row-block{
       width: 970px;
       margin: 0 auto;
+      @include tablet{
+        width: 100%;
+        @include padding-tablet;
+      }
       @include small-phone{
         width: 100%;
         padding: 0 0 10px;

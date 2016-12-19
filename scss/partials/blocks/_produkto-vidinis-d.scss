@@ -7,6 +7,12 @@
     position: relative;
     padding-top: 52px;
     text-align: center;
+    @include tablet{
+      margin-top: 0;
+      float: none;
+      width: 100%;
+      @include padding-tablet;
+    }
     @include small-phone{
       margin-top: 0;
       float: none;
@@ -15,6 +21,14 @@
     .item-block{
       @include small-phone{
         @include padding-mobile;
+      }
+      .img{
+        //max-width: 204px;
+        //display: inline-block;
+      }
+      .text-block{
+        //max-width: 204px;
+        //display: inline-block;
       }
     }
     .btn{
@@ -43,6 +57,12 @@
     padding-top: 52px;
     display: inline-block;
     width: 60%;
+    @include tablet{
+      margin-top: 0;
+      float: none;
+      width: 100%;
+      @include padding-tablet;
+    }
     @include small-phone{
       //padding: 30px 20px 20px;
       padding: 30px 0 10px;

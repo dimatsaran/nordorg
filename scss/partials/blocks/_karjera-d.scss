@@ -5,6 +5,10 @@
     display: block;
     margin: 0 auto;
     width: 720px;
+    @include tablet{
+      width: 100%;
+      @include padding-tablet;
+    }
     @include small-phone{
       width: 100%;
       padding: 0 0 10px;
@@ -34,6 +38,10 @@
   .row-block{
     margin: 0 -10px0;
     padding: 50px 0;
+    @include tablet{
+      width: 100%;
+      text-align: center;
+    }
     @include small-phone{
       margin: 0;
     }
@@ -42,6 +50,11 @@
       width: 33%;
       display: inline-block;
       vertical-align: top;
+      @include tablet{
+        padding: 13px;
+        width: 49%;
+        @include padding-tablet;
+      }
       @include small-phone{
         width: 100%;
         padding: 0 0 10px;
