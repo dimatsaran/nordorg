@@ -73,7 +73,9 @@ $(document).ready(function(){
   /* search block*/
   $(".search-block").find('.search-block-btn').on("click",function(){
     if (!$slicknavMenu.hasClass('search-show')) {
-      $slicknavMenu.removeClass('menu_show').addClass('search-show').find('.slicknav_nav').attr('data-display', 'none');;
+      $slicknavMenu.removeClass('menu_show').addClass('search-show').find('.slicknav_nav').attr('data-display', 'none');
+      $slicknavMenu.find('.slicknav_btn').removeClass('slicknav_open').addClass('slicknav_collapsed');
+      $slicknavMenu.find('.slicknav_nav').addClass('slicknav_hidden');
       $('.search-show > .search-block-line').attr('data-display', 'block');
     }
     else{
