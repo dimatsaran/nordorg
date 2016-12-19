@@ -9,6 +9,8 @@
     width: 100%;
     @include small-phone{
       overflow-x: auto;
+        //margin: 0 10px;
+
     }
     .item-block {
       text-align: left;
@@ -73,6 +75,9 @@
       width: 100%;
       border: 0 none;
       border-collapse: collapse;
+      @include small-phone{
+        @include padding-mobile;
+      }
     }
     thead{
       tr{
@@ -138,10 +143,27 @@
     padding-bottom: 50px;
     .img-block-tapkite{
       position: relative;
+      @include small-phone {
+        overflow-x: hidden;
+      }
+      .img{
+        img{
+          @include small-phone {
+            min-height: 234px;
+            min-width: 630px;
+          }
+        }
+      }
       .text-block{
         position: absolute;
         top: 50px;
         left: 50px;
+        @include small-phone{
+          left: 0;
+          text-align: center;
+          top: 30%;
+          width: 100%;
+        }
         .title{
           font-size: 4.2*$font-size;
           font-weight: 300;

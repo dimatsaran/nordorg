@@ -176,6 +176,8 @@
     padding-left: 60px;
     @include small-phone{
       width: 100%;
+      padding-left: 0;
+      text-align: center;
     }
     .block-category-button{
       padding-top: 50px;
@@ -237,6 +239,9 @@
           text-align: center;
           position: relative;
           padding: 20px;
+          @include small-phone{
+            @include padding-mobile;
+          }
           .img{
             //width: 160px;
             position: relative;

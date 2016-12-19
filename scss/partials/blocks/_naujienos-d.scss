@@ -4,7 +4,8 @@
     padding-bottom: 20px;
     .content-block{
       @include small-phone{
-        padding: 0 20px;
+        width: 100%;
+        @include padding-mobile;
       }
     }
     .item-block{
@@ -166,6 +167,9 @@
         color: $color-white-two;
         width: 332px;
         background-color: $color-sap-green;
+        @include small-phone{
+          width: 100%;
+        }
       }
     }
   }

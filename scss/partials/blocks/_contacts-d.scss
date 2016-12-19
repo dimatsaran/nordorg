@@ -7,9 +7,6 @@
       padding: 30px 0 20px;
     }
     .content-block{
-      @include small-phone{
-        padding:  0 20px;
-      }
       &:first-of-type{
         width: 46%;
         display: inline-block;
@@ -17,6 +14,7 @@
         float: left;
         @include small-phone{
           width: 100%;
+          @include padding-mobile;
         }
       }
       &:last-of-type{
@@ -119,6 +117,9 @@
     }
     .nord-form{
       padding-top: 20px;
+      .form-item-pair{
+        margin: 0;
+      }
       input{
         font-size: 1.6*$font-size;
         font-weight: 300;
@@ -133,6 +134,7 @@
         width: 90%;
         @include small-phone{
           width: 100%;
+          @include padding-mobile;
         }
         &.form-item-block{
           margin: 0;
@@ -165,17 +167,25 @@
         text-align: center;
         color: $color-white-two;
         font-family: $font-light;
+        @include small-phone{
+          width: 100%;
+        }
       }
     }
     .img-block{
       position: relative;
+      @include small-phone {
+        overflow-x: hidden;
+      }
       .text-block{
         position: absolute;
         top: 50px;
         left: 50px;
         @include small-phone{
-          top: 0;
-          left: 0;
+           left: 0;
+          text-align: center;
+          top: 30%;
+          width: 100%;
         }
         .title{
           font-size: 4.2*$font-size;
@@ -190,6 +200,14 @@
           width: 255px;
           height: 52px;
 
+        }
+      }
+      .img{
+        img{
+          @include small-phone {
+            min-height: 234px;
+            min-width: 630px;
+          }
         }
       }
     }

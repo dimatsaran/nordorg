@@ -3,13 +3,14 @@
     padding-top: 45px;
     padding-bottom: 20px;
     .content-block{
-      @include small-phone{
-        padding: 0 20px;
-      }
+
     }
     .item-block{
       text-align: left;
       position: relative;
+      @include small-phone{
+        @include padding-mobile;
+      }
     }
     .block-category-button{
       padding-bottom: 60px;
@@ -165,6 +166,9 @@
         color: $color-white-two;
         width: 332px;
         background-color: $color-sap-green;
+        @include small-phone{
+          width: 100%;
+        }
       }
     }
   }

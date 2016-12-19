@@ -98,7 +98,7 @@ body{
       //float: left;
       @include small-phone{
         width: 100%;
-        padding: 0 20px 10px;
+        @include padding-mobile;
       }
       .item-block{
         text-align: center;
@@ -195,7 +195,8 @@ body{
     padding-top: 40px;
     @include small-phone{
       width: 100%;
-      padding: 20px 10px 0;
+      padding-top: 20px;
+      @include padding-mobile;
     }
     h2{
       color: $color-sap-green;
@@ -235,6 +236,7 @@ body{
       vertical-align: top;
       @include small-phone{
         width: 100%;
+        @include padding-mobile;
       }
       .item-block{
         text-align: center;
@@ -800,24 +802,6 @@ body{
 .block-partner{
   //padding: 35px 0 35px;
   padding: 28px 0 28px;
-  //position: relative;
-  //z-index: 100;
-  //&:after{
-  //  background-image: url('../images/line.svg');
-  //  background-attachment: scroll;
-  //  background-size: cover;
-  //  background-repeat: no-repeat;
-  //  background-position: center;
-  //  width: 100%;
-  //  height: 11px;
-  //  display: block;
-  //  //position: relative;
-  //  position: absolute;
-  //  content: '';
-  //  //top: -2px;
-  //  bottom: -9px;
-  //  transform: rotate(180deg);
-  //}
   @include small-phone{
     padding: 25px 20px 5px;
   }

@@ -38,6 +38,10 @@
   .row-block{
     padding-top: 65px;
     padding-bottom: 50px;
+    @include small-phone{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
     .content-block{
       &:first-of-type{
         width: 50%;
@@ -47,6 +51,7 @@
         @include small-phone{
           width: 100%;
           padding: 0 20px 10px;
+          @include padding-mobile;
         }
       }
       &:last-of-type{
@@ -56,6 +61,7 @@
         @include small-phone{
           width: 100%;
           padding: 0 20px 10px;
+          @include padding-mobile;
         }
       }
     }

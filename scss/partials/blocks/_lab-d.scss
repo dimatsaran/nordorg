@@ -18,6 +18,7 @@
         @include small-phone{
           width: 100%;
           margin: 0 0 20px;
+          @include padding-mobile;
         }
         .item-block{
           text-align: center;
@@ -82,9 +83,11 @@
     }
     .add-list{
       @include clearfix;
-      @include small-phone{
-        padding: 0 20px;
-      }
+
+        @include small-phone{
+          width: 100%;
+          @include padding-mobile;
+        }
       .btn{
         margin-top: 30px;
         font-size: 1.6*$font-size;
@@ -110,7 +113,7 @@
       position: relative;
       @include clearfix;
       @include small-phone{
-        padding: 0 20px;
+        @include padding-mobile;
       }
       h2{
         font-size: 30px;
@@ -136,6 +139,11 @@
         }
         .nord-form {
           .form-item-pair {
+            @include small-phone{
+              width: 100%;
+              margin: 0;
+              //@include padding-mobile;
+            }
             .form-item{
               width: 100% ;
             }
@@ -192,10 +200,14 @@
       margin-top: 5px;
       @include small-phone{
         //padding: 0 20px;
+        overflow-x: hidden;
+
       }
       img{
         @include small-phone{
-
+          min-height: 234px;
+          //min-width: 1000px;
+          min-width: 1170px;
         }
       }
       .text-block{
@@ -203,7 +215,7 @@
         top: 50px;
         left: 50px;
         @include small-phone{
-          top: 0;
+          //top: 0;
           left: 0;
           width: 100%;
           text-align: center;
@@ -215,13 +227,20 @@
           font-stretch: normal;
           line-height: 0.62;
           color: $color-white-two;
+          @include small-phone{
+            line-height: 1.17;
+          }
         }
 
         .btn{
           margin-top: 30px;
           width: 255px;
           height: 52px;
-
+          @include small-phone{
+            margin-top: 10px;
+            //width: 255px;
+            //height: 52px;
+          }
         }
       }
     }

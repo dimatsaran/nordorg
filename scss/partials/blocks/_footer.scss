@@ -225,14 +225,19 @@ footer{
         top: 5px;
         padding: 0;
         .icon-mail{
-          vertical-align: middle;
+          //vertical-align: middle;
           background-image: url("../images/mail.svg");
           background-repeat: no-repeat;
           background-position: center;
           width: 43px;
           height: 43px;
           display: inline-block;
-          text-align: center;
+          //text-align: center;
+
+          left: 0;
+          position: absolute;
+            top: 0;
+
         }
       }
     }
