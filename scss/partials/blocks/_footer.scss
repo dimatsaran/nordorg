@@ -93,9 +93,13 @@ footer{
         padding-bottom: 7px;
       }
       a{
-        color: $color-sap-green;
         text-transform: uppercase;
-        font-family: $font-medium;
+        font-size: 1.6*$font-size;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.63;
+        color: $color-sap-green;
         text-decoration: none;
         @include small-phone{
           font-size: 1.6*$font-size;

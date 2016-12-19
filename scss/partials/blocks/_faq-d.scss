@@ -24,7 +24,7 @@
           width: auto;
           min-width: 170px;
           height: 36px;
-          padding: 8px 15px;
+          padding: 8px 30px;
           line-height: 1.2;
           border-radius: 100px;
           display: inline-block;
@@ -45,19 +45,24 @@
     }
   }
   .dropdown-block{
-      margin-bottom: 30px;
+      margin-bottom: 50px;
+    &:last-of-type{
+      margin-bottom: 20px;
+    }
       .title-block{
-        padding-bottom: 20px;
+        padding-bottom: 15px;
         i{
             vertical-align: middle;
             background-repeat: no-repeat;
-            width: 40px;
-            height: 39px;
+          width: 38px;
+          height: 31px;
             display: inline-block;
             margin-right: 15px;
           }
         .icon-home-line{
             background-image: url("../images/home-line.svg");
+          width: 30px;
+          height: 39px;
           }
         .icon-pro-line{
           background-image: url("../images/pro-line.svg");
@@ -74,9 +79,10 @@
           font-weight: normal;
           font-style: normal;
           font-stretch: normal;
-          line-height: 1.07;
+          //line-height: 1.07;
           color: $color-sap-green;
-          vertical-align: middle;
+          //vertical-align: middle;
+          vertical-align: bottom;
           display: inline-block;
           &.home-line{
             color: $color-sap-green;
@@ -135,6 +141,15 @@
             .icon-plus-rouge{
               background-image: url("../images/minus-rouge.svg");
             }
+            .home-line{
+              color: $color-sap-green;
+            }
+            .pro-line{
+              color: $color-sepia;
+            }
+            .industrial-line{
+              color: $color-rouge;
+            }
           }
           >a{
             text-decoration: none;
@@ -180,7 +195,7 @@
       }
     }
   .row-block{
-      padding-top: 50px;
+      padding-top: 30px;
       padding-bottom: 20px;
       .content-block{
         width: 100%;

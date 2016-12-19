@@ -1,0 +1,172 @@
+.block-naujienos-d{
+  .row-block{
+    padding-top: 45px;
+    padding-bottom: 20px;
+    .content-block{
+      @include small-phone{
+        padding: 0 20px;
+      }
+    }
+    .item-block{
+      text-align: left;
+      position: relative;
+    }
+    .block-category-button{
+      padding-bottom: 60px;
+      .list-button{
+        @include small-phone{
+          text-align: center;
+        }
+        li{
+          display: inline-block;
+          padding-right: 10px;
+          @include small-phone{
+            padding: 5px;
+          }
+          &:last-of-type{
+            padding-right: 0;
+          }
+          .btn{
+            width: auto;
+            min-width: 170px;
+            height: 36px;
+            //padding: 8px 15px;
+            padding: 8px 30px;
+            line-height: 1.2;
+            border-radius: 100px;
+            display: inline-block;
+            font-size: 1.6*$font-size;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            text-align: center;
+            color: $color-black;
+            background-color: $color-very-light-brown;
+            cursor: pointer;
+            &.active,&:hover{
+              color: $color-white-two ;
+              background-color: $color-sap-green;
+            }
+          }
+        }
+      }
+    }
+    .img-block{
+      @include clearfix;
+      position: relative;
+      //padding-top: 52px;
+      padding-bottom: 45px;
+      &:last-of-type{
+        padding-bottom: 0;
+      }
+      .img{
+        display: inline-block;
+        float: left;
+        width: 32%;
+        @include small-phone{
+          width: 100%;
+        }
+      }
+      .text-block{
+        display: inline-block;
+        float: left;
+        width: 55%;
+        @include small-phone{
+          width: 100%;
+        }
+        .title{
+          font-size: 3*$font-size;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.07;
+          color: $color-black;
+        }
+        .desc{
+          padding-top: 20px;
+          font-size: 1.6*$font-size;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.63;
+          color: $color-black;
+        }
+        .autor{
+          padding-top: 20px;
+          .img-autor{
+            display: inline-block;
+            float: left;
+            margin-right: 10px;
+          }
+          .name-autor{
+            color: $color-sepia;
+            font-size: 1.6*$font-size;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.63;
+          }
+          .date{
+            font-size: 1.4*$font-size;
+            font-weight: 300;
+            line-height: 1.86;
+            color: $color-black;
+          }
+        }
+      }
+    }
+  }
+
+}
+.block-tags{
+  .row-block{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    @include small-phone{
+      padding: 20px  20px 10px;
+    }
+    .content-block{
+      width: 45%;
+      @include small-phone{
+        width: 100%;
+      }
+    }
+    .item-block{
+      text-align: left;
+      position: relative;
+    }
+    .list-block{
+      .text-block{
+        padding-bottom: 20px;
+        .title{
+          font-size: 2.2*$font-size;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.18;
+          color: $color-black;
+        }
+        .date{
+          padding-top: 10px;
+          font-size: 1.4*$font-size;
+          font-weight: 300;
+          line-height: 1.86;
+          color: $color-black;
+        }
+      }
+    }
+    .add-list{
+      margin-top: 35px;
+      .btn{
+        font-size: 1.6*$font-size;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        text-align: center;
+        color: $color-white-two;
+        width: 332px;
+        background-color: $color-sap-green;
+      }
+    }
+  }
+}
