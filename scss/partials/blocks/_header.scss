@@ -51,6 +51,11 @@
     display: inline-block;
     text-align: right;
     padding-top: 18px;
+    @include tablet{
+      width: 20%;
+      float: right;
+      margin-right: 150px;
+    }
     @include small-phone{
       display: none;
     }
@@ -58,8 +63,14 @@
       >li{
         display: inline-block;
         padding-left: 20px;
+        @include tablet{
+          display: none;
+        }
         &:first-of-type{
           padding-left: 0;
+          @include tablet{
+            display: block;
+          }
         }
         a{
           font-size: 1.4*$font-size;
@@ -98,6 +109,9 @@
     display: inline-block;
     text-align: right;
     padding-top: 16px;
+    @include tablet{
+      display: none;
+    }
     @include small-phone{
       display: none;
     }
@@ -185,6 +199,7 @@
       -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
       -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+      left: -50%;
       &:after {
         z-index: 1000;
         content: '';
@@ -211,27 +226,6 @@
         }
       }
     }
-    //.icon-submenu{
-    //  transition: none;
-    //  content: "";
-    //  display: inline-block;
-    //  vertical-align: middle;
-    //  margin: 0;
-    //  margin-left: 3px;
-    //  margin-top: -6px;
-    //  border-style: solid;
-    //  border-color: $color-rouge;
-    //  border-width: 0 0 2px 2px;
-    //  -moz-transform: rotate(-45deg);
-    //  -ms-transform: rotate(-45deg);
-    //  -webkit-transform: rotate(-45deg);
-    //  transform: rotate(-45deg);
-    //  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
-    //  height: 7px;
-    //  right: 12px;
-    //  top: 0;
-    //  width: 8px;
-    //}
    }
   .label-block{
     position: absolute;
@@ -272,6 +266,41 @@
       background-color: transparent;
       margin: 0;
       z-index: 150;
+      @include tablet {
+        background-image: url('../images/hamburger.svg');
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 17px;
+        right: 20px;
+        display: inline-block;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0;
+        .slicknav_icon{
+          display: none;
+          //width: 11.4px;
+          //height: 32px;
+          //text-align: center;
+          //line-height: 32px;
+          //float: none;
+          //display: inline-block;
+          &:before{display: none;}
+          .slicknav_icon-bar{
+            width: 11.4px;
+            height: 2px;
+            background-color: $color-sepia;
+            &+.slicknav_icon-bar {
+              margin-top: 3px;
+            }
+          }
+        }
+      }
       @include small-phone {
         background-image: url('../images/hamburger.svg');
         background-attachment: scroll;
@@ -521,6 +550,9 @@
   }
   .search-block{
       display: none;
+    @include tablet {
+      display: block;
+    }
     @include small-phone {
       display: block;
     }
@@ -587,6 +619,21 @@
   }
   &.menu_show{
     display: none;
+    @include tablet {
+      display: block;
+      &:before{
+        content: '';
+        display: inline-block;
+        background-color: $color-sepia;
+        height: 65px;
+        position: absolute;
+        width: 72px;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+      }
+    }
     @include small-phone {
       display: block;
       &:before{
@@ -606,12 +653,6 @@
       -webkit-box-shadow: 0px -2px 2px 0px rgba(50, 50, 50, 0.2);
       -moz-box-shadow:    0px -2px 2px 0px rgba(50, 50, 50, 0.2);
       box-shadow:         0px -2px 2px 0px rgba(50, 50, 50, 0.2);
-      //&[data-display="none"]{
-      //  display: none!important;
-      //}
-      //&[data-display="block"]{
-      //  display: block!important;
-      //}
       .user-nav{
         display: block;
         @include small-phone{
@@ -650,6 +691,13 @@
       }
     }
     .slicknav_btn{
+      @include tablet {
+        background-image: url('../images/hamburger-white.svg');
+        .slicknav_icon{
+          .slicknav_icon-bar{
+           }
+        }
+      }
       @include small-phone {
         //border: 2px solid $color-white-two;
         background-image: url('../images/hamburger-white.svg');
@@ -659,7 +707,6 @@
           }
         }
       }
-
     }
   }
   &.search-show{

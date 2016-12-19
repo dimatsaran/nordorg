@@ -42,7 +42,7 @@ $small-phone: 320px;
   }
 }
 @mixin small-phone {
-  @media (max-width: #{$tablet}) {
+  @media (max-width: #{$tablet - 1px}) {
     @content;
   }
 }
