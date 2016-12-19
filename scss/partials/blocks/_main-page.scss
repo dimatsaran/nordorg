@@ -84,6 +84,9 @@ body{
     margin: 0 -15px;
     padding-top: 125px;
     padding-bottom: 30px;
+    @include tablet{
+      margin: 0;
+    }
     @include small-phone{
       margin: 0;
       padding-top: 10px;
@@ -95,7 +98,10 @@ body{
       width: 33%;
       display: inline-block;
       vertical-align: top;
-      //float: left;
+      @include tablet{
+        width: 50%;
+        text-align: center;
+      }
       @include small-phone{
         width: 100%;
         @include padding-mobile;
@@ -107,6 +113,10 @@ body{
         height: 468px;
         position: relative;
         overflow: hidden;
+        @include tablet{
+          margin: 0 auto;
+          height: auto;
+        }
         @include small-phone{
           width: 100%;
         }
@@ -146,6 +156,9 @@ body{
             -moz-transition: all 0 1s ease-out 0.5s;
             -o-transition: all 0 1s ease-out 0.5s;
             transition: all 0 1s ease-out 0.5s;
+            @include tablet{
+              width: 100%;
+            }
           }
           .icon-hover{
             position: absolute;
@@ -185,8 +198,45 @@ body{
       }
     }
   }
+  .slick-dots{
+    position: absolute;
+    bottom: 34px;
+    @include tablet{
+      bottom: -50px;
+    }
+    @include small-phone{
+      bottom: -50px;
+    }
+    li{
+      width: 12px;
+      height: 12px;
+      margin: 0 13px;
+      button{
+        width: 12px;
+        height: 12px;
+        padding: 0;
+        &:before{
+          border-radius: 100%;
+          background-color: $color-grey-dots;
+          opacity: 1;
+          content: '';
+          width: 12px;
+          height: 12px;
+        }
+
+      }
+      &.slick-active,&:hover{
+        button{
+          &:before{
+            background-color: $color-rouge-v2;
+          }
+        }
+      }
+    }
+  }
 }
 .block-catalog{
+  //display: none;
   .title-block{
     text-align: center;
     display: block;
@@ -224,6 +274,9 @@ body{
     margin: 0 -10px;
     padding-top: 10px;
     padding-bottom: 80px;
+    @include tablet{
+      margin: 0;
+    }
     @include small-phone{
       margin: 0;
       padding: 30px 0 20px;
@@ -234,6 +287,9 @@ body{
       width: 33%;
       display: inline-block;
       vertical-align: top;
+      @include small-phone{
+        width: 50%;
+      }
       @include small-phone{
         width: 100%;
         @include padding-mobile;
@@ -330,6 +386,9 @@ body{
     }
   }
   .slick-dots {
+    @include tablet {
+      bottom: -40px;
+    }
     @include small-phone {
       bottom: -40px;
     }
@@ -353,6 +412,7 @@ body{
 .block-carusel{
   background-color: $color-grey;
   position: relative;
+
   &:before{
     background-image: url('../images/line.svg');
     background-attachment: scroll;
@@ -390,6 +450,9 @@ body{
   .row-block{
     padding-top: 90px;
     padding-bottom: 90px;
+    @include tablet{
+      margin: 0;
+    }
     @include small-phone{
       margin: 0;
       padding-top: 30px;
@@ -399,6 +462,9 @@ body{
   .block-visual{
     overflow-x: hidden;
     padding-top: 30px;
+    @include tablet {
+      overflow-x: visible;
+    }
     @include small-phone {
       overflow-x: visible;
     }
@@ -477,6 +543,9 @@ body{
       height: 40px;
       &.slick-prev{
         left: 32%;
+        @include tablet{
+          left: 1%;
+        }
         &:before{
           background-image: url('../images/slider/arrow-left.svg');
           background-attachment: scroll;
@@ -497,6 +566,9 @@ body{
       }
       &.slick-next{
         right: 32%;
+        @include tablet{
+          right: 1%;
+        }
         &:before{
           background-image: url('../images/slider/arrow-right.svg');
           background-attachment: scroll;
@@ -516,6 +588,9 @@ body{
       }
     }
     .slick-dots {
+      @include tablet {
+        bottom: -50px;
+      }
       @include small-phone {
         bottom: -50px;
       }
@@ -631,6 +706,9 @@ body{
       }
     }
   }
+  @include tablet {
+    bottom: -50px;
+  }
   //.img-block{
   //  display: inline-block;
   //  vertical-align: middle;
@@ -693,6 +771,7 @@ body{
 
 }
 .block-slider{
+
   .slick-list{
     padding: 0!important;
   }
@@ -768,6 +847,9 @@ body{
   .slick-dots{
     position: absolute;
     bottom: 34px;
+    //@include tablet {
+    //  bottom: -50px;
+    //}
     @include small-phone{
       bottom: 16px;
     }
@@ -802,12 +884,18 @@ body{
 .block-partner{
   //padding: 35px 0 35px;
   padding: 28px 0 28px;
+
   @include small-phone{
     padding: 25px 20px 5px;
   }
   .title-block{
     display: inline-block;
     vertical-align: middle;
+    @include tablet{
+      display: inline;
+      text-align: center;
+    }
+
     @include small-phone{
       text-align: center;
       width: 100%;
@@ -825,6 +913,11 @@ body{
   .partner-logos{
     display: inline-block;
     vertical-align: middle;
+    @include tablet{
+      display: inherit;
+      text-align: center;
+      padding-top: 30px;
+    }
     @include small-phone{
       text-align: center;
       padding-top: 15px;
@@ -832,11 +925,11 @@ body{
     }
     li{
       display: inline-block;
-      //padding: 0 15px;
-      //vertical-align: middle;
       padding: 0 23px;
+      @include tablet{
+        width: 16%;
+      }
       @include small-phone{
-        //width: 24%;
         width: 23%;
         padding: 10px 5px;
         &:nth-last-of-type(1){

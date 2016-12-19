@@ -19,6 +19,9 @@
     padding-top: 17px;
     width: 20%;
     float: left;
+    @include tablet {
+      padding: 5px 5px 15px 15px;
+    }
     @include small-phone {
       width: 37%;
       //padding: 0;
@@ -27,6 +30,10 @@
     .logo{
       position: relative;
       display: block;
+      @include tablet{
+        height: 45px;
+        width: 120px;
+      }
       @include small-phone{
         height: 45px;
         width: 120px;
