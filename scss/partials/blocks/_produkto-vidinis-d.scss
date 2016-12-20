@@ -69,6 +69,7 @@
       width: 100%;
     }
     .block-product-single{
+      padding-bottom: 40px;
       @include small-phone{
         text-align: center;
         @include padding-mobile;
@@ -140,7 +141,7 @@
         @include padding-mobile;
       }
       .dropdown-block{
-        margin-bottom: 40px;
+        padding-bottom: 40px;
         .icon-fill{
           vertical-align: middle;
           background-repeat: no-repeat;
@@ -249,6 +250,7 @@
         }
       }
       .row-block{
+        @include clearfix;
         //margin: 0 -9px;
         //padding-top: 50px;
         padding-bottom: 20px;

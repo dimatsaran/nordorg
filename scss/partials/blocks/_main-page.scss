@@ -86,7 +86,9 @@ body{
     padding-bottom: 30px;
     @include tablet{
       margin: 0;
+      @include  padding-height;
     }
+
     @include small-phone{
       margin: 0;
       padding-top: 10px;
@@ -116,7 +118,7 @@ body{
         overflow: hidden;
         @include tablet{
           margin: 0 auto;
-          //height: auto;
+          width: auto;
         }
         @include small-phone{
           width: 100%;
@@ -209,7 +211,7 @@ body{
     position: absolute;
     bottom: 34px;
     @include tablet{
-      bottom: -50px;
+      bottom: -45px;
     }
     @include small-phone{
       bottom: -50px;
@@ -243,7 +245,6 @@ body{
   }
 }
 .block-catalog{
-  //display: none;
   .title-block{
     text-align: center;
     display: block;
@@ -283,6 +284,8 @@ body{
     padding-bottom: 80px;
     @include tablet{
       margin: 0;
+      @include padding-height;
+      padding-bottom: 40px;
     }
     @include small-phone{
       margin: 0;
@@ -459,7 +462,6 @@ body{
 .block-carusel{
   background-color: $color-grey;
   position: relative;
-
   &:before{
     background-image: url('../images/line.svg');
     background-attachment: scroll;
@@ -499,6 +501,9 @@ body{
     padding-bottom: 90px;
     @include tablet{
       margin: 0;
+      @include padding-height;
+      padding-top: 90px;
+      padding-bottom: 50px;
     }
     @include small-phone{
       margin: 0;
@@ -681,21 +686,24 @@ body{
     display: block;
     //margin-left: 20px;
     @include tablet{
-      padding: 20px;
+      padding: 20px 50px;
 
     }
     @include small-phone{
       padding: 0 15px;
       text-align: center;
     }
-    .img-block{
+    .img-block {
       width: 40%;
       //width: 260px;
       //height: 260px;
       height: auto;
       float: left;
       text-align: center;
-      //margin-right: 20px;
+      @include tablet {
+        width: 40%;
+        min-width: 250px;
+      }
       @include small-phone{
         width: 100%;
       }
@@ -703,10 +711,14 @@ body{
         border-radius: 50%;
         background-color: $color-white-two;
         display: inline-block;
-        width: 260px;
-        height: 260px;
+        //max-width: 260px;
+        //max-height: 260px;
         max-width: 100%;
         //height: auto;
+        @include tablet {
+          max-width: 100%;
+          //max-height: 250px;
+        }
       }
     }
     .text-block{
@@ -822,7 +834,6 @@ body{
 
 }
 .block-slider{
-
   .slick-list{
     padding: 0!important;
   }
@@ -933,9 +944,7 @@ body{
   }
 }
 .block-partner{
-  //padding: 35px 0 35px;
   padding: 28px 0 28px;
-
   @include small-phone{
     padding: 25px 20px 5px;
   }

@@ -1,6 +1,6 @@
 .block-knowledge{
   .row-block{
-    padding-top: 45px;
+    //padding-top: 45px;
     padding-bottom: 20px;
     .content-block{
 
@@ -13,7 +13,8 @@
       }
     }
     .block-category-button{
-      padding-bottom: 60px;
+      padding-top: 50px;
+      //padding-bottom: 60px;
       @include tablet{
         width: 100%;
         @include padding-tablet;
@@ -58,6 +59,7 @@
       }
     }
     .list-knowledge{
+      padding-top: 50px;
       @include tablet{
         width: 100%;
         @include padding-tablet;

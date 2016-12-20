@@ -30,7 +30,7 @@
         height: 52px;
         padding: 15px 0;
           @include tablet{
-            width: 150px;
+            width: 140px;
           }
         &.active,&:hover{
           color: $color-sap-green;

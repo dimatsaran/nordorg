@@ -2,6 +2,12 @@
  * Import this file using the following HTML or equivalent:
  * */
 .main-header{
+  @include tablet {
+    background-color: $color-white-two;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+    //padding: 7px 10px;
+    height: 65px;
+  }
   @include small-phone {
     background-color: $color-white-two;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);

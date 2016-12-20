@@ -240,6 +240,11 @@
     //width: 75%;
     max-width: 860px;
     padding-left: 60px;
+    @include tablet{
+      width: 100%;
+      padding-left: 0;
+      //text-align: center;
+    }
     @include small-phone{
       width: 100%;
       padding-left: 0;
@@ -247,6 +252,10 @@
     }
     .block-category-button{
       padding-top: 50px;
+      @include tablet{
+        width: 100%;
+        @include padding-tablet;
+      }
       //text-align: center;
       .list-button{
         li{
@@ -286,9 +295,15 @@
       }
     }
     .row-block{
-      //margin: 0 -20px;
+      @include clearfix;
+      margin: 0 -20px;
       padding-top: 50px;
       padding-bottom: 20px;
+      @include tablet{
+        //margin: 0;
+        width: 100%;
+        @include padding-tablet;
+      }
       @include small-phone{
         margin: 0;
         padding-top: 20px;
@@ -298,6 +313,9 @@
         width: 33%;
         display: inline-block;
         vertical-align: top;
+        @include tablet{
+          float: left;
+        }
         @include small-phone{
           width: 100%;
         }

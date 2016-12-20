@@ -193,7 +193,6 @@
     }
   }
   .row-block{
-    //margin: 0 -10px ;
     padding-top: 50px;
     padding-bottom: 50px;
     .content-block{
@@ -205,7 +204,6 @@
         &:first-of-type {
           width: 100%;
           text-align: center;
-          //width: 720px;
           margin: 0 auto;
           display: inherit;
         }
@@ -220,12 +218,9 @@
       }
 
       .item-block{
-        //min-height: 360px;
-        //padding: 10px 20px 20px;
         text-align: left;
         position: relative;
         .text-block{
-          //padding: 20px;
         }
         .title{
           font-size: 3*$font-size;
@@ -414,6 +409,10 @@
   .title-block{
     padding-top: 78px;
     text-align: center;
+    @include tablet{
+      padding-top: 30px;
+      @include padding-tablet;
+    }
     @include small-phone{
       padding-top: 30px;
       @include padding-mobile;
@@ -449,13 +448,15 @@
       width: 33%;
       display: inline-block;
       vertical-align: top;
+      @include tablet{
+        width: 100%;
+        @include padding-tablet;
+      }
       @include small-phone{
         @include padding-mobile;
         width: 100%;
       }
       .item-block{
-        //min-height: 360px;
-        //padding: 10px 20px 20px;
         text-align: left;
         position: relative;
         @include small-phone{
@@ -497,7 +498,6 @@
   }
 }
 .block-productions{
-  //background-color: $color-white-two;
   .title-block{
     padding-top: 78px;
     max-width: 600px;
