@@ -98,6 +98,7 @@ body{
       width: 33%;
       display: inline-block;
       vertical-align: top;
+
       @include tablet{
         width: 50%;
         text-align: center;
@@ -115,10 +116,11 @@ body{
         overflow: hidden;
         @include tablet{
           margin: 0 auto;
-          height: auto;
+          //height: auto;
         }
         @include small-phone{
           width: 100%;
+          height: auto;
         }
         a{
           width: 100%;
@@ -143,7 +145,6 @@ body{
                 //opacity: 1;
               }
             }
-
           }
         }
         .img{
@@ -163,14 +164,20 @@ body{
           .icon-hover{
             position: absolute;
             width: 100%;
-            //height: 100%;
+            height: 100%;
             text-align: center;
             vertical-align: middle;
-            //display: inline-block;
+            //display: block;
             display: none;
-            top: 80px;
+            top: 0;
             z-index: 100;
+            left: 0;
             //background: rgba(0, 0, 0, 0) url("../images/tractor-white.svg") no-repeat scroll top center;
+            img{
+              display: inline-block;
+              margin-top: 20%;
+              vertical-align: middle;
+            }
           }
         }
         .text-block{
@@ -281,108 +288,148 @@ body{
       margin: 0;
       padding: 30px 0 20px;
     }
-    .content-block{
-      margin: 0 0 10px;
-      padding: 0 10px;
-      width: 33%;
-      display: inline-block;
-      vertical-align: top;
-      @include small-phone{
-        width: 50%;
-      }
-      @include small-phone{
-        width: 100%;
-        @include padding-mobile;
-      }
-      .item-block{
-        text-align: center;
-        position: relative;
-        .img{
-          width: 100%;
-          height: 480px;
-          display: inline-block;
-          position: relative;
-          padding-top: 60px;
-          img{
-            display: inline-block;
-            text-align: center;
-          }
-          .category-quality{
-            border-radius: 50%;
-            background-color: $color-white-two;
-            padding: 5px;
-            position: absolute;
-            right: 50px;
-            bottom: 20px;
-            text-align: center;
-            display: inline-block;
-            vertical-align: middle;
-            width: 60px;
-            height: 60px;
-            @include small-phone{
-              right: 10%;
-            }
-          }
-          .icon-category{
-            background-image: url('../images/plants.svg');
-            background-attachment: scroll;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 52px;
-            height: 52px;
-            display: inline-block;
-            &.icon-plants{
-              background-image: url('../images/plants.svg');
-            }
-            &.icon-agro{
-              background-image: url('../images/agro.svg');
-            }
-            &.icon-soil{
-              background-image: url('../images/soil.svg');
-            }
-            img{
-              width: 60px;
-              height: 60px;
-            }
 
-          }
-          &.upper{
-            //margin-top: -15px;
-            //margin-bottom: 15px;
-            padding-top: 40px;
-            .category-quality{
-              bottom: 50px;
-            }
-          }
-          img{
-            //vertical-align: bottom;
+  }
+  .content-block{
+    margin: 0 0 10px;
+    padding: 0 10px;
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    @include small-phone{
+      width: 50%;
+    }
+    @include small-phone{
+      width: 100%;
+      @include padding-mobile;
+    }
+  }
+  .item-block{
+    text-align: center;
+    position: relative;
+    .img{
+      height: 480px;
+      display: inline-block;
+      position: relative;
+      padding-top: 60px;
+      img{
+        display: inline-block;
+        text-align: center;
+      }
+      &.icon-category{
+        &:before{
+          position: absolute;
+          right: -2%;
+          bottom: 5%;
+          background-color: $color-white-two;
+          background-attachment: scroll;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 50%;
+          border: 5px solid $color-white-two;
+          width: 52px;
+          height: 52px;
+          display: inline-block;
+          content: '';
+        }
+        &.icon-plants{
+          &:before {
+            background-image: url('../images/plants.svg');
           }
         }
-        .text-block{
-          padding: 0 40px;
-          //padding-top: 20px;
+        &.icon-agro{
+          &:before {
+            background-image: url('../images/agro.svg');
+          }
         }
-        .title{
-          color: $color-sap-light-green;
-          font-size: 2.6*$font-size;
-          font-weight: 300;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1.23;
-          text-align: center;
-        }
-        .desc{
-          color: $color-black;
-          font-size: 1.6*$font-size;
-          font-weight: 300;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1.63;
-          text-align: center;
-          padding: 30px 10px;
+        &.icon-soil{
+          &:before {
+            background-image: url('../images/soil.svg');
+          }
         }
       }
+
+      //.category-quality{
+      //  border-radius: 50%;
+      //  background-color: $color-white-two;
+      //  padding: 5px;
+      //  position: absolute;
+      //  right: 50px;
+      //  //right: 16%;
+      //  bottom: 20px;
+      //  text-align: center;
+      //  display: inline-block;
+      //  vertical-align: middle;
+      //  width: 60px;
+      //  height: 60px;
+      //  @include tablet{
+      //    //right: 24%;
+      //    right: 70px;
+      //  }
+      //  @include small-phone{
+      //    //right: 25%;
+      //    right: 80px;
+      //  }
+      //}
+      //.icon-category{
+      //  background-image: url('../images/plants.svg');
+      //  background-attachment: scroll;
+      //  background-size: cover;
+      //  background-repeat: no-repeat;
+      //  background-position: center;
+      //  width: 52px;
+      //  height: 52px;
+      //  display: inline-block;
+      //  &.icon-plants{
+      //    background-image: url('../images/plants.svg');
+      //  }
+      //  &.icon-agro{
+      //    background-image: url('../images/agro.svg');
+      //  }
+      //  &.icon-soil{
+      //    background-image: url('../images/soil.svg');
+      //  }
+      //  img{
+      //    width: 60px;
+      //    height: 60px;
+      //  }
+      //
+      //}
+      &.upper{
+        //margin-top: -15px;
+        //margin-bottom: 15px;
+        padding-top: 40px;
+        .category-quality{
+          bottom: 50px;
+        }
+      }
+      img{
+        //vertical-align: bottom;
+      }
+    }
+    .text-block{
+      padding: 0 40px;
+      //padding-top: 20px;
+    }
+    .title{
+      color: $color-sap-light-green;
+      font-size: 2.6*$font-size;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.23;
+      text-align: center;
+    }
+    .desc{
+      color: $color-black;
+      font-size: 1.6*$font-size;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.63;
+      text-align: center;
+      padding: 30px 10px;
     }
   }
   .slick-dots {
@@ -630,9 +677,13 @@ body{
     }
   }
   .item-block{
-    //padding: 0 30px;
+    @include clearfix;
     display: block;
     //margin-left: 20px;
+    @include tablet{
+      padding: 20px;
+
+    }
     @include small-phone{
       padding: 0 15px;
       text-align: center;
