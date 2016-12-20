@@ -22,49 +22,82 @@
       border-radius: 5px;
       background-color: $color-light-grey-v2;
       margin-bottom: 30px;
-      .title-block{
-        border-radius: 5px 5px 0 0 ;
-        background-color: $color-rouge-v1;
-        //height: 51px;
-        vertical-align: middle;
-        padding: 15px 20px;
-        .title{
-          font-size: 1.8*$font-size;
-          font-weight: normal;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: 1.44;
-          color: $color-white-two;
-          text-align: left;
-          text-transform: uppercase
-        }
-
-      }
-      i{
-        vertical-align: middle;
-        background-repeat: no-repeat;
-        width: 23px;
-        height: 23px;
-        display: inline-block;
-        margin-right: 10px;
-      }
-      .icon-plants{
-        background-image: url("../images/plants.svg");
-      }
-      .icon-soil{
-        background-image: url("../images/soil.svg");
-      }
-      .icon-agro{
-        background-image: url("../images/agro.svg");
-      }
       .catalog-menu{
-        >li{
+        .title-block{
+          border-radius: 5px 5px 0 0 ;
+          background-color: $color-rouge-v1;
+          //height: 51px;
+          vertical-align: middle;
+          padding: 15px 20px;
+          pointer-events: none;
+          cursor: default;
+          position: relative;
+          @include tablet{
+            pointer-events: auto;
+            cursor: pointer;
+          }
+          .selected{
+            display: none;
+            background-image: url("../images/plus-white.svg");
+            background-position: center;
+            vertical-align: middle;
+            background-repeat: no-repeat;
+            width: 23px;
+            height: 23px;
+            //display: inline-block;
+            position: absolute;
+            right: 20px;
+            @include tablet{
+              display: inline-block;
+            }
+          }
+          .title{
+            font-size: 1.8*$font-size;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.44;
+            color: $color-white-two;
+            text-align: left;
+            text-transform: uppercase
+          }
+
+        }
+        i{
+          vertical-align: middle;
+          background-repeat: no-repeat;
+          width: 23px;
+          height: 23px;
+          display: inline-block;
+          margin-right: 10px;
+        }
+        .icon-plants{
+          background-image: url("../images/plants.svg");
+        }
+        .icon-soil{
+          background-image: url("../images/soil.svg");
+        }
+        .icon-agro{
+          background-image: url("../images/agro.svg");
+        }
+        .catalog-menu-block{
+          display: block;
+          @include tablet{
+            display: none;
+            &[data-display="none"]{
+              display: none;
+            }
+            &[data-display="block"]{
+              display: block;
+            }
+          }
           .title-menu{
             cursor: pointer;
             padding: 10px;
             position: relative;
             .selected{
-              background-image: url("../images/plus-grey.svg");
+              //background-image: url("../images/plus-grey.svg");
+              background-image: url("../images/plus-green.svg");
               background-position: center;
               vertical-align: middle;
               background-repeat: no-repeat;
@@ -76,44 +109,67 @@
               right: 20px;
             }
           }
-          &.show{
-            background-color: $color-light-grey;
-            .selected{
-              background-image: url("../images/minus-grey.svg");
+          >li{
+            &.show{
+              background-color: $color-light-grey;
+              .selected{
+                background-image: url("../images/minus-grey.svg");
+              }
+            }
+            >a{
+              text-decoration: none;
+              font-size: 1.6*$font-size;
+              font-weight: 600;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.63;
+              color: $color-black;
             }
           }
-          >a{
-            text-decoration: none;
-            font-size: 1.6*$font-size;
-            font-weight: 600;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.63;
-            color: $color-black;
-          }
         }
-      }
-      .sub-menu{
-        padding: 10px;
-        display: none;
-        &[data-display="none"]{
+        .sub-menu{
+          padding: 10px;
           display: none;
+          &[data-display="none"]{
+            display: none;
+          }
+          &[data-display="block"]{
+            display: block;
+          }
+          li{
+            @include tablet {
+              display: inline-block;
+              width: 30%;
+              vertical-align: top;
+            }
+            @include small-phone{
+              width: 100%;
+            }
+            a{
+              font-size: 1.5*$font-size;
+              font-weight: 400;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.73;
+              color: $color-black;
+              text-decoration: none;
+              &:hover{
+                color: $color-sepia;
+                font-weight: 600;
+              }
+            }
+          }
         }
-        &[data-display="block"]{
-          display: block;
-        }
-        li{
-          a{
-            font-size: 1.5*$font-size;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.73;
-            color: $color-black;
-            text-decoration: none;
+        &.show{
+          .selected{
+            background-image: url("../images/minus-white.svg");
+          }
+          .catalog-menu-block{
+            display: block;
           }
         }
       }
+
     }
     .special-recomend{
       .title-block{
@@ -167,6 +223,9 @@
         }
         .img{
           img{
+            @include tablet{
+              width: 100%;
+            }
             @include small-phone{
               width: 100%;
             }
