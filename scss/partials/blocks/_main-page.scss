@@ -987,7 +987,11 @@ body{
       display: inline-block;
       padding: 0 23px;
       @include tablet{
-        width: 16%;
+        padding: 0 15px;
+        width: 15%;
+        &:last-of-type{
+          padding-right: 15px;
+        }
       }
       @include small-phone{
         width: 23%;

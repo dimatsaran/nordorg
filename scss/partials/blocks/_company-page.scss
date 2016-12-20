@@ -1,7 +1,7 @@
 .block-description-company{
     //background-color: $color-white-two;
     .row-block{
-      padding-top: 50px;
+      padding-top: 40px;
       padding-bottom: 10px;
       //@include tablet{
       //  width: 100%;
@@ -9,7 +9,7 @@
       //}
       @include small-phone{
         margin: 0;
-        padding: 10px 0 10px;
+        @include padding-height;
       }
     }
     .content-block{
@@ -33,6 +33,7 @@
         width: auto;
         margin: 0 auto;
         display: inherit;
+        padding-top: 0;
       }
       @include small-phone{
         width: 100%;
@@ -100,7 +101,6 @@
       vertical-align: top;
       @include small-phone{
         width: 100%;
-        //@include padding-mobile;
       }
       .item-block{
         text-align: center;

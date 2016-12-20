@@ -113,15 +113,25 @@ $(document).ready(function(){
   });
 
   /* dropdown elements*/
-  $(".catalog-menu").find('.menu-slide').on("click",function(){
-    if (!$(this).parent().hasClass('show')) {
-      $(this).parent().addClass('show');
+  var $dropCatalog = jQuery('.catalog-menu');
+  $dropCatalog.find('.menu-slide').on("click",function(){
+    if (!$dropCatalog.hasClass('show')) {
+      $dropCatalog.addClass('show');
       $('.show > .menu-content').attr('data-display', 'block');
     }
     else{
-      $(this).parent().removeClass('show').find('.menu-content').attr('data-display', 'none');
+      $dropCatalog.removeClass('show').find('.menu-content').attr('data-display', 'none');
     }
   });
+  // $(".catalog-menu").find('.menu-slide').on("click",function(){
+  //   if (!$(this).parent().hasClass('show')) {
+  //     $(this).parent().addClass('show');
+  //     $('.show > .menu-content').attr('data-display', 'block');
+  //   }
+  //   else{
+  //     $(this).parent().removeClass('show').find('.menu-content').attr('data-display', 'none');
+  //   }
+  // });
 
   /* dropdown text block*/
   $(".block-product-single").find('.link-more').on("click",function(){

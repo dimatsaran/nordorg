@@ -21,6 +21,9 @@
         line-height: 1.04;
         letter-spacing: -0.5px;
         color: $color-black;
+        @include tablet{
+          font-size: 4*$font-size;
+        }
         @include small-phone{
           line-height: 1.17;
           font-size: 3*$font-size;
@@ -52,6 +55,9 @@
             font-style: normal;
             font-stretch: normal;
             line-height: 1.63;
+            @include tablet{
+              width: 45%;
+            }
           }
           .date{
             font-size: 1.4*$font-size;
