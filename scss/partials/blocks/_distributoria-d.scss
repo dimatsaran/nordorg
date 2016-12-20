@@ -11,7 +11,8 @@
       @include padding-tablet;
     }
     @include small-phone{
-      overflow-x: auto;
+      //overflow-x: auto;
+      @include padding-mobile;
     }
     .item-block {
       text-align: left;
@@ -27,7 +28,7 @@
     }
     @include small-phone{
       width: 100%;
-      padding: 0 20px 10px;
+      @include padding-mobile;
       text-align: center;
     }
     h2{

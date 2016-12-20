@@ -6748,34 +6748,36 @@ body.index .item-block .text-block a {
 @media (max-width: 767px) {
   /* line 6, ../scss/partials/blocks/_distributoria-d.scss */
   .block-distributoriai .content-block {
-    overflow-x: auto;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
-/* line 16, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 17, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .content-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 21, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 22, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .title-block {
   position: relative;
 }
 @media screen and (max-width: 1169px) {
-  /* line 21, ../scss/partials/blocks/_distributoria-d.scss */
+  /* line 22, ../scss/partials/blocks/_distributoria-d.scss */
   .block-distributoriai .title-block {
     margin: 0 auto;
     max-width: 740px;
   }
 }
 @media (max-width: 767px) {
-  /* line 21, ../scss/partials/blocks/_distributoria-d.scss */
+  /* line 22, ../scss/partials/blocks/_distributoria-d.scss */
   .block-distributoriai .title-block {
     width: 100%;
-    padding: 0 20px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
   }
 }
-/* line 33, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 34, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .title-block h2 {
   font-size: 30px;
   font-weight: 300;
@@ -6784,7 +6786,7 @@ body.index .item-block .text-block a {
   line-height: 1.73;
   color: #658d1b;
 }
-/* line 42, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 43, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .title-block .select-person {
   position: absolute;
   height: 44px;
@@ -6792,7 +6794,7 @@ body.index .item-block .text-block a {
   top: 10%;
 }
 @media screen and (max-width: 1169px) {
-  /* line 42, ../scss/partials/blocks/_distributoria-d.scss */
+  /* line 43, ../scss/partials/blocks/_distributoria-d.scss */
   .block-distributoriai .title-block .select-person {
     position: relative;
     height: auto;
@@ -6801,7 +6803,7 @@ body.index .item-block .text-block a {
   }
 }
 @media (max-width: 767px) {
-  /* line 42, ../scss/partials/blocks/_distributoria-d.scss */
+  /* line 43, ../scss/partials/blocks/_distributoria-d.scss */
   .block-distributoriai .title-block .select-person {
     width: 100%;
     position: relative;
@@ -6809,11 +6811,11 @@ body.index .item-block .text-block a {
     right: 0;
   }
 }
-/* line 61, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 62, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .title-block .select-person .nord-form .form-item-pair {
   margin: 0 -9px;
 }
-/* line 63, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 64, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .title-block .select-person .nord-form .form-item-pair .form-item {
   width: auto;
   min-width: 250px;
@@ -6821,34 +6823,34 @@ body.index .item-block .text-block a {
   padding: 0 9px 11px;
 }
 @media (max-width: 767px) {
-  /* line 63, ../scss/partials/blocks/_distributoria-d.scss */
+  /* line 64, ../scss/partials/blocks/_distributoria-d.scss */
   .block-distributoriai .title-block .select-person .nord-form .form-item-pair .form-item {
     width: 100%;
   }
 }
-/* line 75, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 76, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .title-block .select-person .nord-form .w-sel .dropdown .selected {
   background-color: #ffffff;
 }
-/* line 83, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 84, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai {
   padding-top: 30px;
   width: 100%;
 }
-/* line 86, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 87, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai table {
   width: 100%;
   border: 0 none;
   border-collapse: collapse;
 }
 @media (max-width: 767px) {
-  /* line 86, ../scss/partials/blocks/_distributoria-d.scss */
+  /* line 87, ../scss/partials/blocks/_distributoria-d.scss */
   .block-distributoriai .table-distributoriai table {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-/* line 96, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 97, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai thead tr th {
   height: 70px;
   vertical-align: middle;
@@ -6861,35 +6863,35 @@ body.index .item-block .text-block a {
   width: 20%;
   padding: 5px;
 }
-/* line 107, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 108, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai thead tr th.pavadinimas {
   width: 20%;
 }
-/* line 108, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 109, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai thead tr th.adresas {
   width: 30%;
 }
-/* line 109, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 110, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai thead tr th.telefonas {
   width: 20%;
 }
-/* line 110, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 111, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai thead tr th.svetain─Ч {
   width: 20%;
 }
-/* line 111, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 112, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai thead tr th.elpa┼бtas {
   width: 10%;
 }
-/* line 116, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 117, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai tbody tr {
   position: relative;
 }
-/* line 119, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 120, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai tbody tr:first-of-type:after {
   border-bottom: 2px dotted #8b5b29;
 }
-/* line 123, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 124, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai tbody tr:after {
   content: '';
   position: absolute;
@@ -6900,7 +6902,7 @@ body.index .item-block .text-block a {
   opacity: 0.5;
   display: table-row;
 }
-/* line 134, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 135, ../scss/partials/blocks/_distributoria-d.scss */
 .block-distributoriai .table-distributoriai tbody tr td {
   height: 70px;
   font-size: 15px;
@@ -6913,43 +6915,43 @@ body.index .item-block .text-block a {
   padding: 5px;
 }
 
-/* line 153, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 154, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block {
   padding-top: 56px;
   padding-bottom: 50px;
 }
 @media screen and (max-width: 1169px) {
-  /* line 153, ../scss/partials/blocks/_distributoria-d.scss */
+  /* line 154, ../scss/partials/blocks/_distributoria-d.scss */
   .block-tapkite .row-block {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
-/* line 160, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 161, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block .img-block-tapkite {
   position: relative;
 }
 @media (max-width: 767px) {
-  /* line 160, ../scss/partials/blocks/_distributoria-d.scss */
+  /* line 161, ../scss/partials/blocks/_distributoria-d.scss */
   .block-tapkite .row-block .img-block-tapkite {
     overflow-x: hidden;
   }
 }
 @media (max-width: 767px) {
-  /* line 166, ../scss/partials/blocks/_distributoria-d.scss */
+  /* line 167, ../scss/partials/blocks/_distributoria-d.scss */
   .block-tapkite .row-block .img-block-tapkite .img img {
     min-height: 234px;
     min-width: 630px;
   }
 }
-/* line 173, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 174, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block .img-block-tapkite .text-block {
   position: absolute;
   top: 50px;
   left: 50px;
 }
 @media (max-width: 767px) {
-  /* line 173, ../scss/partials/blocks/_distributoria-d.scss */
+  /* line 174, ../scss/partials/blocks/_distributoria-d.scss */
   .block-tapkite .row-block .img-block-tapkite .text-block {
     left: 0;
     text-align: center;
@@ -6957,7 +6959,7 @@ body.index .item-block .text-block a {
     width: 100%;
   }
 }
-/* line 183, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 184, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block .img-block-tapkite .text-block .title {
   font-size: 42px;
   font-weight: 300;
@@ -6966,7 +6968,7 @@ body.index .item-block .text-block a {
   line-height: 0.62;
   color: #ffffff;
 }
-/* line 191, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 192, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block .img-block-tapkite .text-block .btn {
   margin-top: 30px;
   width: 255px;
