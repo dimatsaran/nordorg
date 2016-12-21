@@ -8,9 +8,9 @@
     .item-block{
       text-align: left;
       position: relative;
-      @include small-phone{
-        @include padding-mobile;
-      }
+      //@include small-phone{
+      //  @include padding-mobile;
+      //}
     }
     .block-category-button{
       padding-top: 50px;
@@ -18,6 +18,10 @@
       @include tablet{
         width: 100%;
         @include padding-tablet;
+      }
+      @include small-phone{
+        width: 100%;
+        @include padding-mobile;
       }
       .list-button{
         @include small-phone{
@@ -29,6 +33,7 @@
           padding-bottom: 10px;
           @include small-phone{
             padding: 5px;
+            width: 100%;
           }
           &:last-of-type{
             padding-right: 0;
@@ -50,6 +55,10 @@
             color: $color-black;
             background-color: $color-very-light-brown;
             cursor: pointer;
+            @include small-phone{
+              padding: 8px 5px;
+              width: 100%;
+            }
             &.active,&:hover{
               color: $color-white-two ;
               background-color: $color-sap-green;

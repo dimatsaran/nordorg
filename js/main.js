@@ -143,6 +143,17 @@ $(document).ready(function(){
       $(this).parent().removeClass('show').find('.text-down').attr('data-display', 'none');
     }
   });
+  /* dropdown tabs block*/
+  var $dropTabs = jQuery('.block-tabs');
+  $(".block-tabs").find('.tabs-slide').on("click",function(){
+    if (!$dropTabs.hasClass('show')) {
+      $dropTabs.addClass('show');
+      $('.show > .list-tabs').attr('data-display', 'block');
+    }
+    else{
+      $dropTabs.removeClass('show').find('.list-tabs').attr('data-display', 'none');
+    }
+  });
 });
 
 

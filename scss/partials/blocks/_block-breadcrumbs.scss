@@ -26,6 +26,10 @@
   &.pagalba,&.knowledge-d,&.faq-d,&.naujienos-d,&.company-page{
     background:rgba(0, 0, 0, 0) url("../images/bg-tabs-gruond.png") no-repeat scroll  top center;
     height: 206px;
+    @include tablet{
+      min-height: 206px;
+      height: auto;
+    }
   }
   &.lab-d{
     background:rgba(0, 0, 0, 0) url("../images/bg-lab-d.png") no-repeat scroll  top center;
@@ -34,6 +38,10 @@
   &.lab-article-inner-d{
     background:rgba(0, 0, 0, 0) url("../images/bg-lab-d.png") no-repeat scroll  top center;
     height: 206px;
+    @include tablet{
+      min-height: 206px;
+      height: auto;
+    }
   }
   &.distributoriai-d{
     background:rgba(0, 0, 0, 0) url("../images/bg-company.png") no-repeat scroll  top center;
@@ -50,6 +58,10 @@
   &.lab-distributor-inner-d{
     background:rgba(0, 0, 0, 0) url("../images/bg-lab-d.png") no-repeat scroll  top center;
     height: 206px;
+    @include tablet{
+      min-height: 206px;
+      height: auto;
+    }
   }
   .list-breadcrumbs{
     padding-top: 26px;
@@ -85,5 +97,9 @@
     font-stretch: normal;
     line-height: 1.04;
     letter-spacing: -0.5px;
+    @include small-phone{
+      font-size: 3*$font-size;
+    }
+
   }
 }
