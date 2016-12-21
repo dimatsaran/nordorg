@@ -34,11 +34,13 @@
       &:-moz-placeholder           {color:$color-black;}/* Firefox 18- */
       &:-ms-input-placeholder      {color:$color-black;}
       &:focus{
+        outline: none;
         box-shadow: 0 0 8px 0 $color-sap-green, inset 0 1px 3px 0 rgba(0, 0, 0, 0.31);
         &::-webkit-input-placeholder {color: transparent;}
         &::-moz-placeholder          {color: transparent;}/* Firefox 19+ */
         &:-moz-placeholder           {color: transparent;}/* Firefox 18- */
         &:-ms-input-placeholder      {color: transparent;}
+
       }
     }
   }
