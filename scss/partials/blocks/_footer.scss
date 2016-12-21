@@ -70,6 +70,7 @@ footer{
       }
       @include tablet{
         width: 24%;
+        padding-left: 30px;
       }
       @include small-phone{
         padding-left: 0;
