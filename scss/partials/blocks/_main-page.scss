@@ -113,12 +113,13 @@ body{
         text-align: center;
         border-radius: 10px;
         width: 370px;
-        height: 468px;
+        min-height: 468px;
         position: relative;
         overflow: hidden;
         @include tablet{
           margin: 0 auto;
           width: auto;
+          min-height: 520px;
         }
         @include small-phone{
           width: 100%;
@@ -177,13 +178,14 @@ body{
             //background: rgba(0, 0, 0, 0) url("../images/tractor-white.svg") no-repeat scroll top center;
             img{
               display: inline-block;
-              margin-top: 20%;
+              //margin-top: 30%;
+              margin-top: 90px;
               vertical-align: middle;
             }
           }
         }
         .text-block{
-          padding: 20px 40px;
+          padding: 35px 40px 20px;
         }
         .title{
           color: $color-white-two;
@@ -315,6 +317,9 @@ body{
       display: inline-block;
       position: relative;
       padding-top: 60px;
+      @include small-phone{
+        padding-top: 0;
+      }
       img{
         display: inline-block;
         text-align: center;
@@ -403,6 +408,9 @@ body{
         //margin-top: -15px;
         //margin-bottom: 15px;
         padding-top: 40px;
+        @include small-phone{
+          padding-top: 0;
+        }
         .category-quality{
           bottom: 50px;
         }
@@ -710,6 +718,11 @@ body{
       @include small-phone{
         width: 100%;
       }
+      .img{
+        width: 260px;
+        height: 260px;
+        display: inline-block;
+      }
       img{
         border-radius: 50%;
         background-color: $color-white-two;
@@ -948,6 +961,9 @@ body{
 }
 .block-partner{
   padding: 28px 0 28px;
+  @include tablet{
+    padding-top: 38px;
+  }
   @include small-phone{
     padding: 25px 20px 5px;
   }

@@ -84,6 +84,10 @@ $small-phone: 320px;
   padding-left: 10px;
   padding-right: 10px;
 }
-
+@mixin user-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
 
 

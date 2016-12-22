@@ -90,13 +90,28 @@
           font-weight: normal;
           font-style: normal;
           font-stretch: normal;
-          line-height: 1.86;
+          line-height: 1;
           color: $color-pine;
           text-decoration: none;
           font-family: $font-medium;
+          &:hover{
+            text-decoration: underline;
+          }
+          //&:before{
+          //  vertical-align: middle;
+          //  background-image: url("../images/language.svg");
+          //  background-repeat: no-repeat;
+          //  width: 13px;
+          //  height: 13px;
+          //  display: inline-block;
+          //  margin-right: 5px;
+          //  content: '';
+          //  position: relative;
+          //}
         }
       }
       i{
+
         vertical-align: middle;
         background-image: url("../images/language.svg");
         background-repeat: no-repeat;
@@ -104,6 +119,8 @@
         height: 13px;
         display: inline-block;
         margin-right: 5px;
+        margin-bottom: 2px;
+        //display: none;
       }
       .icon-language{
         background-image: url("../images/language.svg");
@@ -164,7 +181,7 @@
           height: 100%;
           &.have-submenu{
             padding-right: 15px;
-            color: $color-rouge;
+            //color: $color-rouge;
             /**/
             &:after{
               transition: none;
@@ -368,6 +385,20 @@
       &[data-display="block"]{
         display: block!important;
       }
+      .main-nav{
+        >li{
+          margin-top: 18px;
+          &:first-of-type{
+            margin-top: 0;
+            padding-top: 18px;
+          }
+          //padding-top: 18px;
+        }
+      }
+      .user-nav{
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
       ul{
         margin: 0;
         li{
@@ -410,7 +441,7 @@
           }
           &.slicknav_open{
             background-color: $color-dark-sepia;
-            padding: 25px 0 10px 30px;
+            padding: 25px 0 20px 30px;
             .slicknav_arrow{
               transition: none;
               content: "";

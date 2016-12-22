@@ -145,12 +145,21 @@
         .icon-fill{
           vertical-align: middle;
           background-repeat: no-repeat;
-          width: 23px;
-          height: 23px;
+          width: 25px;
+          height: 25px;
           display: inline-block;
           margin-right: 15px;
           background-image: url("../images/fill-8.svg");
           background-position: center center;
+          &.icon-molecule{
+            background-image: url("../images/molecule.svg");
+          }
+          &.icon-drop{
+            background-image: url("../images/drop.svg");
+          }
+          &.icon-volumetric-flask{
+            background-image: url("../images/volumetric-flask.svg");
+          }
         }
         .icon-plus{
           vertical-align: middle;
@@ -197,6 +206,7 @@
               font-stretch: normal;
               line-height: 1.18;
               color: $color-black;
+              @include user-select;
             }
           }
         }

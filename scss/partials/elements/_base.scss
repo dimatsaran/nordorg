@@ -84,5 +84,10 @@ img{
 a{
   outline: none;
 }
+
 /* overlap styles */
 
+/* user-select */
+.menu-slide{
+  @include user-select;
+}
