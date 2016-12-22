@@ -1,6 +1,6 @@
 .block-naujienos-d{
   .row-block{
-    padding-top: 45px;
+    //padding-top: 45px;
     padding-bottom: 20px;
     .content-block{
       @include small-phone{
@@ -12,52 +12,53 @@
       text-align: left;
       position: relative;
     }
-    .block-category-button{
-      padding-bottom: 60px;
-      @include tablet{
-        width: 100%;
-        @include padding-tablet;
-      }
-      .list-button{
-        @include small-phone{
-          //text-align: center;
-        }
-        li{
-          display: inline-block;
-          padding-right: 10px;
-          padding-bottom: 10px;
-          @include small-phone{
-            padding: 5px;
-          }
-          &:last-of-type{
-            padding-right: 0;
-          }
-          .btn{
-            width: auto;
-            min-width: 170px;
-            height: 36px;
-            //padding: 8px 15px;
-            padding: 8px 30px;
-            line-height: 1.2;
-            border-radius: 100px;
-            display: inline-block;
-            font-size: 1.6*$font-size;
-            font-weight: 300;
-            font-style: normal;
-            font-stretch: normal;
-            text-align: center;
-            color: $color-black;
-            background-color: $color-very-light-brown;
-            cursor: pointer;
-            &.active,&:hover{
-              color: $color-white-two ;
-              background-color: $color-sap-green;
-            }
-          }
-        }
-      }
-    }
-    .list-naujienos-d{
+    //.block-category-button{
+    //  padding-bottom: 60px;
+    //  @include tablet{
+    //    width: 100%;
+    //    @include padding-tablet;
+    //  }
+    //  .list-button{
+    //    @include small-phone{
+    //      //text-align: center;
+    //    }
+    //    li{
+    //      display: inline-block;
+    //      padding-right: 10px;
+    //      padding-bottom: 10px;
+    //      @include small-phone{
+    //        padding: 5px;
+    //      }
+    //      &:last-of-type{
+    //        padding-right: 0;
+    //      }
+    //      .btn{
+    //        width: auto;
+    //        min-width: 170px;
+    //        height: 36px;
+    //        //padding: 8px 15px;
+    //        padding: 8px 30px;
+    //        line-height: 1.2;
+    //        border-radius: 100px;
+    //        display: inline-block;
+    //        font-size: 1.6*$font-size;
+    //        font-weight: 300;
+    //        font-style: normal;
+    //        font-stretch: normal;
+    //        text-align: center;
+    //        color: $color-black;
+    //        background-color: $color-very-light-brown;
+    //        cursor: pointer;
+    //        &.active,&:hover{
+    //          color: $color-white-two ;
+    //          background-color: $color-sap-green;
+    //        }
+    //      }
+    //    }
+    //  }
+    //}
+    .list-knowledge{
+      padding-top: 50px;
       @include tablet{
         width: 100%;
         @include padding-tablet;

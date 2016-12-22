@@ -3,6 +3,9 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .nord-form{
+    padding-bottom: 0;
+  }
   .content-block {
     display: inline-block;
     vertical-align: top;
@@ -17,6 +20,7 @@
     .item-block {
       text-align: left;
       position: relative;
+      overflow-x: auto;
     }
   }
   .title-block{
@@ -24,7 +28,8 @@
     @include tablet{
       //@include padding-tablet;
       margin: 0 auto;
-      max-width: 740px;
+      //max-width: 740px;
+      @include padding-tablet;
     }
     @include small-phone{
       width: 100%;
@@ -66,6 +71,9 @@
             min-width: 250px;
             margin: 0 0 5px;
             padding: 0 9px 11px;
+            @include tablet{
+              min-width: 33%;
+            }
             @include small-phone{
               width: 100%;
             }
@@ -84,6 +92,10 @@
   .table-distributoriai{
     padding-top: 30px;
     width: 100%;
+    @include tablet{
+      padding-top: 0;
+      min-width: 500px;
+    }
     table{
       width: 100%;
       border: 0 none;
@@ -110,6 +122,9 @@
           &.telefonas{          width: 20%;}
           &.svetainė{          width: 20%;}
           &.elpaštas{          width: 10%;}
+          @include tablet{
+            height: auto;
+          }
         }
       }
     }

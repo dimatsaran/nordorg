@@ -12,61 +12,7 @@
       //  @include padding-mobile;
       //}
     }
-    .block-category-button{
-      padding-top: 50px;
-      //padding-bottom: 60px;
-      @include tablet{
-        width: 100%;
-        @include padding-tablet;
-      }
-      @include small-phone{
-        width: 100%;
-        @include padding-mobile;
-      }
-      .list-button{
-        @include small-phone{
-          text-align: center;
-        }
-        li{
-          display: inline-block;
-          padding-right: 10px;
-          padding-bottom: 10px;
-          @include small-phone{
-            padding: 5px;
-            width: 100%;
-          }
-          &:last-of-type{
-            padding-right: 0;
-          }
-          .btn{
-            width: auto;
-            min-width: 170px;
-            height: 36px;
-            //padding: 8px 15px;
-            padding: 8px 30px;
-            line-height: 1.2;
-            border-radius: 100px;
-            display: inline-block;
-            font-size: 1.6*$font-size;
-            font-weight: 300;
-            font-style: normal;
-            font-stretch: normal;
-            text-align: center;
-            color: $color-black;
-            background-color: $color-very-light-brown;
-            cursor: pointer;
-            @include small-phone{
-              padding: 8px 5px;
-              width: 100%;
-            }
-            &.active,&:hover{
-              color: $color-white-two ;
-              background-color: $color-sap-green;
-            }
-          }
-        }
-      }
-    }
+
     .list-knowledge{
       padding-top: 50px;
       @include tablet{
@@ -151,6 +97,61 @@
             line-height: 1.86;
             color: $color-black;
           }
+        }
+      }
+    }
+  }
+}
+.block-category-button{
+  padding-top: 50px;
+  //padding-bottom: 60px;
+  @include tablet{
+    width: 100%;
+    @include padding-tablet;
+  }
+  @include small-phone{
+    width: 100%;
+    @include padding-mobile;
+  }
+  .list-button{
+    @include small-phone{
+      text-align: center;
+    }
+    li{
+      display: inline-block;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      @include small-phone{
+        padding: 5px;
+        width: 100%;
+      }
+      &:last-of-type{
+        padding-right: 0;
+      }
+      .btn{
+        width: auto;
+        min-width: 170px;
+        height: 36px;
+        //padding: 8px 15px;
+        padding: 8px 30px;
+        line-height: 1.2;
+        border-radius: 100px;
+        display: inline-block;
+        font-size: 1.6*$font-size;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        text-align: center;
+        color: $color-black;
+        background-color: $color-very-light-brown;
+        cursor: pointer;
+        @include small-phone{
+          padding: 8px 5px;
+          width: 100%;
+        }
+        &.active,&:hover{
+          color: $color-white-two ;
+          background-color: $color-sap-green;
         }
       }
     }

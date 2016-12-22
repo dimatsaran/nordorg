@@ -256,6 +256,7 @@
       @include small-phone{
         //padding: 0 20px;
         overflow-x: hidden;
+        padding: 0;
       }
       img{
         @include small-phone{
@@ -268,11 +269,22 @@
         position: absolute;
         top: 50px;
         left: 50px;
+        @include tablet{
+          height: 100%;
+          left: 0;
+          //padding-top: 20px;
+          position: absolute;
+          text-align: center;
+          top: 0;
+          width: 100%;
+          padding-top: 3%;
+        }
         @include small-phone{
           //top: 0;
           left: 0;
           width: 100%;
           text-align: center;
+          padding-top: 10%;
         }
         .title{
           font-size: 4.2*$font-size;

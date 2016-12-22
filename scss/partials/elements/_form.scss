@@ -140,6 +140,9 @@
   .form-actions{
     padding-top: 16px;
     margin-bottom: 0;
+    @include small-phone{
+      text-align: center;
+    }
   }
   .form-item-pair{
     @include clearfix;

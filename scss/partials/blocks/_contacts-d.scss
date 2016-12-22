@@ -18,8 +18,11 @@
         }
         @include small-phone{
           width: 100%;
+          float: none;
           @include padding-mobile;
+
         }
+
       }
       &:last-of-type{
         width: 54%;
@@ -126,11 +129,7 @@
     .nord-form{
       padding-top: 20px;
       .form-item-pair{
-        //margin: 0;
-        .form-item{
-          margin: 0 0 5px;
-          padding: 0 20px 15px;
-        }
+        margin:  0;
       }
       input{
         font-size: 1.6*$font-size;
@@ -141,24 +140,20 @@
         color: $color-black;
         border: 0 none;
         padding: 8px 15px;
-        height: 44px;
       }
       .form-item{
-        width: 90%;
-        @include tablet{
-          width: 100%;
-          @include padding-tablet;
-        }
-        @include small-phone{
-          width: 100%;
-          @include padding-mobile;
-        }
+        width: 100%;
+        margin: 0 0 5px;
+        padding: 0 0 15px;
         &.form-item-block{
           margin: 0;
           padding: 0 20px 0;
+          @include small-phone{
+            padding: 0;
+          }
           .w-sel{
             margin: 0 0 5px;
-            padding: 0 0 15px;
+            padding: 0 0 11px;
             position: relative;
           }
         }
@@ -166,16 +161,9 @@
           height: 166px;
           border: 0 none;
         }
-
-      }
-      .form-actions{
-        //padding: 0 20px;
       }
       .w-sel{
         .dropdown{
-          .selected{
-            height: 44px;
-          }
           .carat{
             border-color: $color-sepia;
           }
@@ -191,12 +179,82 @@
         text-align: center;
         color: $color-white-two;
         font-family: $font-light;
-        @include small-phone{
-          width: 100%;
-        }
       }
-
     }
+    //.nord-form{
+    //  padding-top: 20px;
+    //  .form-item-pair{
+    //    //margin: 0;
+    //    .form-item{
+    //      margin: 0 0 5px;
+    //      padding: 0 20px 15px;
+    //    }
+    //  }
+    //  input{
+    //    font-size: 1.6*$font-size;
+    //    font-weight: 300;
+    //    font-style: normal;
+    //    font-stretch: normal;
+    //    line-height: 1.63;
+    //    color: $color-black;
+    //    border: 0 none;
+    //    padding: 8px 15px;
+    //    height: 44px;
+    //  }
+    //  .form-item{
+    //    width: 90%;
+    //    @include tablet{
+    //      width: 100%;
+    //      @include padding-tablet;
+    //    }
+    //    @include small-phone{
+    //      width: 100%;
+    //      @include padding-mobile;
+    //    }
+    //    &.form-item-block{
+    //      margin: 0;
+    //      padding: 0 20px 0;
+    //      .w-sel{
+    //        margin: 0 0 5px;
+    //        padding: 0 0 15px;
+    //        position: relative;
+    //      }
+    //    }
+    //    textarea{
+    //      height: 166px;
+    //      border: 0 none;
+    //    }
+    //
+    //  }
+    //  .form-actions{
+    //    //padding: 0 20px;
+    //  }
+    //  .w-sel{
+    //    .dropdown{
+    //      .selected{
+    //        height: 44px;
+    //      }
+    //      .carat{
+    //        border-color: $color-sepia;
+    //      }
+    //    }
+    //  }
+    //  .btn{
+    //    width: 274px;
+    //    height: 52px;
+    //    font-size: 1.6*$font-size;
+    //    font-weight: 300;
+    //    font-style: normal;
+    //    font-stretch: normal;
+    //    text-align: center;
+    //    color: $color-white-two;
+    //    font-family: $font-light;
+    //    @include small-phone{
+    //      width: 100%;
+    //    }
+    //  }
+    //
+    //}
     .img-block{
       position: relative;
       @include small-phone {

@@ -98,6 +98,9 @@
                 right: -5%;
                 top: 20%;
               }
+              @include small-phone{
+                display: none;
+              }
               .icon-arrow{
                 background:rgba(0, 0, 0, 0) url("../images/arrow-right-ling.png") no-repeat scroll  center center;
                 height: 20px;
@@ -178,10 +181,9 @@
           }
       }
       .nord-form{
-        padding-top: 20px;
-        .form-item{
-          margin: 0 0 5px;
-          padding: 0 20px 25px;
+        //padding-top: 20px;
+        .form-item-pair{
+          margin:  0;
         }
         input{
           font-size: 1.6*$font-size;
@@ -192,26 +194,33 @@
           color: $color-black;
           border: 0 none;
           padding: 8px 15px;
-          height: 44px;
         }
         .form-item{
+          width: 100%;
+          margin: 0 0 5px;
+          padding: 0 0 15px;
           &.form-item-block{
             margin: 0;
             padding: 0 20px 0;
+            @include small-phone{
+              padding: 0;
+            }
             .w-sel{
               margin: 0 0 5px;
-              padding: 0 0 25px;
+              padding: 0 0 11px;
               position: relative;
-              .dropdown {
-                .selected{
-                  height: 44px;
-                }
-              }
             }
           }
           textarea{
-            height: 118px;
+            height: 166px;
             border: 0 none;
+          }
+        }
+        .w-sel{
+          .dropdown{
+            .carat{
+              border-color: $color-sepia;
+            }
           }
         }
         .btn{
@@ -226,5 +235,54 @@
           font-family: $font-light;
         }
       }
+      //.nord-form{
+      //  padding-top: 20px;
+      //  .form-item{
+      //    margin: 0 0 5px;
+      //    padding: 0 20px 25px;
+      //  }
+      //  input{
+      //    font-size: 1.6*$font-size;
+      //    font-weight: 300;
+      //    font-style: normal;
+      //    font-stretch: normal;
+      //    line-height: 1.63;
+      //    color: $color-black;
+      //    border: 0 none;
+      //    padding: 8px 15px;
+      //    height: 44px;
+      //  }
+      //  .form-item{
+      //    &.form-item-block{
+      //      margin: 0;
+      //      padding: 0 20px 0;
+      //      .w-sel{
+      //        margin: 0 0 5px;
+      //        padding: 0 0 25px;
+      //        position: relative;
+      //        .dropdown {
+      //          .selected{
+      //            height: 44px;
+      //          }
+      //        }
+      //      }
+      //    }
+      //    textarea{
+      //      height: 118px;
+      //      border: 0 none;
+      //    }
+      //  }
+      //  .btn{
+      //    width: 274px;
+      //    height: 52px;
+      //    font-size: 1.6*$font-size;
+      //    font-weight: 300;
+      //    font-style: normal;
+      //    font-stretch: normal;
+      //    text-align: center;
+      //    color: $color-white-two;
+      //    font-family: $font-light;
+      //  }
+      //}
     }
 }
