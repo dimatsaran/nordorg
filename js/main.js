@@ -134,7 +134,7 @@ $(document).ready(function(){
   });
 
   /* dropdown text block*/
-  $(".block-product-single").find('.link-more').on("click",function(){
+  $(".block-desc").find('.link-more').on("click",function(){
     if (!$(this).parent().hasClass('show')) {
       $(this).parent().addClass('show');
       $('.show > .text-down').attr('data-display', 'block');
