@@ -279,6 +279,23 @@ body{
         display: none;
       }
     }
+    .pdf-link{
+      color: $color-sap-green;
+      text-decoration: none;
+      font-size: 1.6*$font-size;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      text-transform: uppercase;
+      margin-top: 28px;
+      text-align: center;
+      display: inline-block;
+      .icon-pdf{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+    }
   }
   .row-block{
     margin: 0 -10px;

@@ -36,6 +36,7 @@
           @include tablet{
             pointer-events: auto;
             cursor: pointer;
+            border-radius: 5px;
           }
           .selected{
             display: none;
@@ -90,15 +91,16 @@
             }
             &[data-display="block"]{
               display: block;
+
             }
           }
           .title-menu{
             cursor: pointer;
-            padding: 10px;
+            padding: 10px 25px;
             position: relative;
             .selected{
-              //background-image: url("../images/plus-grey.svg");
-              background-image: url("../images/plus-green.svg");
+              background-image: url("../images/plus-grey.svg");
+              //background-image: url("../images/plus-green.svg");
               background-position: center;
               vertical-align: middle;
               background-repeat: no-repeat;
@@ -136,6 +138,8 @@
           }
           &[data-display="block"]{
             display: block;
+            padding-left: 53px;
+            padding-bottom: 18px;
           }
           li{
             @include tablet {
@@ -155,13 +159,16 @@
               color: $color-black;
               text-decoration: none;
               &:hover{
+                @include tablet{}
                 color: $color-sepia;
-                font-weight: 600;
               }
             }
           }
         }
         &.show{
+          .title-block{
+            border-radius: 5px 5px 0 0 ;
+          }
           .selected{
             background-image: url("../images/minus-white.svg");
           }
@@ -175,7 +182,7 @@
     .special-recomend{
       .title-block{
         border-radius: 5px 5px 0 0 ;
-        background-color: $color-rouge-v1;
+        background-color: $color-sap-green;
         vertical-align: middle;
         padding: 10px 20px;
         i{
@@ -241,6 +248,7 @@
     //width: 75%;
     max-width: 860px;
     padding-left: 60px;
+    padding-bottom: 75px;
     @include tablet{
       width: 100%;
       padding-left: 0;
@@ -397,6 +405,7 @@
               text-align: center;
               vertical-align: middle;
               display: inline-block;
+              padding-top: 3px;
             }
           }
         }
@@ -426,7 +435,8 @@
             display: inline-block;
             color: $color-black;
             border-radius: 100px;
-            background-color: $color-very-light-brown;
+            //background-color: $color-very-light-brown;
+            border: 1px solid $color-very-light-brown;
             padding: 5px 15px;
             text-decoration: none;
             text-align: center;
@@ -441,6 +451,8 @@
             &:hover,&.active{
               color: $color-white-two;
               background-color: $color-sap-green;
+              border: 1px solid $color-sap-green;
+              font-weight: 500;
             }
           }
         }
