@@ -120,7 +120,7 @@
     top: -9px;
   }
   .title-block{
-    padding-top: 35px;
+    padding-top: 37px;
     text-align: center;
     @include small-phone{
       padding-top: 30px;
@@ -193,7 +193,8 @@
     }
   }
   .row-block{
-    padding-top: 50px;
+    //padding-top: 50px;
+    padding-top: 82px;
     padding-bottom: 50px;
     .content-block{
       padding: 0 25px;
@@ -229,6 +230,7 @@
           font-stretch: normal;
           line-height: 1.07;
           color: $color-black;
+          padding-bottom: 52px;
           @include tablet {
             text-align: center;
           }
@@ -240,7 +242,11 @@
           font-style: normal;
           font-stretch: normal;
           line-height: 1.63;
-          padding-top: 20px;
+          //padding-top: 15px;
+          padding-bottom: 25px;
+          &:last-of-type{
+            padding-bottom: 0;
+          }
           @include tablet {
             margin: 0 auto;
             text-align: center;

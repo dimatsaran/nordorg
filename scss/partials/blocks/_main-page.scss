@@ -729,14 +729,10 @@ body{
         border-radius: 50%;
         background-color: $color-white-two;
         display: inline-block;
-        //max-width: 260px;
-        //max-height: 260px;
         height: 260px;
         width: 100%;
-        //height: auto;
         @include tablet {
           max-width: 100%;
-          //max-height: 250px;
         }
       }
     }
