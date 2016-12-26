@@ -5718,9 +5718,9 @@ body.index .item-block .text-block a {
 .block-category-button .list-button li .btn {
   width: auto;
   min-width: 170px;
-  height: 36px;
-  padding: 8px 30px;
-  line-height: 1.2;
+  height: 40px;
+  padding: 8px 20px;
+  line-height: 1.4;
   border-radius: 100px;
   display: inline-block;
   font-size: 16px;
@@ -5740,7 +5740,7 @@ body.index .item-block .text-block a {
     width: 100%;
   }
 }
-/* line 161, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 162, ../scss/partials/blocks/_knowledge-d.scss */
 .block-category-button .list-button li:first-of-type .btn {
   color: #ffffff;
   background-color: #658d1b;
@@ -5748,14 +5748,20 @@ body.index .item-block .text-block a {
   width: auto;
   min-width: auto;
 }
+/* line 170, ../scss/partials/blocks/_knowledge-d.scss */
+.block-category-button .list-button li .icon-svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
 
-/* line 173, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 179, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block {
   padding-top: 20px;
   padding-bottom: 50px;
 }
 @media screen and (max-width: 1169px) {
-  /* line 173, ../scss/partials/blocks/_knowledge-d.scss */
+  /* line 179, ../scss/partials/blocks/_knowledge-d.scss */
   .block-tags .row-block {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -5764,31 +5770,31 @@ body.index .item-block .text-block a {
   }
 }
 @media (max-width: 767px) {
-  /* line 173, ../scss/partials/blocks/_knowledge-d.scss */
+  /* line 179, ../scss/partials/blocks/_knowledge-d.scss */
   .block-tags .row-block {
     padding: 20px  20px 10px;
   }
 }
-/* line 183, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 189, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .content-block {
   width: 45%;
 }
 @media (max-width: 767px) {
-  /* line 183, ../scss/partials/blocks/_knowledge-d.scss */
+  /* line 189, ../scss/partials/blocks/_knowledge-d.scss */
   .block-tags .row-block .content-block {
     width: 100%;
   }
 }
-/* line 189, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 195, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 194, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 200, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .list-block .text-block {
   padding-bottom: 20px;
 }
-/* line 197, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 203, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .list-block .text-block .title a {
   text-decoration: none;
   font-size: 22px;
@@ -5798,7 +5804,7 @@ body.index .item-block .text-block a {
   line-height: 1.18;
   color: #373737;
 }
-/* line 207, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 213, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .list-block .text-block .date {
   padding-top: 10px;
   font-size: 14px;
@@ -5806,11 +5812,11 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   color: #373737;
 }
-/* line 216, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 222, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .add-list {
   margin-top: 35px;
 }
-/* line 218, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 224, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .add-list .btn {
   font-size: 16px;
   font-weight: 300;
@@ -5822,7 +5828,7 @@ body.index .item-block .text-block a {
   background-color: #658d1b;
 }
 @media (max-width: 767px) {
-  /* line 218, ../scss/partials/blocks/_knowledge-d.scss */
+  /* line 224, ../scss/partials/blocks/_knowledge-d.scss */
   .block-tags .row-block .add-list .btn {
     width: 100%;
   }
@@ -8637,7 +8643,7 @@ body.index .item-block .text-block a {
 }
 /* line 68, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .title-block .icon-home-line {
-  background-image: url("../images/home-line.svg");
+  background-image: url("../images/plant-green.svg");
   width: 30px;
   height: 39px;
 }
@@ -8708,36 +8714,40 @@ body.index .item-block .text-block a {
   background-position: center center;
   background-image: url("../images/plus-rouge.svg");
 }
-/* line 136, ../scss/partials/blocks/_faq-d.scss */
+/* line 134, ../scss/partials/blocks/_faq-d.scss */
+.block-faq .dropdown-block .catalog-menu {
+  padding-left: 23px;
+}
+/* line 137, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .catalog-menu > li .title-menu {
   cursor: pointer;
   padding: 15px 0;
 }
-/* line 141, ../scss/partials/blocks/_faq-d.scss */
+/* line 142, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .catalog-menu > li.show .icon-plus {
   background-image: url("../images/minus-green.svg");
 }
-/* line 144, ../scss/partials/blocks/_faq-d.scss */
+/* line 145, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .catalog-menu > li.show .icon-plus-sepia {
   background-image: url("../images/minus-sepia.svg");
 }
-/* line 147, ../scss/partials/blocks/_faq-d.scss */
+/* line 148, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .catalog-menu > li.show .icon-plus-rouge {
   background-image: url("../images/minus-rouge.svg");
 }
-/* line 150, ../scss/partials/blocks/_faq-d.scss */
+/* line 151, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .catalog-menu > li.show .home-line {
   color: #658d1b;
 }
-/* line 153, ../scss/partials/blocks/_faq-d.scss */
+/* line 154, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .catalog-menu > li.show .pro-line {
   color: #8b5b29;
 }
-/* line 156, ../scss/partials/blocks/_faq-d.scss */
+/* line 157, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .catalog-menu > li.show .industrial-line {
   color: #a7272a;
 }
-/* line 160, ../scss/partials/blocks/_faq-d.scss */
+/* line 161, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .catalog-menu > li > a {
   text-decoration: none;
   font-size: 16px;
@@ -8747,7 +8757,7 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   color: #373737;
 }
-/* line 171, ../scss/partials/blocks/_faq-d.scss */
+/* line 172, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .catalog-menu .title-menu .title {
   font-size: 22px;
   font-weight: 300;
@@ -8756,20 +8766,20 @@ body.index .item-block .text-block a {
   line-height: 1.18;
   color: #373737;
 }
-/* line 181, ../scss/partials/blocks/_faq-d.scss */
+/* line 182, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .sub-menu {
   padding: 0 25px 15px;
   display: none;
 }
-/* line 184, ../scss/partials/blocks/_faq-d.scss */
+/* line 185, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .sub-menu[data-display="none"] {
   display: none;
 }
-/* line 187, ../scss/partials/blocks/_faq-d.scss */
+/* line 188, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .sub-menu[data-display="block"] {
   display: block;
 }
-/* line 191, ../scss/partials/blocks/_faq-d.scss */
+/* line 192, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .dropdown-block .sub-menu li a {
   font-size: 15px;
   font-weight: normal;
@@ -8779,23 +8789,22 @@ body.index .item-block .text-block a {
   color: #373737;
   text-decoration: none;
 }
-/* line 203, ../scss/partials/blocks/_faq-d.scss */
+/* line 204, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .row-block {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-/* line 206, ../scss/partials/blocks/_faq-d.scss */
+/* line 207, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .row-block .content-block {
   width: 100%;
 }
-/* line 208, ../scss/partials/blocks/_faq-d.scss */
+/* line 209, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .row-block .content-block .item-block {
   text-align: left;
   width: 65%;
-  padding-left: 23px;
 }
 @media screen and (max-width: 1169px) {
-  /* line 208, ../scss/partials/blocks/_faq-d.scss */
+  /* line 209, ../scss/partials/blocks/_faq-d.scss */
   .block-faq .row-block .content-block .item-block {
     width: 100%;
     padding-left: 30px;
@@ -8803,18 +8812,18 @@ body.index .item-block .text-block a {
   }
 }
 @media (max-width: 767px) {
-  /* line 208, ../scss/partials/blocks/_faq-d.scss */
+  /* line 209, ../scss/partials/blocks/_faq-d.scss */
   .block-faq .row-block .content-block .item-block {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-/* line 220, ../scss/partials/blocks/_faq-d.scss */
+/* line 221, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .row-block .content-block .item-block .autor {
   padding-top: 20px;
 }
-/* line 222, ../scss/partials/blocks/_faq-d.scss */
+/* line 223, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .row-block .content-block .item-block .autor .img-autor {
   display: inline-block;
   float: left;
@@ -8823,7 +8832,7 @@ body.index .item-block .text-block a {
   height: 104px;
   text-align: center;
 }
-/* line 233, ../scss/partials/blocks/_faq-d.scss */
+/* line 234, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .row-block .content-block .item-block .autor .name-autor {
   color: #8b5b29;
   font-size: 16px;
@@ -8832,7 +8841,7 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   line-height: 1.63;
 }
-/* line 241, ../scss/partials/blocks/_faq-d.scss */
+/* line 242, ../scss/partials/blocks/_faq-d.scss */
 .block-faq .row-block .content-block .item-block .autor .desc {
   display: inline-block;
   font-size: 14px;
