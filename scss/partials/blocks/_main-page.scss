@@ -146,6 +146,7 @@ body{
               display: inline-block;
               img{
                 //opacity: 1;
+
               }
             }
           }
@@ -160,6 +161,7 @@ body{
             -moz-transition: all 0 1s ease-out 0.5s;
             -o-transition: all 0 1s ease-out 0.5s;
             transition: all 0 1s ease-out 0.5s;
+            max-height: 252px;
             @include tablet{
               width: 100%;
             }

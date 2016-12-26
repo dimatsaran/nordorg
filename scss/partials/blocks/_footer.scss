@@ -145,6 +145,9 @@ footer{
     display: inline-block;
     vertical-align: bottom;
     width: 100%;
+    @include small-phone{
+      padding-top: 0;
+    }
   }
   .footer-social{
     //float: left;
@@ -157,17 +160,17 @@ footer{
     .title-block{
       font-weight: 500;
       font-size: 1.6*$font-size;
-      line-height: 1.63;
+      //line-height: 1.63;
       color: $color-sap-green;
       text-decoration: none;
       font-family: $font-medium;
       text-transform: uppercase;
+      line-height: 0.8;
       @include small-phone{
         display: none;
       }
     }
     ul{
-      padding-top: 10px;
       margin: 0 -10px;
       @include small-phone{
         margin: 0;
@@ -177,6 +180,9 @@ footer{
         display: inline-block;
         padding: 10px 10px 0;
         margin-top: 18px;
+        @include small-phone{
+          margin-top: 5px;
+        }
         a{
           display: inline-block;
           //margin: 10px;
@@ -199,6 +205,7 @@ footer{
     width: 50%;
     @include small-phone{
       width: 100%;
+      margin-top: 17px;
     }
     .form-item{
       width: 418px;
@@ -268,23 +275,3 @@ footer{
     }
   }
 }
-//.faq-d{
-//  footer{
-//    &:before{
-//      background-image: url('../images/line.svg');
-//      background-attachment: scroll;
-//      background-size: cover;
-//      background-repeat: no-repeat;
-//      background-position: center;
-//      width: 100%;
-//      height: 15px;
-//      display: block;
-//      position: relative;
-//      //position: absolute;
-//      content: '';
-//      top: -2px;
-//      //top: -2px;
-//      transform: rotate(180deg);
-//    }
-//  }
-//}
