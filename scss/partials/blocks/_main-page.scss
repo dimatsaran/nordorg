@@ -722,9 +722,10 @@ body{
       text-align: center;
     }
     .img-block {
-      width: 40%;
-      //width: 260px;
+      //width: 40%;
+     width: 260px;
       //height: 260px;
+      //width: 49%;
       height: auto;
       float: left;
       text-align: center;
@@ -756,7 +757,9 @@ body{
     .text-block{
       display: inline-block;
       vertical-align: middle;
-      width: 60%;
+      //width: 60%;
+      //width: 50%;
+      width: 48%;
       float: left;
       padding-left: 20px;
       padding-right: 20px;

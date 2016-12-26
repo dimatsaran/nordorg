@@ -142,9 +142,12 @@
         padding: 8px 15px;
       }
       .form-item{
-        width: 100%;
+        width: 90%;
         margin: 0 0 5px;
         padding: 0 0 15px;
+        @include tablet{
+          width: 100%;
+        }
         &.form-item-block{
           margin: 0;
           padding: 0 20px 0;
