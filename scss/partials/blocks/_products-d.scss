@@ -100,7 +100,9 @@
             position: relative;
             .selected{
               background-image: url("../images/plus-grey.svg");
-              //background-image: url("../images/plus-green.svg");
+              @include tablet{
+                background-image: url("../images/plus-green.svg");
+              }
               background-position: center;
               vertical-align: middle;
               background-repeat: no-repeat;
@@ -117,6 +119,9 @@
               background-color: $color-light-grey;
               .selected{
                 background-image: url("../images/minus-grey.svg");
+                @include tablet{
+                  background-image: url("../images/minus-green.svg");
+                }
               }
             }
             >a{
