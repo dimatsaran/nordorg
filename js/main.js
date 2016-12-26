@@ -92,7 +92,8 @@ $(document).ready(function(){
   $(".carusel-visual").slick({
     dots: false,
     centerMode: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
+    // slidesToShow: 3,
     responsive: [
       {
         breakpoint: 1170,
@@ -111,7 +112,6 @@ $(document).ready(function(){
         }
       }]
   });
-
   /* dropdown elements*/
   // var $dropCatalog = jQuery('.catalog-menu');
   // $dropCatalog.find('.menu-slide').on("click",function(){
