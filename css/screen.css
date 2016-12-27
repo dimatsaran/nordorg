@@ -4745,7 +4745,7 @@ body.index .item-block .text-block a {
   margin: 0;
   padding: 0 20px 0;
 }
-@media (max-width: 767px) {
+@media screen and (max-width: 1169px) {
   /* line 210, ../scss/partials/blocks/_become-partner.scss */
   .block-form-partner .row-block .nord-form .form-item.form-item-block {
     padding: 0;
@@ -4761,21 +4761,34 @@ body.index .item-block .text-block a {
 .block-form-partner .row-block .nord-form .form-item.form-item-block .w-sel:first-of-type {
   padding: 0 0 25px;
 }
-/* line 223, ../scss/partials/blocks/_become-partner.scss */
+@media screen and (max-width: 1169px) {
+  /* line 220, ../scss/partials/blocks/_become-partner.scss */
+  .block-form-partner .row-block .nord-form .form-item.form-item-block .w-sel:first-of-type {
+    padding: 0 0 11px;
+  }
+}
+/* line 226, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form .form-item.form-item-block .w-sel:last-of-type {
   margin: 0;
   padding: 0;
 }
-/* line 229, ../scss/partials/blocks/_become-partner.scss */
-.block-form-partner .row-block .nord-form .form-item textarea {
-  height: 166px;
-  border: 0 none;
+@media screen and (max-width: 1169px) {
+  /* line 226, ../scss/partials/blocks/_become-partner.scss */
+  .block-form-partner .row-block .nord-form .form-item.form-item-block .w-sel:last-of-type {
+    margin: 0 0 5px;
+    padding: 0 0 11px;
+  }
 }
 /* line 236, ../scss/partials/blocks/_become-partner.scss */
+.block-form-partner .row-block .nord-form .form-item textarea {
+  height: 117px;
+  border: 0 none;
+}
+/* line 244, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form .w-sel .dropdown .carat {
   border-color: #8b5b29;
 }
-/* line 242, ../scss/partials/blocks/_become-partner.scss */
+/* line 250, ../scss/partials/blocks/_become-partner.scss */
 .block-form-partner .row-block .nord-form .btn {
   width: 274px;
   height: 52px;
@@ -7557,25 +7570,30 @@ body.index .item-block .text-block a {
   /* line 182, ../scss/partials/blocks/_distributoria-d.scss */
   .block-tapkite .row-block .img-block-tapkite .img img {
     min-height: 234px;
-    min-width: 630px;
+    min-width: 750px;
   }
 }
-/* line 189, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 190, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block .img-block-tapkite .text-block {
   position: absolute;
   top: 50px;
   left: 50px;
 }
+@media screen and (max-width: 1169px) {
+  /* line 190, ../scss/partials/blocks/_distributoria-d.scss */
+  .block-tapkite .row-block .img-block-tapkite .text-block {
+    top: 25%;
+  }
+}
 @media (max-width: 767px) {
-  /* line 189, ../scss/partials/blocks/_distributoria-d.scss */
+  /* line 190, ../scss/partials/blocks/_distributoria-d.scss */
   .block-tapkite .row-block .img-block-tapkite .text-block {
     left: 0;
     text-align: center;
-    top: 30%;
     width: 100%;
   }
 }
-/* line 199, ../scss/partials/blocks/_distributoria-d.scss */
+/* line 203, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block .img-block-tapkite .text-block .title {
   font-size: 42px;
   font-weight: 300;
@@ -7584,11 +7602,23 @@ body.index .item-block .text-block a {
   line-height: 0.62;
   color: #ffffff;
 }
-/* line 207, ../scss/partials/blocks/_distributoria-d.scss */
+@media (max-width: 767px) {
+  /* line 203, ../scss/partials/blocks/_distributoria-d.scss */
+  .block-tapkite .row-block .img-block-tapkite .text-block .title {
+    line-height: 1;
+  }
+}
+/* line 214, ../scss/partials/blocks/_distributoria-d.scss */
 .block-tapkite .row-block .img-block-tapkite .text-block .btn {
   margin-top: 30px;
   width: 255px;
   height: 52px;
+}
+@media (max-width: 767px) {
+  /* line 214, ../scss/partials/blocks/_distributoria-d.scss */
+  .block-tapkite .row-block .img-block-tapkite .text-block .btn {
+    margin-top: 15px;
+  }
 }
 
 /* line 2, ../scss/partials/blocks/_products-d.scss */

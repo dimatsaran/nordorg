@@ -210,7 +210,7 @@
           &.form-item-block{
             margin: 0;
             padding: 0 20px 0;
-            @include small-phone{
+            @include tablet{
               padding: 0;
             }
             .w-sel{
@@ -219,16 +219,24 @@
               position: relative;
               &:first-of-type{
                 padding: 0 0 25px;
+                @include tablet{
+                  padding: 0 0 11px;
+                }
               }
               &:last-of-type{
                 margin: 0;
                 padding: 0;
+                @include tablet{
+                  margin: 0 0 5px;
+                  padding: 0 0 11px;
+                }
               }
             }
           }
           textarea{
-            height: 166px;
+            height: 117px;
             border: 0 none;
+
           }
         }
         .w-sel{

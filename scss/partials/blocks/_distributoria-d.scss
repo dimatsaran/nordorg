@@ -182,7 +182,8 @@
         img{
           @include small-phone {
             min-height: 234px;
-            min-width: 630px;
+            //min-width: 630px;
+            min-width: 750px;
           }
         }
       }
@@ -190,10 +191,13 @@
         position: absolute;
         top: 50px;
         left: 50px;
+        @include tablet{
+          top: 25%;
+        }
         @include small-phone{
           left: 0;
           text-align: center;
-          top: 30%;
+          //top: 30%;
           width: 100%;
         }
         .title{
@@ -203,11 +207,17 @@
           font-stretch: normal;
           line-height: 0.62;
           color: $color-white-two;
+          @include small-phone{
+            line-height: 1;
+          }
         }
         .btn{
           margin-top: 30px;
           width: 255px;
           height: 52px;
+          @include small-phone{
+            margin-top: 15px;
+          }
         }
       }
     }
