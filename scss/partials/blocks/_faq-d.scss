@@ -67,8 +67,8 @@
           }
         .icon-home-line{
             background-image: url("../images/plant-green.svg");
-          width: 30px;
-          height: 39px;
+          width: 32px;
+          height: 40px;
           }
         .icon-pro-line{
           background-image: url("../images/pro-line.svg");
@@ -90,6 +90,9 @@
           //vertical-align: middle;
           vertical-align: bottom;
           display: inline-block;
+          @include small-phone{
+            padding-top: 20px;
+          }
           &.home-line{
             color: $color-sap-green;
           }
