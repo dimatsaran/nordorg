@@ -5777,20 +5777,26 @@ body.index .item-block .text-block a {
   width: auto;
   min-width: auto;
 }
-/* line 170, ../scss/partials/blocks/_knowledge-d.scss */
+@media (max-width: 767px) {
+  /* line 162, ../scss/partials/blocks/_knowledge-d.scss */
+  .block-category-button .list-button li:first-of-type .btn {
+    width: 100%;
+  }
+}
+/* line 173, ../scss/partials/blocks/_knowledge-d.scss */
 .block-category-button .list-button li .icon-svg {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
 }
 
-/* line 179, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 182, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block {
   padding-top: 20px;
   padding-bottom: 50px;
 }
 @media screen and (max-width: 1169px) {
-  /* line 179, ../scss/partials/blocks/_knowledge-d.scss */
+  /* line 182, ../scss/partials/blocks/_knowledge-d.scss */
   .block-tags .row-block {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -5799,31 +5805,31 @@ body.index .item-block .text-block a {
   }
 }
 @media (max-width: 767px) {
-  /* line 179, ../scss/partials/blocks/_knowledge-d.scss */
+  /* line 182, ../scss/partials/blocks/_knowledge-d.scss */
   .block-tags .row-block {
     padding: 20px  20px 10px;
   }
 }
-/* line 189, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 192, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .content-block {
   width: 45%;
 }
 @media (max-width: 767px) {
-  /* line 189, ../scss/partials/blocks/_knowledge-d.scss */
+  /* line 192, ../scss/partials/blocks/_knowledge-d.scss */
   .block-tags .row-block .content-block {
     width: 100%;
   }
 }
-/* line 195, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 198, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .item-block {
   text-align: left;
   position: relative;
 }
-/* line 200, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 203, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .list-block .text-block {
   padding-bottom: 20px;
 }
-/* line 203, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 206, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .list-block .text-block .title a {
   text-decoration: none;
   font-size: 22px;
@@ -5833,7 +5839,7 @@ body.index .item-block .text-block a {
   line-height: 1.18;
   color: #373737;
 }
-/* line 213, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 216, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .list-block .text-block .date {
   padding-top: 10px;
   font-size: 14px;
@@ -5841,11 +5847,11 @@ body.index .item-block .text-block a {
   line-height: 1.86;
   color: #373737;
 }
-/* line 222, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 225, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .add-list {
   margin-top: 35px;
 }
-/* line 224, ../scss/partials/blocks/_knowledge-d.scss */
+/* line 227, ../scss/partials/blocks/_knowledge-d.scss */
 .block-tags .row-block .add-list .btn {
   font-size: 16px;
   font-weight: 300;
@@ -5857,7 +5863,7 @@ body.index .item-block .text-block a {
   background-color: #658d1b;
 }
 @media (max-width: 767px) {
-  /* line 224, ../scss/partials/blocks/_knowledge-d.scss */
+  /* line 227, ../scss/partials/blocks/_knowledge-d.scss */
   .block-tags .row-block .add-list .btn {
     width: 100%;
   }

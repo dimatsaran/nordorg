@@ -165,6 +165,9 @@
           border: 1px solid $color-sap-green;
           width: auto;
           min-width: auto;
+          @include small-phone{
+            width: 100%;
+          }
         }
       }
       .icon-svg{
