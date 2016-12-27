@@ -2480,7 +2480,7 @@ body.index .item-block .text-block a {
   text-align: center;
   border-radius: 10px;
   width: 370px;
-  min-height: 468px;
+  min-height: 470px;
   position: relative;
   overflow: hidden;
 }
@@ -2536,7 +2536,6 @@ body.index .item-block .text-block a {
   -moz-transition: all 0 1s ease-out 0.5s;
   -o-transition: all 0 1s ease-out 0.5s;
   transition: all 0 1s ease-out 0.5s;
-  max-height: 252px;
 }
 @media screen and (max-width: 1169px) {
   /* line 157, ../scss/partials/blocks/_main-page.scss */
