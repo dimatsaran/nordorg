@@ -1918,6 +1918,7 @@ div.messages p {
   font-stretch: normal;
   line-height: 1.86;
   letter-spacing: -0.1px;
+  text-decoration: none;
 }
 @media (max-width: 767px) {
   /* line 74, ../scss/partials/blocks/_block-breadcrumbs.scss */
@@ -1925,7 +1926,7 @@ div.messages p {
     width: 100%;
   }
 }
-/* line 91, ../scss/partials/blocks/_block-breadcrumbs.scss */
+/* line 92, ../scss/partials/blocks/_block-breadcrumbs.scss */
 .block-breadcrumbs h1 {
   color: #ffffff;
   font-size: 50px;
@@ -1937,7 +1938,7 @@ div.messages p {
   letter-spacing: -0.5px;
 }
 @media (max-width: 767px) {
-  /* line 91, ../scss/partials/blocks/_block-breadcrumbs.scss */
+  /* line 92, ../scss/partials/blocks/_block-breadcrumbs.scss */
   .block-breadcrumbs h1 {
     font-size: 30px;
   }
@@ -7761,7 +7762,7 @@ body.index .item-block .text-block a {
 /* line 144, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .menu-block .catalog-menu .sub-menu[data-display="block"] {
   display: block;
-  padding-left: 53px;
+  padding-left: 57px;
   padding-bottom: 18px;
 }
 @media screen and (max-width: 1169px) {
@@ -7818,7 +7819,7 @@ body.index .item-block .text-block a {
   width: 34px;
   height: 45px;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 /* line 201, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .special-recomend .title-block .icon-apple {
@@ -7851,7 +7852,6 @@ body.index .item-block .text-block a {
   top: 0;
   padding-top: 30px;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 /* line 230, ../scss/partials/blocks/_products-d.scss */
 .block-products .left-sidebar .special-recomend .img-block .text-block .title {
@@ -7886,6 +7886,7 @@ body.index .item-block .text-block a {
   /* line 254, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog {
     width: 100%;
+    max-width: 100%;
     padding-left: 0;
   }
 }
@@ -7897,7 +7898,7 @@ body.index .item-block .text-block a {
     text-align: center;
   }
 }
-/* line 314, ../scss/partials/blocks/_products-d.scss */
+/* line 315, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block {
   margin: 0 -20px;
   padding-top: 50px;
@@ -7912,7 +7913,7 @@ body.index .item-block .text-block a {
   height: 0;
 }
 @media screen and (max-width: 1169px) {
-  /* line 314, ../scss/partials/blocks/_products-d.scss */
+  /* line 315, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .row-block {
     margin: 0;
     width: 100%;
@@ -7921,55 +7922,55 @@ body.index .item-block .text-block a {
   }
 }
 @media (max-width: 767px) {
-  /* line 314, ../scss/partials/blocks/_products-d.scss */
+  /* line 315, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .row-block {
     margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
-/* line 329, ../scss/partials/blocks/_products-d.scss */
+/* line 330, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block {
   width: 33%;
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (max-width: 1169px) {
-  /* line 329, ../scss/partials/blocks/_products-d.scss */
+  /* line 330, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .row-block .content-block {
     float: left;
   }
 }
 @media (max-width: 767px) {
-  /* line 329, ../scss/partials/blocks/_products-d.scss */
+  /* line 330, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .row-block .content-block {
     width: 100%;
   }
 }
-/* line 340, ../scss/partials/blocks/_products-d.scss */
+/* line 341, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block {
   text-align: center;
   position: relative;
   padding: 20px;
 }
 @media (max-width: 767px) {
-  /* line 340, ../scss/partials/blocks/_products-d.scss */
+  /* line 341, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .row-block .content-block .item-block {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-/* line 347, ../scss/partials/blocks/_products-d.scss */
+/* line 348, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .img {
   position: relative;
   text-align: center;
   display: inline-block;
 }
-/* line 352, ../scss/partials/blocks/_products-d.scss */
+/* line 353, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .img img {
   max-width: 156px;
 }
-/* line 356, ../scss/partials/blocks/_products-d.scss */
+/* line 357, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .img .icon-category {
   position: absolute;
   bottom: 0;
@@ -7983,7 +7984,7 @@ body.index .item-block .text-block a {
   height: 40px;
   display: inline-block;
 }
-/* line 373, ../scss/partials/blocks/_products-d.scss */
+/* line 374, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .title {
   padding-top: 10px;
   font-size: 20px;
@@ -7994,7 +7995,7 @@ body.index .item-block .text-block a {
   text-align: center;
   color: #373737;
 }
-/* line 382, ../scss/partials/blocks/_products-d.scss */
+/* line 383, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .title a {
   padding-top: 10px;
   font-size: 20px;
@@ -8006,12 +8007,12 @@ body.index .item-block .text-block a {
   color: #373737;
   text-decoration: none;
 }
-/* line 394, ../scss/partials/blocks/_products-d.scss */
+/* line 395, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .desc {
   padding-top: 10px;
   display: inline-block;
 }
-/* line 397, ../scss/partials/blocks/_products-d.scss */
+/* line 398, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .desc .icon-bag {
   vertical-align: middle;
   background-image: url("../images/t-a-r-a.svg");
@@ -8021,7 +8022,7 @@ body.index .item-block .text-block a {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 406, ../scss/partials/blocks/_products-d.scss */
+/* line 407, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .desc .count-size {
   font-size: 15px;
   font-weight: normal;
@@ -8035,7 +8036,7 @@ body.index .item-block .text-block a {
   padding-top: 3px;
 }
 @media screen and (max-width: 1169px) {
-  /* line 423, ../scss/partials/blocks/_products-d.scss */
+  /* line 424, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .list-pagination {
     padding-left: 30px;
     padding-right: 30px;
@@ -8043,31 +8044,31 @@ body.index .item-block .text-block a {
   }
 }
 @media (max-width: 767px) {
-  /* line 423, ../scss/partials/blocks/_products-d.scss */
+  /* line 424, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .list-pagination {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 @media (max-width: 767px) {
-  /* line 431, ../scss/partials/blocks/_products-d.scss */
+  /* line 432, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .list-pagination ul {
     text-align: center;
   }
 }
-/* line 435, ../scss/partials/blocks/_products-d.scss */
+/* line 436, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .list-pagination ul li {
   display: inline-block;
   padding: 0 5px;
 }
 @media (max-width: 767px) {
-  /* line 435, ../scss/partials/blocks/_products-d.scss */
+  /* line 436, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .list-pagination ul li {
     text-align: center;
     padding: 5px;
   }
 }
-/* line 442, ../scss/partials/blocks/_products-d.scss */
+/* line 443, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .list-pagination ul li a {
   display: inline-block;
   color: #373737;
@@ -8082,11 +8083,11 @@ body.index .item-block .text-block a {
   font-stretch: normal;
   min-width: 45px;
 }
-/* line 456, ../scss/partials/blocks/_products-d.scss */
+/* line 457, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .list-pagination ul li a.first-page {
   min-width: 60px;
 }
-/* line 459, ../scss/partials/blocks/_products-d.scss */
+/* line 460, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .list-pagination ul li a:hover, .block-products .block-products-catalog .list-pagination ul li a.active {
   color: #ffffff;
   background-color: #658d1b;
@@ -8297,7 +8298,6 @@ body.index .item-block .text-block a {
 }
 /* line 176, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-desc {
-  padding-top: 52px;
   width: 60%;
   float: right;
 }
@@ -8321,7 +8321,7 @@ body.index .item-block .text-block a {
 }
 /* line 190, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product .block-desc .desc {
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 16px;
   font-weight: 300;
   font-style: normal;
@@ -8329,7 +8329,7 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   color: #373737;
 }
-/* line 201, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 202, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description {
   display: inline-block;
   padding-left: 40%;
@@ -8337,7 +8337,7 @@ body.index .item-block .text-block a {
   width: 100%;
 }
 @media screen and (max-width: 1169px) {
-  /* line 201, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 202, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product-description {
     margin-top: 0;
     float: none;
@@ -8347,24 +8347,24 @@ body.index .item-block .text-block a {
   }
 }
 @media (max-width: 767px) {
-  /* line 201, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 202, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product-description {
     padding: 30px 0 10px;
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-  /* line 217, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 218, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product-description .block-characteristics {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-/* line 221, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 222, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block {
   padding-bottom: 40px;
 }
-/* line 223, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 224, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .icon-fill {
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -8375,19 +8375,19 @@ body.index .item-block .text-block a {
   background-image: url("../images/fill-8.svg");
   background-position: center center;
 }
-/* line 232, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 233, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .icon-fill.icon-molecule {
   background-image: url("../images/molecule.svg");
 }
-/* line 235, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 236, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .icon-fill.icon-drop {
   background-image: url("../images/drop.svg");
 }
-/* line 238, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 239, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .icon-fill.icon-volumetric-flask {
   background-image: url("../images/volumetric-flask.svg");
 }
-/* line 242, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 243, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .icon-plus {
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -8400,15 +8400,15 @@ body.index .item-block .text-block a {
   right: 15px;
   margin: 5px;
 }
-/* line 256, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 257, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .catalog-menu > li.show {
   background-color: #f8f2ec;
 }
-/* line 258, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 259, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .catalog-menu > li.show .icon-plus {
   background-image: url("../images/minus-grey.svg");
 }
-/* line 262, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 263, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .catalog-menu > li > a {
   text-decoration: none;
   font-size: 16px;
@@ -8418,7 +8418,7 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   color: #373737;
 }
-/* line 272, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 273, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .catalog-menu .title-menu {
   height: 51px;
   background-color: #f8f2ec;
@@ -8427,7 +8427,7 @@ body.index .item-block .text-block a {
   position: relative;
   cursor: pointer;
 }
-/* line 280, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 281, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .catalog-menu .title-menu .title {
   font-size: 22px;
   font-weight: 300;
@@ -8439,20 +8439,20 @@ body.index .item-block .text-block a {
   -moz-user-select: none;
   -ms-user-select: none;
 }
-/* line 291, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 292, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .sub-menu {
   padding: 0 48px 15px 48px;
   display: none;
 }
-/* line 294, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 295, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .sub-menu[data-display="none"] {
   display: none;
 }
-/* line 297, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 298, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .sub-menu[data-display="block"] {
   display: block;
 }
-/* line 300, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 301, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .sub-menu .desc {
   font-size: 16px;
   font-weight: 300;
@@ -8461,11 +8461,11 @@ body.index .item-block .text-block a {
   line-height: 1.63;
   color: #373737;
 }
-/* line 307, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 308, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .sub-menu .desc p {
   padding-bottom: 20px;
 }
-/* line 312, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 313, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-characteristics .dropdown-block .sub-menu li a {
   font-size: 15px;
   font-weight: normal;
@@ -8476,14 +8476,14 @@ body.index .item-block .text-block a {
   text-decoration: none;
 }
 @media (max-width: 767px) {
-  /* line 325, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 326, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product-description .block-products-catalog {
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
   }
 }
-/* line 331, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 332, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-products-catalog .title-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -8492,7 +8492,7 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #689146;
 }
-/* line 340, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 341, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-products-catalog .row-block {
   padding-bottom: 20px;
 }
@@ -8504,7 +8504,7 @@ body.index .item-block .text-block a {
   clear: both;
   height: 0;
 }
-/* line 345, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 346, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-products-catalog .row-block .content-block {
   width: 33%;
   float: left;
@@ -8512,30 +8512,30 @@ body.index .item-block .text-block a {
   vertical-align: top;
 }
 @media (max-width: 767px) {
-  /* line 345, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 346, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product-description .block-products-catalog .row-block .content-block {
     width: 100%;
     float: none;
   }
 }
-/* line 354, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 355, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-products-catalog .row-block .content-block .item-block {
   text-align: center;
   position: relative;
   padding: 20px;
 }
-/* line 358, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 359, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-products-catalog .row-block .content-block .item-block .img {
   width: 160px;
   position: relative;
   text-align: center;
   display: inline-block;
 }
-/* line 363, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 364, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-products-catalog .row-block .content-block .item-block .img img {
   vertical-align: bottom;
 }
-/* line 366, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 367, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-products-catalog .row-block .content-block .item-block .img .icon-category {
   position: absolute;
   bottom: 0;
@@ -8549,7 +8549,7 @@ body.index .item-block .text-block a {
   height: 40px;
   display: inline-block;
 }
-/* line 384, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 385, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-products-catalog .row-block .content-block .item-block .title a {
   padding-top: 10px;
   font-size: 20px;
@@ -8561,12 +8561,12 @@ body.index .item-block .text-block a {
   color: #373737;
   text-decoration: none;
 }
-/* line 396, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 397, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-products-catalog .row-block .content-block .item-block .desc {
   padding-top: 10px;
   display: inline-block;
 }
-/* line 399, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 400, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-products-catalog .row-block .content-block .item-block .desc .icon-bag {
   vertical-align: middle;
   background-image: url("../images/t-a-r-a.svg");
@@ -8576,7 +8576,7 @@ body.index .item-block .text-block a {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 408, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 409, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-products-catalog .row-block .content-block .item-block .desc .count-size {
   font-size: 15px;
   font-weight: normal;
@@ -8589,12 +8589,12 @@ body.index .item-block .text-block a {
   display: inline-block;
 }
 @media (max-width: 767px) {
-  /* line 424, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 425, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product-description .block-product-advantages {
     text-align: center;
   }
 }
-/* line 429, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 430, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-product-advantages .title-block .title {
   font-size: 30px;
   font-weight: 300;
@@ -8603,7 +8603,7 @@ body.index .item-block .text-block a {
   line-height: 1.07;
   color: #689146;
 }
-/* line 438, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 439, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-product-advantages .row-block {
   padding-top: 20px;
   margin: 0 -10px;
@@ -8618,14 +8618,14 @@ body.index .item-block .text-block a {
   height: 0;
 }
 @media (max-width: 767px) {
-  /* line 438, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 439, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product-description .block-product-advantages .row-block {
     margin: 0;
     padding-top: 20px;
     padding-bottom: 0;
   }
 }
-/* line 448, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 449, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-product-advantages .row-block .content-block {
   width: 50%;
   display: inline-block;
@@ -8633,7 +8633,7 @@ body.index .item-block .text-block a {
   float: left;
 }
 @media (max-width: 767px) {
-  /* line 448, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 449, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product-description .block-product-advantages .row-block .content-block {
     width: 100%;
     padding: 0 0 10px;
@@ -8641,7 +8641,7 @@ body.index .item-block .text-block a {
     padding-right: 10px;
   }
 }
-/* line 459, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 460, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-product-advantages .row-block .item-block {
   background-color: #f8f2ec;
   text-align: left;
@@ -8649,14 +8649,14 @@ body.index .item-block .text-block a {
   padding: 24px 5px 24px 20px;
   border-radius: 5px;
 }
-/* line 465, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 466, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-product-advantages .row-block .item-block .icon-category {
   vertical-align: middle;
   background-repeat: no-repeat;
   display: inline-block;
   margin-right: 15px;
 }
-/* line 476, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+/* line 477, ../scss/partials/blocks/_produkto-vidinis-d.scss */
 .block-product-page .block-product-description .block-product-advantages .row-block .item-block .desc {
   display: inline-block;
   font-size: 20px;
@@ -8669,7 +8669,7 @@ body.index .item-block .text-block a {
   vertical-align: middle;
 }
 @media (max-width: 767px) {
-  /* line 476, ../scss/partials/blocks/_produkto-vidinis-d.scss */
+  /* line 477, ../scss/partials/blocks/_produkto-vidinis-d.scss */
   .block-product-page .block-product-description .block-product-advantages .row-block .item-block .desc {
     width: 70%;
   }

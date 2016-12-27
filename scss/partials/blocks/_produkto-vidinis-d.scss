@@ -174,7 +174,7 @@
 
     }
     .block-desc{
-      padding-top: 52px;
+      //padding-top: 52px;
       width: 60%;
       float: right;
       @include tablet {
@@ -188,7 +188,8 @@
         @include padding-mobile;
       }
       .desc {
-        padding-top: 20px;
+        //padding-top: 20px;
+        padding-top: 10px;
         font-size: 16px;
         font-weight: 300;
         font-style: normal;

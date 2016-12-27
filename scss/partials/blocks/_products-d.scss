@@ -143,7 +143,7 @@
           }
           &[data-display="block"]{
             display: block;
-            padding-left: 53px;
+            padding-left: 57px;
             padding-bottom: 18px;
           }
           li{
@@ -196,7 +196,7 @@
           width: 34px;
           height: 45px;
           display: inline-block;
-          margin-right: 5px;
+          margin-right: 15px;
         }
         .icon-apple{
           background-image: url("../images/apple-white.svg");
@@ -226,7 +226,7 @@
           top: 0;
           padding-top: 30px;
           left: 0;
-          background-color: rgba( $color-white-two, 0.5);
+          //background-color: rgba( $color-white-two, 0.5);
           .title{
             font-size: 2.6*$font-size;
             font-weight: normal;
@@ -259,6 +259,7 @@
     padding-bottom: 75px;
     @include tablet{
       width: 100%;
+      max-width: 100%;
       padding-left: 0;
       //text-align: center;
     }
