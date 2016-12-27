@@ -83,7 +83,7 @@ body{
     @include clearfix;
     margin: 0 -15px;
     padding-top: 125px;
-    padding-bottom: 30px;
+    //padding-bottom: 30px;
     @include tablet{
       margin: 0;
       @include  padding-height;
@@ -92,7 +92,7 @@ body{
     @include small-phone{
       margin: 0;
       padding-top: 10px;
-      padding-bottom: 45px;
+      //padding-bottom: 45px;
     }
     .content-block{
       //margin: 0 0 10px;
@@ -119,11 +119,12 @@ body{
         @include tablet{
           margin: 0 auto;
           width: auto;
-          min-height: 520px;
+          min-height: 540px;
         }
         @include small-phone{
           width: 100%;
-          height: auto;
+          //height: auto;
+          min-height: 600px;
         }
         a{
           width: 100%;
