@@ -380,7 +380,6 @@ body{
           }
         }
       }
-
       //.category-quality{
       //  border-radius: 50%;
       //  background-color: $color-white-two;
@@ -430,12 +429,20 @@ body{
       &.upper{
         //margin-top: -15px;
         //margin-bottom: 15px;
-        padding-top: 40px;
+        &:before {
+          //padding-top: 40px;
+          bottom: 50px;
+          @include small-phone {
+            bottom: 0;
+          }
+        }
+        //padding-top: 40px;
         @include small-phone{
-          padding-top: 0;
+          //padding-top: 0;
+
         }
         .category-quality{
-          bottom: 50px;
+          //bottom: 50px;
         }
       }
       img{
