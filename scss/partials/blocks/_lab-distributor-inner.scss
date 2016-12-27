@@ -1,65 +1,9 @@
 .block-lab-distributor{
   .block-product {
     position: relative;
-    //padding-top: 52px;
-    //display: inline-block;
-    //width: 722px;
-    //@include tablet {
-    //  margin-top: 0;
-    //  float: none;
-    //  width: 100%;
-    //}
-    //@include small-phone {
-    //  margin-top: 0;
-    //  float: none;
-    //  width: 100%;
-    //}
-    //.left-sidebar{
-    //  display: inline-block;
-    //  float: left;
-    //  width: 446px;
-    //  z-index: 200;
-    //  position: relative;
-    //  padding-top: 52px;
-    //  text-align: center;
-    //  @include tablet{
-    //    margin-top: 0;
-    //    float: none;
-    //    width: 100%;
-    //    @include padding-tablet;
-    //  }
-    //  @include small-phone{
-    //    margin-top: 0;
-    //    float: none;
-    //    width: 100%;
-    //    padding: 0 20px;
-    //  }
-    //  .btn{
-    //    margin-top: 20px;
-    //    text-align: left;
-    //    position: relative;
-    //    padding: 10px 20px;
-    //    background-color: $color-rouge-v1;
-    //    .title-link{
-    //      text-align: left;
-    //      display: inline-block;
-    //    }
-    //    .icon-email{
-    //      vertical-align: middle;
-    //      background-image: url("../images/email.svg");
-    //      background-repeat: no-repeat;
-    //      width: 32px;
-    //      height: 32px;
-    //      display: inline-block;
-    //      margin-right: 5px;
-    //      position: absolute;
-    //      right: 5px;
-    //    }
-    //  }
-    //}
     .img-block {
-      //width: 40%;
-      width: 35%;
+      width: 40%;
+      //width: 35%;
       z-index: 200;
       padding-top: 52px;
       text-align: center;
@@ -76,14 +20,18 @@
         @include padding-mobile;
       }
       .item-block {
+        text-align: center;
+        display: inline;
+        text-align: center;
         @include small-phone {
           @include padding-mobile;
         }
         .img {
-          //max-width: 204px;
-          //display: inline-block;
+          max-width: 330px;
+          max-height: 330px;
+          margin: 0 auto;
           a{
-            //display: block;
+            display: block;
           }
         }
         .text-block {
@@ -115,11 +63,12 @@
     }
     .button-block{
       float: left;
-      //width: 40%;
-      width: 35%;
+      width: 40%;
+      //width: 35%;
       z-index: 200;
       position: absolute;
-      top: 450px;
+      //top: 450px;
+      top: 412px;
       text-align: center;
       @include tablet {
         position: relative;
@@ -158,8 +107,8 @@
     }
     .block-product-single {
       padding-top: 52px;
-      //width: 60%;
-      width: 65%;
+      width: 60%;
+      //width: 65%;
       float: right;
       @include tablet {
         position: relative;
@@ -235,7 +184,7 @@
             background-repeat: no-repeat;
             background-position: center;
             width: 30px;
-            height: 25px;
+            height: 32px;
             display: inline-block;
             margin-right: 5px;
           }
@@ -246,13 +195,17 @@
             font-stretch: normal;
             line-height: 1.3;
             color: $color-black;
+            display: inline-block;
+            vertical-align: middle;
           }
         }
     }
     .block-desc {
-      padding-top: 52px;
-      //width: 60%;
-      width: 65%;
+      //padding-top: 52px;
+      padding-top: 29px;
+      width: 60%;
+      //width: 65%;
+      padding-right: 12%;
       float: right;
       @include tablet {
         position: relative;
@@ -301,7 +254,7 @@
         }
       }
       .desc{
-        padding-top: 20px;
+        //padding-top: 20px;
         font-size: 16px;
         font-weight: 300;
         font-style: normal;
@@ -329,74 +282,11 @@
         text-decoration: underline;
       }
     }
-    //.block-product-single {
-    //  @include tablet {
-    //    @include padding-tablet;
-    //  }
-    //  @include small-phone {
-    //    padding: 0 20px;
-    //  }
-    //  h2 {
-    //    font-size: 5*$font-size;
-    //    font-weight: 300;
-    //    font-style: normal;
-    //    font-stretch: normal;
-    //    line-height: 1.04;
-    //    letter-spacing: -0.5px;
-    //    color: $color-black;
-    //  }
-    //  .title-block {
-    //    padding-top: 20px;
-    //    font-size: 2*$font-size;
-    //    font-weight: 300;
-    //    font-style: normal;
-    //    font-stretch: normal;
-    //    line-height: 1.3;
-    //    color: $color-black;
-    //    .icon-agro {
-    //      margin-right: 10px;
-    //      vertical-align: middle;
-    //      background-image: url("../images/tractor-1.svg");
-    //      background-attachment: scroll;
-    //      background-size: contain;
-    //      background-repeat: no-repeat;
-    //      background-position: center;
-    //      width: 30px;
-    //      height: 25px;
-    //      display: inline-block;
-    //    }
-    //  }
-    //  .country {
-    //    padding-top: 20px;
-    //    .icon-country {
-    //      vertical-align: middle;
-    //      background-image: url("../images/geolocalization-brown.svg");
-    //      background-attachment: scroll;
-    //      background-size: contain;
-    //      background-repeat: no-repeat;
-    //      background-position: center;
-    //      width: 30px;
-    //      height: 25px;
-    //      display: inline-block;
-    //      margin-right: 5px;
-    //    }
-    //    .countries {
-    //      font-size: 2*$font-size;
-    //      font-weight: 300;
-    //      font-style: normal;
-    //      font-stretch: normal;
-    //      line-height: 1.3;
-    //      color: $color-black;
-    //    }
-    //  }
-    //
-    //
-    //}
   }
   .block-product-description {
       display: inline-block;
-      //padding-left: 40%;
-      padding-left: 35%;
+      padding-left: 40%;
+      //padding-left: 35%;
       padding-top: 40px;
       width: 100%;
       @include tablet {
@@ -619,8 +509,8 @@
             text-align: left;
             position: relative;
             .img{
-              width: 350px;
-              height: 208px;
+              max-width: 349px;
+              max-height: 208px;
             }
             .text-block {
               padding-top: 20px;

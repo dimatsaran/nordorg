@@ -266,7 +266,7 @@
           }
         }
         textarea{
-          height: 166px;
+          height: 146px;
           border: 0 none;
         }
       }
@@ -276,6 +276,9 @@
             border-color: $color-sepia;
           }
         }
+      }
+      .form-actions{
+        padding: 17px 0 0;
       }
       .btn{
         width: 274px;
