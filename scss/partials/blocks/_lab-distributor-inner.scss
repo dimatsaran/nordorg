@@ -20,9 +20,6 @@
         @include padding-mobile;
       }
       .item-block {
-        text-align: center;
-        display: inline;
-        text-align: center;
         @include small-phone {
           @include padding-mobile;
         }
@@ -201,7 +198,6 @@
         }
     }
     .block-desc {
-      //padding-top: 52px;
       padding-top: 29px;
       width: 60%;
       //width: 65%;
@@ -301,7 +297,7 @@
         width: 100%;
       }
       .block-products-catalog {
-        padding-top: 50px;
+        //padding-top: 50px;
         @include tablet {
           @include padding-tablet;
         }
@@ -315,7 +311,10 @@
             font-style: normal;
             font-stretch: normal;
             line-height: 1.07;
-            color: $color-sap-light-green
+            color: $color-sap-light-green;
+            @include small-phone {
+              text-align: center;
+            }
           }
         }
         .row-block {
@@ -408,6 +407,7 @@
         }
         @include small-phone {
           text-align: center;
+          @include padding-mobile;
         }
         .title-block {
           .title {
@@ -437,7 +437,7 @@
             @include small-phone {
               width: 100%;
               padding: 0 0 10px;
-              @include padding-mobile;
+              //@include padding-mobile;
             }
           }
           .item-block {
@@ -479,7 +479,8 @@
           @include padding-tablet;
         }
         @include small-phone {
-          padding: 0 20px 0;
+          padding-top: 20px;
+          @include padding-mobile;
         }
         .title-block {
           .title {
@@ -496,6 +497,10 @@
           padding-top: 20px;
           margin: 0 -15px;
           padding-bottom: 35px;
+          @include small-phone {
+            margin: 0;
+            padding-bottom: 0;
+          }
           .content-block {
             width: 50%;
             float: left;
@@ -503,11 +508,15 @@
             padding: 0 15px 50px;
             @include small-phone {
               width: 100%;
+              padding: 0 0 50px;
             }
           }
           .item-block {
             text-align: left;
             position: relative;
+            a{
+              display: block;
+            }
             .img{
               max-width: 349px;
               max-height: 208px;

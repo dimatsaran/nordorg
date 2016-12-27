@@ -34,6 +34,7 @@
         @include small-phone{
           width: 100%;
           margin: 0 0 20px;
+          padding: 20px 0 20px;
           @include padding-mobile;
         }
         .item-block{
@@ -72,7 +73,7 @@
               width: 120px;
               //margin-top: -60px;
               @include small-phone{
-                margin-top: 0;
+                //margin-top: 0;
               }
             }
             .name-autor{
@@ -99,6 +100,9 @@
               vertical-align: bottom;
               display: inline-block;
               text-align: left;
+              @include small-phone{
+                width: 100%;
+              }
             }
             .date{
               font-size: 1.4*$font-size;
