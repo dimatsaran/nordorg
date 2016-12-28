@@ -4930,14 +4930,14 @@ body.index .item-block .text-block a {
     padding-right: 10px;
   }
 }
-/* line 27, ../scss/partials/blocks/_contacts-d.scss */
+/* line 26, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .content-block:last-of-type {
   width: 54%;
   display: inline-block;
   vertical-align: top;
 }
 @media screen and (max-width: 1169px) {
-  /* line 27, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 26, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .content-block:last-of-type {
     width: 100%;
     padding-left: 30px;
@@ -4945,9 +4945,12 @@ body.index .item-block .text-block a {
   }
 }
 @media (max-width: 767px) {
-  /* line 27, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 26, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .content-block:last-of-type {
     width: 100%;
+    float: none;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 /* line 41, ../scss/partials/blocks/_contacts-d.scss */
