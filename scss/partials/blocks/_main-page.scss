@@ -83,7 +83,6 @@ body{
     @include clearfix;
     margin: 0 -15px;
     padding-top: 125px;
-    //padding-bottom: 30px;
     @include tablet{
       margin: 0;
       @include  padding-height;
@@ -218,11 +217,8 @@ body{
   .slick-dots{
     position: absolute;
     bottom: 34px;
-    @include tablet{
-      bottom: -45px;
-    }
-    @include small-phone{
-      bottom: -45px;
+    @include tablet {
+      bottom: -30px;
     }
     li{
       width: 12px;
@@ -310,11 +306,11 @@ body{
     @include tablet{
       margin: 0;
       @include padding-height;
-      padding-bottom: 40px;
+      padding-bottom: 10px;
     }
     @include small-phone{
       margin: 0;
-      padding: 30px 0 20px;
+      padding-top: 30px;
     }
 
   }
@@ -324,8 +320,8 @@ body{
     width: 33%;
     display: inline-block;
     vertical-align: top;
-    @include small-phone{
-      width: 50%;
+    @include tablet {
+      //margin: 0;
     }
     @include small-phone{
       width: 100%;
@@ -335,6 +331,9 @@ body{
   .item-block{
     text-align: center;
     position: relative;
+    //>a{
+    //  display: block;
+    //}
     .img{
       height: 480px;
       display: inline-block;
@@ -342,6 +341,7 @@ body{
       padding-top: 60px;
       @include small-phone{
         padding-top: 0;
+        height: auto;
       }
       img{
         display: inline-block;
@@ -380,66 +380,19 @@ body{
           }
         }
       }
-      //.category-quality{
-      //  border-radius: 50%;
-      //  background-color: $color-white-two;
-      //  padding: 5px;
-      //  position: absolute;
-      //  right: 50px;
-      //  //right: 16%;
-      //  bottom: 20px;
-      //  text-align: center;
-      //  display: inline-block;
-      //  vertical-align: middle;
-      //  width: 60px;
-      //  height: 60px;
-      //  @include tablet{
-      //    //right: 24%;
-      //    right: 70px;
-      //  }
-      //  @include small-phone{
-      //    //right: 25%;
-      //    right: 80px;
-      //  }
-      //}
-      //.icon-category{
-      //  background-image: url('../images/plants.svg');
-      //  background-attachment: scroll;
-      //  background-size: cover;
-      //  background-repeat: no-repeat;
-      //  background-position: center;
-      //  width: 52px;
-      //  height: 52px;
-      //  display: inline-block;
-      //  &.icon-plants{
-      //    background-image: url('../images/plants.svg');
-      //  }
-      //  &.icon-agro{
-      //    background-image: url('../images/agro.svg');
-      //  }
-      //  &.icon-soil{
-      //    background-image: url('../images/soil.svg');
-      //  }
-      //  img{
-      //    width: 60px;
-      //    height: 60px;
-      //  }
-      //
-      //}
+
       &.upper{
-        //margin-top: -15px;
-        //margin-bottom: 15px;
+        padding-top: 40px;
+        @include tablet{
+          max-height: 480px;
+          //padding-top: 0;
+        }
         &:before {
           //padding-top: 40px;
           bottom: 50px;
-          @include small-phone {
-            bottom: 0;
+          @include tablet{
+            //bottom: 5%;
           }
-        }
-        //padding-top: 40px;
-        @include small-phone{
-          //padding-top: 0;
-
         }
         .category-quality{
           //bottom: 50px;
@@ -478,10 +431,10 @@ body{
   }
   .slick-dots {
     @include tablet {
-      bottom: -40px;
+      bottom: -30px;
     }
     @include small-phone {
-      bottom: -35px;
+      //bottom: -35px;
     }
     li{
       button{
@@ -500,324 +453,6 @@ body{
     }
   }
 }
-//.block-carusel{
-//  background-color: $color-grey;
-//  position: relative;
-//  &:before{
-//    background-image: url('../images/line.svg');
-//    background-attachment: scroll;
-//    background-size: cover;
-//    background-repeat: no-repeat;
-//    background-position: center;
-//    width: 100%;
-//    height: 12px;
-//    display: block;
-//    position: absolute;
-//    content: '';
-//    top: -2px;
-//    transform: rotate(180deg);
-//    z-index: 200;
-//  }
-//  &:after{
-//    background-image: url('../images/line.svg');
-//    background-attachment: scroll;
-//    background-size: cover;
-//    background-repeat: no-repeat;
-//    background-position: center;
-//    width: 100%;
-//    height: 13px;
-//    display: block;
-//    //position: relative;
-//    position: absolute;
-//    content: '';
-//    bottom: -4px;
-//  }
-//  &.main{
-//    &:after {
-//      display: none;
-//    }
-//  }
-//  .row-block{
-//    padding-top: 90px;
-//    padding-bottom: 90px;
-//    @include tablet{
-//      margin: 0;
-//      @include padding-height;
-//      padding-top: 90px;
-//      padding-bottom: 50px;
-//    }
-//    @include small-phone{
-//      margin: 0;
-//      padding-top: 30px;
-//      padding-bottom: 30px;
-//    }
-//  }
-//  .block-visual{
-//    overflow-x: hidden;
-//    padding-top: 30px;
-//    @include tablet {
-//      overflow-x: visible;
-//    }
-//    @include small-phone {
-//      overflow-x: visible;
-//    }
-//    .slick-list{
-//      padding: 0!important;
-//    }
-//    .slick-slide{
-//      opacity: 0.3;
-//      &.slick-active{}
-//      &.slick-center{
-//        opacity: 1;
-//        //.item-block{
-//        //  //width: 120%;
-//        //  padding: 0;
-//        //  margin-left: 0;
-//        //  .img-block{
-//        //    width: 260px;
-//        //    height: 260px;
-//        //    float: left;
-//        //    text-align: center;
-//        //    img{
-//        //      border-radius: 50%;
-//        //      background-color: $color-white-two;
-//        //      display: inline-block;
-//        //      width: 260px;
-//        //      height: 260px;
-//        //    }
-//        //  }
-//        //  .text-block{
-//        //    display: inline-block;
-//        //    vertical-align: middle;
-//        //    width: 55%;
-//        //    float: left;
-//        //    padding:0 0 0 30px;
-//        //    .title{
-//        //      font-size: 3*$font-size;
-//        //      font-weight: 300;
-//        //      font-style: normal;
-//        //      font-stretch: normal;
-//        //      line-height: 1.07;
-//        //      color: $color-sepia;
-//        //    }
-//        //    .desc{
-//        //      padding-top: 20px;
-//        //      font-size: 1.6*$font-size;
-//        //      font-weight: 300;
-//        //      font-style: normal;
-//        //      font-stretch: normal;
-//        //      line-height: 1.63;
-//        //      color: $color-black;
-//        //
-//        //    }
-//        //    .name-autor{
-//        //      padding-top: 25px;
-//        //      font-size: 1.6*$font-size;
-//        //      font-weight: normal;
-//        //      font-style: normal;
-//        //      font-stretch: normal;
-//        //      line-height: 1.63;
-//        //      color: $color-sepia;
-//        //    }
-//        //    .spec-autor{
-//        //      font-size: 1.4*$font-size;
-//        //      font-weight: 300;
-//        //      font-style: normal;
-//        //      font-stretch: normal;
-//        //      line-height: 1.86;
-//        //      color: $color-black;
-//        //    }
-//        //  }
-//        //}
-//      }
-//    }
-//    .slick-arrow{
-//      z-index: 800;
-//      height: 40px;
-//      &.slick-prev{
-//        left: 32%;
-//        @include tablet{
-//          left: 1%;
-//        }
-//        &:before{
-//          background-image: url('../images/slider/arrow-left.svg');
-//          background-attachment: scroll;
-//          background-size: cover;
-//          background-repeat: no-repeat;
-//          background-position: center;
-//          width: 22px;
-//          height: 40px;
-//          content: '';
-//          display: block;
-//        }
-//        &:hover{
-//          &:before {
-//            background-image: url('../images/slider/arrow-left-active.svg');
-//          }
-//        }
-//
-//      }
-//      &.slick-next{
-//        right: 32%;
-//        @include tablet{
-//          right: 1%;
-//        }
-//        &:before{
-//          background-image: url('../images/slider/arrow-right.svg');
-//          background-attachment: scroll;
-//          background-size: cover;
-//          background-repeat: no-repeat;
-//          background-position: center;
-//          width: 22px;
-//          height: 40px;
-//          content: '';
-//          display: block;
-//        }
-//        &:hover{
-//          &:before {
-//            background-image: url('../images/slider/arrow-right-active.svg');
-//          }
-//        }
-//      }
-//    }
-//    .slick-dots {
-//      @include tablet {
-//        bottom: -50px;
-//      }
-//      @include small-phone {
-//        bottom: -40px;
-//      }
-//      li{
-//        button{
-//          &:before{
-//            //background-color: $color-grey;
-//          }
-//
-//        }
-//        &.slick-active,&:hover{
-//          button{
-//            &:before{
-//              background-color: $color-rouge-v1;
-//            }
-//          }
-//        }
-//      }
-//    }
-//  }
-//  .title-block{
-//    text-align: center;
-//    h2{
-//      font-size: 42px;
-//      font-weight: 300;
-//      font-style: normal;
-//      font-stretch: normal;
-//      line-height: 0.62;
-//      text-align: center;
-//      color: $color-sap-green;
-//      @include small-phone {
-//        line-height: 1.05;
-//      }
-//    }
-//    .link-logo{
-//      padding-top: 20px;
-//    }
-//  }
-//  .item-block{
-//    @include clearfix;
-//    display: block;
-//    //margin-left: 20px;
-//    @include tablet{
-//      padding: 20px 50px;
-//
-//    }
-//    @include small-phone{
-//      padding: 0 15px;
-//      text-align: center;
-//    }
-//    .img-block {
-//      //width: 40%;
-//     width: 260px;
-//      //height: 260px;
-//      //width: 49%;
-//      height: auto;
-//      float: left;
-//      text-align: center;
-//      @include tablet {
-//        width: 40%;
-//        min-width: 250px;
-//      }
-//      @include small-phone{
-//        width: 100%;
-//      }
-//      .img{
-//        width: 260px;
-//        height: 260px;
-//        display: inline-block;
-//        background-color: $color-white-two;
-//        border-radius: 50%;
-//      }
-//      img{
-//        border-radius: 50%;
-//        background-color: $color-white-two;
-//        display: inline-block;
-//        height: 260px;
-//        width: 100%;
-//        @include tablet {
-//          max-width: 100%;
-//        }
-//      }
-//    }
-//    .text-block{
-//      display: inline-block;
-//      vertical-align: middle;
-//      //width: 60%;
-//      //width: 50%;
-//      width: 48%;
-//      float: left;
-//      padding-left: 20px;
-//      padding-right: 20px;
-//      @include small-phone{
-//        width: 100%;
-//      }
-//      //padding: 0 0 0 30px;
-//      .title{
-//        font-size: 3*$font-size;
-//        font-weight: 300;
-//        font-style: normal;
-//        font-stretch: normal;
-//        line-height: 1.07;
-//        color: $color-sepia;
-//      }
-//      .desc{
-//        padding-top: 20px;
-//        font-size: 1.6*$font-size;
-//        font-weight: 300;
-//        font-style: normal;
-//        font-stretch: normal;
-//        line-height: 1.63;
-//        color: $color-black;
-//
-//      }
-//      .name-autor{
-//        padding-top: 25px;
-//        font-size: 1.6*$font-size;
-//        font-weight: normal;
-//        font-style: normal;
-//        font-stretch: normal;
-//        line-height: 1.63;
-//        color: $color-sepia;
-//      }
-//      .spec-autor{
-//        font-size: 1.4*$font-size;
-//        font-weight: 300;
-//        font-style: normal;
-//        font-stretch: normal;
-//        line-height: 1.86;
-//        color: $color-black;
-//      }
-//    }
-//  }
-//}
 .block-carusel{
   background-color: $color-grey;
   position: relative;
@@ -868,7 +503,7 @@ body{
     @include small-phone{
       margin: 0;
       padding-top: 30px;
-      padding-bottom: 70px;
+      padding-bottom: 43px;
     }
   }
   .block-visual{
@@ -890,7 +525,7 @@ body{
         padding: 0 20px!important;
       }
       @include small-phone{
-        padding: 0 20px 30px!important;
+        padding: 0 20px 1px!important;
       }
     }
     .slick-slide{
@@ -1013,7 +648,7 @@ body{
         bottom: -50px;
       }
       @include small-phone {
-        bottom: -40px;
+        bottom: -30px;
       }
       li{
         button{

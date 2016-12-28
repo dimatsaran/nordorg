@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
+
+
   /*mobile menu*/
-  var $mainMenu = jQuery('#nav');
+  // var $mainMenu = jQuery('#nav');
   $('#nav').slicknav(
       {
         prependTo: '.main-header .container',
@@ -18,17 +20,31 @@ $(document).ready(function(){
     }
   });
 
-  /* search block*/
-
+  /* search block mobile*/
   $(".search-block").find('.search-block-btn').on("click",function(){
     if (!$slicknavMenu.hasClass('search-show')) {
-      $slicknavMenu.removeClass('menu_show').addClass('search-show').find('.slicknav_nav').attr('data-display', 'none');
+      $slicknavMenu.removeClass('menu_show').removeClass('search-show-desktop').addClass('search-show').find('.slicknav_nav').attr('data-display', 'none');
       $slicknavMenu.find('.slicknav_btn').removeClass('slicknav_open').addClass('slicknav_collapsed');
       $slicknavMenu.find('.slicknav_nav').addClass('slicknav_hidden');
       $('.search-show > .search-block-line').attr('data-display', 'block');
     }
     else{
       $slicknavMenu.removeClass('search-show').find('.search-block-line').attr('data-display', 'none');
+    }
+  });
+
+  /* search block*/
+  $(".user-block").find('.search-btn').on("click",function(){
+    if (!$slicknavMenu.hasClass('search-show-desktop')) {
+      $slicknavMenu.removeClass('search-show').addClass('search-show-desktop');
+      // $slicknavMenu.addClass('search-show-desktop').find('.search-block').attr('data-display', 'block').find('.search-block-line').attr('data-display', 'block');
+      // $slicknavMenu.find('.slicknav_btn').removeClass('slicknav_open').addClass('slicknav_collapsed');
+      // $slicknavMenu.find('.slicknav_nav').addClass('slicknav_hidden');
+      // $('.search-show > .search-block-line').attr('data-display', 'block');
+    }
+    else{
+      $slicknavMenu.removeClass('search-show-desktop');
+      // $slicknavMenu.removeClass('search-show-desktop').find('.search-block').attr('data-display', 'none').find('.search-block-line').attr('data-display', 'none');
     }
   });
 
@@ -112,17 +128,6 @@ $(document).ready(function(){
         }
       }]
   });
-  /* dropdown elements*/
-  // var $dropCatalog = jQuery('.catalog-menu');
-  // $dropCatalog.find('.menu-slide').on("click",function(){
-  //   if (!$dropCatalog.hasClass('show')) {
-  //     $dropCatalog.addClass('show');
-  //     $('.show > .menu-content').attr('data-display', 'block');
-  //   }
-  //   else{
-  //     $dropCatalog.removeClass('show').find('.menu-content').attr('data-display', 'none');
-  //   }
-  // });
   $(".catalog-menu").find('.menu-slide').on("click",function(){
     if (!$(this).parent().hasClass('show')) {
       $(this).parent().addClass('show');

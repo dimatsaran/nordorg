@@ -201,6 +201,8 @@
           padding: 8px 15px;
         }
         .form-item{
+          margin-bottom: 5px;
+          padding-bottom: 25px;
           @include tablet{
             width: 100%;
             margin: 0 0 5px;

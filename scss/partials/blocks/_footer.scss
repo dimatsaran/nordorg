@@ -135,6 +135,9 @@ footer{
           color: $color-black;
           text-decoration: none;
           font-family: $font-light;
+          &:hover{
+            color: $color-sap-green;
+          }
         }
       }
     }
