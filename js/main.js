@@ -36,7 +36,6 @@ $(document).ready(function(){
     }
     else{
       $slicknavMenu.removeClass('search-show-desktop');
-
     }
   });
   /*hide search*/
