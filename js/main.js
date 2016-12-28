@@ -1,9 +1,5 @@
 $(document).ready(function(){
-
-
-
   /*mobile menu*/
-  // var $mainMenu = jQuery('#nav');
   $('#nav').slicknav(
       {
         prependTo: '.main-header .container',
@@ -37,14 +33,17 @@ $(document).ready(function(){
   $(".user-block").find('.search-btn').on("click",function(){
     if (!$slicknavMenu.hasClass('search-show-desktop')) {
       $slicknavMenu.removeClass('search-show').addClass('search-show-desktop');
-      // $slicknavMenu.addClass('search-show-desktop').find('.search-block').attr('data-display', 'block').find('.search-block-line').attr('data-display', 'block');
-      // $slicknavMenu.find('.slicknav_btn').removeClass('slicknav_open').addClass('slicknav_collapsed');
-      // $slicknavMenu.find('.slicknav_nav').addClass('slicknav_hidden');
-      // $('.search-show > .search-block-line').attr('data-display', 'block');
     }
     else{
       $slicknavMenu.removeClass('search-show-desktop');
-      // $slicknavMenu.removeClass('search-show-desktop').find('.search-block').attr('data-display', 'none').find('.search-block-line').attr('data-display', 'none');
+
+    }
+  });
+  /*hide search*/
+  $("body").mouseup(function (e) {
+    var container = $(".search-show-desktop");
+    if (container.find('.search-block-line').has(e.target).length === 0){
+      container.removeClass('search-show-desktop');
     }
   });
 
@@ -160,6 +159,7 @@ $(document).ready(function(){
     }
   });
 });
+
 
 
 
