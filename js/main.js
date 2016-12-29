@@ -38,6 +38,7 @@ $(document).ready(function(){
       $slicknavMenu.removeClass('search-show-desktop');
     }
   });
+
   /*hide search*/
   $("body").mouseup(function (e) {
     var container = $(".search-show-desktop");
@@ -126,6 +127,8 @@ $(document).ready(function(){
         }
       }]
   });
+
+  /*slide-down blocks*/
   $(".catalog-menu").find('.menu-slide').on("click",function(){
     if (!$(this).parent().hasClass('show')) {
       $(this).parent().addClass('show');
@@ -146,6 +149,7 @@ $(document).ready(function(){
       $(this).parent().removeClass('show').find('.text-down').attr('data-display', 'none');
     }
   });
+
   /* dropdown tabs block*/
   var $dropTabs = jQuery('.block-tabs');
   $(".block-tabs").find('.tabs-slide').on("click",function(){
