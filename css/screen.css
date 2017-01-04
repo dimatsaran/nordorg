@@ -199,48 +199,6 @@ a {
   -ms-user-select: none;
 }
 
-/* line 6, ../scss/partials/elements/_sprites.scss */
-.social-f-b {
-  width: 11px;
-  height: 23px;
-  background-position: -5px -5px;
-}
-
-/* line 12, ../scss/partials/elements/_sprites.scss */
-.social-g {
-  width: 34px;
-  height: 23px;
-  background-position: -26px -5px;
-}
-
-/* line 18, ../scss/partials/elements/_sprites.scss */
-.social-i-n {
-  width: 24px;
-  height: 22px;
-  background-position: -5px -38px;
-}
-
-/* line 24, ../scss/partials/elements/_sprites.scss */
-.social-pinterest {
-  width: 20px;
-  height: 24px;
-  background-position: -38px -38px;
-}
-
-/* line 30, ../scss/partials/elements/_sprites.scss */
-.social-t-w {
-  width: 27px;
-  height: 20px;
-  background-position: -70px -5px;
-}
-
-/* line 36, ../scss/partials/elements/_sprites.scss */
-.social-y-t-b-e {
-  width: 20px;
-  height: 24px;
-  background-position: -70px -35px;
-}
-
 /* --- EASYDROPDOWN DEFAULT THEME --- */
 /* PREFIXED CSS */
 /* line 5, ../scss/partials/elements/_easydropdown.scss */
