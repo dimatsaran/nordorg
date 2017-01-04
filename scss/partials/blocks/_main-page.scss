@@ -76,7 +76,7 @@ body{
     }
     .content-block{
       //margin: 0 0 10px;
-      padding: 0 15px 10px;
+      padding: 0 13px 10px;
       width: 33%;
       display: inline-block;
       vertical-align: top;
@@ -117,8 +117,9 @@ body{
           -o-transition: all 0 1s ease-out 0.5s;
           transition: all 0 1s ease-out 0.5s;
           &:hover{
-            margin-top: -20px;
+            //margin-top: -20px;
             .img{
+              margin-top: -20px;
               >img{
                 opacity: 0.5;
               }
