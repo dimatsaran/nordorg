@@ -129,8 +129,10 @@ $(document).ready(function(){
   });
 
   /*slide-down blocks*/
+  var $catalogMenu = jQuery('.catalog-menu');
   $(".catalog-menu").find('.menu-slide').on("click",function(){
     if (!$(this).parent().hasClass('show')) {
+      $catalogMenu.find('.list-menu').removeClass('show').find('.menu-content').attr('data-display', 'none');
       $(this).parent().addClass('show');
       $('.show > .menu-content').attr('data-display', 'block');
     }
