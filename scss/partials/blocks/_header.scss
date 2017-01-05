@@ -180,9 +180,9 @@
           text-transform: uppercase;
           display: block;
           height: 100%;
+          @include transition(color  .5s);
           &.have-submenu{
             padding-right: 15px;
-            //color: $color-rouge;
             /**/
             &:after{
               transition: none;
@@ -418,9 +418,10 @@
              line-height: 1.63;
              color: $color-white-two;
              margin: 0;
+             @include transition(color  .5s);
              &:hover{
                color: $color-white;
-                 background-color: transparent;
+               background-color: transparent;
              }
            }
           ul.submenu{

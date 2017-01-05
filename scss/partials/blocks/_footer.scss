@@ -135,6 +135,7 @@ footer{
           color: $color-black;
           text-decoration: none;
           font-family: $font-light;
+          @include transition(color  .5s);
           &:hover{
             color: $color-sap-green;
           }
