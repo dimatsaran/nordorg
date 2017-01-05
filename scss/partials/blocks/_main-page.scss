@@ -137,7 +137,7 @@ body{
           width: 100%;
           position: relative;
           >img{
-            border-radius: 10px;
+            border-radius: 10px 10px 0 0;
             opacity: 1;
             -webkit-transition: all 0 1s ease-out 0.5s;
             -moz-transition: all 0 1s ease-out 0.5s;
@@ -173,6 +173,30 @@ body{
         }
         .text-block{
           padding: 35px 40px 20px;
+          position: relative;
+          //pseudo elements
+          //&:before{
+          //  width: 0;
+          //  height: 0;
+          //  border-bottom: 20px solid red;
+          //  border-right: 185px solid transparent;
+          //  position: absolute;
+          //  top: -20px;
+          //  left: 0;
+          //  content: '';
+          //  opacity: 0.1;
+          //}
+          //&:after{
+          //  width: 0;
+          //  height: 0;
+          //  border-bottom: 20px solid red;
+          //  border-left: 185px solid transparent;
+          //  position: absolute;
+          //  top: -20px;
+          //  right: 0;
+          //  content: '';
+          //  opacity: 0.1;
+          //}
         }
         .title{
           color: $color-white-two;
