@@ -5113,8 +5113,14 @@ body.karjiera-d {
 .block-form-contact .row-block .map-block {
   padding-top: 65px;
   position: relative;
+  height: 676px;
+  width: 630px;
 }
-/* line 302, ../scss/partials/blocks/_contacts-d.scss */
+/* line 305, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block #map {
+  height: 100%;
+}
+/* line 308, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .hover-block {
   width: 100%;
   height: 100%;
@@ -5122,46 +5128,46 @@ body.karjiera-d {
   top: 0;
   left: 0;
 }
-/* line 309, ../scss/partials/blocks/_contacts-d.scss */
+/* line 315, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor {
   position: absolute;
   display: inline-block;
   width: 280px;
 }
-/* line 313, ../scss/partials/blocks/_contacts-d.scss */
+/* line 319, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.one {
   left: 370px;
   top: 122px;
 }
 @media (max-width: 767px) {
-  /* line 313, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 319, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .map-block .anchor.one {
     left: 0;
   }
 }
-/* line 320, ../scss/partials/blocks/_contacts-d.scss */
+/* line 326, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.two {
   left: 258px;
   top: 182px;
 }
 @media (max-width: 767px) {
-  /* line 320, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 326, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .map-block .anchor.two {
     left: 0;
   }
 }
-/* line 327, ../scss/partials/blocks/_contacts-d.scss */
+/* line 333, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.three {
   left: 346px;
   top: 330px;
 }
 @media (max-width: 767px) {
-  /* line 327, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 333, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .map-block .anchor.three {
     left: 0;
   }
 }
-/* line 341, ../scss/partials/blocks/_contacts-d.scss */
+/* line 347, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .icon-paper {
   display: inline-block;
   background-image: url("../images/paper.svg");
@@ -5172,33 +5178,17 @@ body.karjiera-d {
   vertical-align: top;
   margin-right: 5px;
 }
-/* line 351, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .map-block .anchor .text-block {
-  width: 240px;
-  padding: 20px;
-  display: none;
-  background-color: #ffffff;
-  vertical-align: top;
-  position: relative;
-  border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+/* line 439, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor:hover {
+  cursor: pointer;
 }
-/* line 362, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .map-block .anchor .text-block:after {
-  z-index: 1000;
-  content: '';
-  position: absolute;
-  /* ╨Р╨▒╤Б╨╛╨╗╤О╤В╨╜╨╛╨╡ ╨┐╨╛╨╖╨╕╤Ж╨╕╨╛╨╜╨╕╤А╨╛╨▓╨░╨╜╨╕╨╡ */
-  left: -15px;
-  bottom: 40%;
-  /* ╨Я╨╛╨╗╨╛╨╢╨╡╨╜╨╕╨╡ ╤В╤А╨╡╤Г╨│╨╛╨╗╤М╨╜╨╕╨║╨░ */
-  border: 10px solid transparent;
-  border-right: 10px solid #ffffff;
+/* line 441, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .anchor:hover .text-block {
+  display: inline-block;
+  top: -40px;
 }
-/* line 375, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .map-block .anchor .text-block .title {
+/* line 448, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block h1.title-company {
   font-size: 16px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -5208,8 +5198,15 @@ body.karjiera-d {
   letter-spacing: -0.6px;
   color: #284734;
 }
-/* line 385, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .map-block .anchor .text-block .adress {
+/* line 459, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .text-block {
+  width: 240px;
+  background-color: #ffffff;
+  vertical-align: top;
+  position: relative;
+}
+/* line 484, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .text-block .adress {
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -5218,8 +5215,8 @@ body.karjiera-d {
   letter-spacing: -0.5px;
   color: #636362;
 }
-/* line 394, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .map-block .anchor .text-block .phone {
+/* line 493, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .text-block .phone {
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -5227,13 +5224,13 @@ body.karjiera-d {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 401, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .map-block .anchor .text-block .phone a {
+/* line 500, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .text-block .phone a {
   color: #636362;
   text-decoration: none;
 }
-/* line 407, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .map-block .anchor .text-block .mail {
+/* line 506, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .text-block .mail {
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -5241,13 +5238,13 @@ body.karjiera-d {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 414, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .map-block .anchor .text-block .mail a {
+/* line 513, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .text-block .mail a {
   color: #658d1b;
   text-decoration: none;
 }
-/* line 420, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .map-block .anchor .text-block .web-link {
+/* line 519, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .text-block .web-link {
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -5255,19 +5252,10 @@ body.karjiera-d {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 427, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .map-block .anchor .text-block .web-link a {
+/* line 526, ../scss/partials/blocks/_contacts-d.scss */
+.block-form-contact .row-block .map-block .text-block .web-link a {
   color: #658d1b;
   text-decoration: none;
-}
-/* line 433, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .map-block .anchor:hover {
-  cursor: pointer;
-}
-/* line 435, ../scss/partials/blocks/_contacts-d.scss */
-.block-form-contact .row-block .map-block .anchor:hover .text-block {
-  display: inline-block;
-  top: -40px;
 }
 
 /* line 1, ../scss/partials/blocks/_pagalba-d.scss */

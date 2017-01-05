@@ -152,39 +152,40 @@
             </div>
           </div>
            <div class="map-block">
-             <div class="img"><img src="../content-images/contacts-map.png" alt=""></div>
-             <div class="hover-block">
-               <div class="anchor one">
-                 <i class="icon-paper"></i>
-                 <div class="text-block">
-                   <p class="title">UAB “Senukai”</p>
-                   <p class="adress">Islandijos pl. 15, LT 51542 Kaunas</p>
-                   <p class="phone"><a href="tel:+37062047660">+370 620 47 660</a></p>
-                   <p class="mail"><a href="mailto:info@nordorganics.lt">info@nordorganics.lt</a></p>
-                   <p class="web-link"> <a href="www.senukai.lt">www.senukai.lt</a></p>
-                 </div>
-               </div>
-               <div class="anchor two">
-                 <i class="icon-paper"></i>
-                 <div class="text-block">
-                   <p class="title">UAB “Senukai”</p>
-                   <p class="adress">Islandijos pl. 15, LT 51542 Kaunas</p>
-                   <p class="phone"><a href="tel:+37062047660">+370 620 47 660</a></p>
-                   <p class="mail"><a href="mailto:info@nordorganics.lt">info@nordorganics.lt</a></p>
-                   <p class="web-link"> <a href="www.senukai.lt">www.senukai.lt</a></p>
-                 </div>
-               </div>
-               <div class="anchor three">
-                 <i class="icon-paper"></i>
-                 <div class="text-block">
-                   <p class="title">UAB “Senukai”</p>
-                   <p class="adress">Islandijos pl. 15, LT 51542 Kaunas</p>
-                   <p class="phone"><a href="tel:+37062047660">+370 620 47 660</a></p>
-                   <p class="mail"><a href="mailto:info@nordorganics.lt">info@nordorganics.lt</a></p>
-                   <p class="web-link"> <a href="www.senukai.lt">www.senukai.lt</a></p>
-                 </div>
-               </div>
-             </div>
+             <div id="map"></div>
+             <!--<div  class="img"><img src="../content-images/contacts-map.png" alt=""></div>-->
+             <!--<div class="hover-block">-->
+               <!--<div class="anchor one">-->
+                 <!--<i class="icon-paper"></i>-->
+                 <!--<div class="text-block">-->
+                   <!--<p class="title">UAB “Senukai”</p>-->
+                   <!--<p class="adress">Islandijos pl. 15, LT 51542 Kaunas</p>-->
+                   <!--<p class="phone"><a href="tel:+37062047660">+370 620 47 660</a></p>-->
+                   <!--<p class="mail"><a href="mailto:info@nordorganics.lt">info@nordorganics.lt</a></p>-->
+                   <!--<p class="web-link"> <a href="www.senukai.lt">www.senukai.lt</a></p>-->
+                 <!--</div>-->
+               <!--</div>-->
+               <!--<div class="anchor two">-->
+                 <!--<i class="icon-paper"></i>-->
+                 <!--<div class="text-block">-->
+                   <!--<p class="title">UAB “Senukai”</p>-->
+                   <!--<p class="adress">Islandijos pl. 15, LT 51542 Kaunas</p>-->
+                   <!--<p class="phone"><a href="tel:+37062047660">+370 620 47 660</a></p>-->
+                   <!--<p class="mail"><a href="mailto:info@nordorganics.lt">info@nordorganics.lt</a></p>-->
+                   <!--<p class="web-link"> <a href="www.senukai.lt">www.senukai.lt</a></p>-->
+                 <!--</div>-->
+               <!--</div>-->
+               <!--<div class="anchor three">-->
+                 <!--<i class="icon-paper"></i>-->
+                 <!--<div class="text-block">-->
+                   <!--<p class="title">UAB “Senukai”</p>-->
+                   <!--<p class="adress">Islandijos pl. 15, LT 51542 Kaunas</p>-->
+                   <!--<p class="phone"><a href="tel:+37062047660">+370 620 47 660</a></p>-->
+                   <!--<p class="mail"><a href="mailto:info@nordorganics.lt">info@nordorganics.lt</a></p>-->
+                   <!--<p class="web-link"> <a href="www.senukai.lt">www.senukai.lt</a></p>-->
+                 <!--</div>-->
+               <!--</div>-->
+             <!--</div>-->
            </div>
         </div>
       </div>
@@ -341,10 +342,68 @@ script(src='respond/respond.min.js')
 <script src="js/jquery.easydropdown.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.slicknav.js"></script>
-<script src="js/main.js"></script><script src="js/jquery.min.js"></script>
-<script src="js/jquery.easydropdown.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/jquery.slicknav.js"></script>
 <script src="js/main.js"></script>
+  <script type="text/javascript">
+  var map;
+  function initMap() {
+    var styles =
+      [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}];
+
+    var styledMap = new google.maps.StyledMapType(styles,
+        {name: "Styled Map"});
+
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 29.110902, lng: 12.773401},
+      zoom: 3,
+      mapTypeControlOptions: {
+        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+      }
+    });
+    /* text block*/
+    var contentString = '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h1 id="firstHeading" class="firstHeading title-company">UAB “Senukai”</h1>'+
+        '<div id="bodyContent" class="text-block" >'+
+        '<p class="adress">Islandijos pl. 15, LT 51542 Kaunas</p>'+
+        '<p class="phone"><a href="tel:+37062047660">+370 620 47 660</a></p>'+
+        '<p class="mail"><a href="mailto:info@nordorganics.lt">info@nordorganics.lt</a></p>'+
+        '<p class="web-link"><a href="www.senukai.lt">www.senukai.lt</a></p>'+
+        '</div>'+
+        '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+      content: contentString,
+      maxWidth: 240
+    });
+
+    /* position marker*/
+    var companyLogo = new google.maps.MarkerImage('images/paper.svg',
+        new google.maps.Size(28,60),
+        new google.maps.Point(0,0),
+        new google.maps.Point(0,0)
+    );
+    /* position marker*/
+    var companyPos = new google.maps.LatLng(34.110902, 12.773401);
+    companyMarker = new google.maps.Marker({
+      map: map,
+      icon: companyLogo,
+      animation: google.maps.Animation.DROP,
+      position: companyPos,
+      title:"Company"
+    });
+    companyMarker.addListener('click', function() {
+      infowindow.open(map, companyMarker);
+    });
+    map.mapTypes.set('map_style', styledMap);
+    map.setMapTypeId('map_style');
+  }
+  google.maps.event.addListener(companyMarker, 'click', function() {
+    infowindow.open(map,companyMarker);
+  });
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiYMR4AiWBd_uqsmNa_sh6aqvXv00DiQ&callback=initMap&language=Lt">
+</script>
 </body>
 </html>
