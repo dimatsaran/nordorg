@@ -813,12 +813,14 @@ a {
 /* line 183, ../scss/partials/elements/_form.scss */
 .nord-form .red-description, .nord-form .error-message {
   bottom: 0;
+  color: #da4947;
   font-size: 10px;
   line-height: 1;
   position: absolute;
+  left: 0;
 }
 
-/* line 192, ../scss/partials/elements/_form.scss */
+/* line 193, ../scss/partials/elements/_form.scss */
 div.messages {
   font-size: 18px;
   line-height: 22px;
@@ -826,7 +828,7 @@ div.messages {
   margin: 3px 0;
   border: 1px solid;
 }
-/* line 200, ../scss/partials/elements/_form.scss */
+/* line 201, ../scss/partials/elements/_form.scss */
 div.messages p {
   font-size: 18px;
   line-height: 22px;
@@ -4832,6 +4834,18 @@ body.karjiera-d {
   color: #ffffff;
   font-family: "Rubik", sans-serif;
 }
+/* line 264, ../scss/partials/blocks/_become-partner.scss */
+.block-form-partner .row-block .nord-form .error-message {
+  padding-left: 20px;
+  bottom: 5px;
+}
+@media screen and (max-width: 1169px) {
+  /* line 264, ../scss/partials/blocks/_become-partner.scss */
+  .block-form-partner .row-block .nord-form .error-message {
+    padding-left: 0;
+    bottom: 0;
+  }
+}
 
 /* line 2, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block {
@@ -5111,16 +5125,22 @@ body.karjiera-d {
 }
 /* line 299, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block {
-  padding-top: 65px;
+  margin-top: 65px;
   position: relative;
   height: 676px;
-  width: 630px;
+  max-width: 630px;
 }
-/* line 305, ../scss/partials/blocks/_contacts-d.scss */
+@media (max-width: 767px) {
+  /* line 299, ../scss/partials/blocks/_contacts-d.scss */
+  .block-form-contact .row-block .map-block {
+    height: 300px;
+  }
+}
+/* line 308, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block #map {
   height: 100%;
 }
-/* line 308, ../scss/partials/blocks/_contacts-d.scss */
+/* line 311, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .hover-block {
   width: 100%;
   height: 100%;
@@ -5128,46 +5148,46 @@ body.karjiera-d {
   top: 0;
   left: 0;
 }
-/* line 315, ../scss/partials/blocks/_contacts-d.scss */
+/* line 318, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor {
   position: absolute;
   display: inline-block;
   width: 280px;
 }
-/* line 319, ../scss/partials/blocks/_contacts-d.scss */
+/* line 322, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.one {
   left: 370px;
   top: 122px;
 }
 @media (max-width: 767px) {
-  /* line 319, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 322, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .map-block .anchor.one {
     left: 0;
   }
 }
-/* line 326, ../scss/partials/blocks/_contacts-d.scss */
+/* line 329, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.two {
   left: 258px;
   top: 182px;
 }
 @media (max-width: 767px) {
-  /* line 326, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 329, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .map-block .anchor.two {
     left: 0;
   }
 }
-/* line 333, ../scss/partials/blocks/_contacts-d.scss */
+/* line 336, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor.three {
   left: 346px;
   top: 330px;
 }
 @media (max-width: 767px) {
-  /* line 333, ../scss/partials/blocks/_contacts-d.scss */
+  /* line 336, ../scss/partials/blocks/_contacts-d.scss */
   .block-form-contact .row-block .map-block .anchor.three {
     left: 0;
   }
 }
-/* line 347, ../scss/partials/blocks/_contacts-d.scss */
+/* line 350, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor .icon-paper {
   display: inline-block;
   background-image: url("../images/paper.svg");
@@ -5178,16 +5198,16 @@ body.karjiera-d {
   vertical-align: top;
   margin-right: 5px;
 }
-/* line 439, ../scss/partials/blocks/_contacts-d.scss */
+/* line 442, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor:hover {
   cursor: pointer;
 }
-/* line 441, ../scss/partials/blocks/_contacts-d.scss */
+/* line 444, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .anchor:hover .text-block {
   display: inline-block;
   top: -40px;
 }
-/* line 448, ../scss/partials/blocks/_contacts-d.scss */
+/* line 451, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block h1.title-company {
   font-size: 16px;
   font-family: "Rubik", sans-serif;
@@ -5198,14 +5218,14 @@ body.karjiera-d {
   letter-spacing: -0.6px;
   color: #284734;
 }
-/* line 459, ../scss/partials/blocks/_contacts-d.scss */
+/* line 462, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .text-block {
   width: 240px;
   background-color: #ffffff;
   vertical-align: top;
   position: relative;
 }
-/* line 484, ../scss/partials/blocks/_contacts-d.scss */
+/* line 487, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .text-block .adress {
   font-size: 14px;
   font-weight: normal;
@@ -5215,7 +5235,7 @@ body.karjiera-d {
   letter-spacing: -0.5px;
   color: #636362;
 }
-/* line 493, ../scss/partials/blocks/_contacts-d.scss */
+/* line 496, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .text-block .phone {
   font-size: 14px;
   font-weight: normal;
@@ -5224,12 +5244,12 @@ body.karjiera-d {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 500, ../scss/partials/blocks/_contacts-d.scss */
+/* line 503, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .text-block .phone a {
   color: #636362;
   text-decoration: none;
 }
-/* line 506, ../scss/partials/blocks/_contacts-d.scss */
+/* line 509, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .text-block .mail {
   font-size: 14px;
   font-weight: normal;
@@ -5238,12 +5258,12 @@ body.karjiera-d {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 513, ../scss/partials/blocks/_contacts-d.scss */
+/* line 516, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .text-block .mail a {
   color: #658d1b;
   text-decoration: none;
 }
-/* line 519, ../scss/partials/blocks/_contacts-d.scss */
+/* line 522, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .text-block .web-link {
   font-size: 14px;
   font-weight: normal;
@@ -5252,7 +5272,7 @@ body.karjiera-d {
   line-height: 1.86;
   letter-spacing: -0.5px;
 }
-/* line 526, ../scss/partials/blocks/_contacts-d.scss */
+/* line 529, ../scss/partials/blocks/_contacts-d.scss */
 .block-form-contact .row-block .map-block .text-block .web-link a {
   color: #658d1b;
   text-decoration: none;

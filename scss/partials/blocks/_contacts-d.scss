@@ -298,10 +298,13 @@
     }
     .map-block{
       //padding-top: 65px;
-      padding-top: 65px;
+      margin-top: 65px;
       position: relative;
       height: 676px;
-      width: 630px;
+      max-width: 630px;
+      @include small-phone {
+        height: 300px;
+      }
       #map{
         height: 100%;
       }

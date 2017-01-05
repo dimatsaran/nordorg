@@ -182,10 +182,11 @@
   }
   .red-description,.error-message{
     bottom: 0;
-    //color: $color-red;
+    color: $color-rouge-v2;
     font-size: 10px;
     line-height: 1;
     position: absolute;
+    left: 0;
   }
 }
 

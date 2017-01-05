@@ -261,6 +261,14 @@
           color: $color-white-two;
           font-family: $font-light;
         }
+        .error-message{
+          padding-left: 20px;
+          bottom: 5px;
+          @include tablet{
+            padding-left: 0;
+            bottom: 0;
+          }
+        }
       }
       //.nord-form{
       //  padding-top: 20px;
