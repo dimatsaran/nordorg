@@ -8173,7 +8173,19 @@ body.karjiera-d {
   height: 40px;
   display: inline-block;
 }
-/* line 374, ../scss/partials/blocks/_products-d.scss */
+/* line 370, ../scss/partials/blocks/_products-d.scss */
+.block-products .block-products-catalog .row-block .content-block .item-block .img a {
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+/* line 373, ../scss/partials/blocks/_products-d.scss */
+.block-products .block-products-catalog .row-block .content-block .item-block .img a:hover {
+  opacity: 0.5;
+}
+/* line 381, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .title {
   padding-top: 10px;
   font-size: 20px;
@@ -8184,7 +8196,7 @@ body.karjiera-d {
   text-align: center;
   color: #373737;
 }
-/* line 383, ../scss/partials/blocks/_products-d.scss */
+/* line 390, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .title a {
   padding-top: 10px;
   font-size: 20px;
@@ -8196,12 +8208,12 @@ body.karjiera-d {
   color: #373737;
   text-decoration: none;
 }
-/* line 395, ../scss/partials/blocks/_products-d.scss */
+/* line 402, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .desc {
   padding-top: 10px;
   display: inline-block;
 }
-/* line 398, ../scss/partials/blocks/_products-d.scss */
+/* line 405, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .desc .icon-bag {
   vertical-align: middle;
   background-image: url("../images/t-a-r-a.svg");
@@ -8211,7 +8223,7 @@ body.karjiera-d {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 407, ../scss/partials/blocks/_products-d.scss */
+/* line 414, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .row-block .content-block .item-block .desc .count-size {
   font-size: 15px;
   font-weight: normal;
@@ -8225,7 +8237,7 @@ body.karjiera-d {
   padding-top: 3px;
 }
 @media screen and (max-width: 1169px) {
-  /* line 424, ../scss/partials/blocks/_products-d.scss */
+  /* line 431, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .list-pagination {
     padding-left: 30px;
     padding-right: 30px;
@@ -8233,31 +8245,31 @@ body.karjiera-d {
   }
 }
 @media (max-width: 767px) {
-  /* line 424, ../scss/partials/blocks/_products-d.scss */
+  /* line 431, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .list-pagination {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 @media (max-width: 767px) {
-  /* line 432, ../scss/partials/blocks/_products-d.scss */
+  /* line 439, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .list-pagination ul {
     text-align: center;
   }
 }
-/* line 436, ../scss/partials/blocks/_products-d.scss */
+/* line 443, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .list-pagination ul li {
   display: inline-block;
   padding: 0 5px;
 }
 @media (max-width: 767px) {
-  /* line 436, ../scss/partials/blocks/_products-d.scss */
+  /* line 443, ../scss/partials/blocks/_products-d.scss */
   .block-products .block-products-catalog .list-pagination ul li {
     text-align: center;
     padding: 5px;
   }
 }
-/* line 443, ../scss/partials/blocks/_products-d.scss */
+/* line 450, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .list-pagination ul li a {
   display: inline-block;
   color: #373737;
@@ -8272,11 +8284,11 @@ body.karjiera-d {
   font-stretch: normal;
   min-width: 45px;
 }
-/* line 457, ../scss/partials/blocks/_products-d.scss */
+/* line 464, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .list-pagination ul li a.first-page {
   min-width: 60px;
 }
-/* line 460, ../scss/partials/blocks/_products-d.scss */
+/* line 467, ../scss/partials/blocks/_products-d.scss */
 .block-products .block-products-catalog .list-pagination ul li a:hover, .block-products .block-products-catalog .list-pagination ul li a.active {
   color: #ffffff;
   background-color: #658d1b;

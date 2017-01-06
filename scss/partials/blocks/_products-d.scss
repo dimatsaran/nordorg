@@ -367,6 +367,13 @@
               height: 40px;
               display: inline-block;
              }
+            a{
+              @include transition(opacity  .5s);
+              opacity: 1;
+              &:hover{
+                opacity: 0.5;
+              }
+            }
           }
           .text-block{
             //padding: 0 40px;
