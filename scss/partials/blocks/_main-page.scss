@@ -107,37 +107,55 @@ body{
         }
         a{
           width: 100%;
-          height: 100%;
+          //height: 100%;
+          min-height: 470px;
           text-decoration: none;
           display: block;
           margin-top: 0;
-          opacity: 1;
-          @include transition(opacity  .3s);
+          //opacity: 1;
+          position: relative;
+          //@include transition(opacity  .3s);
+          @include tablet{
+            min-height: 540px;
+          }
+          @include small-phone{
+            min-height: 600px;
+          }
           &:hover{
             //margin-top: -20px;
-
             .img{
-              margin-top: -20px;
+              //margin-top: -20px;
+              top: -20px;
+              border-radius: 10px 10px 0 0;
               >img{
                 opacity: 0.5;
               }
             }
             .icon-hover{
               display: inline-block;
+              opacity: 1;
               img{
                 //opacity: 1;
-
               }
+            }
+            .text-block{
+              bottom: 20px;
             }
           }
         }
         .img{
           width: 100%;
-          position: relative;
+          //position: relative;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 1;
+          border-radius: 10px 10px 0 0;
+          @include transition(top  .3s);
           >img{
-            border-radius: 10px 10px 0 0;
+            //border-radius: 10px 10px 0 0;
             opacity: 1;
-            @include transition(opacity  .3s);
+            //@include transition(all  .1s);
             //height: 252px;
             @include tablet{
               width: 100%;
@@ -149,8 +167,10 @@ body{
             height: 100%;
             text-align: center;
             vertical-align: middle;
-            //display: block;
-            display: none;
+            display: inline-block;
+            //display: none;
+            opacity: 0;
+            @include transition(opacity  .5s);
             top: 0;
             z-index: 100;
             left: 0;
@@ -168,7 +188,11 @@ body{
         }
         .text-block{
           padding: 35px 40px 20px;
-          position: relative;
+          //position: relative;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          @include transition(bottom  .3s);
           //pseudo elements
           //&:before{
           //  width: 0;
