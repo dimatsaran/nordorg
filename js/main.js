@@ -141,7 +141,7 @@ $(document).ready(function(){
     }
   });
 
-  /* dropdown text block*/
+  /* dropdown text block for all blocks*/
   $(".block-desc").find('.link-more').on("click",function(){
     if (!$(this).parent().hasClass('show')) {
       $(this).parent().addClass('show');
