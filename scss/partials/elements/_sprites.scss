@@ -1,40 +1,50 @@
+
 .social{
-  //background-image: url("../images/social.png");
-  //background-repeat: no-repeat;
-  //display: block;
-}
-.social-f-b {
-  width: 11px;
-  height: 23px;
-  background-position: -5px -5px;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
 }
 
-.social-g {
-  width: 34px;
+.social-facebook {
+  font-size:(23/10)*1rem;
+  //width:(11/23)*1em;
+  width:11px;
   height: 23px;
-  background-position: -26px -5px;
 }
-
-.social-i-n {
-  width: 24px;
+.social-google {
+  font-size:(23/10)*1rem;
+  //width:(34/23)*1em;
+  width:35px;
+  height:  23px;
+}
+.social-inlink {
+  font-size:(22/10)*1rem;
+  //width:(24/22)*1em;
+  width:24px;
   height: 22px;
-  background-position: -5px -38px;
 }
-
 .social-pinterest {
-  width: 20px;
+  font-size:(24/10)*1rem;
+  //width:(19/24)*1em;
+  width:19px;
   height: 24px;
-  background-position: -38px -38px;
 }
-
-.social-t-w {
-  width: 27px;
+.social-twitter {
+  font-size:(20/10)*1rem;
+  //width:(27/20)*1em;
+  width:27px;
   height: 20px;
-  background-position: -70px -5px;
 }
-
-.social-y-t-b-e {
-  width: 20px;
+.social-youtube {
+  font-size:(24/10)*1rem;
+  //width:(20/24)*1em;
+  width:20px;
   height: 24px;
-  background-position: -70px -35px;
+}
+.social{
+  color: #636262;
+  &:hover {
+    color: #a7272a;
+  }
 }

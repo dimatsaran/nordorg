@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  /*svg sprites cross-browser compatibility */
+  svg4everybody({});
+  
   /*mobile menu*/
   $('#nav').slicknav(
       {
