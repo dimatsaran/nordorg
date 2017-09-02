@@ -43,8 +43,8 @@
   height: 24px;
 }
 .social{
-  color: #636262;
+  color: $color-medium-grey;
   &:hover {
-    color: #a7272a;
+    color: $color-rouge;
   }
 }
